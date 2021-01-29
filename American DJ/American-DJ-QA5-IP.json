@@ -1,0 +1,888 @@
+{
+    "manufacturer": "American DJ",
+    "name": "QA5 IP",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Georg M\u00fcller",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobing": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobing slow \u2013 fast"
+                }
+            ]
+        },
+        "Program selection mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        51
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimming mode"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        102
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color macro mode"
+                },
+                {
+                    "dmxRange": [
+                        103,
+                        153
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color change mode"
+                },
+                {
+                    "dmxRange": [
+                        154,
+                        204
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color fade mode"
+                },
+                {
+                    "dmxRange": [
+                        205,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto run mode"
+                }
+            ]
+        },
+        "Color macros / Programs / Color macro mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 1 (off)"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        4
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 2"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        8
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 3"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        12
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 4"
+                },
+                {
+                    "dmxRange": [
+                        13,
+                        16
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 5"
+                },
+                {
+                    "dmxRange": [
+                        17,
+                        20
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 6"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 7"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        28
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 8"
+                },
+                {
+                    "dmxRange": [
+                        29,
+                        32
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 9"
+                },
+                {
+                    "dmxRange": [
+                        33,
+                        36
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 10"
+                },
+                {
+                    "dmxRange": [
+                        37,
+                        40
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 11"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        44
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 12"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        48
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 13"
+                },
+                {
+                    "dmxRange": [
+                        49,
+                        52
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 14"
+                },
+                {
+                    "dmxRange": [
+                        53,
+                        56
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 15"
+                },
+                {
+                    "dmxRange": [
+                        57,
+                        60
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 16"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        64
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 17"
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        68
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 18"
+                },
+                {
+                    "dmxRange": [
+                        69,
+                        72
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 19"
+                },
+                {
+                    "dmxRange": [
+                        73,
+                        76
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 20"
+                },
+                {
+                    "dmxRange": [
+                        77,
+                        80
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 21"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        84
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 22"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        88
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 23"
+                },
+                {
+                    "dmxRange": [
+                        89,
+                        92
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 24"
+                },
+                {
+                    "dmxRange": [
+                        93,
+                        96
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 25"
+                },
+                {
+                    "dmxRange": [
+                        97,
+                        100
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 26"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        104
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 27"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        108
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 28"
+                },
+                {
+                    "dmxRange": [
+                        109,
+                        112
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 29"
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        116
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 30"
+                },
+                {
+                    "dmxRange": [
+                        117,
+                        120
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 31"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        124
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 32"
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        128
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 33"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        132
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 34",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        133,
+                        136
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 35"
+                },
+                {
+                    "dmxRange": [
+                        137,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 36"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        144
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 37"
+                },
+                {
+                    "dmxRange": [
+                        145,
+                        148
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 38"
+                },
+                {
+                    "dmxRange": [
+                        149,
+                        152
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 39"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        156
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 40"
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        160
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 41"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        164
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 42"
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        168
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 43"
+                },
+                {
+                    "dmxRange": [
+                        169,
+                        172
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 44"
+                },
+                {
+                    "dmxRange": [
+                        173,
+                        176
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 45"
+                },
+                {
+                    "dmxRange": [
+                        177,
+                        180
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 46"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        184
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 47"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        188
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 48"
+                },
+                {
+                    "dmxRange": [
+                        189,
+                        192
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 49"
+                },
+                {
+                    "dmxRange": [
+                        193,
+                        196
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 50"
+                },
+                {
+                    "dmxRange": [
+                        197,
+                        200
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 51"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        204
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 52"
+                },
+                {
+                    "dmxRange": [
+                        205,
+                        208
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 53"
+                },
+                {
+                    "dmxRange": [
+                        209,
+                        212
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 54"
+                },
+                {
+                    "dmxRange": [
+                        213,
+                        216
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 55"
+                },
+                {
+                    "dmxRange": [
+                        217,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 56"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        224
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 57"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        228
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 58"
+                },
+                {
+                    "dmxRange": [
+                        229,
+                        232
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 59"
+                },
+                {
+                    "dmxRange": [
+                        233,
+                        236
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 60"
+                },
+                {
+                    "dmxRange": [
+                        237,
+                        240
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 61"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        244
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 62"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        248
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 63"
+                },
+                {
+                    "dmxRange": [
+                        249,
+                        252
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 64"
+                },
+                {
+                    "dmxRange": [
+                        253,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 65"
+                }
+            ]
+        },
+        "Program speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "comment": "Speed control"
+            }
+        },
+        "Color temperature": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        28
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "3200 K",
+                    "colors": [
+                        "#ffb87b"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        29,
+                        57
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "3700 K",
+                    "colors": [
+                        "#ffc697"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        86
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "4200 K",
+                    "colors": [
+                        "#ffd3af"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        87,
+                        114
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "4700 K",
+                    "colors": [
+                        "#ffdec3"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        142
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "5200 K",
+                    "colors": [
+                        "#ffe8d5"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        143,
+                        170
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "5700 K",
+                    "colors": [
+                        "#fff1e4"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        198
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "6200 K",
+                    "colors": [
+                        "#fff9f2"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        199,
+                        226
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "6700 K",
+                    "colors": [
+                        "#edf9ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        227,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "7200 K",
+                    "colors": [
+                        "#edefff"
+                    ]
+                }
+            ]
+        },
+        "Dimmer curves": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        20
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Standard"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        40
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Stage"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        60
+                    ],
+                    "type": "Maintenance",
+                    "comment": "TV"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        80
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Architecture"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        100
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Theater"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Default to unit curve setting"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "Master dimmer"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "Master dimmer",
+                "Strobing"
+            ]
+        },
+        {
+            "name": "10-channel",
+            "shortName": "10ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "Master dimmer",
+                "Strobing",
+                "Program selection mode",
+                "Color macros / Programs / Color macro mode",
+                "Program speed",
+                "Dimmer curves"
+            ]
+        },
+        {
+            "name": "11-channel",
+            "shortName": "11ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "Master dimmer",
+                "Strobing",
+                "Program selection mode",
+                "Color macros / Programs / Color macro mode",
+                "Program speed",
+                "Color temperature",
+                "Dimmer curves"
+            ]
+        }
+    ]
+}

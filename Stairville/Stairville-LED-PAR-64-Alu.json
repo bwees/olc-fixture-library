@@ -1,0 +1,139 @@
+{
+    "manufacturer": "Stairville",
+    "name": "LED PAR 64 Alu",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Allan Rhynas",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.9.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "RGB Control"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "7 Colour Fades"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "7 Colour Changes"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "3 Colour Changes"
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        100
+                    ],
+                    "type": "Speed",
+                    "comment": "high to low",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        150
+                    ],
+                    "type": "Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Speed control by the device, via music or controller",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Mode",
+                "Red",
+                "Green",
+                "Blue",
+                "Speed"
+            ]
+        }
+    ]
+}

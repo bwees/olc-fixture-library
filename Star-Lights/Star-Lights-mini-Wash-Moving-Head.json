@@ -1,0 +1,212 @@
+{
+    "manufacturer": "Star-Lights",
+    "name": "LED 3W Mini Moving Head",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Tolmino",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Color Mixing": {
+            "slots": [
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "R. G. B. color mixing"
+                }
+            ]
+        },
+        "Color Mixing Speed": {
+            "slots": [
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Speed Adjustable from Fast to Slow"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan fine 16 bit"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "450deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt fine 16 bit"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "XY-Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Flash": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        215
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Flash from Fast to Slow"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        231
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        247
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Semi On",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "On"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Color Mixing": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "WheelSlot",
+                "slotNumber": 1,
+                "comment": "R. G. B. color mixing"
+            }
+        },
+        "Color Mixing Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "WheelSlot",
+                "slotNumber": 1,
+                "comment": "Speed Adjustable from Fast to Slow"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Reset Channel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        247
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Without reposition"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Hold for 5 seconds to reset"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "13-channel",
+            "shortName": "13ch",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Pan fine 16 bit",
+                "Tilt fine 16 bit",
+                "XY-Speed",
+                "Flash",
+                "Dimmer",
+                "Color Mixing",
+                "Color Mixing Speed",
+                "Red",
+                "Green",
+                "Blue",
+                "Reset Channel"
+            ]
+        }
+    ]
+}

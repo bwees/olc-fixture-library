@@ -1,0 +1,746 @@
+{
+    "manufacturer": "Eurolite",
+    "name": "TSL-200",
+    "categories": [
+        "Scanner"
+    ],
+    "meta": {
+        "authors": [
+            "Rob Nieuwenhuizen",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Color-wheel": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "Open / White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Dark blue",
+                    "colors": [
+                        "#00007f"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Orange",
+                    "colors": [
+                        "#ffaa00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Pink",
+                    "colors": [
+                        "#ff007f"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Light blue",
+                    "colors": [
+                        "#0055ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Green",
+                    "colors": [
+                        "#00aa00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Megenta",
+                    "colors": [
+                        "#ff007f"
+                    ]
+                }
+            ]
+        },
+        "Gobo-wheel, gobo shake": {
+            "slots": [
+                {
+                    "type": "Open"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 1"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 2"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 3"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 4"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 5"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 6"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 7"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Open shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 1 shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 2 shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 3 shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 4 shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 5 shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 6 shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 7 shake"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "13deg"
+            }
+        },
+        "Tilt": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "13deg"
+            }
+        },
+        "Color-wheel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Open / White"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        31
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Dark blue"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        47
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Orange"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        63
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Yellow"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        79
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Pink"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        95
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Light blue"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Megenta"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Rainbow effect with increasing speed"
+                }
+            ]
+        },
+        "Gobo-wheel, gobo shake": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Gobo 1"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        23
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Gobo 2"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        31
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Gobo 3"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        39
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Gobo 4"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        47
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Gobo 5"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        55
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Gobo 6"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        63
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Gobo 7"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        71
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 9,
+                    "comment": "Open shake"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        79
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 10,
+                    "comment": "Gobo 1 shake"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        87
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 11,
+                    "comment": "Gobo 2 shake"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        95
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 12,
+                    "comment": "Gobo 3 shake"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        103
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 13,
+                    "comment": "Gobo 4 shake"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        111
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 14,
+                    "comment": "Gobo 5 shake"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        119
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 15,
+                    "comment": "Gobo 6 shake"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        127
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 16,
+                    "comment": "Gobo 7 shake"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 17,
+                    "comment": "Cont. gobo-wheel rotation with increasing speed"
+                }
+            ]
+        },
+        "Gobo rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        135
+                    ],
+                    "type": "Speed",
+                    "comment": "Forwards gobo with decreasing speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Backwards gobo rotation with increasing speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Shutter, strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        131
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe-effect with increasing speed"
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        139
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        180
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse closing with increasing speed"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        189
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        231
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse closing with decreasing speed"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        239
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset after 3-5 seconds",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        247
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random strobe-effect"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                }
+            ]
+        },
+        "Dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Motion macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        25
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 1",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        43
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 2",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        44,
+                        61
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 3",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        62,
+                        79
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 4",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        97
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 5",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        98,
+                        115
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 6",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        116,
+                        133
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 7",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        151
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 8",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        169
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 9",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        187
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 10",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        205
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 11",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        223
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 12",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        241
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 13",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        242,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Motion macro 14",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Speed Motion macros": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Increasing speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Color-wheel",
+                "Gobo-wheel, gobo shake",
+                "Gobo rotation",
+                "Shutter, strobe",
+                "Dimmer intensity",
+                "Motion macros",
+                "Speed Motion macros"
+            ]
+        }
+    ]
+}

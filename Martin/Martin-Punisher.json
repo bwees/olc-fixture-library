@@ -1,0 +1,401 @@
+{
+    "manufacturer": "Martin",
+    "name": "Punisher",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "Heikki Junnila",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Lamp": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        11
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp OFF",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        12,
+                        193
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp ON",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Gobo strobe slow to fast"
+                }
+            ]
+        },
+        "Trigger Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        11
+                    ],
+                    "type": "Maintenance",
+                    "comment": "OFF"
+                },
+                {
+                    "dmxRange": [
+                        12,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Music triggered"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Controller triggered when 195 crossed"
+                }
+            ]
+        },
+        "Parabol speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        91
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "fast CW",
+                    "speedEnd": "slow CW"
+                },
+                {
+                    "dmxRange": [
+                        92,
+                        98
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        99,
+                        189
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        231
+                    ],
+                    "type": "Speed",
+                    "comment": "Random slow (triggered)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Random fast (triggered)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Trigger decay": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Speed",
+                    "comment": "0 seconds",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        252
+                    ],
+                    "type": "Speed",
+                    "comment": "0.2 to 9.9 seconds",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        253,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Random (triggered)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Colour/Gobo": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        20
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 1"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        36
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 2"
+                },
+                {
+                    "dmxRange": [
+                        37,
+                        52
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 3"
+                },
+                {
+                    "dmxRange": [
+                        53,
+                        68
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 4"
+                },
+                {
+                    "dmxRange": [
+                        69,
+                        84
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 5"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        100
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 6"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        116
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 7"
+                },
+                {
+                    "dmxRange": [
+                        117,
+                        132
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 8"
+                },
+                {
+                    "dmxRange": [
+                        133,
+                        148
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 9"
+                },
+                {
+                    "dmxRange": [
+                        149,
+                        164
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 10"
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        180
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 11"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        196
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 12"
+                },
+                {
+                    "dmxRange": [
+                        197,
+                        244
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "No effect"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Random (triggered)"
+                }
+            ]
+        },
+        "Shake": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Speed",
+                    "comment": "OFF",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        252
+                    ],
+                    "type": "Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        253,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Random (triggered)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        50
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        101
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Slow random action"
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        152
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Medium random action"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        203
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Fast random action"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Random speed and action"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Normal",
+            "channels": [
+                "Lamp",
+                "Trigger Mode",
+                "Parabol speed",
+                "Trigger decay",
+                "Colour/Gobo",
+                "Shake"
+            ]
+        },
+        {
+            "name": "Single",
+            "channels": [
+                "Control"
+            ]
+        }
+    ]
+}

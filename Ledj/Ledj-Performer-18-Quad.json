@@ -1,0 +1,147 @@
+{
+    "manufacturer": "Ledj",
+    "name": "Performer 18 Quad",
+    "categories": [
+        "Other"
+    ],
+    "meta": {
+        "authors": [
+            "Clem",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.7.0 RC1)"
+        }
+    },
+    "availableChannels": {
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "StrobeSpeed",
+                "comment": "Stobe speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Programme": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX control"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour change"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour fade"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour fade in/out"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound activated",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Chase / fade speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Red intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Master dimmer",
+                "Strobe speed",
+                "Programme",
+                "Chase / fade speed",
+                "Red intensity",
+                "Green intensity",
+                "Blue intensity",
+                "White intensity"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red intensity",
+                "Green intensity",
+                "Blue intensity",
+                "White intensity"
+            ]
+        }
+    ]
+}

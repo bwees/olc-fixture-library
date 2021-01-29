@@ -1,0 +1,447 @@
+{
+    "manufacturer": "Martin",
+    "name": "Destroyer",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "Heikki Junnila",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Colour/Gobo Wheel": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "Blackout"
+                },
+                {
+                    "type": "Color",
+                    "name": "Position 1"
+                },
+                {
+                    "type": "Color",
+                    "name": "Position 2"
+                },
+                {
+                    "type": "Color",
+                    "name": "Position 3"
+                },
+                {
+                    "type": "Color",
+                    "name": "Position 4"
+                },
+                {
+                    "type": "Color",
+                    "name": "Position 5"
+                },
+                {
+                    "type": "Color",
+                    "name": "Position 6"
+                },
+                {
+                    "type": "Color",
+                    "name": "Position 7"
+                },
+                {
+                    "type": "Color",
+                    "name": "Position 8"
+                },
+                {
+                    "type": "Color",
+                    "name": "Position 9"
+                },
+                {
+                    "type": "Color",
+                    "name": "Position 10"
+                },
+                {
+                    "type": "Color",
+                    "name": "Position 11"
+                },
+                {
+                    "type": "Color",
+                    "name": "Position 12"
+                },
+                {
+                    "type": "Color",
+                    "name": "No effect"
+                },
+                {
+                    "type": "Color",
+                    "name": "Random (music/controller triggered)"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Lamp On/Off": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        11
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Lamp off"
+                },
+                {
+                    "dmxRange": [
+                        12,
+                        193
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Lamp on"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Gobo strobe slow -> fast"
+                }
+            ]
+        },
+        "Trigger Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        11
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        12,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Music triggered"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Controller triggered - triggers when DMX level crosses 195"
+                }
+            ]
+        },
+        "Parabol Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        91
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "fast CW",
+                    "speedEnd": "slow CW",
+                    "comment": "Rotation"
+                },
+                {
+                    "dmxRange": [
+                        92,
+                        98
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        99,
+                        189
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW",
+                    "comment": "Rotation"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        231
+                    ],
+                    "type": "Speed",
+                    "comment": "Random CW/CCW slow (music/controller triggered)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Random CW/CCW fast (music/controller triggered)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Trigger Decay": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Speed",
+                    "comment": "0 seconds",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        252
+                    ],
+                    "type": "Speed",
+                    "comment": "0.2 to 9.9 seconds",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        253,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Random (music/controller triggered)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Colour/Gobo Wheel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        20
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Position 1"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        36
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Position 2"
+                },
+                {
+                    "dmxRange": [
+                        37,
+                        52
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Position 3"
+                },
+                {
+                    "dmxRange": [
+                        53,
+                        68
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Position 4"
+                },
+                {
+                    "dmxRange": [
+                        69,
+                        84
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Position 5"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        100
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Position 6"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        116
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Position 7"
+                },
+                {
+                    "dmxRange": [
+                        117,
+                        132
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Position 8"
+                },
+                {
+                    "dmxRange": [
+                        133,
+                        148
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 10,
+                    "comment": "Position 9"
+                },
+                {
+                    "dmxRange": [
+                        149,
+                        164
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 11,
+                    "comment": "Position 10"
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        180
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 12,
+                    "comment": "Position 11"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        196
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 13,
+                    "comment": "Position 12"
+                },
+                {
+                    "dmxRange": [
+                        197,
+                        244
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 14,
+                    "comment": "No effect"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 15,
+                    "comment": "Random (music/controller triggered)"
+                }
+            ]
+        },
+        "Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        50
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        101
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Slow random action"
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        152
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Medium random action"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        203
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Fast random action"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Random speed and action"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Normal",
+            "channels": [
+                "Lamp On/Off",
+                "Trigger Mode",
+                "Parabol Speed",
+                "Trigger Decay",
+                "Colour/Gobo Wheel"
+            ]
+        },
+        {
+            "name": "Single",
+            "channels": [
+                "Control"
+            ]
+        }
+    ]
+}

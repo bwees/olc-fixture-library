@@ -1,0 +1,196 @@
+{
+    "manufacturer": "Ledj",
+    "name": "Slimline 12Q5 Batten",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Dean Clough",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.11.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Colour Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Macro"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Change"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Fade"
+                }
+            ]
+        },
+        "Dimmer/Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        240
+                    ],
+                    "type": "Intensity",
+                    "comment": "Master Dimmer (0-100%)"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe"
+                }
+            ]
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Dimmer/Strobe",
+                "Colour Macro"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "4-channel (RGBW)",
+            "shortName": "4ch (RGBW)",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White"
+            ]
+        },
+        {
+            "name": "4-channel (RGBA)",
+            "shortName": "4ch (RGBA)",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber"
+            ]
+        },
+        {
+            "name": "7-channel (RGBW)",
+            "shortName": "7ch (RGBW)",
+            "channels": [
+                "Master dimmer",
+                "Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Colour Macro"
+            ]
+        },
+        {
+            "name": "7-channel (RGBA)",
+            "shortName": "7ch (RGBA)",
+            "channels": [
+                "Master dimmer",
+                "Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "Colour Macro"
+            ]
+        }
+    ]
+}

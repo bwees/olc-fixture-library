@@ -1,0 +1,60 @@
+{
+    "manufacturer": "Robe",
+    "name": "Fog 1500 FT",
+    "categories": [
+        "Smoke"
+    ],
+    "meta": {
+        "authors": [
+            "Christian Hollbj\u00e4r",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.5 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Fog Volume Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fog Off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        249
+                    ],
+                    "type": "Effect",
+                    "effectName": "Volume 5% - 95%"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Max Volume 100%"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Fog Volume Control"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,833 @@
+{
+    "manufacturer": "Litecraft",
+    "name": "PowerBar AT10.sx",
+    "categories": [
+        "Pixel Bar"
+    ],
+    "meta": {
+        "authors": [
+            "Thorben / Fredje",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            18,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Colour Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        13
+                    ],
+                    "type": "Effect",
+                    "effectName": "No macro"
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "preprogrammed colours"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        13
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speed": "undefinedHz",
+                    "comment": "Strobe 16 speeds"
+                }
+            ]
+        },
+        "Mode selection": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        24
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic dimming upwards"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        74
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic dimming downwards"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic dimming up/downwards"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        124
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic color mix mode"
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random playback, 3 colours"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        174
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random playback, 7 colours"
+                },
+                {
+                    "dmxRange": [
+                        175,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 1"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        224
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 2"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        250
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 3"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Audio Mode"
+                }
+            ]
+        },
+        "H01 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H01 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H01 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H01 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H02 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H02 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H02 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H02 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H03 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H03 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H03 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H03 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H04 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H04 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H04 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H04 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H05 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H05 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H05 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H05 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H06 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H06 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H06 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H06 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H07 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H07 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H07 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H07 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H08 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H08 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H08 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H08 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H09 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H09 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H09 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H09 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H10 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H10 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H10 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H10 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H11 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H11 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H11 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H11 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H12 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H12 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H12 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H12 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H13 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H13 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H13 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H13 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H14 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H14 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H14 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H14 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H15 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H15 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H15 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H15 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H16 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H16 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H16 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H16 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H17 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H17 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H17 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H17 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "H18 red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "H18 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "H18 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "H18 white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Colour Macro"
+            ]
+        },
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Colour Macro",
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White"
+            ]
+        },
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Colour Macro",
+                "Strobe",
+                "Mode selection",
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "72-channel",
+            "shortName": "72ch",
+            "channels": [
+                "H01 red",
+                "H01 Green",
+                "H01 Blue",
+                "H01 white",
+                "H02 red",
+                "H02 Green",
+                "H02 Blue",
+                "H02 white",
+                "H03 red",
+                "H03 Green",
+                "H03 Blue",
+                "H03 white",
+                "H04 red",
+                "H04 Green",
+                "H04 Blue",
+                "H04 white",
+                "H05 red",
+                "H05 Green",
+                "H05 Blue",
+                "H05 white",
+                "H06 red",
+                "H06 Green",
+                "H06 Blue",
+                "H06 white",
+                "H07 red",
+                "H07 Green",
+                "H07 Blue",
+                "H07 white",
+                "H08 red",
+                "H08 Green",
+                "H08 Blue",
+                "H08 white",
+                "H09 red",
+                "H09 Green",
+                "H09 Blue",
+                "H09 white",
+                "H10 red",
+                "H10 Green",
+                "H10 Blue",
+                "H10 white",
+                "H11 red",
+                "H11 Green",
+                "H11 Blue",
+                "H11 white",
+                "H12 red",
+                "H12 Green",
+                "H12 Blue",
+                "H12 white",
+                "H13 red",
+                "H13 Green",
+                "H13 Blue",
+                "H13 white",
+                "H14 red",
+                "H14 Green",
+                "H14 Blue",
+                "H14 white",
+                "H15 red",
+                "H15 Green",
+                "H15 Blue",
+                "H15 white",
+                "H16 red",
+                "H16 Green",
+                "H16 Blue",
+                "H16 white",
+                "H17 red",
+                "H17 Green",
+                "H17 Blue",
+                "H17 white",
+                "H18 red",
+                "H18 Green",
+                "H18 Blue",
+                "H18 white"
+            ]
+        }
+    ]
+}

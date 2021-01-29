@@ -1,0 +1,109 @@
+{
+    "manufacturer": "Cameo",
+    "name": "LED RGB PAR56 9x3W",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "VagSag",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.8.4)"
+        }
+    },
+    "availableChannels": {
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "RED": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "GREEN": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "BLUE": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Color Change": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        84
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color micro"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color jump"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color fade"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Master Dimmer",
+                "RED",
+                "GREEN",
+                "BLUE",
+                "Color Change",
+                "Strobe"
+            ]
+        }
+    ]
+}

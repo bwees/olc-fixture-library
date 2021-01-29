@@ -1,0 +1,578 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "COLORdash Par-Hex 12",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Robert Box",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "fineChannelAliases": [
+                "Fine Red"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "fineChannelAliases": [
+                "Fine Green"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "fineChannelAliases": [
+                "Fine Blue"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Amber": {
+            "fineChannelAliases": [
+                "Fine Amber"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Slow to fast"
+                }
+            ]
+        },
+        "Color Macro + White Balance": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        30
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R: 100% G: 0\u2013100% B: 0",
+                    "colors": [
+                        "#ff0000",
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R: 100%\u20130 G: 100% B: 0",
+                    "colors": [
+                        "#ffff00",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        70
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R: 0 G: 100% B: 0\u2013100%",
+                    "colors": [
+                        "#00ff00",
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R: 0 G: 100%\u20130 B: 100%",
+                    "colors": [
+                        "#00ffff",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        110
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R: 0\u2013100% G: 0 B: 100%",
+                    "colors": [
+                        "#0000ff",
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        130
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R: 100% G: 0 B: 100%\u20130",
+                    "colors": [
+                        "#ff00ff",
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        150
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R: 100% G: 0\u2013100% B: 0\u2013100%",
+                    "colors": [
+                        "#ff0000",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        170
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R: 100%\u20130 G: 100%\u20130 B: 100%",
+                    "colors": [
+                        "#ffffff",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        200
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R: 100% G: 100% B: 100% A: 100%",
+                    "colors": [
+                        "#ffdf80"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        205
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 1",
+                    "colors": [
+                        "#ffad5e"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        210
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 2",
+                    "colors": [
+                        "#ffc489"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        215
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 3",
+                    "colors": [
+                        "#ffd5ad"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 4",
+                    "colors": [
+                        "#ffe4ce"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        225
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 5",
+                    "colors": [
+                        "#ffefe6"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        230
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 6",
+                    "colors": [
+                        "#fff8fb"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        235
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 7",
+                    "colors": [
+                        "#f3f2ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        240
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 8",
+                    "colors": [
+                        "#e6ebff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        245
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 9",
+                    "colors": [
+                        "#dae4ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        250
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 10",
+                    "colors": [
+                        "#d2dfff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 11",
+                    "colors": [
+                        "#ccdbff"
+                    ]
+                }
+            ]
+        },
+        "Auto programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        60
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 1"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        120
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 2"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 3"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        240
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 4"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 0 (auto 1-4)"
+                }
+            ]
+        },
+        "Auto speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Dimmer speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        51
+                    ],
+                    "type": "Speed",
+                    "comment": "Preset dimmer speed from display menu",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        101
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimming curve off (linear dimmer)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        152
+                    ],
+                    "type": "Speed",
+                    "comment": "Nonlinear dimming curve 1 (fastest)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        203
+                    ],
+                    "type": "Speed",
+                    "comment": "Nonlinear dimming curve 2",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Nonlinear dimming curve 3 (slowest)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "White": {
+            "fineChannelAliases": [
+                "Fine White"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Hue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Saturation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Value": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "UV": {
+            "fineChannelAliases": [
+                "Fine UV"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White",
+                "UV"
+            ]
+        },
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White",
+                "UV",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "13-channel",
+            "shortName": "13ch",
+            "channels": [
+                "Red",
+                "Fine Red",
+                "Green",
+                "Fine Green",
+                "Blue",
+                "Fine Blue",
+                "Amber",
+                "Fine Amber",
+                "White",
+                "Fine White",
+                "UV",
+                "Fine UV",
+                "Dimmer speed"
+            ]
+        },
+        {
+            "name": "HSV",
+            "channels": [
+                "Hue",
+                "Saturation",
+                "Value"
+            ]
+        },
+        {
+            "name": "HSI",
+            "channels": [
+                "Hue",
+                "Saturation",
+                "Intensity"
+            ]
+        },
+        {
+            "name": "12-channel",
+            "shortName": "12ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White",
+                "UV",
+                "Strobe",
+                "Color Macro + White Balance",
+                "Auto programs",
+                "Auto speed",
+                "Dimmer speed"
+            ]
+        }
+    ]
+}

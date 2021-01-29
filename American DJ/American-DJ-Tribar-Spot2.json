@@ -1,0 +1,987 @@
+{
+    "manufacturer": "American DJ",
+    "name": "Tribar Spot",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Rob Goudriaan",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            6,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Red (All)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green (All)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue (All)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Strobing": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobing slow - fast"
+                }
+            ]
+        },
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Color macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        1,
+                        7
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bastard Amber",
+                    "colors": [
+                        "#ffce8f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Medium Amber",
+                    "colors": [
+                        "#feb199"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        23
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pale Amber Gold",
+                    "colors": [
+                        "#fec08a"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Gallo Gold",
+                    "colors": [
+                        "#fea562"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Golden Amber",
+                    "colors": [
+                        "#fe7900"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        47
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Red",
+                    "colors": [
+                        "#b01100"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Medium Red",
+                    "colors": [
+                        "#60000b"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Medium Pink",
+                    "colors": [
+                        "#ea8bab"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        71
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Broadway Pink",
+                    "colors": [
+                        "#e00561"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Follies Pink",
+                    "colors": [
+                        "#af4dad"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        87
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Lavender",
+                    "colors": [
+                        "#7782c7"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Special Lavender",
+                    "colors": [
+                        "#93a4d4"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        103
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Lavender",
+                    "colors": [
+                        "#5802a3"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        111
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Indigo",
+                    "colors": [
+                        "#260056"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        119
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Hemsley Blue",
+                    "colors": [
+                        "#008ed0"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Tipton Blue",
+                    "colors": [
+                        "#3494d1"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Steel Blue",
+                    "colors": [
+                        "#0186c9"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        143
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Sky Blue",
+                    "colors": [
+                        "#0091d4"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        151
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sky Blue",
+                    "colors": [
+                        "#0079c0"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Brilliant Blue",
+                    "colors": [
+                        "#0081b8"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        167
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Green Blue",
+                    "colors": [
+                        "#005373"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        175
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bright Blue",
+                    "colors": [
+                        "#0061a6"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        183
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Primary Blue",
+                    "colors": [
+                        "#0164a7"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Congo Blue",
+                    "colors": [
+                        "#002856"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pale Yellow Green",
+                    "colors": [
+                        "#d1dbb6"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        207
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Moss Green",
+                    "colors": [
+                        "#20a555"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        215
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Primary Green",
+                    "colors": [
+                        "#002e23"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Double CTB",
+                    "colors": [
+                        "#086bde"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        231
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Full CTB",
+                    "colors": [
+                        "#6b9ce7"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Half CTB",
+                    "colors": [
+                        "#a5c6f7"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        247
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark Blue",
+                    "colors": [
+                        "#0000bd"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                }
+            ]
+        },
+        "Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        25
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 1 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        35
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 2 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        45
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 3 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        46,
+                        55
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 4 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        65
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 5 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        75
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 6 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 7 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 8 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        105
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 9 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        115
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 10 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        116,
+                        125
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 11 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        135
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 12 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        145
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 13 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        146,
+                        155
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 14 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        165
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 15 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        166,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 16 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        185
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 17 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        186,
+                        195
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 18 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        205
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 19 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 20 (Ch.6:Speed)"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        225
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 21 (Ch.3:flow color Ch.4 base color Ch.6 speed)"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        235
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 22 (Ch.3:flow color Ch.4 base color Ch.6 speed)"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        245
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Run"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Active (Ch.6:Sensitivitity)",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Red (Pinspots 1- 3)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red (Pinspots 4 - 6)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red (Pinspots 1 & 2)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red (Pinspots 3 & 4)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red (Pinspots 5 & 6)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red (Pinspot 1)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red (Pinspot 2)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red (Pinspot 3)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red (Pinspot 4)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red (Pinspot 5)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red (Pinspot 6)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green (Pinspots 1 - 3)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green (Pinspots 4 - 6)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green (Pinspots 1 & 2)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green (Pinspots 3 & 4)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green (Pinspots 5 & 6)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green (Pinspot 1)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green (Pinspot 2)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green (Pinspot 3)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green (Pinspot 4)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green (Pinspot 5)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green (Pinspot 6)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue (Pinspots 1- 3)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue (Pinspots 4- 6)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue (Pinspots 1 & 2)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue (Pinspots 3 & 4)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue (Pinspots 5 & 6)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue (Pinspot 1)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue (Pinspot 2)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue (Pinspot 3)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue (Pinspot 4)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue (Pinspot 5)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue (Pinspot 6)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Program Speed / Sound Sensitivity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "Slow - Fast or Least Sensitive - Most Sensitive"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "3-channel DMX",
+            "shortName": "3ch DMX",
+            "channels": [
+                "Red (All)",
+                "Green (All)",
+                "Blue (All)"
+            ]
+        },
+        {
+            "name": "5-channel DMX",
+            "shortName": "5ch DMX",
+            "channels": [
+                "Red (All)",
+                "Green (All)",
+                "Blue (All)",
+                "Strobing",
+                "Master dimmer"
+            ]
+        },
+        {
+            "name": "6-channel DMX",
+            "shortName": "6ch DMX",
+            "channels": [
+                "Red (All)",
+                "Green (All)",
+                "Blue (All)",
+                "Color macros",
+                "Strobing",
+                "Master dimmer"
+            ]
+        },
+        {
+            "name": "8-channel DMX",
+            "shortName": "8ch DMX",
+            "channels": [
+                "Red (All)",
+                "Green (All)",
+                "Blue (All)",
+                "Color macros",
+                "Programs",
+                "Program Speed / Sound Sensitivity",
+                "Strobing",
+                "Master dimmer"
+            ]
+        },
+        {
+            "name": "8-channelnek DMX 2",
+            "shortName": "8chnek DMX 2",
+            "channels": [
+                "Red (Pinspots 1- 3)",
+                "Green (Pinspots 1 - 3)",
+                "Blue (Pinspots 1- 3)",
+                "Red (Pinspots 4 - 6)",
+                "Green (Pinspots 4 - 6)",
+                "Blue (Pinspots 4- 6)",
+                "Strobing",
+                "Master dimmer"
+            ]
+        },
+        {
+            "name": "11-channel DMX",
+            "shortName": "11ch DMX",
+            "channels": [
+                "Red (Pinspots 1 & 2)",
+                "Green (Pinspots 1 & 2)",
+                "Blue (Pinspots 1 & 2)",
+                "Red (Pinspots 3 & 4)",
+                "Green (Pinspots 3 & 4)",
+                "Blue (Pinspots 3 & 4)",
+                "Red (Pinspots 5 & 6)",
+                "Green (Pinspots 5 & 6)",
+                "Blue (Pinspots 5 & 6)",
+                "Strobing",
+                "Master dimmer"
+            ]
+        },
+        {
+            "name": "20-channel DMX",
+            "shortName": "20ch DMX",
+            "channels": [
+                "Red (Pinspot 1)",
+                "Green (Pinspot 1)",
+                "Blue (Pinspot 1)",
+                "Red (Pinspot 2)",
+                "Green (Pinspot 2)",
+                "Blue (Pinspot 2)",
+                "Red (Pinspot 3)",
+                "Green (Pinspot 3)",
+                "Blue (Pinspot 3)",
+                "Red (Pinspot 4)",
+                "Green (Pinspot 4)",
+                "Blue (Pinspot 4)",
+                "Red (Pinspot 5)",
+                "Green (Pinspot 5)",
+                "Blue (Pinspot 5)",
+                "Red (Pinspot 6)",
+                "Green (Pinspot 6)",
+                "Blue (Pinspot 6)",
+                "Strobing",
+                "Master dimmer"
+            ]
+        }
+    ]
+}

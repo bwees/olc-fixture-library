@@ -1,0 +1,128 @@
+{
+    "manufacturer": "American DJ",
+    "name": "Tri Phase",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "Piotr Nowik",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        120
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "fast CW",
+                    "speedEnd": "slow CW"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        134
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        245
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        249
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Active",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Strobing": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobing Slow - Fast"
+                }
+            ]
+        },
+        "Color selection": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset",
+                "helpWanted": "Which color can be selected at which DMX values?"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Color selection",
+                "Rotation",
+                "Strobing",
+                "Dimmer"
+            ]
+        }
+    ]
+}

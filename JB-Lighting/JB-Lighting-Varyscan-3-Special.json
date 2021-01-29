@@ -1,0 +1,979 @@
+{
+    "manufacturer": "JB-Lighting",
+    "name": "Varyscan 3 Special",
+    "categories": [
+        "Scanner"
+    ],
+    "meta": {
+        "authors": [
+            "",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller (version 3.0.4)"
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "170deg"
+            }
+        },
+        "Tilt": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "110deg"
+            }
+        },
+        "Gobo & effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        3
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Gobo 1 no effect"
+                },
+                {
+                    "dmxRange": [
+                        4,
+                        7
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Gobo 1 conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        11
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Gobo 1 daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        12,
+                        15
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Gobo 1 prism"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        19
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Gobo 1 floodfilter"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        23
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Gobo 2 no effect"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        27
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Gobo 2 conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        28,
+                        31
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Gobo 2 daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        35
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Gobo 2 prism"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        39
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 10,
+                    "comment": "Gobo 3 no effect"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        43
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 11,
+                    "comment": "Gobo 3 conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        44,
+                        47
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 12,
+                    "comment": "Gobo 3 daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        51
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 13,
+                    "comment": "Gobo 3 prism"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        55
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 14,
+                    "comment": "Gobo 4 no effect"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        59
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 15,
+                    "comment": "Gobo 4 conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        63
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 16,
+                    "comment": "Gobo 4 daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        67
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 17,
+                    "comment": "Gobo 4 prism"
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        71
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 18,
+                    "comment": "Gobo 5 no effect"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        75
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 19,
+                    "comment": "Gobo 5 conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        79
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 20,
+                    "comment": "Gobo 5 daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        83
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 21,
+                    "comment": "Gobo 5 prism"
+                },
+                {
+                    "dmxRange": [
+                        84,
+                        87
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 22,
+                    "comment": "Gobo 6 no effect"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        91
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 23,
+                    "comment": "Gobo 6 conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        92,
+                        95
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 24,
+                    "comment": "Gobo 6 daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        99
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 25,
+                    "comment": "Gobo 6 prism"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        103
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 26,
+                    "comment": "Gobo 7 no effect"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        107
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 27,
+                    "comment": "Gobo 7 conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        111
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 28,
+                    "comment": "Gobo 7 daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        115
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 29,
+                    "comment": "Gobo 7 prism"
+                },
+                {
+                    "dmxRange": [
+                        116,
+                        119
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 30,
+                    "comment": "Gobo 8 no effect"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        123
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 31,
+                    "comment": "Gobo 8 conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        124,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 32,
+                    "comment": "Gobo 8 daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        131
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 33,
+                    "comment": "Gobo 8 prism"
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        135
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 34,
+                    "comment": "Gobo 9 no effect"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        139
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 35,
+                    "comment": "Gobo 9 conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        143
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 36,
+                    "comment": "Gobo 9 daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        147
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 37,
+                    "comment": "Gobo 9 prism"
+                },
+                {
+                    "dmxRange": [
+                        148,
+                        151
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 38,
+                    "comment": "Gobo 10 no effect"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        155
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 39,
+                    "comment": "Gobo 10 conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        159
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 40,
+                    "comment": "Gobo 10 daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        163
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 41,
+                    "comment": "Gobo 10 prism"
+                },
+                {
+                    "dmxRange": [
+                        164,
+                        167
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 42,
+                    "comment": "Gobo 11 no effect"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        171
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 43,
+                    "comment": "Gobo 11 conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        172,
+                        175
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 44,
+                    "comment": "Gobo 11 daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        179
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 45,
+                    "comment": "Gobo 11 prism"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        183
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 46,
+                    "comment": "Gobo 12 no effect"
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        187
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 47,
+                    "comment": "Gobo 12 conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        191
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 48,
+                    "comment": "Gobo 12 daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        254
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 49,
+                    "comment": "Gobo 12 prism"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 50,
+                    "comment": "Reset"
+                }
+            ]
+        },
+        "Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        23
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark pink"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light blue"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        47
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        71
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light pink"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        87
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "4 colours"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        119
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light pink"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        143
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        151
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        167
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        175
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light blue"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        183
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark pink"
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow"
+                }
+            ]
+        },
+        "Dimmer/Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Intensity",
+                    "comment": "Dimmer intensity"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        139
+                    ],
+                    "type": "Intensity",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        243
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        244,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Gobo rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        191
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Position 0-360 degrees"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        222
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Rotation speed CCW"
+                },
+                {
+                    "dmxRange": [
+                        223,
+                        224
+                    ],
+                    "type": "WheelSlotRotation",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Rotation speed CW"
+                }
+            ]
+        },
+        "Gobo": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Gobo 1"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        31
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Gobo 2"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        47
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Gobo 3"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        63
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Gobo 4"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        79
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Gobo 5"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        95
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Gobo 6"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Gobo 7"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Gobo 8"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        143
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Gobo 9"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        159
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 10,
+                    "comment": "Gobo 10"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        175
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 11,
+                    "comment": "Gobo 11"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        254
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 12,
+                    "comment": "Gobo 12"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 13,
+                    "comment": "Reset"
+                }
+            ]
+        },
+        "Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "Effect",
+                    "effectName": "Open"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Conversion filter"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Daylight filter"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "Effect",
+                    "effectName": "Prism"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Prism swing"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flood filter"
+                }
+            ]
+        },
+        "No function 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "No function 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Simple",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Gobo & effect",
+                "Colour",
+                "Dimmer/Shutter"
+            ]
+        },
+        {
+            "name": "Advanced",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Gobo",
+                "Colour",
+                "Dimmer/Shutter",
+                "No function 6",
+                "No function 7",
+                "Effect"
+            ]
+        }
+    ]
+}

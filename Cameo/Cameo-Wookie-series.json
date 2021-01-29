@@ -1,0 +1,437 @@
+{
+    "manufacturer": "Cameo",
+    "name": "Wookie series",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Andres Robles",
+            "Massimo Callegari",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Mode select": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "Generic",
+                    "comment": "Laser off",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Mode"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound mode"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "DMX mode (CH2-CH8)"
+                }
+            ]
+        },
+        "Colours RGB": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Original colour"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pink",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                }
+            ]
+        },
+        "Pattern select": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Maintenance",
+                "comment": "32 Pattern"
+            }
+        },
+        "Zooming": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Manual pattern size"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Loop zooming in out"
+                }
+            ]
+        },
+        "X axis rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual rolling"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Rolling speed"
+                }
+            ]
+        },
+        "Y axis rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual rolling"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Rolling speed"
+                }
+            ]
+        },
+        "Z axis rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual rolling"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Speed rolling"
+                }
+            ]
+        },
+        "X axis moving": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "60deg",
+                    "comment": "Manual position"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "60deg",
+                    "comment": "Horizontal moving speed"
+                }
+            ]
+        },
+        "Y axis moving": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "60deg",
+                    "comment": "Manual position"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "60deg",
+                    "comment": "Vertical moving speed"
+                }
+            ]
+        },
+        "No function": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        100
+                    ],
+                    "type": "Generic",
+                    "comment": "Laser Off",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        155
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Mode"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Mode with rising speed (0-100%)"
+                }
+            ]
+        },
+        "Colours RGY": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Original colour"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "3-channel (150G/200R/600B)",
+            "shortName": "3ch (150G/200R/600B)",
+            "channels": [
+                "Zooming",
+                "No function",
+                "Mode"
+            ]
+        },
+        {
+            "name": "3-channel (200RGY)",
+            "shortName": "3ch (200RGY)",
+            "channels": [
+                "Zooming",
+                "Colours RGY",
+                "Mode"
+            ]
+        },
+        {
+            "name": "3-channel (400RGB)",
+            "shortName": "3ch (400RGB)",
+            "channels": [
+                "Zooming",
+                "Colours RGB",
+                "Mode"
+            ]
+        },
+        {
+            "name": "9-channel (150G/200R/600B)",
+            "shortName": "9ch (150G/200R/600B)",
+            "channels": [
+                "Mode select",
+                "No function",
+                "Pattern select",
+                "Zooming",
+                "X axis rolling",
+                "Y axis rolling",
+                "Z axis rolling",
+                "X axis moving",
+                "Y axis moving"
+            ]
+        },
+        {
+            "name": "9-channel (200RGY)",
+            "shortName": "9ch (200RGY)",
+            "channels": [
+                "Mode select",
+                "Colours RGY",
+                "Pattern select",
+                "Zooming",
+                "X axis rolling",
+                "Y axis rolling",
+                "Z axis rolling",
+                "X axis moving",
+                "Y axis moving"
+            ]
+        },
+        {
+            "name": "9-channel (400RGB)",
+            "shortName": "9ch (400RGB)",
+            "channels": [
+                "Mode select",
+                "Colours RGB",
+                "Pattern select",
+                "Zooming",
+                "X axis rolling",
+                "Y axis rolling",
+                "Z axis rolling",
+                "X axis moving",
+                "Y axis moving"
+            ]
+        }
+    ]
+}

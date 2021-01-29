@@ -1,0 +1,819 @@
+{
+    "manufacturer": "Elation",
+    "name": "Vision 250",
+    "categories": [
+        "Scanner"
+    ],
+    "meta": {
+        "authors": [
+            "Heikki Junnila",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Colours": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "Open, white",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Turquoise",
+                    "colors": [
+                        "#55ffff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Light green",
+                    "colors": [
+                        "#aaff7f"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Magenta",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Light blue",
+                    "colors": [
+                        "#aaaaff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Pink",
+                    "colors": [
+                        "#ffaaff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Orange",
+                    "colors": [
+                        "#ffaa00"
+                    ]
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "170deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "85deg"
+            }
+        },
+        "Speed of pan/tilt movement": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "PanTiltSpeed",
+                    "comment": "Max. speed (tracking mode)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        249
+                    ],
+                    "type": "PanTiltSpeed",
+                    "comment": "Min speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "PanTiltSpeed",
+                    "comment": "Max speed, vector mode, black-out while any change",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Lamp on/off, reset, fan speed control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "From max to min fan speed"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        139
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp on, reset",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        229
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        239
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp off after 3 sec",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Colours": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Open, white",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        20
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Turquoise",
+                    "colors": [
+                        "#55ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        52
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light green",
+                    "colors": [
+                        "#aaff7f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        53,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        73
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light blue",
+                    "colors": [
+                        "#aaaaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        74,
+                        84
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        105
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pink",
+                    "colors": [
+                        "#ffaaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        116
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        117,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Orange",
+                    "colors": [
+                        "#ffaa00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        189
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 13,
+                    "comment": "Forwards rainbow effect from fast to slow"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        193
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "No rotation"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 15,
+                    "comment": "Backwards rainbow effect from slow to fast"
+                }
+            ]
+        },
+        "No function": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "Frost, correction filters, 3-facet prism, Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Open position (hole)"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        103
+                    ],
+                    "type": "Effect",
+                    "effectName": "Frost filter"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        135
+                    ],
+                    "type": "Effect",
+                    "effectName": "3-facet prism"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "3200 K correction filter"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        151
+                    ],
+                    "type": "Effect",
+                    "effectName": "5600 K correction filter"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "UV filter"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        167
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 1"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 2"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        183
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 3"
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 4"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 5"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 6"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 7"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 8"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        231
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 9"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 10"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 11"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 12"
+                }
+            ]
+        },
+        "3-facet prism rotation control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Prism",
+                    "comment": "No rotation"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        126
+                    ],
+                    "type": "Prism",
+                    "comment": "Forwards rotation from fast to slow"
+                },
+                {
+                    "dmxRange": [
+                        127,
+                        128
+                    ],
+                    "type": "Prism",
+                    "comment": "No rotation"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "Prism",
+                    "comment": "Backwards rotation from slow to fast"
+                }
+            ]
+        },
+        "Rotating gobos; continous rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Rotation gobo 1 (dichroic)"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Rotation gobo 2 (glass)"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Rotation gobo 3 (metal)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Rotation gobo 4 (metal)"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Rotation gobo 5 (metal)"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Rotation gobo 6 (metal)"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "WheelSlotRotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Rotation gobo wheel, cont. rotation from"
+                }
+            ]
+        },
+        "Rotating gobo indexing, rotating gobo rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Gobo indexing"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "WheelSlotRotation",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Forwards gobo rotation from"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        192
+                    ],
+                    "type": "WheelSlotRotation",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        193,
+                        255
+                    ],
+                    "type": "WheelSlotRotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Backwards gobo rotation from"
+                }
+            ]
+        },
+        "No function 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "Focus": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Focus",
+                "distanceStart": "near",
+                "distanceEnd": "far"
+            }
+        },
+        "Shutter, strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Shutter closed"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function, shutter open"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe effect from slow to fast (max. 10 flashes/sec)"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function, shutter open"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse effect in sequences"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function (shutter open)"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random strobe effect from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function (shutter open)"
+                }
+            ]
+        },
+        "Dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Pan fine",
+                "Tilt fine",
+                "Speed of pan/tilt movement",
+                "Lamp on/off, reset, fan speed control",
+                "Colours",
+                "No function",
+                "Frost, correction filters, 3-facet prism, Macros",
+                "3-facet prism rotation control",
+                "Rotating gobos; continous rotation",
+                "Rotating gobo indexing, rotating gobo rotation",
+                "No function 2",
+                "Focus",
+                "Shutter, strobe",
+                "Dimmer intensity"
+            ]
+        }
+    ]
+}

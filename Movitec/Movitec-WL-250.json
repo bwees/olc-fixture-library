@@ -1,0 +1,727 @@
+{
+    "manufacturer": "Movitec",
+    "name": "WL-250",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Heikki Junnila",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Colour wheel": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "White"
+                },
+                {
+                    "type": "Color",
+                    "name": "Red"
+                },
+                {
+                    "type": "Color",
+                    "name": "Blue"
+                },
+                {
+                    "type": "Color",
+                    "name": "Green"
+                },
+                {
+                    "type": "Color",
+                    "name": "CTF 3200K"
+                },
+                {
+                    "type": "Color",
+                    "name": "CTF 5600K"
+                },
+                {
+                    "type": "Color",
+                    "name": "UV Filter"
+                }
+            ]
+        },
+        "Effect wheel": {
+            "slots": [
+                {
+                    "type": "Unknown",
+                    "name": "Full beam"
+                },
+                {
+                    "type": "Unknown",
+                    "name": "Beam shaper"
+                },
+                {
+                    "type": "Unknown",
+                    "name": "Frost filter"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "530deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "280deg"
+            }
+        },
+        "Speed of movement": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Speed",
+                    "comment": "Tracking mode",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        249
+                    ],
+                    "type": "Speed",
+                    "comment": "Vector mode speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Tracking, BO when moved",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Lamp On/Off, reset, fan": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Fan speed"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        139
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp ON",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        229
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        239
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp OFF in 3sec",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Colour wheel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        17
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "White"
+                },
+                {
+                    "dmxRange": [
+                        18,
+                        35
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        53
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        54,
+                        72
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        73,
+                        90
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "CTF 3200K"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        108
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "CTF 5600K"
+                },
+                {
+                    "dmxRange": [
+                        109,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "UV Filter"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        190
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Forwards rainbow speed"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        192
+                    ],
+                    "type": "WheelRotation",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        193,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 10,
+                    "comment": "Backwards rainbow speed"
+                }
+            ]
+        },
+        "Cyan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Cyan"
+            }
+        },
+        "Magenta": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Magenta"
+            }
+        },
+        "Yellow": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Yellow"
+            }
+        },
+        "Speed of CMY and Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Colour macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 1"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        23
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 2"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 3"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 4"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        47
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 5"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 6"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 7"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        71
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 8"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 9"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        87
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 10"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 11"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        103
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 12"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        111
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 13"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        119
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 14"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 15"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 16"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        143
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 17"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        151
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 18"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 19"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        167
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 20"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        175
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 21"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        183
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 22"
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 23"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 24"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        207
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 25"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        215
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 26"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 27"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        231
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 28"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 29"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        247
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 30"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 31"
+                }
+            ]
+        },
+        "Effect wheel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        70
+                    ],
+                    "type": "Generic",
+                    "comment": "Full beam"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        230
+                    ],
+                    "type": "Generic",
+                    "comment": "Beam shaper"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Frost filter"
+                }
+            ]
+        },
+        "Shutter, strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe speed"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse effect"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random strobe speed"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "No function": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "16bit",
+            "channels": [
+                "Pan",
+                "Pan fine",
+                "Tilt",
+                "Tilt fine",
+                "Speed of movement",
+                "Lamp On/Off, reset, fan",
+                "Colour wheel",
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Speed of CMY and Dimmer",
+                "Colour macros",
+                "Effect wheel",
+                "Shutter, strobe",
+                "Dimmer intensity"
+            ]
+        },
+        {
+            "name": "8bit",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Speed of movement",
+                "Lamp On/Off, reset, fan",
+                "Colour wheel",
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Speed of CMY and Dimmer",
+                "Colour macros",
+                "Effect wheel",
+                "Shutter, strobe",
+                "Dimmer intensity"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,247 @@
+{
+    "manufacturer": "Pro-Lights",
+    "name": "BB5 Pix",
+    "categories": [
+        "Pixel Bar"
+    ],
+    "meta": {
+        "authors": [
+            "Lorenzo Andreani",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.1 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            5,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Dimmer 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Dimmer 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Dimmer 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Dimmer 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Dimmer 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe Slow > Fast"
+                }
+            ]
+        },
+        "Chase": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        30
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 1"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        50
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 2"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        70
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 3"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        90
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 4"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        110
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 5"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        130
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 6"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 7"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 8"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 9"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        210
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 10"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        230
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 11"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        250
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 12"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Speed Slow > Fast",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Dimmer",
+                "Shutter",
+                "Chase",
+                "Speed"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Dimmer 1",
+                "Dimmer 2",
+                "Dimmer 3",
+                "Dimmer 4",
+                "Dimmer 5"
+            ]
+        }
+    ]
+}

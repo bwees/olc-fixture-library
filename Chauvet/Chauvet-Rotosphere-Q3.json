@@ -1,0 +1,767 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "Rotosphere Q3",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "Eric Sherlock",
+            "Massimo Callegari",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "LED Zone 1 Manual Color Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "LED Zone 1 Manual Color Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "LED Zone 1 Manual Color Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "LED Zone 1 Strobe/Sound": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        250
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Sound-active Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "LED Zone 2 Manual Color Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "LED Zone 2 Manual Color Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "LED Zone 2 Manual Color Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "LED Zone 2 Strobe/Sound": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        250
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Sound-active Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "LED Zone 3 Manual Color Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "LED Zone 3 Manual Color Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "LED Zone 3 Manual Color Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "LED Zone 3 Strobe/Sound": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        250
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Sound-active Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Motor (Zones 1, 2 and 3)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        127
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Rotate Left, slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        128
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Rotate Right, slow to fast"
+                }
+            ]
+        },
+        "Color Macros and Auto Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        13
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        22
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        23,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        40
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red/Green/Blue"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        58
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red/Green/White"
+                },
+                {
+                    "dmxRange": [
+                        59,
+                        67
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red/Blue/White"
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        76
+                    ],
+                    "type": "Effect",
+                    "effectName": "Green/Blue/White"
+                },
+                {
+                    "dmxRange": [
+                        77,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red Green/Red Blue/Red White"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        94
+                    ],
+                    "type": "Effect",
+                    "effectName": "Green Red/Green Blue/Green White"
+                },
+                {
+                    "dmxRange": [
+                        95,
+                        103
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blue Red/Blue Green/Blue White"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        112
+                    ],
+                    "type": "Effect",
+                    "effectName": "White Red/White Green/Blue White"
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        121
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red Green",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        122,
+                        130
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red Blue",
+                    "colors": [
+                        "#ff0000",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        139
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red White",
+                    "colors": [
+                        "#ff0000",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        148
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green Blue",
+                    "colors": [
+                        "#00ff00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        149,
+                        157
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green White",
+                    "colors": [
+                        "#00ff00",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        158,
+                        166
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue White",
+                    "colors": [
+                        "#0000ff",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        167,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red Green Blue"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        184
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red Green White"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        193
+                    ],
+                    "type": "Effect",
+                    "effectName": "Green Blue White"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        202
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red Green Blue/Green Blue White/Red Green White"
+                },
+                {
+                    "dmxRange": [
+                        203,
+                        211
+                    ],
+                    "type": "Effect",
+                    "effectName": "RGBW"
+                },
+                {
+                    "dmxRange": [
+                        212,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 1/Sound 1",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        229
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 2/Sound 2",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        238
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 3/Sound 3",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        239,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 4/Sound 3",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 5/Sound 3",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Progam Speed / Sound Sensitivity (macro ch. 212-255)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        250
+                    ],
+                    "type": "Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Program speed"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Sound-active program sensitivity",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Motor Control (Color Macros Channel)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        127
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Rotate left, slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        128
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Rotate right, slow to fast"
+                }
+            ]
+        },
+        "LED Zone 1 Manual Color White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "LED Zone 2 Manual Color White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "LED Zone 3 Manual Color White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "All Manual Color Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "All Manual Color Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "All Manual Color Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "All Manual Color White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "All Strobe/Sound": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        250
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe, slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Sount-active strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Motor": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        127
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Rotate left, slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        128
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Rotate right, slow to fast"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "19-channel",
+            "shortName": "19ch",
+            "channels": [
+                "LED Zone 1 Manual Color Red",
+                "LED Zone 1 Manual Color Green",
+                "LED Zone 1 Manual Color Blue",
+                "LED Zone 1 Manual Color White",
+                "LED Zone 1 Strobe/Sound",
+                "LED Zone 2 Manual Color Red",
+                "LED Zone 2 Manual Color Green",
+                "LED Zone 2 Manual Color Blue",
+                "LED Zone 2 Manual Color White",
+                "LED Zone 2 Strobe/Sound",
+                "LED Zone 3 Manual Color Red",
+                "LED Zone 3 Manual Color Green",
+                "LED Zone 3 Manual Color Blue",
+                "LED Zone 3 Manual Color White",
+                "LED Zone 3 Strobe/Sound",
+                "Motor (Zones 1, 2 and 3)",
+                "Color Macros and Auto Programs",
+                "Progam Speed / Sound Sensitivity (macro ch. 212-255)",
+                "Motor Control (Color Macros Channel)"
+            ]
+        },
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "All Manual Color Red",
+                "All Manual Color Green",
+                "All Manual Color Blue",
+                "All Manual Color White",
+                "All Strobe/Sound",
+                "Motor",
+                "Color Macros and Auto Programs",
+                "Progam Speed / Sound Sensitivity (macro ch. 212-255)",
+                "Motor Control (Color Macros Channel)"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Color Macros and Auto Programs",
+                "Progam Speed / Sound Sensitivity (macro ch. 212-255)",
+                "Motor"
+            ]
+        }
+    ]
+}

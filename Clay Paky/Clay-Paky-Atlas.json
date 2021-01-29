@@ -1,0 +1,77 @@
+{
+    "manufacturer": "Clay Paky",
+    "name": "Atlas",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "Massimo Callegari",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.2.3)"
+        }
+    },
+    "availableChannels": {
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        6
+                    ],
+                    "type": "Effect",
+                    "effectName": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        7,
+                        64
+                    ],
+                    "type": "Effect",
+                    "effectName": "Bands opened progressively (right to left)"
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "Bands obscured progressively (right to left)"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        243
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        244,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Open"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Strobe"
+            ]
+        }
+    ]
+}

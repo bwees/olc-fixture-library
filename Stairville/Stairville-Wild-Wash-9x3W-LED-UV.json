@@ -1,0 +1,206 @@
+{
+    "manufacturer": "Stairville",
+    "name": "Wild Wash 9x3W LED UV",
+    "categories": [
+        "Pixel Bar"
+    ],
+    "meta": {
+        "authors": [
+            "Johannes Felber",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.1 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            9,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe effect"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe effect, increasing frequency"
+                }
+            ]
+        },
+        "Function": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Effect",
+                    "effectName": "All LEDs off"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto show selection"
+                }
+            ]
+        },
+        "Show speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        249
+                    ],
+                    "type": "Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Auto show speed"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Sound-controlled auto show",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Brightness LED 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Brightness LED 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Brightness LED 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Brightness LED 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Brightness LED 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Brightness LED 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Brightness LED 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Brightness LED 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Brightness LED 9": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "2-channel 1",
+            "shortName": "2ch 1",
+            "channels": [
+                "Dimmer",
+                "Shutter"
+            ]
+        },
+        {
+            "name": "2-channel 2",
+            "shortName": "2ch 2",
+            "channels": [
+                "Function",
+                "Show speed"
+            ]
+        },
+        {
+            "name": "11-channel",
+            "shortName": "11ch",
+            "channels": [
+                "Dimmer",
+                "Shutter",
+                "Brightness LED 1",
+                "Brightness LED 2",
+                "Brightness LED 3",
+                "Brightness LED 4",
+                "Brightness LED 5",
+                "Brightness LED 6",
+                "Brightness LED 7",
+                "Brightness LED 8",
+                "Brightness LED 9"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,566 @@
+{
+    "manufacturer": "Monacor",
+    "name": "LSX-142SRGY",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Robert Box",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.11.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        20
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        40
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Auto show with RGY colours"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        60
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Auto show with red colour",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        80
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Auto show with green colour",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        100
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Auto show with yellow colour",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        120
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound show with RGY colours"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound show with red colour",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        160
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound show with green colour",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        180
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound show with yellow colour",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        200
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Auto pattern show"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound pattern show"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "DMX mode"
+                }
+            ]
+        },
+        "Pattern group": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        51
+                    ],
+                    "type": "Effect",
+                    "effectName": "Group 1 patterns"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        103
+                    ],
+                    "type": "Effect",
+                    "effectName": "Group 2 patterns"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        155
+                    ],
+                    "type": "Effect",
+                    "effectName": "Group 3 patterns"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "Group 4 patterns"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Group 5 patterns"
+                }
+            ]
+        },
+        "Pattern": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Patterns"
+            }
+        },
+        "Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Original"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        47
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        111
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour rolling"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour jumping"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        207
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour moving"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "strobing/speed"
+                }
+            ]
+        },
+        "Clipping": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "No clipping"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "0-99% clipped"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Speed"
+                }
+            ]
+        },
+        "Zooming": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "100-5% zoomed"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zooming in"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zooming out"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Alternate zooming"
+                }
+            ]
+        },
+        "Zoom speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Y-axis rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "0-359 degree Y-axis rolling"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise rolling"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anticlockwise rolling"
+                }
+            ]
+        },
+        "Y-axis roll speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "TiltContinuous",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "X-axis rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "0-359 degree X-axis rolling"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise rolling"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anticlockwise rolling"
+                }
+            ]
+        },
+        "X-axis roll speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanContinuous",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Z-axis rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "0-359 degree Z-axis rolling"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise rolling"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anticlockwise rolling"
+                }
+            ]
+        },
+        "Z-axis roll speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "X-axis moving": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "20deg",
+                    "comment": "X-axis position"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "20deg",
+                    "comment": "Clockwise moving"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "20deg",
+                    "comment": "Anticlockwise moving"
+                }
+            ]
+        },
+        "X-axis move speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanContinuous",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Y-axis moving": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "20deg",
+                    "comment": "Y-axis position"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "20deg",
+                    "comment": "Clockwise moving"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "20deg",
+                    "comment": "Anticlockwise moving"
+                }
+            ]
+        },
+        "Y-axis move speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "TiltContinuous",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Mode",
+                "Pattern group",
+                "Pattern",
+                "Colour",
+                "Clipping",
+                "Zooming",
+                "Zoom speed",
+                "Y-axis rolling",
+                "Y-axis roll speed",
+                "X-axis rolling",
+                "X-axis roll speed",
+                "Z-axis rolling",
+                "Z-axis roll speed",
+                "X-axis moving",
+                "X-axis move speed",
+                "Y-axis moving",
+                "Y-axis move speed"
+            ]
+        }
+    ]
+}

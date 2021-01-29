@@ -1,0 +1,193 @@
+{
+    "manufacturer": "JB Systems",
+    "name": "COB-PLANO",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Fr\u00e9d\u00e9ric Combe",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 5.0.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Control for 4 channel mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "Master Dimmer (0-100%)"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound control",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Master dimmer full on"
+                }
+            ]
+        },
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "ON / Open"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        37
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random Strobe"
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        67
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Strobe",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe Speed:",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Fade:",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Chase",
+                    "soundControlled": true
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Control for 4 channel mode"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Master dimmer",
+                "Strobe",
+                "Effect",
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,998 @@
+{
+    "manufacturer": "GTD",
+    "name": "LM150 Spot",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Pablo Martin Marrone",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Color wheel": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "Open / white",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Red",
+                    "colors": [
+                        "#fc0006"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Amber",
+                    "colors": [
+                        "#fea608"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Geen",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Magenta",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Pink",
+                    "colors": [
+                        "#ff80ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Purple",
+                    "colors": [
+                        "#8000ff"
+                    ]
+                }
+            ]
+        },
+        "Gobo 1 Wheel (static)": {
+            "slots": [
+                {
+                    "type": "Open"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "GOBO 1"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 2"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 3"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 4"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 5"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 6"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 7"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 1 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 2 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 3 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 4 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 5 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 6 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 7 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "No Scroll"
+                }
+            ]
+        },
+        "Gobo 2 Wheel (rot)": {
+            "slots": [
+                {
+                    "type": "Open"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "GOBO 1"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 2"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 3"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 4"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 5"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 6"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 7"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 1 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 2 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 3 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 4 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 5 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 6 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 7 Shake"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "No Scroll"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open Display"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        223
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe Hz"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Color wheel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Open / white"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        29
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        43
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Amber"
+                },
+                {
+                    "dmxRange": [
+                        44,
+                        57
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Yellow"
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        71
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Geen"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        85
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        99
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Magenta"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        113
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Pink"
+                },
+                {
+                    "dmxRange": [
+                        114,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Purple"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        187
+                    ],
+                    "type": "WheelRotation",
+                    "speed": "fast CW",
+                    "comment": "Scroll CW"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        195
+                    ],
+                    "type": "WheelRotation",
+                    "speed": "stop",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        255
+                    ],
+                    "type": "WheelRotation",
+                    "speed": "fast CCW",
+                    "comment": "Scroll"
+                }
+            ]
+        },
+        "Gobo 1 Wheel (static)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        19
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "GOBO 1"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        23
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Gobo 2"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        27
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Gobo 3"
+                },
+                {
+                    "dmxRange": [
+                        28,
+                        31
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Gobo 4"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        35
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Gobo 5"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        39
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Gobo 6"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        43
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Gobo 7"
+                },
+                {
+                    "dmxRange": [
+                        44,
+                        55
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 9,
+                    "comment": "Gobo 1 Shake"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        67
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 10,
+                    "comment": "Gobo 2 Shake"
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        79
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 11,
+                    "comment": "Gobo 3 Shake"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        91
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 12,
+                    "comment": "Gobo 4 Shake"
+                },
+                {
+                    "dmxRange": [
+                        92,
+                        103
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 13,
+                    "comment": "Gobo 5 Shake"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        115
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 14,
+                    "comment": "Gobo 6 Shake"
+                },
+                {
+                    "dmxRange": [
+                        116,
+                        127
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 15,
+                    "comment": "Gobo 7 Shake"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        187
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 16,
+                    "comment": "Scroll CCW"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        195
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 17,
+                    "comment": "No Scroll"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 18,
+                    "comment": "Scroll CW"
+                }
+            ]
+        },
+        "Prism": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "NoFunction",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        255
+                    ],
+                    "type": "Prism",
+                    "comment": "3-facet Prism"
+                }
+            ]
+        },
+        "Prism Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "PrismRotation",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "helpWanted": "Are these the correct angles?",
+                    "comment": "Prism Indexed"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        187
+                    ],
+                    "type": "PrismRotation",
+                    "speedStart": "fast CW",
+                    "speedEnd": "slow CW",
+                    "comment": "Prism continous rotation CW from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        195
+                    ],
+                    "type": "PrismRotation",
+                    "speed": "stop",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        255
+                    ],
+                    "type": "PrismRotation",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW",
+                    "comment": "Prism continous rotation CCW from slow to fast"
+                }
+            ]
+        },
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Iris": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Iris",
+                "openPercentStart": "closed",
+                "openPercentEnd": "open"
+            }
+        },
+        "Iris Macro": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Iris Macro"
+            }
+        },
+        "Control Special": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Safe"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp On",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        29
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp Off",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        39
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Colour Half"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        49
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Colour Range"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        59
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Safe"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        69
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset All",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset P/T",
+                    "helpWanted": "Unknown QLC+ capability preset ResetPanTilt, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset Colour",
+                    "helpWanted": "Unknown QLC+ capability preset ResetColor, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset Gobo",
+                    "helpWanted": "Unknown QLC+ capability preset ResetGobo, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Music Control"
+                }
+            ]
+        },
+        "Scan Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Raw DMX",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Gobo 2 Rotation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "WheelSlot",
+                "slotNumber": 1
+            }
+        },
+        "Gobo 1 Rotation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "WheelSlot",
+                "slotNumber": 1
+            }
+        },
+        "Focus": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Maintenance"
+            }
+        },
+        "Gobo 2 Wheel (rot)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        19
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "GOBO 1"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        23
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Gobo 2"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        27
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Gobo 3"
+                },
+                {
+                    "dmxRange": [
+                        28,
+                        31
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Gobo 4"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        35
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Gobo 5"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        39
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Gobo 6"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        43
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Gobo 7"
+                },
+                {
+                    "dmxRange": [
+                        44,
+                        55
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 9,
+                    "comment": "Gobo 1 Shake"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        67
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 10,
+                    "comment": "Gobo 2 Shake"
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        79
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 11,
+                    "comment": "Gobo 3 Shake"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        91
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 12,
+                    "comment": "Gobo 4 Shake"
+                },
+                {
+                    "dmxRange": [
+                        92,
+                        103
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 13,
+                    "comment": "Gobo 5 Shake"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        115
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 14,
+                    "comment": "Gobo 6 Shake"
+                },
+                {
+                    "dmxRange": [
+                        116,
+                        127
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 15,
+                    "comment": "Gobo 7 Shake"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        187
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 16,
+                    "comment": "Scroll CCW"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        195
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 17,
+                    "comment": "No Scroll"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 18,
+                    "comment": "Scroll CW"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "17-channel",
+            "shortName": "17ch",
+            "channels": [
+                "Shutter",
+                "Dimmer",
+                "Color wheel",
+                "Gobo 1 Wheel (static)",
+                "Gobo 1 Rotation",
+                "Gobo 2 Wheel (rot)",
+                "Prism",
+                "Prism Rotation",
+                "Iris",
+                "Iris Macro",
+                "Focus",
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Scan Speed",
+                "Control Special"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,367 @@
+{
+    "manufacturer": "Starway",
+    "name": "UrbanKolor",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        151
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe min to max"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        159
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "comment": "Open Pulse Slow",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        167
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "comment": "Open Pulse Med",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        175
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "comment": "Open Pulse Fast",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        183
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "comment": "Close Pulse Slow",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        190
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "comment": "Close Pulse Med",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        199
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "comment": "Close Pulse Fast",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        207
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random Strobe Slow"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        215
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random Strobe Med"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        223
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random Strobe Fast"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Color temperature": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "CTO Cold +2000\u00b0K to Hot -2000\u00b0K"
+                }
+            ]
+        },
+        "Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Slow - 5s"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        23
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Med - 5s"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Fast - 5s"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Slow"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        47
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Med"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Fast"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow very slow"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        70
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Random"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        71
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Register Colours"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Random medium"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        87
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Random Fast"
+                }
+            ]
+        },
+        "White Balance": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White Balance Disabled"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        189
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White Balance Enabled"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        250
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White Balance Disabled"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Store White Balance"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Standard",
+            "channels": [
+                "Shutter",
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Color temperature",
+                "Macro",
+                "White Balance"
+            ]
+        }
+    ]
+}

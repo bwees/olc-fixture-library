@@ -1,0 +1,297 @@
+{
+    "manufacturer": "DNA",
+    "name": "PRO SLIM 18 RGBW",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        1
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Strobe off"
+                },
+                {
+                    "dmxRange": [
+                        2,
+                        196
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Strobe speed"
+                },
+                {
+                    "dmxRange": [
+                        197,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random strobe"
+                }
+            ]
+        },
+        "Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        1
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "No Function",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        2,
+                        19
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB Colour Fade",
+                    "colors": [
+                        "#ffee9e"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour changing"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random colour changing"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        99
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Purple",
+                    "colors": [
+                        "#7f00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        119
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light green",
+                    "colors": [
+                        "#7fff7f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        139
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Orange",
+                    "colors": [
+                        "#ff7f00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red on/off (10 sec)",
+                    "colors": [
+                        "#ff0000",
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        179
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green on/off (10 sec)",
+                    "colors": [
+                        "#00ff00",
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue on/off (10 sec)",
+                    "colors": [
+                        "#0000ff",
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        219
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow on/off (10 sec)",
+                    "colors": [
+                        "#ffff00",
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        229
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan on/off (10 sec)",
+                    "colors": [
+                        "#00ffff",
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        249
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White on/off (10 sec)",
+                    "colors": [
+                        "#ffffff",
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Full on",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White"
+            ]
+        }
+    ]
+}

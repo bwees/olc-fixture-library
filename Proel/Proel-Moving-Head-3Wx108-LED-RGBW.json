@@ -1,0 +1,299 @@
+{
+    "manufacturer": "Proel",
+    "name": "Moving Head 3Wx108 LED RGBW",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Massimo Callegari",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        2
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        3,
+                        125
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random strobe"
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulsing strobe"
+                }
+            ]
+        },
+        "Colour change": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        2
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        3,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color change (Slow to fast)"
+                }
+            ]
+        },
+        "Colours Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        2
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        3,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red to Yellow",
+                    "colors": [
+                        "#ff0000",
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        83
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow to Green",
+                    "colors": [
+                        "#ffff00",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        84,
+                        125
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green to Cyan",
+                    "colors": [
+                        "#00ff00",
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        167
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan to Blue",
+                    "colors": [
+                        "#00ffff",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        209
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue to Magenta",
+                    "colors": [
+                        "#0000ff",
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        251
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta to White",
+                    "colors": [
+                        "#ff00ff",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                }
+            ]
+        },
+        "Automatic Colours Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        2
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        3,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Automatic colour mix (Slow to fast)"
+                }
+            ]
+        },
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Pan Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset after 3 seconds",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Strobe",
+                "Colour change",
+                "Colours Macro",
+                "Automatic Colours Macro",
+                "Pan",
+                "Tilt",
+                "Pan Fine",
+                "Tilt Fine",
+                "Pan Tilt Speed",
+                "Reset"
+            ]
+        }
+    ]
+}

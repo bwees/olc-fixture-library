@@ -1,0 +1,313 @@
+{
+    "manufacturer": "Cameo",
+    "name": "Flash Bar 150",
+    "categories": [
+        "Strobe"
+    ],
+    "meta": {
+        "authors": [
+            "Kevin Wimmer",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.11.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Auto Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Programs off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        54
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 1"
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        103
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 2"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        152
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 3"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        201
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 4"
+                },
+                {
+                    "dmxRange": [
+                        202,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 5"
+                }
+            ]
+        },
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Strobe off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe Speed (slow to fast)"
+                }
+            ]
+        },
+        "Duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Flash Duration (0ms to 510ms)",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Auto Speed / Sound Sensitivity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Auto Speed (slow to fast) / Sound Sensitivity",
+                "soundControlled": true
+            }
+        },
+        "Light Control LED 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 9": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 10": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 11": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 12": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 13": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 14": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Control LED 15": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Auto Programs"
+            ]
+        },
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Master Dimmer",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Master Dimmer",
+                "Strobe",
+                "Duration"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Master Dimmer",
+                "Strobe",
+                "Duration",
+                "Auto Programs",
+                "Auto Speed / Sound Sensitivity"
+            ]
+        },
+        {
+            "name": "15-channel",
+            "shortName": "15ch",
+            "channels": [
+                "Light Control LED 1",
+                "Light Control LED 2",
+                "Light Control LED 3",
+                "Light Control LED 4",
+                "Light Control LED 5",
+                "Light Control LED 6",
+                "Light Control LED 7",
+                "Light Control LED 8",
+                "Light Control LED 9",
+                "Light Control LED 10",
+                "Light Control LED 11",
+                "Light Control LED 12",
+                "Light Control LED 13",
+                "Light Control LED 14",
+                "Light Control LED 15"
+            ]
+        },
+        {
+            "name": "20-channel",
+            "shortName": "20ch",
+            "channels": [
+                "Master Dimmer",
+                "Strobe",
+                "Duration",
+                "Auto Programs",
+                "Auto Speed / Sound Sensitivity",
+                "Light Control LED 1",
+                "Light Control LED 2",
+                "Light Control LED 3",
+                "Light Control LED 4",
+                "Light Control LED 5",
+                "Light Control LED 6",
+                "Light Control LED 7",
+                "Light Control LED 8",
+                "Light Control LED 9",
+                "Light Control LED 10",
+                "Light Control LED 11",
+                "Light Control LED 12",
+                "Light Control LED 13",
+                "Light Control LED 14",
+                "Light Control LED 15"
+            ]
+        }
+    ]
+}

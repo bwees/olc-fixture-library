@@ -1,0 +1,515 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "COLORpalette",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "JL Griffin",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            4,
+            2,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Control/Operating Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "Maintenance",
+                    "comment": "27 Channel Mode"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        39
+                    ],
+                    "type": "Maintenance",
+                    "comment": "15 Channel Mode"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        59
+                    ],
+                    "type": "Maintenance",
+                    "comment": "9 Channel Mode"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        79
+                    ],
+                    "type": "Maintenance",
+                    "comment": "6 Channel Mode"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 1"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 2"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 3"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        119
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 4"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        129
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 5"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        139
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 6"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        149
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 7"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        159
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 8"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        169
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 9"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        179
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 10"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        189
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 11"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        199
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 12"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        209
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 13"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        219
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 14"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        229
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 15"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        239
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Mode 1"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Sound Mode 16"
+                }
+            ]
+        },
+        "Auto Mode Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Speed",
+                    "comment": "Slow > Med",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Med > Fast",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        2
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe"
+                },
+                {
+                    "dmxRange": [
+                        3,
+                        249
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe [Slow > Fast]"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Sound-Active",
+                    "helpWanted": "Unknown QLC+ capability preset SilentModeOff, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        },
+        "Red 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Control/Operating Mode",
+                "Auto Mode Speed",
+                "Strobe",
+                "Red 1",
+                "Green 1",
+                "Blue 1"
+            ]
+        },
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Control/Operating Mode",
+                "Auto Mode Speed",
+                "Strobe",
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2"
+            ]
+        },
+        {
+            "name": "15-channel",
+            "shortName": "15ch",
+            "channels": [
+                "Control/Operating Mode",
+                "Auto Mode Speed",
+                "Strobe",
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2",
+                "Red 3",
+                "Green 3",
+                "Blue 3",
+                "Red 4",
+                "Green 4",
+                "Blue 4"
+            ]
+        },
+        {
+            "name": "27-channel",
+            "shortName": "27ch",
+            "channels": [
+                "Control/Operating Mode",
+                "Auto Mode Speed",
+                "Strobe",
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2",
+                "Red 3",
+                "Green 3",
+                "Blue 3",
+                "Red 4",
+                "Green 4",
+                "Blue 4",
+                "Red 5",
+                "Green 5",
+                "Blue 5",
+                "Red 6",
+                "Green 6",
+                "Blue 6",
+                "Red 7",
+                "Green 7",
+                "Blue 7",
+                "Red 8",
+                "Green 8",
+                "Blue 8"
+            ]
+        }
+    ]
+}

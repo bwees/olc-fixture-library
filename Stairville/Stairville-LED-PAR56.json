@@ -1,0 +1,133 @@
+{
+    "manufacturer": "Stairville",
+    "name": "LED PAR56",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Heikki Junnila",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.1)"
+        }
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB control"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "7 colour fades"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "7 colour changes"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "3 colour changes"
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Speed control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        100
+                    ],
+                    "type": "Speed",
+                    "comment": "High to slow",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        150
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Speed control by the device or controller",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Mode",
+                "Red",
+                "Green",
+                "Blue",
+                "Speed control"
+            ]
+        }
+    ]
+}

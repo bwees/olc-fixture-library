@@ -1,0 +1,183 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "Vue 1.1",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Robert Box",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Control/Operating Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        24
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red, green, blue mode"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "Standalone mode 1 (automatic)"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        74
+                    ],
+                    "type": "Effect",
+                    "effectName": "Standalone mode 2 (automatic)"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "Standalone mode 3 (automatic)"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        124
+                    ],
+                    "type": "Effect",
+                    "effectName": "Standalone mode 4 (automatic)"
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "Standalone mode 5 (automatic)"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        174
+                    ],
+                    "type": "Effect",
+                    "effectName": "Standalone mode 6 (automatic)"
+                },
+                {
+                    "dmxRange": [
+                        175,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Standalone mode 7 (automatic)"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        224
+                    ],
+                    "type": "Effect",
+                    "effectName": "Standalone mode 8 (automatic)"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        249
+                    ],
+                    "type": "Effect",
+                    "effectName": "Standalone mode 9 (automatic)"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Standalone (sound active)",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Standalone Speed/Strobing Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "StrobeSpeed",
+                    "comment": "Slow <-> fast/No strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Slow <-> fast/Slow <-> fast",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Control/Operating Mode",
+                "Red",
+                "Green",
+                "Blue",
+                "Standalone Speed/Strobing Speed",
+                "Dimmer"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,246 @@
+{
+    "manufacturer": "Ayra",
+    "name": "ComPar 20",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Rob Nieuwenhuizen",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Color Marco": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        36
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        37,
+                        73
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        74,
+                        110
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        147
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        148,
+                        184
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        221
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe slow to fast"
+                }
+            ]
+        },
+        "Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Marco (Color 1 - Color 15)"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Jumping",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Fading",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound control (mic sens)",
+                    "soundControlled": true
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Dimmer",
+                "Color Marco"
+            ]
+        },
+        {
+            "name": "3-channel 1",
+            "shortName": "3ch 1",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "3-channel 2",
+            "shortName": "3ch 2",
+            "channels": [
+                "Dimmer",
+                "Strobe",
+                "Effect"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Dimmer",
+                "Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "Effect"
+            ]
+        }
+    ]
+}

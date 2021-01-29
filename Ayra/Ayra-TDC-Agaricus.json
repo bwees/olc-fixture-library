@@ -1,0 +1,219 @@
+{
+    "manufacturer": "Ayra",
+    "name": "TDC Agaricus",
+    "categories": [
+        "Effect"
+    ],
+    "meta": {
+        "authors": [
+            "Rob Nieuwenhuizen",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Intensity",
+                    "comment": "Black out"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "Intensity"
+                }
+            ]
+        },
+        "Red Dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Red",
+                    "comment": "Black out"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Red",
+                    "comment": "Red dimmer"
+                }
+            ]
+        },
+        "Green dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Green",
+                    "comment": "Black out"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Green"
+                }
+            ]
+        },
+        "Blue dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Blue",
+                    "comment": "Black out"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Blue"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Black out",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "RGB color mixation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Black out"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ColorPreset"
+                }
+            ]
+        },
+        "Motor": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Adjust motor",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW",
+                    "comment": "Motor move forward and back, slow to fast"
+                }
+            ]
+        },
+        "Sound Controlled": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Sound Off",
+                    "helpWanted": "Unknown QLC+ capability preset SilentModeOn, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Sound On",
+                    "helpWanted": "Unknown QLC+ capability preset SilentModeOff, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Dimmer",
+                "Red Dimmer",
+                "Green dimmer",
+                "Blue dimmer",
+                "Strobe",
+                "RGB color mixation",
+                "Motor",
+                "Sound Controlled"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,598 @@
+{
+    "manufacturer": "Equinox",
+    "name": "Gigabar",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Juski",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.1 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            4,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "1-Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "1-Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "1-Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "2-Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "2-Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "2-Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "3-Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "3-Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "3-Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "4-Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "4-Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "4-Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Flash Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Power 1": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Off"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "ON"
+                }
+            ]
+        },
+        "Power 2": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Off"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "ON"
+                }
+            ]
+        },
+        "Program": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Built in programs"
+            }
+        },
+        "Sound sensitivity / Flash": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        1,
+                        5
+                    ],
+                    "type": "Intensity",
+                    "comment": "Sound sensitivity - 1 (lowest) to 5 (highest)"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Flash Speed (11 slowest 255 highest)"
+                }
+            ]
+        },
+        "R1 R2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "G1 G2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "B1 B2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "R3 R4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "G3 G4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "B3 B4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "CH1": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        36
+                    ],
+                    "type": "Intensity",
+                    "comment": "R"
+                },
+                {
+                    "dmxRange": [
+                        37,
+                        73
+                    ],
+                    "type": "Intensity",
+                    "comment": "G"
+                },
+                {
+                    "dmxRange": [
+                        74,
+                        110
+                    ],
+                    "type": "Intensity",
+                    "comment": "B"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        147
+                    ],
+                    "type": "Intensity",
+                    "comment": "RG : Yellow"
+                },
+                {
+                    "dmxRange": [
+                        148,
+                        184
+                    ],
+                    "type": "Intensity",
+                    "comment": "RB : Violet"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        221
+                    ],
+                    "type": "Intensity",
+                    "comment": "GB : Cyan"
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "RGB : White"
+                }
+            ]
+        },
+        "CH2": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        36
+                    ],
+                    "type": "Intensity",
+                    "comment": "R"
+                },
+                {
+                    "dmxRange": [
+                        37,
+                        73
+                    ],
+                    "type": "Intensity",
+                    "comment": "G"
+                },
+                {
+                    "dmxRange": [
+                        74,
+                        110
+                    ],
+                    "type": "Intensity",
+                    "comment": "B"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        147
+                    ],
+                    "type": "Intensity",
+                    "comment": "RG : Yellow"
+                },
+                {
+                    "dmxRange": [
+                        148,
+                        184
+                    ],
+                    "type": "Intensity",
+                    "comment": "RB : Violet"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        221
+                    ],
+                    "type": "Intensity",
+                    "comment": "GB : Cyan"
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "RGB : White"
+                }
+            ]
+        },
+        "CH3": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        36
+                    ],
+                    "type": "Intensity",
+                    "comment": "R"
+                },
+                {
+                    "dmxRange": [
+                        37,
+                        73
+                    ],
+                    "type": "Intensity",
+                    "comment": "G"
+                },
+                {
+                    "dmxRange": [
+                        74,
+                        110
+                    ],
+                    "type": "Intensity",
+                    "comment": "B"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        147
+                    ],
+                    "type": "Intensity",
+                    "comment": "RG : Yellow"
+                },
+                {
+                    "dmxRange": [
+                        148,
+                        184
+                    ],
+                    "type": "Intensity",
+                    "comment": "RB : Violet"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        221
+                    ],
+                    "type": "Intensity",
+                    "comment": "GB : Cyan"
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "RGB : White"
+                }
+            ]
+        },
+        "CH4": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        36
+                    ],
+                    "type": "Intensity",
+                    "comment": "R"
+                },
+                {
+                    "dmxRange": [
+                        37,
+                        73
+                    ],
+                    "type": "Intensity",
+                    "comment": "G"
+                },
+                {
+                    "dmxRange": [
+                        74,
+                        110
+                    ],
+                    "type": "Intensity",
+                    "comment": "B"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        147
+                    ],
+                    "type": "Intensity",
+                    "comment": "RG : Yellow"
+                },
+                {
+                    "dmxRange": [
+                        148,
+                        184
+                    ],
+                    "type": "Intensity",
+                    "comment": "RB : Violet"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        221
+                    ],
+                    "type": "Intensity",
+                    "comment": "GB : Cyan"
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "RGB : White"
+                }
+            ]
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "17-channel",
+            "shortName": "17ch",
+            "channels": [
+                "Program",
+                "Master Dimmer",
+                "Flash Speed",
+                "1-Red",
+                "1-Green",
+                "1-Blue",
+                "2-Red",
+                "2-Green",
+                "2-Blue",
+                "3-Red",
+                "3-Green",
+                "3-Blue",
+                "4-Red",
+                "4-Green",
+                "4-Blue",
+                "Power 1",
+                "Power 2"
+            ]
+        },
+        {
+            "name": "12-channel",
+            "shortName": "12ch",
+            "channels": [
+                "1-Red",
+                "1-Green",
+                "1-Blue",
+                "2-Red",
+                "2-Green",
+                "2-Blue",
+                "3-Red",
+                "3-Green",
+                "3-Blue",
+                "4-Red",
+                "4-Green",
+                "4-Blue"
+            ]
+        },
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Program",
+                "Master Dimmer",
+                "Flash Speed",
+                "1-Red",
+                "1-Green",
+                "1-Blue",
+                "Power 1",
+                "Power 2"
+            ]
+        },
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "1-Red",
+                "1-Green",
+                "1-Blue",
+                "Master Dimmer",
+                "Sound sensitivity / Flash",
+                "Power 1",
+                "Power 2"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "R1 R2",
+                "G1 G2",
+                "B1 B2",
+                "R3 R4",
+                "G3 G4",
+                "B3 B4"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "1-Red",
+                "1-Green",
+                "1-Blue",
+                "Power 1",
+                "Power 2"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "1-Red",
+                "1-Green",
+                "1-Blue"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "CH1",
+                "CH2",
+                "CH3",
+                "CH4"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,913 @@
+{
+    "manufacturer": "Blizzard Lighting",
+    "name": "Stimul-Eye",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "George Qualley IV",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            7,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Fine Pan"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Fine Tilt"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "250deg"
+            }
+        },
+        "Pan/Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Beam Angle + Lens Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Beam spread (narrow <--> wide)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        190
+                    ],
+                    "type": "Generic",
+                    "comment": "Clockwise rotation (slow <--> fast)"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Counterclockwise rotation (fast <--> slow)"
+                }
+            ]
+        },
+        "Color Wheel Rotation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "WheelSlot",
+                "slotNumber": 1,
+                "comment": "Slow <--> fast"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "LED 1 Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "0% <--> 100%"
+            }
+        },
+        "LED 2 Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "0% <--> 100%"
+            }
+        },
+        "LED 3 Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "0% <--> 100%"
+            }
+        },
+        "LED 4 Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "0% <--> 100%"
+            }
+        },
+        "LED 5 Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "0% <--> 100%"
+            }
+        },
+        "LED 6 Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "0% <--> 100%"
+            }
+        },
+        "LED 7 (Center) Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "0% <--> 100%"
+            }
+        },
+        "Built-in Programs (Static & Dynamic Effects)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 1"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        10
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 1"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        13
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 2"
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        16
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 2"
+                },
+                {
+                    "dmxRange": [
+                        17,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 3"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        22
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 3"
+                },
+                {
+                    "dmxRange": [
+                        23,
+                        25
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 4"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        28
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 4"
+                },
+                {
+                    "dmxRange": [
+                        29,
+                        31
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 5"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        34
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 5"
+                },
+                {
+                    "dmxRange": [
+                        35,
+                        37
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 6"
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        40
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 6"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        43
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 7"
+                },
+                {
+                    "dmxRange": [
+                        44,
+                        46
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 7"
+                },
+                {
+                    "dmxRange": [
+                        47,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 8"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        52
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 8"
+                },
+                {
+                    "dmxRange": [
+                        53,
+                        55
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 9"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        58
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 9"
+                },
+                {
+                    "dmxRange": [
+                        59,
+                        61
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 10"
+                },
+                {
+                    "dmxRange": [
+                        62,
+                        64
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 10"
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        67
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 11"
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        70
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 11"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        73
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 12"
+                },
+                {
+                    "dmxRange": [
+                        74,
+                        76
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 12"
+                },
+                {
+                    "dmxRange": [
+                        77,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 13"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        82
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 13"
+                },
+                {
+                    "dmxRange": [
+                        83,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 14"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        88
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 14"
+                },
+                {
+                    "dmxRange": [
+                        89,
+                        91
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 15"
+                },
+                {
+                    "dmxRange": [
+                        92,
+                        94
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 15"
+                },
+                {
+                    "dmxRange": [
+                        95,
+                        97
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 16"
+                },
+                {
+                    "dmxRange": [
+                        98,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 16"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        103
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 17"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        106
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 17"
+                },
+                {
+                    "dmxRange": [
+                        107,
+                        109
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 18"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        112
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 18"
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        115
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 19"
+                },
+                {
+                    "dmxRange": [
+                        116,
+                        118
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 19"
+                },
+                {
+                    "dmxRange": [
+                        119,
+                        121
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 20"
+                },
+                {
+                    "dmxRange": [
+                        122,
+                        124
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 20"
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 21"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        130
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 21"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        133
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 22"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        136
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 22"
+                },
+                {
+                    "dmxRange": [
+                        137,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 23"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        142
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 23"
+                },
+                {
+                    "dmxRange": [
+                        143,
+                        145
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 24"
+                },
+                {
+                    "dmxRange": [
+                        146,
+                        148
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 24"
+                },
+                {
+                    "dmxRange": [
+                        149,
+                        151
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 25"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        154
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 25"
+                },
+                {
+                    "dmxRange": [
+                        155,
+                        157
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 26"
+                },
+                {
+                    "dmxRange": [
+                        158,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 26"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        163
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 27"
+                },
+                {
+                    "dmxRange": [
+                        164,
+                        166
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 27"
+                },
+                {
+                    "dmxRange": [
+                        167,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 28"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        172
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 28"
+                },
+                {
+                    "dmxRange": [
+                        173,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 29"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        178
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 29"
+                },
+                {
+                    "dmxRange": [
+                        179,
+                        181
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 30"
+                },
+                {
+                    "dmxRange": [
+                        182,
+                        184
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 30"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        187
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 31"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 31"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        193
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 32"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        196
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 32"
+                },
+                {
+                    "dmxRange": [
+                        197,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 33"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        202
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 33"
+                },
+                {
+                    "dmxRange": [
+                        203,
+                        205
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 34"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        208
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 34"
+                },
+                {
+                    "dmxRange": [
+                        209,
+                        211
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 35"
+                },
+                {
+                    "dmxRange": [
+                        212,
+                        214
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 35"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        217
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 36"
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 36"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 37"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        226
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 37"
+                },
+                {
+                    "dmxRange": [
+                        227,
+                        229
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 38"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        232
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 38"
+                },
+                {
+                    "dmxRange": [
+                        233,
+                        235
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 39"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        238
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 39"
+                },
+                {
+                    "dmxRange": [
+                        239,
+                        241
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static 40"
+                },
+                {
+                    "dmxRange": [
+                        242,
+                        244
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic 40"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Built-in Program Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Fast <--> slow",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Auto Run + System Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        128
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        249
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto run mode"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset (after 6 seconds)",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        },
+        "LED 1-6 Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "Intensity (0% -> 100%)"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "19-channel",
+            "shortName": "19ch",
+            "channels": [
+                "Pan",
+                "Fine Pan",
+                "Tilt",
+                "Fine Tilt",
+                "Pan/Tilt Speed",
+                "Beam Angle + Lens Rotation",
+                "Color Wheel Rotation",
+                "Dimmer",
+                "Strobe",
+                "LED 1 Intensity",
+                "LED 2 Intensity",
+                "LED 3 Intensity",
+                "LED 4 Intensity",
+                "LED 5 Intensity",
+                "LED 6 Intensity",
+                "LED 7 (Center) Intensity",
+                "Built-in Programs (Static & Dynamic Effects)",
+                "Built-in Program Speed",
+                "Auto Run + System Reset"
+            ]
+        },
+        {
+            "name": "12-channel",
+            "shortName": "12ch",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Pan/Tilt Speed",
+                "Beam Angle + Lens Rotation",
+                "Color Wheel Rotation",
+                "Dimmer",
+                "Strobe",
+                "LED 7 (Center) Intensity",
+                "LED 1-6 Intensity",
+                "Built-in Programs (Static & Dynamic Effects)",
+                "Built-in Program Speed",
+                "Auto Run + System Reset"
+            ]
+        }
+    ]
+}

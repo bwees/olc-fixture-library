@@ -1,0 +1,143 @@
+{
+    "manufacturer": "Stellar Labs",
+    "name": "LED PAR38 RGB (555-11410)",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "X",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.4.2)"
+        }
+    },
+    "availableChannels": {
+        "Modes": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "Maintenance",
+                    "comment": "RGB"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "7 Color Fade"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Maintenance",
+                    "comment": "7 Color Change"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "3 Color Change"
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        100
+                    ],
+                    "type": "Speed",
+                    "comment": "Fast > Slow",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        150
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Speed set by unit - Mic (sw4=1), Pot (sw4=0)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "5-channel - 4 way dip switch set to 011",
+            "shortName": "5ch - 4 way dip switch set to 011",
+            "channels": [
+                "Modes",
+                "Red",
+                "Green",
+                "Blue",
+                "Speed"
+            ]
+        },
+        {
+            "name": "3-channel - 4 way dip switch set to 101",
+            "shortName": "3ch - 4 way dip switch set to 101",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        }
+    ]
+}

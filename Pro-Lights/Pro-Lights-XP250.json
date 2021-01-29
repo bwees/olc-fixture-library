@@ -1,0 +1,598 @@
+{
+    "manufacturer": "Pro-Lights",
+    "name": "XP250",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Tolmino Muccitelli",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Colours": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Steel Blue",
+                    "colors": [
+                        "#007dc2"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Orange",
+                    "colors": [
+                        "#e87845"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Green Blue",
+                    "colors": [
+                        "#85c226"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Bright Blue",
+                    "colors": [
+                        "#bab3d6"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Bright Pink",
+                    "colors": [
+                        "#f09ca1"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Red",
+                    "colors": [
+                        "#d9261c"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Deep Blue",
+                    "colors": [
+                        "#291770"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Yellow",
+                    "colors": [
+                        "#fff500"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Dark Pink",
+                    "colors": [
+                        "#964578"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Moss Green",
+                    "colors": [
+                        "#009140"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Light Blue",
+                    "colors": [
+                        "#75c4f0"
+                    ]
+                }
+            ]
+        },
+        "Gobo": {
+            "slots": [
+                {
+                    "type": "Open"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM-Color/gobo00522.png",
+                    "name": "Gobo1 (Colours)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/ClayPaky/gobo00012.svg",
+                    "name": "Gobo2 (Bars)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Robe/gobo00036.svg",
+                    "name": "Gobo3 (Atomic)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Robe/gobo00018.svg",
+                    "name": "Gobo4 (Ring)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM-Color/gobo00555.png",
+                    "name": "Gobo5 (Moon)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Chauvet/gobo00052.svg",
+                    "name": "Gobo6 (Sun)"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Shutter Closed"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe Slow-Fast"
+                }
+            ]
+        },
+        "Colours": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        13
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        27
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Steel Blue",
+                    "colors": [
+                        "#007dc2"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        28,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Orange",
+                    "colors": [
+                        "#e87845"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green Blue",
+                    "colors": [
+                        "#85c226"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        69
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bright Blue",
+                    "colors": [
+                        "#bab3d6"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        83
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bright Pink",
+                    "colors": [
+                        "#f09ca1"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        84,
+                        97
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#d9261c"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        98,
+                        111
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Deep Blue",
+                    "colors": [
+                        "#291770"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        125
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#fff500"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        139
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark Pink",
+                    "colors": [
+                        "#964578"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        153
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Moss Green",
+                    "colors": [
+                        "#009140"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        154,
+                        167
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Blue",
+                    "colors": [
+                        "#75c4f0"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 13,
+                    "comment": "Colour Rotation Slow-Fast"
+                }
+            ]
+        },
+        "Gobo": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        23
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "No Gobo"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        47
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Gobo1 (Colours)"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        71
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Gobo2 (Bars)"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        95
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Gobo3 (Atomic)"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        119
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Gobo4 (Ring)"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        143
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Gobo5 (Moon)"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        167
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Gobo6 (Sun)"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Gobo Rotation"
+                }
+            ]
+        },
+        "Gobo Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Rotation Adjustment From 0 To 360"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "WheelSlotRotation",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Forwards Rotation"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "WheelSlotRotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Backwards Rotation"
+                }
+            ]
+        },
+        "Prism": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        1
+                    ],
+                    "type": "Prism",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        2,
+                        7
+                    ],
+                    "type": "Prism",
+                    "comment": "Triple Prism Static"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        132
+                    ],
+                    "type": "Prism",
+                    "comment": "Forwards Rotation Fast-Slow"
+                },
+                {
+                    "dmxRange": [
+                        133,
+                        253
+                    ],
+                    "type": "Prism",
+                    "comment": "Backwards Rotation Slow-Fast"
+                },
+                {
+                    "dmxRange": [
+                        254,
+                        255
+                    ],
+                    "type": "Prism",
+                    "comment": "Triple Prism Static"
+                }
+            ]
+        },
+        "Focus": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Focus",
+                "distanceStart": "near",
+                "distanceEnd": "far"
+            }
+        },
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "570deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Normal State"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mechanical Reset"
+                }
+            ]
+        },
+        "Lamp Switch": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        47
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Standby"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        95
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp On 3 Seconds Later"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        159
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Standby"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        207
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp Off 3 Seconds Later"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Standby"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "XP250 Scanner",
+            "channels": [
+                "Dimmer",
+                "Shutter",
+                "Colours",
+                "Gobo",
+                "Gobo Rotation",
+                "Prism",
+                "Focus",
+                "Pan",
+                "Tilt",
+                "Pan Fine",
+                "Tilt Fine",
+                "Reset",
+                "Lamp Switch"
+            ]
+        }
+    ]
+}

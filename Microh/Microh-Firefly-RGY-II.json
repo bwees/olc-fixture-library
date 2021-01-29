@@ -1,0 +1,283 @@
+{
+    "manufacturer": "Microh",
+    "name": "Firefly RGY II",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Christopher Enoch",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Control mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        49
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound Control"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        99
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto-beam"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        149
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto-animation"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Manual"
+                }
+            ]
+        },
+        "Color select": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Laser off"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green, Red, Yellow"
+                }
+            ]
+        },
+        "Pattern Select": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "WheelSlot",
+                "slotNumber": 1,
+                "comment": "Patterns"
+            }
+        },
+        "Vertical Move": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Manual"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Generic",
+                    "comment": "Down to Up (fast)"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Up to Down (fast)"
+                }
+            ]
+        },
+        "Horizontal Move": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Manual"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Generic",
+                    "comment": "Right to Left"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Left to Right"
+                }
+            ]
+        },
+        "Vertical Rotate": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Horizontal Rotate": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Rotate": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "CCW Rotate"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "CW Rotate"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zoom In"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zoom Out"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Zoom"
+                }
+            ]
+        },
+        "Pattern Size": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "Normal Size"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Small to Large"
+                }
+            ]
+        },
+        "Spot and Line": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Line to Spot"
+            }
+        },
+        "Twinkle Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Generic",
+            "channels": [
+                "Control mode",
+                "Color select",
+                "Pattern Select",
+                "Vertical Move",
+                "Horizontal Move",
+                "Vertical Rotate",
+                "Horizontal Rotate",
+                "Rotate",
+                "Zoom",
+                "Pattern Size",
+                "Spot and Line",
+                "Twinkle Speed"
+            ]
+        }
+    ]
+}

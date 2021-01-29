@@ -1,0 +1,99 @@
+{
+    "manufacturer": "Martin",
+    "name": "JEM ZR24/7",
+    "categories": [
+        "Hazer"
+    ],
+    "meta": {
+        "authors": [
+            "Jannis Achstetter",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.2)"
+        }
+    },
+    "availableChannels": {
+        "Fog output level": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "Intensity",
+                    "comment": "No fog"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        220
+                    ],
+                    "type": "Intensity",
+                    "comment": "Output level in 20 steps"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        230
+                    ],
+                    "type": "Intensity",
+                    "comment": "Prime function"
+                }
+            ]
+        },
+        "Fan speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "Intensity",
+                    "comment": "Fan off"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        220
+                    ],
+                    "type": "Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Fan speed in 20 steps"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        230
+                    ],
+                    "type": "Intensity",
+                    "comment": "Auto fan mode"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Fan off, Fog off, Heater off"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Fog output level",
+                "Fan speed"
+            ]
+        }
+    ]
+}

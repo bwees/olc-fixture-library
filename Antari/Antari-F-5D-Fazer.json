@@ -1,0 +1,129 @@
+{
+    "manufacturer": "Antari",
+    "name": "F-5D Fazer",
+    "categories": [
+        "Smoke"
+    ],
+    "meta": {
+        "authors": [
+            "Mark Lohrey",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Faze": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "Faze Off"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Faze 1-100%"
+                }
+            ]
+        },
+        "Fan": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fan 20%"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fan 21% to 100%"
+                }
+            ]
+        },
+        "Faze and Fan": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "Faze Off and Fan 20%"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Faze 1 to 100% and Fan 100%"
+                }
+            ]
+        },
+        "Fan and Haze Sync Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "Faze Off and Fan 20%"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Faze 1 to 100% and Fan 21% to 100%"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Faze",
+                "Fan"
+            ]
+        },
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Faze and Fan"
+            ]
+        },
+        {
+            "name": "Sync",
+            "channels": [
+                "Fan and Haze Sync Mode"
+            ]
+        }
+    ]
+}

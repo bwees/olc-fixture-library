@@ -1,0 +1,448 @@
+{
+    "manufacturer": "Pro-Lights",
+    "name": "Miniruby",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Dario Gonzalez",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "265deg"
+            }
+        },
+        "Movement Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        223
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe effect slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                }
+            ]
+        },
+        "Color": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        2
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 1"
+                },
+                {
+                    "dmxRange": [
+                        3,
+                        5
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 2"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        8
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 3"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        11
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 4"
+                },
+                {
+                    "dmxRange": [
+                        12,
+                        14
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 5"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        17
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 6"
+                },
+                {
+                    "dmxRange": [
+                        18,
+                        20
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 7"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        23
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 8"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        26
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 9"
+                },
+                {
+                    "dmxRange": [
+                        27,
+                        29
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 10"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        32
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 11"
+                },
+                {
+                    "dmxRange": [
+                        33,
+                        35
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 12"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        38
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 13"
+                },
+                {
+                    "dmxRange": [
+                        39,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 14"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        44
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 15"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        47
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 16"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 17"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        53
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 18"
+                },
+                {
+                    "dmxRange": [
+                        54,
+                        56
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Position 19"
+                },
+                {
+                    "dmxRange": [
+                        57,
+                        66
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Indexed with bounce position 1"
+                },
+                {
+                    "dmxRange": [
+                        67,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Indexed With bounce position 2 ~ 17"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Forward Wheel Spin Stop to fast"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Reverse Wheel Spin Stop to fast"
+                }
+            ]
+        },
+        "Prism & Prism rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        3
+                    ],
+                    "type": "Prism",
+                    "comment": "Prism Open"
+                },
+                {
+                    "dmxRange": [
+                        4,
+                        127
+                    ],
+                    "type": "Prism",
+                    "comment": "Forward Spin Stop to fast"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Prism",
+                    "comment": "Reverse Spin Stop to fast"
+                }
+            ]
+        },
+        "Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Normal"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset All",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        23
+                    ],
+                    "type": "Generic",
+                    "comment": "Pan & Tilt Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetPanTilt, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        31
+                    ],
+                    "type": "Generic",
+                    "comment": "Color Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetColor, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        39
+                    ],
+                    "type": "Maintenance",
+                    "comment": "TBD"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        47
+                    ],
+                    "type": "Maintenance",
+                    "comment": "TBD"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        55
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Other Reset"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        63
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display off"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        71
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display on"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        79
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp Off",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        87
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp On",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        95
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Hibernation"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "TBD"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Movement Speed",
+                "Shutter",
+                "Color",
+                "Prism & Prism rotation",
+                "Control"
+            ]
+        },
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Pan",
+                "Pan fine",
+                "Tilt",
+                "Tilt fine",
+                "Movement Speed",
+                "Shutter",
+                "Color",
+                "Prism & Prism rotation",
+                "Control"
+            ]
+        }
+    ]
+}

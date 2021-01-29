@@ -1,0 +1,149 @@
+{
+    "manufacturer": "Stellar Labs",
+    "name": "ECO LED PAR56",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Jimmy Traylor",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "RGB control, ch2=red, ch3=green, ch4=blue"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "7 colour fade, ch5=speed control"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "7 colour change, ch5=speed control"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "3 colour change, ch5=speed control"
+                }
+            ]
+        },
+        "Red Colour": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green Colour": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue Colour": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Speed",
+                    "comment": "No function - no speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        100
+                    ],
+                    "type": "Speed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        150
+                    ],
+                    "type": "Speed",
+                    "comment": "No function - no speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Speed control by unit, by music or potentiometer",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Mode",
+                "Red Colour",
+                "Green Colour",
+                "Blue Colour",
+                "Speed"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red Colour",
+                "Green Colour",
+                "Blue Colour"
+            ]
+        }
+    ]
+}

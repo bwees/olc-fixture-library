@@ -1,0 +1,2040 @@
+{
+    "manufacturer": "High End Systems",
+    "name": "Studio Beam",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Freasy",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Cyan Color Wheel": {
+            "slots": [
+                {
+                    "type": "Unknown",
+                    "name": "See manual"
+                }
+            ]
+        },
+        "Magenta Color Wheel": {
+            "slots": [
+                {
+                    "type": "Unknown",
+                    "name": "See manual"
+                }
+            ]
+        },
+        "Yellow Color Wheel": {
+            "slots": [
+                {
+                    "type": "Unknown",
+                    "name": "See manual"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Pan Coarse": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt Coarse": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "256deg"
+            }
+        },
+        "Dim": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Shutter (Normal/Lamp Assisted)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        23
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed/Closed"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        49
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Periodic strobe/Periodic lamp strobe"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        75
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random strobe/Random lamp strobes"
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        101
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Synchronous random strobe/Synchronous random lamp pulses"
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        105
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, snap shut/Boost lamp 1.0 second, black"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        109
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, snap shut/Boost lamp .75 second, black"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        113
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, snap shut/Boost lamp .66 second, black"
+                },
+                {
+                    "dmxRange": [
+                        114,
+                        117
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, snap shut/Boost lamp .5 second, black"
+                },
+                {
+                    "dmxRange": [
+                        118,
+                        121
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, snap shut/Boost lamp .33 second, black"
+                },
+                {
+                    "dmxRange": [
+                        122,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, snap shut/Boost lamp .25 second, black"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        131
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Snap open, ramp shut/Boost lamp 1.0 second, white"
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        135
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Snap open, ramp shut/Boost lamp .75 second, white"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        139
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Snap open, ramp shut/Boost lamp .66 second, white"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        143
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Snap open, ramp shut/Boost lamp .5 second, white"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        147
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Snap open, ramp shut/Boost lamp .33 second, white"
+                },
+                {
+                    "dmxRange": [
+                        148,
+                        153
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Snap open, ramp shut/Boost lamp .25 second, white"
+                },
+                {
+                    "dmxRange": [
+                        154,
+                        157
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, ramp shut/Lightning strike 1"
+                },
+                {
+                    "dmxRange": [
+                        158,
+                        161
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, ramp shut/Lightning strike 2"
+                },
+                {
+                    "dmxRange": [
+                        162,
+                        165
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, ramp shut/Lightning strike 3"
+                },
+                {
+                    "dmxRange": [
+                        166,
+                        169
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, ramp shut/Lightning strike 4"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        173
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, ramp shut/Lightning strike 5"
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        179
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, ramp shut/Lightning strike 6"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        205
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Random ramp open, snap shut/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        231
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Random snap open, ramp shut/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open/Open"
+                }
+            ]
+        },
+        "Cyan": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Cyan",
+                    "comment": "Open white"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        128
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Cyan",
+                    "comment": "Cyan (0% to 100% saturation)"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        129
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Cyan",
+                    "comment": "Discrete color (deep red position)"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        130
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Cyan",
+                    "comment": "Open white"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        172
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Cyan",
+                    "comment": "Media scan"
+                },
+                {
+                    "dmxRange": [
+                        173,
+                        213
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Cyan",
+                    "comment": "Reverse spin (fast to slow)"
+                },
+                {
+                    "dmxRange": [
+                        214,
+                        214
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Cyan",
+                    "comment": "Spin stop"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        255
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Cyan",
+                    "comment": "Forward spin (slow to fast)"
+                }
+            ]
+        },
+        "Magenta": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Magenta",
+                    "comment": "Open white"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        128
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Magenta",
+                    "comment": "Magenta (0% to 100% saturation)"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        129
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Magenta",
+                    "comment": "Discrete color (CTO position)"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        130
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Magenta",
+                    "comment": "Open white"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        172
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Magenta",
+                    "comment": "Media scan"
+                },
+                {
+                    "dmxRange": [
+                        173,
+                        213
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Magenta",
+                    "comment": "Reverse spin (fast to slow)"
+                },
+                {
+                    "dmxRange": [
+                        214,
+                        214
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Magenta",
+                    "comment": "Spin stop"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        255
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Magenta",
+                    "comment": "Forward spin (slow to fast)"
+                }
+            ]
+        },
+        "Yellow": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Yellow",
+                    "comment": "Open white"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        128
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Yellow",
+                    "comment": "Yellow (0% to 100% saturation)"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        129
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Yellow",
+                    "comment": "Discrete color (deep blue position)"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        130
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Yellow",
+                    "comment": "Open white"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        172
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Yellow",
+                    "comment": "Media scan"
+                },
+                {
+                    "dmxRange": [
+                        173,
+                        213
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Yellow",
+                    "comment": "Reverse spin (fast to slow)"
+                },
+                {
+                    "dmxRange": [
+                        214,
+                        214
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Yellow",
+                    "comment": "Spin stop"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        255
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Yellow",
+                    "comment": "Forward spin (slow to fast)"
+                }
+            ]
+        },
+        "Color Function Flat": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "Safe (disables all control settings)"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        1
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blink (continuous to discrete)"
+                },
+                {
+                    "dmxRange": [
+                        2,
+                        65
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color cycle (uses only the color mixing portion of all color wheels to cycle factory determined colors at variable speeds",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random (uses only the color mixing portion of all color wheels to cycle facotry determined colors at variable speeds",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "To be determined, defaults to safe"
+                }
+            ]
+        },
+        "Beam Shaping Standard (Default/Audio Modulation Mode)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Generic",
+                    "comment": "Continuous positioning/Forward, slow decay"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "Generic",
+                    "comment": "Continuous positioning/Forward, medium decay"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        23
+                    ],
+                    "type": "Generic",
+                    "comment": "Continuous positioning/Forward, fast decay"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        31
+                    ],
+                    "type": "Generic",
+                    "comment": "Continuous positionng/Reverse, fast decay"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        39
+                    ],
+                    "type": "Generic",
+                    "comment": "Continuous positioning/Reverse, medium decay"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        47
+                    ],
+                    "type": "Generic",
+                    "comment": "Continuous positioning/Reverse, slow decay"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        79
+                    ],
+                    "type": "Generic",
+                    "comment": "Continuous positioning/Forward"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        111
+                    ],
+                    "type": "Generic",
+                    "comment": "Continuous positioning/Reverse"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Continuous positioning/To de determined"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        187
+                    ],
+                    "type": "Generic",
+                    "comment": "Spin reverse (fastest to slowest)/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        195
+                    ],
+                    "type": "Generic",
+                    "comment": "Spin stop/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Spin forward (slowest to fastest)/To be determined"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "narrow",
+                "angleEnd": "wide"
+            }
+        },
+        "Frost Standard (Default/Audio Modulation Mode)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "Continuous positioning (open to closed/No frost to frost, slow decay"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "Effect",
+                    "effectName": "Continuous positioning (open to closed/No frost to frost, medium decay"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        23
+                    ],
+                    "type": "Effect",
+                    "effectName": "Continuous positioning (open to closed/No frost to frost, fast decay"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        31
+                    ],
+                    "type": "Effect",
+                    "effectName": "Continuous positioning (open to closed/Frost to no frost, fast decay"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Continuous positioning (open to closed/Frost to no frost, medium decay"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        47
+                    ],
+                    "type": "Effect",
+                    "effectName": "Continuous positioning (open to closed/Frost to no frost, slow decay"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Continuous positioning (open to closed/No frost to frost. No movement to full movement"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        111
+                    ],
+                    "type": "Effect",
+                    "effectName": "Continuous positioning (open to closed/Frost to no frost. Full movement to no movement"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Continuous positioning (open to closed)/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        135
+                    ],
+                    "type": "Effect",
+                    "effectName": "Closed/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        151
+                    ],
+                    "type": "Effect",
+                    "effectName": "Periodic strobe/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        167
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random strobe/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        183
+                    ],
+                    "type": "Effect",
+                    "effectName": "Ramp open, snap shut/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Snap open, ramp shut/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "Ramp open, ramp shut/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        231
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random ramp open, snap shut/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random snap open, ramp shut/To be determined"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Open/To be determined"
+                }
+            ]
+        },
+        "Control Flat": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Safe"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        28
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display off"
+                },
+                {
+                    "dmxRange": [
+                        29,
+                        29
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        38
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display dim"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        48
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display bright"
+                },
+                {
+                    "dmxRange": [
+                        49,
+                        59
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        68
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Home"
+                },
+                {
+                    "dmxRange": [
+                        69,
+                        79
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        88
+                    ],
+                    "type": "NoFunction",
+                    "comment": "Lamp on"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        98
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp off",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        99,
+                        109
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        118
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lock"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        130
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Fixture shutdown"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Color Function Standard": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full Speed Control - Continuous"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        31
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full Speed Control - Indexed"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        47
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full Speed Control - Pure mix"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full Speed Control - Spin"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full Speed Control - Cycle (speed is set by the cyan channel)"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full Speed Control - Color scan (speed or fixed position set individually on cyan, magenta, and yellow channels)"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full Speed Control - Random (speed is set by the cyan channel)"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full Speed Control - Blink continuous"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "MSpeed Controlled - Continuous"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "MSpeed Controlled - Indexed"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "MSpeed Controlled - Pure mix"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "MSpeed Controlled - Spin"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "MSpeed Controlled - Cycle (speed is set by the cyan channel)"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "MSpeed Controlled - Color scan (speed or fixed position set individually on cyan, magenta, and yellow channels)"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "MSpeed Controlled - Random (speed is set by the cyan channel)"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "MSpeed Controlled - Blink continuous"
+                }
+            ]
+        },
+        "Cyan Color Wheel": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "See manual"
+            }
+        },
+        "Magenta Color Wheel": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "See manual"
+            }
+        },
+        "Yellow Color Wheel": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "See manual"
+            }
+        },
+        "MSpeed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        3
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Disable"
+                },
+                {
+                    "dmxRange": [
+                        4,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Longest (252.7 sec.) to shortest (0.15 sec.)"
+                }
+            ]
+        },
+        "Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        62
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan sweep, small to large angle"
+                },
+                {
+                    "dmxRange": [
+                        63,
+                        65
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro off"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        122
+                    ],
+                    "type": "Effect",
+                    "effectName": "Tilt sweep, small to large angle"
+                },
+                {
+                    "dmxRange": [
+                        123,
+                        125
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro off"
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise circle, small to large"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        163
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro off"
+                },
+                {
+                    "dmxRange": [
+                        164,
+                        198
+                    ],
+                    "type": "Effect",
+                    "effectName": "Counterclockwise circle, small to large"
+                },
+                {
+                    "dmxRange": [
+                        199,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Reserved"
+                }
+            ]
+        },
+        "Control Standard": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Safe (disables all control settings)"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pan & Tilt MSpeed off"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        28
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display off"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        38
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display dim"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        48
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display bright"
+                },
+                {
+                    "dmxRange": [
+                        49,
+                        59
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        68
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Home"
+                },
+                {
+                    "dmxRange": [
+                        69,
+                        79
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        88
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp on",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        98
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp off",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        99,
+                        109
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        118
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lock (send for 5 seconds)"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        130
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Shutdown (send for 5 seconds)"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        133
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        137
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp assisted strobes (periodic and random strobe functions are lamp assisted, ramp functions are not lamp assisted)"
+                },
+                {
+                    "dmxRange": [
+                        138,
+                        141
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp functions (modifies the shutter channel)"
+                },
+                {
+                    "dmxRange": [
+                        142,
+                        145
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp/mechanical dimmings (lamp output will vary from a minimum to 700 Watts as the mechanical dimming ranges from 0-100%)"
+                },
+                {
+                    "dmxRange": [
+                        146,
+                        149
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp only dimming (electronic dimming only from a minimum to 700 Watts)"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        169
+                    ],
+                    "type": "Maintenance",
+                    "comment": "To be determined"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        173
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Cyan modulation"
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        177
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Magenta modulation"
+                },
+                {
+                    "dmxRange": [
+                        178,
+                        181
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Yellow modulation"
+                },
+                {
+                    "dmxRange": [
+                        182,
+                        185
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Cyan & yagenta modulation"
+                },
+                {
+                    "dmxRange": [
+                        186,
+                        189
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Cyan & yellow modulation"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        193
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Magenta & yellow modulation"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        197
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Modulate all colors"
+                },
+                {
+                    "dmxRange": [
+                        198,
+                        201
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Frost modulation"
+                },
+                {
+                    "dmxRange": [
+                        202,
+                        205
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Beam shaping modulation"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        209
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Dim modulation"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        213
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp and dim modulation"
+                },
+                {
+                    "dmxRange": [
+                        214,
+                        217
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp modulation (long sustain)"
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        221
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp modulation (medium sustain)"
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        225
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp modulation (short sustain)"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "To be determined"
+                }
+            ]
+        },
+        "Shutter Flat": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        26
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Periodic"
+                },
+                {
+                    "dmxRange": [
+                        27,
+                        52
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random/Random"
+                },
+                {
+                    "dmxRange": [
+                        53,
+                        78
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random/Synchronous"
+                },
+                {
+                    "dmxRange": [
+                        79,
+                        104
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, ramp shut"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        120
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampDown",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Snap open, ramp shut"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        146
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp open, ramp shut"
+                },
+                {
+                    "dmxRange": [
+                        147,
+                        172
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Random ramp open, snap shut"
+                },
+                {
+                    "dmxRange": [
+                        173,
+                        198
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Random snap open, ramp shut"
+                },
+                {
+                    "dmxRange": [
+                        199,
+                        250
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "To be determined, defaults open",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                }
+            ]
+        },
+        "Lamp Control Flat": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "Lamp full power"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Lamp dim (full to dim)"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "Lamp assists shutter strobes"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        130
+                    ],
+                    "type": "Effect",
+                    "effectName": "Lamp/mechanical dimming"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        156
+                    ],
+                    "type": "Effect",
+                    "effectName": "Periodic lamp strobe"
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        172
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random lamp strobe"
+                },
+                {
+                    "dmxRange": [
+                        173,
+                        198
+                    ],
+                    "type": "Effect",
+                    "effectName": "Synchronous random strobe"
+                },
+                {
+                    "dmxRange": [
+                        199,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Boost lamp 1.0 second, black"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Boost lamp .75 second, black"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        201
+                    ],
+                    "type": "Effect",
+                    "effectName": "Boost lamp .66 second, black"
+                },
+                {
+                    "dmxRange": [
+                        202,
+                        202
+                    ],
+                    "type": "Effect",
+                    "effectName": "Boost lamp .5 second, black"
+                },
+                {
+                    "dmxRange": [
+                        203,
+                        203
+                    ],
+                    "type": "Effect",
+                    "effectName": "Boost lamp .33 second, black"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        204
+                    ],
+                    "type": "Effect",
+                    "effectName": "Boost lamp .25 second, black"
+                },
+                {
+                    "dmxRange": [
+                        205,
+                        205
+                    ],
+                    "type": "Effect",
+                    "effectName": "Boost lamp 1.0 second, white"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        206
+                    ],
+                    "type": "Effect",
+                    "effectName": "Boost lamp .75 second, white"
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "Boost lamp .66 second, white"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        208
+                    ],
+                    "type": "Effect",
+                    "effectName": "Boost lamp .5 second, white"
+                },
+                {
+                    "dmxRange": [
+                        209,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "Boost lamp .33 second, white"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        210
+                    ],
+                    "type": "Effect",
+                    "effectName": "Boost lamp .25 second, white"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        211
+                    ],
+                    "type": "Effect",
+                    "effectName": "Lightning strike 1"
+                },
+                {
+                    "dmxRange": [
+                        212,
+                        212
+                    ],
+                    "type": "Effect",
+                    "effectName": "Lightning strike 2"
+                },
+                {
+                    "dmxRange": [
+                        213,
+                        213
+                    ],
+                    "type": "Effect",
+                    "effectName": "Lightning strike 3"
+                },
+                {
+                    "dmxRange": [
+                        214,
+                        214
+                    ],
+                    "type": "Effect",
+                    "effectName": "Lightning strike 4"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "Lightning strike 5"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        216
+                    ],
+                    "type": "Effect",
+                    "effectName": "Lightning strike 6"
+                },
+                {
+                    "dmxRange": [
+                        217,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "To be determined"
+                }
+            ]
+        },
+        "Beam Shaping Flat": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Generic",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Continuous positioning"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Generic",
+                    "comment": "Reverse spin (fast to slow)"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        192
+                    ],
+                    "type": "Generic",
+                    "comment": "Spin stop"
+                },
+                {
+                    "dmxRange": [
+                        193,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Forward spin (slow to fast)"
+                }
+            ]
+        },
+        "Frost Flat": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Continuous positioning (closed to open)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "Periodic strobe"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random strobe"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Ramp open, snap shut"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Snap open, ramp shut"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "Ramp open, ramp shut"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random ramp open, snap shut"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random snap open, ramp shut"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Open"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Flat Protocol",
+            "channels": [
+                "Pan Coarse",
+                "Pan Fine",
+                "Tilt Coarse",
+                "Tilt Fine",
+                "Dim",
+                "Shutter Flat",
+                "Lamp Control Flat",
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Color Function Flat",
+                "Beam Shaping Flat",
+                "Zoom",
+                "Frost Flat",
+                "Control Flat"
+            ]
+        },
+        {
+            "name": "Standard Protocol",
+            "channels": [
+                "Pan Coarse",
+                "Pan Fine",
+                "Tilt Coarse",
+                "Tilt Fine",
+                "Color Function Standard",
+                "Cyan Color Wheel",
+                "Magenta Color Wheel",
+                "Yellow Color Wheel",
+                "Beam Shaping Standard (Default/Audio Modulation Mode)",
+                "Zoom",
+                "Frost Standard (Default/Audio Modulation Mode)",
+                "Shutter (Normal/Lamp Assisted)",
+                "Dim",
+                "MSpeed",
+                "Macro",
+                "Control Standard"
+            ]
+        }
+    ]
+}

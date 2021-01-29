@@ -1,0 +1,385 @@
+{
+    "manufacturer": "Martin",
+    "name": "Atomic 3000",
+    "categories": [
+        "Strobe"
+    ],
+    "meta": {
+        "authors": [
+            "B\u00fcro",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Simple": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        249
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Flash rate slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Blinder"
+                }
+            ]
+        },
+        "Intensity": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Intensity",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Flash intensity"
+                }
+            ]
+        },
+        "Duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "0 to 650/530ms",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Rate": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Speed",
+                    "comment": "Single flash",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "0.5 to 25/30Hz",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Effects": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "No effect"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        42
+                    ],
+                    "type": "Effect",
+                    "effectName": "Ramp up"
+                },
+                {
+                    "dmxRange": [
+                        43,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Ramp down"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Ramp up-down"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        171
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random"
+                },
+                {
+                    "dmxRange": [
+                        172,
+                        214
+                    ],
+                    "type": "Effect",
+                    "effectName": "Lightning"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Spikes"
+                }
+            ]
+        },
+        "Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        25
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Straw"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        76
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pale Amber Gold"
+                },
+                {
+                    "dmxRange": [
+                        77,
+                        104
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Orange"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        129
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        155
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Broadway pink"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        180
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light lavender"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        206
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Aquamarine"
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        229
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green blue"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        254
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light green"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue grass"
+                }
+            ]
+        },
+        "Fan": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        61
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Fan level 4"
+                },
+                {
+                    "dmxRange": [
+                        62,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Fan level 3"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        190
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Fan level 2"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Fan level 1"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Simple"
+            ]
+        },
+        {
+            "name": "2",
+            "channels": [
+                "Intensity",
+                "Duration",
+                "Rate"
+            ]
+        },
+        {
+            "name": "3",
+            "channels": [
+                "Intensity",
+                "Duration",
+                "Rate",
+                "Effects"
+            ]
+        },
+        {
+            "name": "1 with Colour",
+            "channels": [
+                "Simple",
+                "Colour"
+            ]
+        },
+        {
+            "name": "2 with Colour",
+            "channels": [
+                "Intensity",
+                "Duration",
+                "Rate",
+                "Colour"
+            ]
+        },
+        {
+            "name": "3 with Colour",
+            "channels": [
+                "Intensity",
+                "Duration",
+                "Rate",
+                "Effects",
+                "Colour"
+            ]
+        },
+        {
+            "name": "1 with Colour and Fan",
+            "channels": [
+                "Simple",
+                "Colour",
+                "Fan"
+            ]
+        },
+        {
+            "name": "2 with Colour and Fan",
+            "channels": [
+                "Intensity",
+                "Duration",
+                "Rate",
+                "Colour",
+                "Fan"
+            ]
+        },
+        {
+            "name": "3 with Colour and Fan",
+            "channels": [
+                "Intensity",
+                "Duration",
+                "Rate",
+                "Effects",
+                "Colour",
+                "Fan"
+            ]
+        }
+    ]
+}

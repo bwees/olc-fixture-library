@@ -1,0 +1,237 @@
+{
+    "manufacturer": "Kam",
+    "name": "KMH Series",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Synkajax",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Effects": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        2
+                    ],
+                    "type": "Effect",
+                    "effectName": "RGBW Dimmer"
+                },
+                {
+                    "dmxRange": [
+                        3,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Mixing"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        234
+                    ],
+                    "type": "Effect",
+                    "effectName": "Snap Color Changes (Slow > Fast)"
+                },
+                {
+                    "dmxRange": [
+                        235,
+                        243
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fading Color Changes (Slow > Fast)"
+                },
+                {
+                    "dmxRange": [
+                        244,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Control (Slow > Fast)",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Effect Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Effect Speed (Slow > Fast)",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Pan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "360deg"
+            }
+        },
+        "Tilt": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Pan Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanContinuous",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "TiltContinuous",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        50
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        101
+                    ],
+                    "type": "Generic",
+                    "comment": "Pan Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetPan, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        152
+                    ],
+                    "type": "Generic",
+                    "comment": "Tilt Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetTilt, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        203
+                    ],
+                    "type": "Generic",
+                    "comment": "Pan/Tilt Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetPanTilt, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        255
+                    ],
+                    "type": "Generic",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Dimmer",
+                "Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Effects",
+                "Pan",
+                "Tilt"
+            ]
+        },
+        {
+            "name": "13-channel",
+            "shortName": "13ch",
+            "channels": [
+                "Dimmer",
+                "Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Effects",
+                "Effect Speed",
+                "Pan",
+                "Tilt",
+                "Pan Speed",
+                "Tilt Speed",
+                "Reset"
+            ]
+        }
+    ]
+}

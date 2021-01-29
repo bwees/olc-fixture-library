@@ -1,0 +1,266 @@
+{
+    "manufacturer": "beamZ",
+    "name": "LED FlatPAR-154",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "J\u00e1szber\u00e9nyi Szabolcs",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        14
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        44
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Single colour strobe"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                }
+            ]
+        },
+        "Color / Sound control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        19
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue color",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White color",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        59
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red+White color",
+                    "colors": [
+                        "#ff0000",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blue+Green+White color"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color change 1"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color change 2"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "All bright"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Multicolor auto 1"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "Multicolor auto 2"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound 1",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        219
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound 2",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound 3",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound 4",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Color control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        209
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red color"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green color"
+                }
+            ]
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Strobe",
+                "Color control",
+                "Color / Sound control",
+                "Speed"
+            ]
+        }
+    ]
+}

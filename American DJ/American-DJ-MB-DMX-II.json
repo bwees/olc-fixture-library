@@ -1,0 +1,95 @@
+{
+    "manufacturer": "American DJ",
+    "name": "MB DMX II",
+    "categories": [
+        "Other"
+    ],
+    "meta": {
+        "authors": [
+            "Peter Chave",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Intensity",
+                    "comment": "Lamp Off"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Lamp On"
+                }
+            ]
+        },
+        "Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        127
+                    ],
+                    "type": "Speed",
+                    "comment": "CW Speed 5rpm (1) - 0.5rpm (127)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        128
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "CCW Speed 0.5rpm (129) - 5rpm (255)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Dimmer",
+                "Rotation"
+            ]
+        }
+    ]
+}

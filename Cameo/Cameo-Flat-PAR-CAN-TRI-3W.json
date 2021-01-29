@@ -1,0 +1,273 @@
+{
+    "manufacturer": "Cameo",
+    "name": "Flat PAR CAN TRI 3W",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Jan-Hendrik Nolte",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.7.0 RC2)"
+        }
+    },
+    "availableChannels": {
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Stroboscope rate": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        15
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        26
+                    ],
+                    "type": "Effect",
+                    "effectName": "Green"
+                },
+                {
+                    "dmxRange": [
+                        27,
+                        37
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        48
+                    ],
+                    "type": "Effect",
+                    "effectName": "Yellow"
+                },
+                {
+                    "dmxRange": [
+                        49,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Magenta"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        70
+                    ],
+                    "type": "Effect",
+                    "effectName": "Cyan"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "White"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour change (rate)"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour blending (rate)"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Music control (microphone sensitivity)"
+                }
+            ]
+        },
+        "Colour macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        36
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        37,
+                        73
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        74,
+                        110
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        147
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        148,
+                        184
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        221
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Master dimmer",
+                "Colour macro"
+            ]
+        },
+        {
+            "name": "3-channel 1",
+            "shortName": "3ch 1",
+            "channels": [
+                "Master dimmer",
+                "Stroboscope rate",
+                "Mode"
+            ]
+        },
+        {
+            "name": "3-channel 2",
+            "shortName": "3ch 2",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Master dimmer",
+                "Stroboscope rate",
+                "Red",
+                "Green",
+                "Blue",
+                "Mode"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1705 @@
+{
+    "manufacturer": "DTS",
+    "name": "XR5 Wash",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Johannes Felber",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Colour": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Colour 1 (3200 K)",
+                    "colors": [
+                        "#ffd95e"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Colour 2 (5600 K)",
+                    "colors": [
+                        "#d1ffff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Colour 3",
+                    "colors": [
+                        "#7038ab"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Bicolour 3/4",
+                    "colors": [
+                        "#7038ab",
+                        "#ff7000"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Colour 4",
+                    "colors": [
+                        "#ff7000"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Bicolour 4/5",
+                    "colors": [
+                        "#ff7000",
+                        "#00c729"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Colour 5",
+                    "colors": [
+                        "#00c729"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Bicolour 5/6",
+                    "colors": [
+                        "#00c729",
+                        "#f5001c"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Colour 6",
+                    "colors": [
+                        "#f5001c"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Bicolour 6/7",
+                    "colors": [
+                        "#f5001c",
+                        "#660adb"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Colour 7",
+                    "colors": [
+                        "#660adb"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Bicolour 7/8",
+                    "colors": [
+                        "#660adb",
+                        "#faa80f"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Colour 8",
+                    "colors": [
+                        "#faa80f"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Bicolour 8/white",
+                    "colors": [
+                        "#faa80f",
+                        "#ffffff"
+                    ]
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Movement Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Speed",
+                    "comment": "Standard",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        25
+                    ],
+                    "type": "Speed",
+                    "comment": "Fast movement",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        127
+                    ],
+                    "type": "Speed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Vector mode from"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        247
+                    ],
+                    "type": "Speed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Variable time reaction to DMX signal"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Slow reaction time to DMX signal",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Black-out"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        23
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe speed 1 min.",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        37
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe speed 2",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        51
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe speed 3",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        65
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe speed 4",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        79
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe speed 5",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        93
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe speed 6 max.",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        94,
+                        107
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Flash open speed 1 min.",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        121
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Flash open speed 2",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        122,
+                        135
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Flash open speed 3",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        149
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Flash open speed 4 max.",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        163
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Flash closed speed 1 min.",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        164,
+                        177
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Flash closed speed 2",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        178,
+                        191
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Flash closed speed 3",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        205
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Flash closed speed 4 max.",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        219
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Colours / Macros in black-out",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        233
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Pan / Tilt in black-out",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        234,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        12
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        13,
+                        25
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 1 (3200 K)",
+                    "colors": [
+                        "#ffd95e"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        38
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 2 (5600 K)",
+                    "colors": [
+                        "#d1ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        39,
+                        51
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 3",
+                    "colors": [
+                        "#7038ab"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        64
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bicolour 3/4",
+                    "colors": [
+                        "#7038ab",
+                        "#ff7000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        77
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 4",
+                    "colors": [
+                        "#ff7000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        78,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bicolour 4/5",
+                    "colors": [
+                        "#ff7000",
+                        "#00c729"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        103
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 5",
+                    "colors": [
+                        "#00c729"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        116
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bicolour 5/6",
+                    "colors": [
+                        "#00c729",
+                        "#f5001c"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        117,
+                        129
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 6",
+                    "colors": [
+                        "#f5001c"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        142
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bicolour 6/7",
+                    "colors": [
+                        "#f5001c",
+                        "#660adb"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        143,
+                        155
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 7",
+                    "colors": [
+                        "#660adb"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        168
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bicolour 7/8",
+                    "colors": [
+                        "#660adb",
+                        "#faa80f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        169,
+                        181
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 8",
+                    "colors": [
+                        "#faa80f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        182,
+                        197
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bicolour 8/white",
+                    "colors": [
+                        "#faa80f",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        198,
+                        200
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 16,
+                    "comment": "Right rotation speed 1 max."
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        203
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 17,
+                    "comment": "Right rotation speed 2"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        206
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 18,
+                    "comment": "Right rotation speed 3"
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        209
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 19,
+                    "comment": "Right rotation speed 4"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        212
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 20,
+                    "comment": "Right rotation speed 5"
+                },
+                {
+                    "dmxRange": [
+                        213,
+                        215
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 21,
+                    "comment": "Right rotation speed 6"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        218
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 22,
+                    "comment": "Right rotation speed 7"
+                },
+                {
+                    "dmxRange": [
+                        219,
+                        221
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 23,
+                    "comment": "Right rotation speed 8"
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        224
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 24,
+                    "comment": "Right rotation speed 9 min."
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        228
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        229,
+                        231
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 26,
+                    "comment": "Left rotation speed 1 min."
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        234
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 27,
+                    "comment": "Left rotation speed 2"
+                },
+                {
+                    "dmxRange": [
+                        235,
+                        237
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 28,
+                    "comment": "Left rotation speed 3"
+                },
+                {
+                    "dmxRange": [
+                        238,
+                        240
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 29,
+                    "comment": "Left rotation speed 4"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        243
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 30,
+                    "comment": "Left rotation speed 5"
+                },
+                {
+                    "dmxRange": [
+                        244,
+                        246
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 31,
+                    "comment": "Left rotation speed 6"
+                },
+                {
+                    "dmxRange": [
+                        247,
+                        249
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 32,
+                    "comment": "Left rotation speed 7"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        252
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 33,
+                    "comment": "Left rotation speed 8"
+                },
+                {
+                    "dmxRange": [
+                        253,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 34,
+                    "comment": "Left rotation speed 9 max."
+                }
+            ]
+        },
+        "Cyan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Cyan"
+            }
+        },
+        "Magenta": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Magenta"
+            }
+        },
+        "Yellow": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Yellow"
+            }
+        },
+        "Speed CMY/Dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Variable speed from max to min",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Macro CMY/Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        14
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 1"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 2"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        24
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 3"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 4"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        34
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 5"
+                },
+                {
+                    "dmxRange": [
+                        35,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 6"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        44
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 7"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 8"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        54
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 9"
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 10"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        64
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 11"
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 12"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        74
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 13"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 14"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        84
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 15"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 16"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        94
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 17"
+                },
+                {
+                    "dmxRange": [
+                        95,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 18"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        104
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 19"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        109
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 20"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        114
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 21"
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        121
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 1"
+                },
+                {
+                    "dmxRange": [
+                        122,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 2"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        135
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 3"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        142
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 4"
+                },
+                {
+                    "dmxRange": [
+                        143,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 5"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        156
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 6"
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        163
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 7"
+                },
+                {
+                    "dmxRange": [
+                        164,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 8"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        177
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 9"
+                },
+                {
+                    "dmxRange": [
+                        178,
+                        184
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 10"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 1"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        198
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 2"
+                },
+                {
+                    "dmxRange": [
+                        199,
+                        205
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 3"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        212
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 4"
+                },
+                {
+                    "dmxRange": [
+                        213,
+                        219
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 5"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        226
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 6"
+                },
+                {
+                    "dmxRange": [
+                        227,
+                        233
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 7"
+                },
+                {
+                    "dmxRange": [
+                        234,
+                        240
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 8"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 9"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 10"
+                }
+            ]
+        },
+        "Effects": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "No effect"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Frost"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Beam Shape"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "narrow",
+                "angleEnd": "wide"
+            }
+        },
+        "Lamp/Reset XR 5": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Maintenance",
+                    "comment": "No Effect"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        60
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp OFF (Active after 3 seconds)",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        129
+                    ],
+                    "type": "Maintenance",
+                    "comment": "No Effect"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        179
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp ON (Active after 3 seconds)",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        200
+                    ],
+                    "type": "Maintenance",
+                    "comment": "No Effect"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        239
+                    ],
+                    "type": "Generic",
+                    "comment": "Internal Motors Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetMotors, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Total Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        },
+        "Lamp/Reset XR 250 Wash": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        29
+                    ],
+                    "type": "Maintenance",
+                    "comment": "No Effect"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        85
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp OFF (active after 3 seconds)",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        170
+                    ],
+                    "type": "Generic",
+                    "comment": "Internal motor Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetMotors, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        235
+                    ],
+                    "type": "Generic",
+                    "comment": "Total Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp ON (active after 3 seconds)",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        },
+        "Macro CMY/Colour 2": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        14
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 1"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 2"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        24
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 3"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 4"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        34
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 5"
+                },
+                {
+                    "dmxRange": [
+                        35,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 6"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        44
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 7"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 8"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        54
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 9"
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 10"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        64
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 11"
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 12"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        74
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 13"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 14"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        84
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 15"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 16"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        94
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 17"
+                },
+                {
+                    "dmxRange": [
+                        95,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 18"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        104
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 19"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        109
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 20"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        114
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 21"
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        121
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 1"
+                },
+                {
+                    "dmxRange": [
+                        122,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 2"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        135
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 3"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        142
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 4"
+                },
+                {
+                    "dmxRange": [
+                        143,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 5"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        156
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 6"
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        163
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 7"
+                },
+                {
+                    "dmxRange": [
+                        164,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 8"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        177
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 9"
+                },
+                {
+                    "dmxRange": [
+                        178,
+                        184
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macros rainbow wait = 10"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 1"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        198
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 2"
+                },
+                {
+                    "dmxRange": [
+                        199,
+                        205
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 3"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        212
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 4"
+                },
+                {
+                    "dmxRange": [
+                        213,
+                        219
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 5"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        226
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 6"
+                },
+                {
+                    "dmxRange": [
+                        227,
+                        233
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 7"
+                },
+                {
+                    "dmxRange": [
+                        234,
+                        240
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 8"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 9"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full colours rainbow wait = 10"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Pan",
+                "Pan fine",
+                "Tilt",
+                "Tilt fine",
+                "Movement Speed",
+                "Dimmer",
+                "Shutter",
+                "Colour",
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Speed CMY/Dimmer",
+                "Macro CMY/Colour",
+                "Effects",
+                "Zoom",
+                "Lamp/Reset XR 5"
+            ]
+        },
+        {
+            "name": "Same as XR 250 Wash",
+            "channels": [
+                "Pan",
+                "Pan fine",
+                "Tilt",
+                "Tilt fine",
+                "Movement Speed",
+                "Dimmer",
+                "Shutter",
+                "Colour",
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Speed CMY/Dimmer",
+                "Macro CMY/Colour",
+                "Effects",
+                "Zoom",
+                "Lamp/Reset XR 250 Wash"
+            ]
+        }
+    ]
+}

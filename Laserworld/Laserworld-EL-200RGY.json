@@ -1,0 +1,206 @@
+{
+    "manufacturer": "Laserworld",
+    "name": "EL-200RGY",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Steven",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        69
+                    ],
+                    "type": "Generic",
+                    "comment": "Laser Off",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        209
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Sound Mode",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "DMX Mode",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Pattern": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Point Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Point Speed"
+            }
+        },
+        "Horizontal movement": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "40deg"
+            }
+        },
+        "Vertical movement": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "40deg"
+            }
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "narrow",
+                "angleEnd": "wide"
+            }
+        },
+        "Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        119
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Original Pattern"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pattern Colours are Changed"
+                }
+            ]
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "comment": "(Above 200 Shortly)",
+                "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+            }
+        },
+        "Colour Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "draw (increasing) part of the pattern"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Increase Speed"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Change Colours"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Mode",
+                "Pattern",
+                "Strobe",
+                "Point Speed",
+                "Horizontal movement",
+                "Vertical movement",
+                "Zoom",
+                "Colour",
+                "Reset",
+                "Colour Effect"
+            ]
+        }
+    ]
+}

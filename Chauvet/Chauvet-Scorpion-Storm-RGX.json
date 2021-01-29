@@ -1,0 +1,289 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "Scorpion Storm RGX",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Francois Blanchette",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Control Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX Mode"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic fast (red)"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic slow (red)"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic fast (green)"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic slow (green)"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic fast (red & green)"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic slow (red & green)"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound (red)",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound (green)",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound (red & green)",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random"
+                }
+            ]
+        },
+        "Color selection": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        28
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        29,
+                        56
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        57,
+                        84
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & Green"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        112
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green strobing"
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red strobing"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        168
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red on & Green strobing"
+                },
+                {
+                    "dmxRange": [
+                        169,
+                        197
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green on & Red strobing"
+                },
+                {
+                    "dmxRange": [
+                        198,
+                        224
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & Green strobing"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & green (alternate strobing)"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        254
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe (slow <=> fast)"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe to sound",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Prism",
+                    "comment": "No Rotation"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "Prism",
+                    "comment": "Clockwise rotation (slow <=> fast)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        133
+                    ],
+                    "type": "Prism",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        255
+                    ],
+                    "type": "Prism",
+                    "comment": "Counterclockwise rotation (slow <=> fast)"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Control Mode",
+                "Color selection",
+                "Strobe",
+                "Rotation"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1249 @@
+{
+    "manufacturer": "Elation",
+    "name": "Cuepix Batten",
+    "categories": [
+        "Pixel Bar"
+    ],
+    "meta": {
+        "authors": [
+            "Saul Vielmetti",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            10,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Red": {
+            "fineChannelAliases": [
+                "Red fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "fineChannelAliases": [
+                "Green fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "fineChannelAliases": [
+                "Blue fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Flash/Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        95
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "LEDs ON"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "LEDs ON"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random strobe effect slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "LEDs ON"
+                }
+            ]
+        },
+        "Color Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "OFF"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        7
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bastard Amber"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Medium Amber"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        23
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pale Amber Gold"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Gallo Gold"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Golden Amber"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        47
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Red"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Medium Red"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Medium Pink"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        71
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Broadway Pink"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Follies Pink"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        87
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Lavender"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Special Lavender"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        103
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Lavender"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        111
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Indigo"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        119
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Hemsley Blue"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Tipton Blue"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Steel Blue"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        143
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Sky Blue"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        151
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sky Blue"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Brilliant Blue"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        167
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Green Blue"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        175
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bright Blue"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        183
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Primary Blue"
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Congo Blue"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pale Yellow Green"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        207
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Moss Green"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        215
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Primary Green"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Double CTB"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        231
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Full Red"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Full Green"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        247
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Full Blue"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Full White"
+                }
+            ]
+        },
+        "Dimming Curve Modes": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        20
+                    ],
+                    "type": "Effect",
+                    "effectName": "Standard"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        40
+                    ],
+                    "type": "Effect",
+                    "effectName": "Stage"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        60
+                    ],
+                    "type": "Effect",
+                    "effectName": "TV"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "Architectural"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Theatre"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Default to Unit Setting"
+                }
+            ]
+        },
+        "Chase Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        20
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dream Macro"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        40
+                    ],
+                    "type": "Effect",
+                    "effectName": "Meteor Macro"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        60
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade Macro"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "Change Macro"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flow Macro 1"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        120
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flow Macro 2"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        140
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flow Macro 3"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flow Macro 4"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flow Macro 5"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flow Macro 6"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flow Macro 7"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        240
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flow Macro 8"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flow Macro 9"
+                }
+            ]
+        },
+        "Chase Macro Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Red - COB Module 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green - COB Module 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue - COB Module 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red Fine - COB Module 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityRedFine."
+            }
+        },
+        "Blue Fine - COB Module 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityBlueFine."
+            }
+        },
+        "Green Fine - COB Module 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityGreenFine."
+            }
+        },
+        "Red - COB Module 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red Fine - COB Module 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityRedFine."
+            }
+        },
+        "Green - COB Module 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green Fine - COB Module 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityGreenFine."
+            }
+        },
+        "Blue - COB Module 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityBlueFine."
+            }
+        },
+        "Blue Fine - COB Module 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityBlueFine."
+            }
+        },
+        "Red - COB Module 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red Fine - COB Module 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityRedFine."
+            }
+        },
+        "Green - COB Module 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green Fine - COB Module 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityGreenFine."
+            }
+        },
+        "Blue - COB Module 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue Fine - COB Module 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityBlueFine."
+            }
+        },
+        "Red - COB Module 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red Fine - COB Module 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityRedFine."
+            }
+        },
+        "Green - COB Module 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green Fine - COB Module 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityGreenFine."
+            }
+        },
+        "Blue - COB Module 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue Fine - COB Module 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityBlueFine."
+            }
+        },
+        "Red - COB Module 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red Fine - COB Module 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityRedFine."
+            }
+        },
+        "Green - COB Module 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green Fine - COB Module 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityGreenFine."
+            }
+        },
+        "Blue - COB Module 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue Fine - COB Module 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityBlueFine."
+            }
+        },
+        "Red - COB Module 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red Fine - COB Module 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityRedFine."
+            }
+        },
+        "Green - COB Module 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green Fine - COB Module 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityGreenFine."
+            }
+        },
+        "Blue - COB Module 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue Fine - COB Module 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityBlueFine."
+            }
+        },
+        "Red - COB Module 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red Fine - COB Module 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityRedFine."
+            }
+        },
+        "Green - COB Module 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green Fine - COB Module 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityGreenFine."
+            }
+        },
+        "Blue - COB Module 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue Fine - COB Module 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityBlueFine."
+            }
+        },
+        "Red - COB Module 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red Fine - COB Module 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityRedFine."
+            }
+        },
+        "Green - COB Module 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green Fine - COB Module 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityGreenFine."
+            }
+        },
+        "Blue - COB Module 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue Fine - COB Module 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityBlueFine."
+            }
+        },
+        "Red - COB Module 9": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red Fine - COB Module 9": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityRedFine."
+            }
+        },
+        "Green - COB Module 9": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green Fine - COB Module 9": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityGreenFine."
+            }
+        },
+        "Blue - COB Module 9": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue Fine - COB Module 9": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityBlueFine."
+            }
+        },
+        "Red - COB Module 10": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red Fine - COB Module 10": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityRedFine."
+            }
+        },
+        "Green - COB Module 10": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green Fine - COB Module 10": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityGreenFine."
+            }
+        },
+        "Blue - COB Module 10": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue Fine - COB Module 10": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityBlueFine."
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Master Dimmer"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Flash/Strobe",
+                "Master Dimmer",
+                "Dimming Curve Modes"
+            ]
+        },
+        {
+            "name": "6H CH",
+            "channels": [
+                "Red",
+                "Red fine",
+                "Green",
+                "Green fine",
+                "Blue",
+                "Blue fine"
+            ]
+        },
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Master Dimmer",
+                "Flash/Strobe",
+                "Color Macros",
+                "Chase Macros",
+                "Chase Macro Speed",
+                "Dimming Curve Modes"
+            ]
+        },
+        {
+            "name": "30-channel",
+            "shortName": "30ch",
+            "channels": [
+                "Red - COB Module 1",
+                "Green - COB Module 1",
+                "Blue - COB Module 1",
+                "Red - COB Module 2",
+                "Green - COB Module 2",
+                "Blue - COB Module 2",
+                "Red - COB Module 3",
+                "Green - COB Module 3",
+                "Blue - COB Module 3",
+                "Red - COB Module 4",
+                "Green - COB Module 4",
+                "Blue - COB Module 4",
+                "Red - COB Module 5",
+                "Green - COB Module 5",
+                "Blue - COB Module 5",
+                "Red - COB Module 6",
+                "Green - COB Module 6",
+                "Blue - COB Module 6",
+                "Red - COB Module 7",
+                "Green - COB Module 7",
+                "Blue - COB Module 7",
+                "Red - COB Module 8",
+                "Green - COB Module 8",
+                "Blue - COB Module 8",
+                "Red - COB Module 9",
+                "Green - COB Module 9",
+                "Blue - COB Module 9",
+                "Red - COB Module 10",
+                "Green - COB Module 10",
+                "Blue - COB Module 10"
+            ]
+        },
+        {
+            "name": "33-channel",
+            "shortName": "33ch",
+            "channels": [
+                "Red - COB Module 1",
+                "Green - COB Module 1",
+                "Blue - COB Module 1",
+                "Red - COB Module 2",
+                "Green - COB Module 2",
+                "Blue - COB Module 2",
+                "Red - COB Module 3",
+                "Green - COB Module 3",
+                "Blue - COB Module 3",
+                "Red - COB Module 4",
+                "Green - COB Module 4",
+                "Blue - COB Module 4",
+                "Red - COB Module 5",
+                "Green - COB Module 5",
+                "Blue - COB Module 5",
+                "Red - COB Module 6",
+                "Green - COB Module 6",
+                "Blue - COB Module 6",
+                "Red - COB Module 7",
+                "Green - COB Module 7",
+                "Blue - COB Module 7",
+                "Red - COB Module 8",
+                "Green - COB Module 8",
+                "Blue - COB Module 8",
+                "Red - COB Module 9",
+                "Green - COB Module 9",
+                "Blue - COB Module 9",
+                "Red - COB Module 10",
+                "Green - COB Module 10",
+                "Blue - COB Module 10",
+                "Flash/Strobe",
+                "Master Dimmer",
+                "Dimming Curve Modes"
+            ]
+        },
+        {
+            "name": "36-channel",
+            "shortName": "36ch",
+            "channels": [
+                "Red - COB Module 1",
+                "Green - COB Module 1",
+                "Blue - COB Module 1",
+                "Red - COB Module 2",
+                "Green - COB Module 2",
+                "Blue - COB Module 2",
+                "Red - COB Module 3",
+                "Green - COB Module 3",
+                "Blue - COB Module 3",
+                "Red - COB Module 4",
+                "Green - COB Module 4",
+                "Blue - COB Module 4",
+                "Red - COB Module 5",
+                "Green - COB Module 5",
+                "Blue - COB Module 5",
+                "Red - COB Module 6",
+                "Green - COB Module 6",
+                "Blue - COB Module 6",
+                "Red - COB Module 7",
+                "Green - COB Module 7",
+                "Blue - COB Module 7",
+                "Red - COB Module 8",
+                "Green - COB Module 8",
+                "Blue - COB Module 8",
+                "Red - COB Module 9",
+                "Green - COB Module 9",
+                "Blue - COB Module 9",
+                "Red - COB Module 10",
+                "Green - COB Module 10",
+                "Blue - COB Module 10",
+                "Color Macros",
+                "Flash/Strobe",
+                "Master Dimmer",
+                "Chase Macros",
+                "Chase Macro Speed",
+                "Dimming Curve Modes"
+            ]
+        },
+        {
+            "name": "60-channel",
+            "shortName": "60ch",
+            "channels": [
+                "Red - COB Module 1",
+                "Red Fine - COB Module 1",
+                "Green - COB Module 1",
+                "Green Fine - COB Module 1",
+                "Blue - COB Module 1",
+                "Blue Fine - COB Module 1",
+                "Red - COB Module 2",
+                "Red Fine - COB Module 2",
+                "Green - COB Module 2",
+                "Green Fine - COB Module 2",
+                "Blue - COB Module 2",
+                "Blue Fine - COB Module 2",
+                "Red - COB Module 3",
+                "Red Fine - COB Module 3",
+                "Green - COB Module 3",
+                "Green Fine - COB Module 3",
+                "Blue - COB Module 3",
+                "Blue Fine - COB Module 3",
+                "Red - COB Module 4",
+                "Red Fine - COB Module 4",
+                "Green - COB Module 4",
+                "Green Fine - COB Module 4",
+                "Blue - COB Module 4",
+                "Blue Fine - COB Module 4",
+                "Red - COB Module 5",
+                "Red Fine - COB Module 5",
+                "Green - COB Module 5",
+                "Green Fine - COB Module 5",
+                "Blue - COB Module 5",
+                "Blue Fine - COB Module 5",
+                "Red - COB Module 6",
+                "Red Fine - COB Module 6",
+                "Green - COB Module 6",
+                "Green Fine - COB Module 6",
+                "Blue - COB Module 6",
+                "Blue Fine - COB Module 6",
+                "Red - COB Module 7",
+                "Red Fine - COB Module 7",
+                "Green - COB Module 7",
+                "Green Fine - COB Module 7",
+                "Blue - COB Module 7",
+                "Blue Fine - COB Module 7",
+                "Red - COB Module 8",
+                "Red Fine - COB Module 8",
+                "Green - COB Module 8",
+                "Green Fine - COB Module 8",
+                "Blue - COB Module 8",
+                "Blue Fine - COB Module 8",
+                "Red - COB Module 9",
+                "Red Fine - COB Module 9",
+                "Green - COB Module 9",
+                "Green Fine - COB Module 9",
+                "Blue - COB Module 9",
+                "Blue Fine - COB Module 9",
+                "Red - COB Module 10",
+                "Red Fine - COB Module 10",
+                "Green - COB Module 10",
+                "Green Fine - COB Module 10",
+                "Blue - COB Module 10",
+                "Blue Fine - COB Module 10"
+            ]
+        }
+    ]
+}

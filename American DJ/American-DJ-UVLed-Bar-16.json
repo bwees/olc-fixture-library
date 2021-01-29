@@ -1,0 +1,126 @@
+{
+    "manufacturer": "American DJ",
+    "name": "UVLed Bar 16",
+    "categories": [
+        "Pixel Bar"
+    ],
+    "meta": {
+        "authors": [
+            "Fr\u00e9d\u00e9ric Combe",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.1 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Program Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "comment": "Speed"
+            }
+        },
+        "Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        30
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimming"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        61
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe"
+                },
+                {
+                    "dmxRange": [
+                        62,
+                        92
+                    ],
+                    "type": "Effect",
+                    "effectName": "Increasing Intensity"
+                },
+                {
+                    "dmxRange": [
+                        93,
+                        123
+                    ],
+                    "type": "Effect",
+                    "effectName": "Decreasing Intensity"
+                },
+                {
+                    "dmxRange": [
+                        124,
+                        154
+                    ],
+                    "type": "Effect",
+                    "effectName": "increase - Decrease intensity"
+                },
+                {
+                    "dmxRange": [
+                        155,
+                        185
+                    ],
+                    "type": "Effect",
+                    "effectName": "Three Flash"
+                },
+                {
+                    "dmxRange": [
+                        186,
+                        216
+                    ],
+                    "type": "Effect",
+                    "effectName": "One and 2 Flash"
+                },
+                {
+                    "dmxRange": [
+                        217,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flash"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Active",
+                    "soundControlled": true
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Dimmer",
+                "Program Speed",
+                "Programs"
+            ]
+        }
+    ]
+}

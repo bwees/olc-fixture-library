@@ -1,0 +1,1074 @@
+{
+    "manufacturer": "Cameo",
+    "name": "LED Colour Bar RGBA (CLBAR10RGBA)",
+    "categories": [
+        "Pixel Bar"
+    ],
+    "meta": {
+        "authors": [
+            "Ren\u00e9 Brixel",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.1 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            4,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Colour-Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        16
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        17,
+                        33
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        34,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        67
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber",
+                    "colors": [
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        84
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        101
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        118
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Lavender",
+                    "colors": [
+                        "#e6e6fa"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        119,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pink",
+                    "colors": [
+                        "#ffc0cb"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        152
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Green",
+                    "colors": [
+                        "#7fff7f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        169
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        186
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Turquoise",
+                    "colors": [
+                        "#40e0d0"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        187,
+                        203
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Orange",
+                    "colors": [
+                        "#ffa500"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bright Magenta",
+                    "colors": [
+                        "#ffaaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        237
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cold White",
+                    "colors": [
+                        "#e5faff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        238,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Warm White",
+                    "colors": [
+                        "#fffae5"
+                    ]
+                }
+            ]
+        },
+        "Strobe speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "1Hz",
+                "speedEnd": "20Hz",
+                "comment": "Strobe Speed (1Hz - 20Hz)"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "ON (refers to CH1 - CH5)"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound (refers to Sound Control Mode)",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        10
+                    ],
+                    "type": "Effect",
+                    "effectName": "ON (refers to CH1 - CH5)"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe (refers to CH1 - CH5)"
+                }
+            ]
+        },
+        "Colour Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        11
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        12,
+                        17
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "B",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        18,
+                        23
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "A",
+                    "colors": [
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        29
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RA",
+                    "colors": [
+                        "#ff0000",
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        35
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RG",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RB",
+                    "colors": [
+                        "#ff0000",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        47
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "GB",
+                    "colors": [
+                        "#00ff00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        53
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "AB",
+                    "colors": [
+                        "#ffbf00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        54,
+                        59
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "AG",
+                    "colors": [
+                        "#ffbf00",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        65
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB",
+                    "colors": [
+                        "#ffff00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        71
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGA",
+                    "colors": [
+                        "#ffff00",
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        77
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RBA",
+                    "colors": [
+                        "#ff00ff",
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        78,
+                        83
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "GBA",
+                    "colors": [
+                        "#00ffff",
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        84,
+                        89
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGBA",
+                    "colors": [
+                        "#ffffff",
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour jumping"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        110
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour fading"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        120
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dreaming"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        130
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour flow"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        140
+                    ],
+                    "type": "Effect",
+                    "effectName": "Overlap flow"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour chase"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Multi colour"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade flow"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "Two flow"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "One way"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Two way"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        210
+                    ],
+                    "type": "Effect",
+                    "effectName": "Two colour"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound control",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Dimmer/Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Dimmer/Speed"
+            }
+        },
+        "Color Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        10
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimmer RGBA"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        15
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimmer RGBA 1-4"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        20
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        25
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        30
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "B",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        35
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "A",
+                    "colors": [
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        40
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RA",
+                    "colors": [
+                        "#ff0000",
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        45
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RG",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        46,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RB",
+                    "colors": [
+                        "#ff0000",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "GB",
+                    "colors": [
+                        "#00ff00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        60
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "AB",
+                    "colors": [
+                        "#ffbf00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        65
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "AG",
+                    "colors": [
+                        "#ffbf00",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        70
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB",
+                    "colors": [
+                        "#ffff00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        75
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGA",
+                    "colors": [
+                        "#ffff00",
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        80
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RBA",
+                    "colors": [
+                        "#ff00ff",
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        85
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "GBA",
+                    "colors": [
+                        "#00ffff",
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGBA",
+                    "colors": [
+                        "#ffffff",
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Jump"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        110
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Fade"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        120
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dreaming"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        130
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Flow"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        140
+                    ],
+                    "type": "Effect",
+                    "effectName": "Overlap Flow"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Chase"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Multi Color"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade Flow"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "Two Flow"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "One Way"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Two Way"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        210
+                    ],
+                    "type": "Effect",
+                    "effectName": "Two Color"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Control",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Dimmer/Speed/Sens": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Dimmer/Speed/Sens"
+            }
+        },
+        "R1/R/Color select": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red",
+                "comment": "R/R1/Color select"
+            }
+        },
+        "G1/G/Color select": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green",
+                "comment": "G/G1/Color select"
+            }
+        },
+        "B1/B": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue",
+                "comment": "B/B1"
+            }
+        },
+        "A1/A": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber",
+                "comment": "A/A1"
+            }
+        },
+        "R2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "G2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "B2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "A2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "R3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "G3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "B3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "A3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "R4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "G4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "B4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "A4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Dimmer",
+                "Colour-Macro"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "Dimmer",
+                "Mode"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Colour Macros",
+                "Dimmer/Speed",
+                "Strobe speed"
+            ]
+        },
+        {
+            "name": "19-channel",
+            "shortName": "19ch",
+            "channels": [
+                "Color Mode",
+                "Dimmer/Speed/Sens",
+                "Strobe speed",
+                "R1/R/Color select",
+                "G1/G/Color select",
+                "B1/B",
+                "A1/A",
+                "R2",
+                "G2",
+                "B2",
+                "A2",
+                "R3",
+                "G3",
+                "B3",
+                "A3",
+                "R4",
+                "G4",
+                "B4",
+                "A4"
+            ]
+        }
+    ]
+}

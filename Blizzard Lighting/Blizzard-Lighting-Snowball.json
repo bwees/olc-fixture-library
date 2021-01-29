@@ -1,0 +1,148 @@
+{
+    "manufacturer": "Blizzard Lighting",
+    "name": "Snowball",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "James Elliott",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.3.2)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        16
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe off (open)"
+                },
+                {
+                    "dmxRange": [
+                        17,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "Color Macro": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset",
+                "helpWanted": "Which color can be selected at which DMX values?"
+            }
+        },
+        "Beam Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Fixed position"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Back-and-Forth Slow -> Fast"
+                }
+            ]
+        },
+        "Sound Active": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Off"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "On"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "DMX",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Strobe",
+                "Color Macro",
+                "Beam Rotation",
+                "Sound Active"
+            ]
+        }
+    ]
+}

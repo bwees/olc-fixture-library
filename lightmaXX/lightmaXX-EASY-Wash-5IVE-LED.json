@@ -1,0 +1,257 @@
+{
+    "manufacturer": "lightmaXX",
+    "name": "EASY Wash 5IVE LED",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Jan F",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "180deg"
+            }
+        },
+        "Dimmer & Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Intensity",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        134
+                    ],
+                    "type": "Intensity"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        239
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe from 0Hz to 40Hz"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Pan/Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Color Mixed and Changed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color mixed"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        240
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color gradient from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color jump from slow to fast"
+                }
+            ]
+        },
+        "Movement (Auto and Sound Effect)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        3
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX control"
+                },
+                {
+                    "dmxRange": [
+                        4,
+                        102
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 1"
+                },
+                {
+                    "dmxRange": [
+                        103,
+                        152
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 2"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        203
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 3"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        254
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "Generic",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Dimmer & Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Amber",
+                "Pan/Tilt Speed"
+            ]
+        },
+        {
+            "name": "14-channel",
+            "shortName": "14ch",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Dimmer & Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Amber",
+                "Pan/Tilt Speed",
+                "Color Mixed and Changed",
+                "Movement (Auto and Sound Effect)",
+                "Reset"
+            ]
+        }
+    ]
+}

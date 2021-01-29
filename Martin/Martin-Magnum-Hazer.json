@@ -1,0 +1,89 @@
+{
+    "manufacturer": "Martin",
+    "name": "Magnum Hazer",
+    "categories": [
+        "Smoke"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.4 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Fog Level": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "Intensity",
+                    "comment": "Zero Output"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        220
+                    ],
+                    "type": "Intensity",
+                    "comment": "Proportional output level control Step 20"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Prime Function"
+                }
+            ]
+        },
+        "Fan Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        20,
+                        219
+                    ],
+                    "type": "Intensity",
+                    "comment": "Proportional speed control step 20"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        230
+                    ],
+                    "type": "Intensity",
+                    "comment": "Auto fan mode"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Machine shutdown, all off"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Fog Level",
+                "Fan Speed"
+            ]
+        }
+    ]
+}

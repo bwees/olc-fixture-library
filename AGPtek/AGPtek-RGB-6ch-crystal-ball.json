@@ -1,0 +1,188 @@
+{
+    "manufacturer": "AGPtek",
+    "name": "RGB 6ch crystal ball",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "Davey D",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.7.0)"
+        }
+    },
+    "availableChannels": {
+        "strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        250
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Full On",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "red/white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "green/orange": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "movement": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Manual Operation"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "comment": "Auto Speed Slow to Fast"
+                }
+            ]
+        },
+        "program": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        55
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red / White Auto Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        105
+                    ],
+                    "type": "Effect",
+                    "effectName": "Green / Orange Auto Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        155
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blue Auto Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        205
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 1 Auto Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        250
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 2 Auto Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 3 Audio"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "strobe",
+                "red/white",
+                "green/orange",
+                "blue",
+                "movement",
+                "program"
+            ]
+        }
+    ]
+}

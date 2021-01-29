@@ -1,0 +1,321 @@
+{
+    "manufacturer": "American DJ",
+    "name": "VPar",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Eric Eskam",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobing": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Slow - Fast Strobe"
+                }
+            ]
+        },
+        "Color Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Off",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        47
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber",
+                    "colors": [
+                        "#ff8000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & Green (Light Yellow)",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & Blue (Deep Purple)",
+                    "colors": [
+                        "#800080"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & Amber (Dark Orange)",
+                    "colors": [
+                        "#ff8000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        143
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green & Blue (Teal)",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green & Amber (Yellow Green)",
+                    "colors": [
+                        "#ccff66"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        175
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue & Amber (Light Purple)"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & Green & Blue (Purple-White)",
+                    "colors": [
+                        "#ceb2ec"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        207
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & Green & Amber (Orange - Yellow)",
+                    "colors": [
+                        "#eccf1d"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & Blue & Amber (Purple)",
+                    "colors": [
+                        "#800080"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green & Blue & Amber (Light Teal)"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & Green & Blue & Amber (Off White)",
+                    "colors": [
+                        "#e3cff1"
+                    ]
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "Master Dimmer",
+                "Strobing",
+                "Color Macros"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "Master Dimmer",
+                "Color Macros"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "Master Dimmer"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Color Macros",
+                "Master Dimmer",
+                "Strobing"
+            ]
+        },
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Color Macros",
+                "Master Dimmer"
+            ]
+        }
+    ]
+}

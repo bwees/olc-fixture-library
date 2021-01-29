@@ -1,0 +1,153 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "Ovation FD-165WW",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Robert Box",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "fineChannelAliases": [
+                "Dimmer Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        99
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        179
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Lightning effect",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        189
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "narrow",
+                "angleEnd": "wide"
+            }
+        },
+        "Motor Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        200
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        220
+                    ],
+                    "type": "Generic",
+                    "comment": "Motor reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetMotors, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Uno",
+            "channels": [
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "Dos",
+            "channels": [
+                "Dimmer",
+                "Dimmer Fine"
+            ]
+        },
+        {
+            "name": "Std.P",
+            "channels": [
+                "Dimmer",
+                "Dimmer Fine",
+                "Strobe",
+                "Zoom",
+                "Motor Reset"
+            ]
+        }
+    ]
+}

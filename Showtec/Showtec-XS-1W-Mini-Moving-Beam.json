@@ -1,0 +1,365 @@
+{
+    "manufacturer": "Showtec",
+    "name": "XS-1W Mini Moving Beam",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "AxelOtl",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan fine 16 bit"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt fine 16 bit"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Shutter/Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Shutter closed"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        131
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe effect, from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        139
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        181
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Fast Close to slow Open, from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        182,
+                        189
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        231
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampDown",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Slow Close to Fast Open, slow Open, from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        239
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        247
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "randomTiming": true,
+                    "comment": "Random shutters are on or off, from long to short intervals"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                }
+            ]
+        },
+        "Channel Functions": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        69
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Enable Pan/tilt blackout (after 5 seconds)"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Disable Pan/tilt blackout (after 5 seconds)"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        199
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        209
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Reset All (after 5 seconds)"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        249
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound-controlled"
+                }
+            ]
+        },
+        "Pan/Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Pan/Tilt Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        35
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan/Tilt Macro 1"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        55
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan/Tilt Macro 2"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        75
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan/Tilt Macro 3"
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan/Tilt Macro 4"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        115
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan/Tilt Macro 5"
+                },
+                {
+                    "dmxRange": [
+                        116,
+                        135
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan/Tilt Macro 6"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        155
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan/Tilt Macro 7"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan/Tilt Macro 8"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        195
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan/Tilt Macro 9"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan/Tilt Macro 10"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        235
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan/Tilt Macro 11"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan/Tilt Macro 12"
+                }
+            ]
+        },
+        "Pan/Tilt Macro Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Dimmer",
+                "Shutter/Strobe",
+                "Channel Functions"
+            ]
+        },
+        {
+            "name": "10-channel",
+            "shortName": "10ch",
+            "channels": [
+                "Pan",
+                "Pan fine 16 bit",
+                "Tilt",
+                "Tilt fine 16 bit",
+                "Pan/Tilt Speed",
+                "Pan/Tilt Macro",
+                "Pan/Tilt Macro Speed",
+                "Channel Functions",
+                "Dimmer",
+                "Shutter/Strobe"
+            ]
+        }
+    ]
+}

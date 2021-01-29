@@ -1,0 +1,249 @@
+{
+    "manufacturer": "Eurolite",
+    "name": "TMH-X3",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "kom",
+            "ma",
+            "Jannis Achstetter",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.1)"
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "220deg"
+            }
+        },
+        "Pan/Tilt speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe with increasing speed"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "wide",
+                "angleEnd": "narrow"
+            }
+        },
+        "Prism": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        64
+                    ],
+                    "type": "NoFunction",
+                    "comment": "No effect"
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        128
+                    ],
+                    "type": "Prism",
+                    "comment": "8-facetted prism"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "Prism",
+                    "comment": "8-facet Prism rotation with increasing speed"
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Colour change": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour change linear"
+                }
+            ]
+        },
+        "Internal programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Music control"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        249
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Reset all motors"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "16-channel",
+            "shortName": "16ch",
+            "channels": [
+                "Pan",
+                "Pan fine",
+                "Tilt",
+                "Tilt fine",
+                "Pan/Tilt speed",
+                "Strobe",
+                "Dimmer",
+                "Zoom",
+                "Prism",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Colour change",
+                "Internal programs",
+                "Reset"
+            ]
+        }
+    ]
+}

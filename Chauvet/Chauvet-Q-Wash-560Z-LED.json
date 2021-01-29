@@ -1,0 +1,537 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "Q-Wash 560Z-LED",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Connor Faulder",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Power/Colour Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        10
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "High Power"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        30
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red:100% Green:Up Blue:0%",
+                    "colors": [
+                        "#ff0000",
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red:Down Green:100% Blue:0%",
+                    "colors": [
+                        "#ffff00",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        70
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red:0% Green:100% Blue:Up",
+                    "colors": [
+                        "#00ff00",
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red:0% Green:Down Blue:100%",
+                    "colors": [
+                        "#00ffff",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        110
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red:Up Green:0% Blue:100%",
+                    "colors": [
+                        "#0000ff",
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        130
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red:100% Green:0% Blue:Down",
+                    "colors": [
+                        "#ff00ff",
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        150
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red:100% Green:Up Blue:Up",
+                    "colors": [
+                        "#ff0000",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        170
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red:Down Green:Down Blue:100%",
+                    "colors": [
+                        "#ffffff",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        200
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red:100% Green:100% Blue:100%",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        205
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 1: 3200 K"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        210
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 2: 3400 K"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        215
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 3: 4200 K"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 4: 4900 K"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        225
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 5: 5600 K"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        230
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 6: 5900 K"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        235
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 7: 6500 K"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        240
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 8: 7200 K"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        245
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 9: 8000 K"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        250
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 10: 8500 K"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 11: 10,000 K"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Function"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "1Hz",
+                    "speedEnd": "20Hz",
+                    "comment": "1 - 20 Hz"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "narrow",
+                "angleEnd": "wide"
+            }
+        },
+        "Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        39
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pan/Tilt Black Activation"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        59
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pan/Tilt Black Deactivation"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        79
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Automatic Fan Speed"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        99
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Slow Fan Speed"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        119
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Normal Fan Speed"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        139
+                    ],
+                    "type": "Maintenance",
+                    "comment": "High Fan Speed"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        149
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Program 1"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        159
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Program 2"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        169
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Test"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        179
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Custom Program"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        199
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        219
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        235
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        239
+                    ],
+                    "type": "Maintenance",
+                    "comment": "DIM0"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        243
+                    ],
+                    "type": "Maintenance",
+                    "comment": "DIM1"
+                },
+                {
+                    "dmxRange": [
+                        244,
+                        247
+                    ],
+                    "type": "Maintenance",
+                    "comment": "DIM2"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        251
+                    ],
+                    "type": "Maintenance",
+                    "comment": "DIM3"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "DIM4"
+                }
+            ]
+        },
+        "Pan/Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Basic (12-channel)",
+            "shortName": "Basic (12ch)",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Amber",
+                "Power/Colour Macro",
+                "Dimmer",
+                "Strobe",
+                "Zoom",
+                "Control"
+            ]
+        },
+        {
+            "name": "Advanced (15-channel)",
+            "shortName": "Advanced (15ch)",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Pan/Tilt Speed",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Amber",
+                "Power/Colour Macro",
+                "Dimmer",
+                "Strobe",
+                "Zoom",
+                "Control"
+            ]
+        }
+    ]
+}

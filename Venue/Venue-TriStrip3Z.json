@@ -1,0 +1,508 @@
+{
+    "manufacturer": "Venue",
+    "name": "TriStrip3Z",
+    "categories": [
+        "Pixel Bar"
+    ],
+    "meta": {
+        "authors": [
+            "Flo Edelmann",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            null,
+            null,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "20Hz",
+                    "comment": "Strobe 0-20Hz"
+                }
+            ]
+        },
+        "Dimmer Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        51
+                    ],
+                    "type": "Speed",
+                    "comment": "Preset dimmer speed from display menu",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        101
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed mode off",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        152
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed mode 1 (fast speed)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        203
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed mode 2 (medium speed)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed mode 3 (slow speed)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Color Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color macros"
+                }
+            ]
+        },
+        "RGB / Auto Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Sound Sensitivity": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Intensity",
+                    "comment": "Sound sensitivity off"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Sound sensitivity control"
+                }
+            ]
+        },
+        "RGB / Auto Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pulse effect 0-100%"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pulse effect 100-0%"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        114
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pulse effect 100-0-100%"
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        122
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 1"
+                },
+                {
+                    "dmxRange": [
+                        123,
+                        130
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 2"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        138
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 3"
+                },
+                {
+                    "dmxRange": [
+                        139,
+                        146
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 4"
+                },
+                {
+                    "dmxRange": [
+                        147,
+                        154
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 5"
+                },
+                {
+                    "dmxRange": [
+                        155,
+                        162
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 6"
+                },
+                {
+                    "dmxRange": [
+                        163,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 7"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        178
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 8"
+                },
+                {
+                    "dmxRange": [
+                        179,
+                        186
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 9"
+                },
+                {
+                    "dmxRange": [
+                        187,
+                        194
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 10"
+                },
+                {
+                    "dmxRange": [
+                        195,
+                        202
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 11"
+                },
+                {
+                    "dmxRange": [
+                        203,
+                        210
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 12"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        218
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 13"
+                },
+                {
+                    "dmxRange": [
+                        219,
+                        226
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 14"
+                },
+                {
+                    "dmxRange": [
+                        227,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound program",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Strobe / Speed / Sound Sensitivity": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "20Hz",
+                    "comment": "Strobe 0-20Hz"
+                }
+            ]
+        },
+        "Red All Zones": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green All Zones": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue All Zones": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red Zone 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green Zone 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue Zone 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red Zone 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green Zone 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue Zone 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red Zone 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green Zone 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue Zone 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red All Zones",
+                "Green All Zones",
+                "Blue All Zones"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red All Zones",
+                "Green All Zones",
+                "Blue All Zones",
+                "Dimmer",
+                "Strobe",
+                "Dimmer Speed"
+            ]
+        },
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Red All Zones",
+                "Green All Zones",
+                "Blue All Zones",
+                "Color Macros",
+                "Strobe / Speed / Sound Sensitivity",
+                "RGB / Auto Mode",
+                "Dimmer",
+                "Dimmer Speed"
+            ]
+        },
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Red Zone 1",
+                "Green Zone 1",
+                "Blue Zone 1",
+                "Red Zone 2",
+                "Green Zone 2",
+                "Blue Zone 2",
+                "Red Zone 3",
+                "Green Zone 3",
+                "Blue Zone 3"
+            ]
+        },
+        {
+            "name": "14-channel",
+            "shortName": "14ch",
+            "channels": [
+                "Red Zone 1",
+                "Green Zone 1",
+                "Blue Zone 1",
+                "Red Zone 2",
+                "Green Zone 2",
+                "Blue Zone 2",
+                "Red Zone 3",
+                "Green Zone 3",
+                "Blue Zone 3",
+                "Color Macros",
+                "Strobe / Speed / Sound Sensitivity",
+                "RGB / Auto Mode",
+                "Dimmer",
+                "Dimmer Speed"
+            ]
+        }
+    ]
+}

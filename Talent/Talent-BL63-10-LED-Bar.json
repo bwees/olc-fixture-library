@@ -1,0 +1,291 @@
+{
+    "manufacturer": "Talent",
+    "name": "BL63 10\" LED Bar",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "FooSchnickens",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        6
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Dimmer mode"
+                },
+                {
+                    "dmxRange": [
+                        7,
+                        65
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        69
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "None"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        128
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse strobe from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        132
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "None"
+                },
+                {
+                    "dmxRange": [
+                        133,
+                        191
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe fading in from"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        195
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "None"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe fading out from"
+                }
+            ]
+        },
+        "Static Color": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset",
+                "helpWanted": "Which color can be selected at which DMX values?"
+            }
+        },
+        "Function": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimmer mode"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static color mode"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color jump change mode"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color gradual change mode"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active mode",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Strobe/Sound Active Speed/Running Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        6
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimmer mode/Speed"
+                },
+                {
+                    "dmxRange": [
+                        7,
+                        65
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe from slow to fast/Speed"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "None/Speed"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pulse strobe from slow to fast/Speed"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        132
+                    ],
+                    "type": "Effect",
+                    "effectName": "None/Speed"
+                },
+                {
+                    "dmxRange": [
+                        133,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe fading in from slow to fast/Speed"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        195
+                    ],
+                    "type": "Effect",
+                    "effectName": "None/Speed"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe fading out from slow to fast/Speed"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red Dimmer",
+                "Green Dimmer",
+                "Blue Dimmer"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Red Dimmer",
+                "Green Dimmer",
+                "Blue Dimmer",
+                "Master Dimmer",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Red Dimmer",
+                "Green Dimmer",
+                "Blue Dimmer",
+                "Master Dimmer",
+                "Strobe/Sound Active Speed/Running Speed",
+                "Static Color",
+                "Function"
+            ]
+        }
+    ]
+}

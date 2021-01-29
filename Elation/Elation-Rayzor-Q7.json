@@ -1,0 +1,759 @@
+{
+    "manufacturer": "Elation",
+    "name": "Rayzor Q7",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            2,
+            2,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "265deg"
+            }
+        },
+        "Speed Pan/Tilt movement": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        225
+                    ],
+                    "type": "PanTiltSpeed",
+                    "comment": "Max To Min Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        235
+                    ],
+                    "type": "PanTiltSpeed",
+                    "comment": "Blackout By Movement",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Red 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Red 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Red 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Red 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Shutter / Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Shutter Closed"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter Open"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe Slow to Fast"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter Open"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse effect in sequences"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter Open"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random Strobe Effect Slow to Fast"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter Open"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Color Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Macro Slow To Fast"
+                }
+            ]
+        },
+        "Color Presets": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        20
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 2700K"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        30
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 3200K"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        40
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 4300K"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 5600K"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        60
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 6500K"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        70
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 8000K"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        100
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue [Group 1], Red [Groups 2,3,4]"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        130
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue [Group 1], Green [Groups 2,3,4]"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        160
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green [Group 1], Red [Groups 2,3,4]"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        190
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red [Group 1], Blue [Groups 2,3,4]"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green [Group 1], Blue [Groups 2,3,4]"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red [Group 1], Green [Groups 2,3,4]"
+                }
+            ]
+        },
+        "Color Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        189
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        254
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Edit A New White Balance"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Store A New White Balance"
+                }
+            ]
+        },
+        "Chase Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Effect",
+                    "effectName": "LED OFF"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        46
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase Macro 1"
+                },
+                {
+                    "dmxRange": [
+                        47,
+                        70
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase Macro 2"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase Macro 3"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        130
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase Macro 4"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase Macro 5"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase Macro 6"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase Macro 7"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase Macro 8"
+                }
+            ]
+        },
+        "Chase Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Reset internal programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        79
+                    ],
+                    "type": "Generic",
+                    "comment": "Normal",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        84
+                    ],
+                    "type": "Generic",
+                    "comment": "All Motor Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetMotors, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        87
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        90
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        93
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Store White Balance Enabled"
+                },
+                {
+                    "dmxRange": [
+                        94,
+                        96
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        97,
+                        99
+                    ],
+                    "type": "NoFunction",
+                    "comment": "No Function"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        119
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Internal Program 1 (Scene 1 - 8)"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        139
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Internal Program 2 (Scene 9 - 16)"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        159
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Internal Program 3 (Scene 17 - 24)"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        179
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Internal Program 4 (Scene 25 - 32)"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        199
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Internal Program 5 (Scene 33 - 40)"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        219
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Internal Program 6 (Scene 41 - 48)"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        239
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Internal Program 7 (Scene 49 - 56)"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Music Control (Scene Of Program 1)"
+                }
+            ]
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "Extended",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Speed Pan/Tilt movement",
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "White 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2",
+                "White 2",
+                "Red 3",
+                "Green 3",
+                "Blue 3",
+                "White 3",
+                "Red 4",
+                "Green 4",
+                "Blue 4",
+                "White 4",
+                "Shutter / Strobe",
+                "Dimmer",
+                "Color Macro",
+                "Color Presets",
+                "Color Mode",
+                "Chase Macros",
+                "Chase Speed",
+                "Reset internal programs"
+            ]
+        },
+        {
+            "name": "Basic",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Speed Pan/Tilt movement",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Shutter / Strobe",
+                "Dimmer",
+                "Color Macro",
+                "Color Presets",
+                "Color Mode",
+                "Chase Macros",
+                "Chase Speed",
+                "Reset internal programs"
+            ]
+        },
+        {
+            "name": "Standard",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Speed Pan/Tilt movement",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Shutter / Strobe",
+                "Dimmer",
+                "Color Macro",
+                "Color Presets",
+                "Color Mode",
+                "Chase Macros",
+                "Chase Speed",
+                "Reset internal programs"
+            ]
+        }
+    ]
+}

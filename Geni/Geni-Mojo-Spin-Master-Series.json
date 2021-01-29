@@ -1,0 +1,269 @@
+{
+    "manufacturer": "Geni",
+    "name": "Mojo Spin Master Series",
+    "categories": [
+        "Scanner"
+    ],
+    "meta": {
+        "authors": [
+            "Sam Brooks",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.11.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Effect",
+                    "effectName": "Shutter"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "White Circle"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red Triangle"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Green, White, Yellow Bar"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blue Bubbles"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Four-Colour Square"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Yellow Circle Ring"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Green Flowers"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blue & Purple Arc"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "Purple Hearts"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blue Stars"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "White Clouds"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "White Roundlet"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "Orange Candle"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "Green Tropics"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red Lips"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        208
+                    ],
+                    "type": "Effect",
+                    "effectName": "Rotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        209,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "1 flash per 4 seconds -> 4 flash per second"
+                }
+            ]
+        },
+        "Angle and rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        111
+                    ],
+                    "type": "Effect",
+                    "effectName": "Angle"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        183
+                    ],
+                    "type": "Effect",
+                    "effectName": "Slow - Fast CW"
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fast - Slow CCW"
+                }
+            ]
+        },
+        "Micro Adjustment": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        3
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        4,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Rotation CW"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Rotation CCW"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Master I",
+            "channels": [
+                "Effect",
+                "Angle and rotation",
+                "Micro Adjustment"
+            ]
+        },
+        {
+            "name": "Master II",
+            "physical": {
+                "weight": 7.8
+            },
+            "channels": [
+                "Effect",
+                "Rotation"
+            ]
+        },
+        {
+            "name": "Master III",
+            "physical": {
+                "weight": 8.7
+            },
+            "channels": [
+                "Effect",
+                "Rotation",
+                "Angle and rotation",
+                "Micro Adjustment"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,437 @@
+{
+    "manufacturer": "Futurelight",
+    "name": "PRO Slim PAR-12 MK2 HCL",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Lukas J\u00e4hn",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "UV": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe (increasing speed)"
+                }
+            ]
+        },
+        "Static colors/Color changes": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        50
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        100
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Static colors"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        150
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Switching colors"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        200
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fading colors"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        250
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pulsing colors"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound control"
+                }
+            ]
+        },
+        "Static colors (CH9 values 51-100)/Sound control (CH9 values 251-255) Speed color changes (CH9 values 101-250)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "No color"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        10
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        21
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        22,
+                        32
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        33,
+                        43
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        44,
+                        54
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber",
+                    "colors": [
+                        "#ffaa00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        65
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "UV",
+                    "colors": [
+                        "#5555ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        76
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rose Pink",
+                    "colors": [
+                        "#ffaaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        77,
+                        87
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Evergreen",
+                    "colors": [
+                        "#55ff7f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        98
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Ice Blue",
+                    "colors": [
+                        "#aaffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        99,
+                        109
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pale Lavender",
+                    "colors": [
+                        "#aaaaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        120
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Salmon red",
+                    "colors": [
+                        "#ffaa7f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        131
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Neon Green",
+                    "colors": [
+                        "#aaff7f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        142
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#55ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        143,
+                        153
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#ff55ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        154,
+                        164
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        175
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Peach",
+                    "colors": [
+                        "#ffaa7f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        186
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pink",
+                    "colors": [
+                        "#ffaaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        187,
+                        197
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Lime Green",
+                    "colors": [
+                        "#aaff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        198,
+                        208
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Peacock Blue",
+                    "colors": [
+                        "#00aaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        209,
+                        219
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Mauve",
+                    "colors": [
+                        "#aa1618"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        230
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red UV"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        241
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Steel Blue",
+                    "colors": [
+                        "#39d1ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        242,
+                        252
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Full On - for Static colors / 23 static colors - for sound control"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Amber",
+                "UV"
+            ]
+        },
+        {
+            "name": "10-channel",
+            "shortName": "10ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Amber",
+                "UV",
+                "Strobe",
+                "Static colors/Color changes",
+                "Static colors (CH9 values 51-100)/Sound control (CH9 values 251-255) Speed color changes (CH9 values 101-250)"
+            ]
+        }
+    ]
+}

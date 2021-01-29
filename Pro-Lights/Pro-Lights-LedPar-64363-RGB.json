@@ -1,0 +1,153 @@
+{
+    "manufacturer": "Pro-Lights",
+    "name": "LedPar 64363 RGB",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "LorenzoTRE",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.6.0)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Auto Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        35
+                    ],
+                    "type": "Effect",
+                    "effectName": "1 - Color Fading"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        71
+                    ],
+                    "type": "Effect",
+                    "effectName": "2 - Color Jump"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        107
+                    ],
+                    "type": "Effect",
+                    "effectName": "3 - Color Dreaming"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "4 - Red Fading"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "5 - Green Fading"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "6 - Blue Fading"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Active Mode",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Program Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Speed Control / Sound Sensitivity",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "2 (5-channel)",
+            "shortName": "2 (5ch)",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Dimmer",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "1 (3-channel)",
+            "shortName": "1 (3ch)",
+            "channels": [
+                "Auto Programs",
+                "Program Speed",
+                "Strobe"
+            ]
+        }
+    ]
+}

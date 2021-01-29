@@ -1,0 +1,120 @@
+{
+    "manufacturer": "Pro-Lights",
+    "name": "EVO90F",
+    "categories": [
+        "Dimmer"
+    ],
+    "meta": {
+        "authors": [
+            "Ray Console - cd",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.4)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "fineChannelAliases": [
+                "Dimmer fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        99
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe (slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        179
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Lighting Strobe (slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        189
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random Strobe (slow to fast)"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "UNO",
+            "channels": [
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "DOS",
+            "channels": [
+                "Dimmer",
+                "Dimmer fine"
+            ]
+        },
+        {
+            "name": "STD.P",
+            "channels": [
+                "Dimmer",
+                "Dimmer fine",
+                "Strobe"
+            ]
+        }
+    ]
+}

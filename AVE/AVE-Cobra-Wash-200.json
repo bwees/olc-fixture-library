@@ -1,0 +1,313 @@
+{
+    "manufacturer": "AVE",
+    "name": "Cobra Wash 200",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Mark Sy",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Color-Jump 5ch": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Ch4 effectivity?"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colours"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        235
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Gradual Change mode"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Jump Change mode"
+                }
+            ]
+        },
+        "Pan-Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Color-Jump 13ch": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Ch7~Ch10 dimmer mode"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colours"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        235
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Gradual Change mode"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Jump Change mode"
+                }
+            ]
+        },
+        "Machine Restoration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+            }
+        },
+        "Auto Modes": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        2
+                    ],
+                    "type": "Effect",
+                    "effectName": "None"
+                },
+                {
+                    "dmxRange": [
+                        3,
+                        84
+                    ],
+                    "type": "Effect",
+                    "effectName": "Slow running in Auto"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fast running in Auto"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Mode",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Dimmer-Strobe 5ch": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Intensity",
+                    "comment": "None"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        134
+                    ],
+                    "type": "Intensity",
+                    "comment": "RGB Dimmer"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        239
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "None"
+                }
+            ]
+        },
+        "Dimmer-Strobe 13ch": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "RGBW off"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        8
+                    ],
+                    "type": "Effect",
+                    "effectName": "RGBW On-Needs to be set here for RGB operation"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        134
+                    ],
+                    "type": "Effect",
+                    "effectName": "Adds White Dimmer"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        254
+                    ],
+                    "type": "Effect",
+                    "effectName": "Ch7~C10 effectivity"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Pan-Tilt Speed",
+                "Dimmer-Strobe 5ch",
+                "Color-Jump 5ch"
+            ]
+        },
+        {
+            "name": "13-channel",
+            "shortName": "13ch",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Pan-Tilt Speed",
+                "Dimmer-Strobe 13ch",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Color-Jump 13ch",
+                "Auto Modes",
+                "Machine Restoration"
+            ]
+        }
+    ]
+}

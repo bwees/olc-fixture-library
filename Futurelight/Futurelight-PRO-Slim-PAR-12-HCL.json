@@ -1,0 +1,532 @@
+{
+    "manufacturer": "Futurelight",
+    "name": "PRO Slim PAR-12 HCL",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Lukas J\u00e4hn",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Purple": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Magenta"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe_8ch": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Sound Control",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "slow to fast (increasing speed)"
+                }
+            ]
+        },
+        "Strobe_12ch": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "slow to fast (increasing speed)"
+                }
+            ]
+        },
+        "Color presets": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        30
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RED 100% / GREEN increasing / BLUE 0%"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RED decreasing / GREEN 100% / BLUE 0%"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        70
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RED 0% / GREEN 100% / BLUE increasing"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RED 0% / GREEN decreasing / BLUE 100%"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        110
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RED increasing/ GREEN 0% / BLUE 100%"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        130
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RED 100% / GREEN 0% / BLUE decreasing"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        150
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RED 100% / GREEN increasing / BLUE increasing"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        170
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RED decreasing / GREEN decreasing / BLUE 100%"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        200
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RED 100% / GREEN 100% / BLUE 100% / WHITE 100%"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        205
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "WHITE 1: 3200 K"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        210
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "WHITE 2: 3400 K"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        215
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "WHITE 3: 4200 K"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "WHITE 4: 4900 K"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        225
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "WHITE 5: 5600 K"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        230
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "WHITE 6: 5900 K"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        235
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "WHITE 7: 6500 K"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        240
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "WHITE 8: 7200 K"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        245
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "WHITE 9: 8000 K"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        250
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "WHITE 10: 8500 K"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "WHITE 11: 10000 K",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                }
+            ]
+        },
+        "Internal programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        60
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 1"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        120
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 2"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 3"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        240
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 4"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        250
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 5"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Music control"
+                }
+            ]
+        },
+        "Speed internal programs/microphone sensitivity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Increasing Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Dimmer speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        51
+                    ],
+                    "type": "Speed",
+                    "comment": "Control Board setting dimer speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        101
+                    ],
+                    "type": "Speed",
+                    "comment": "Neutral",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        152
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed 1",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        203
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed 2",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed 1",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Hue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Saturation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Value (brightness)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White",
+                "Purple"
+            ]
+        },
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White",
+                "Purple",
+                "Dimmer",
+                "Strobe_8ch"
+            ]
+        },
+        {
+            "name": "12-channel",
+            "shortName": "12ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White",
+                "Purple",
+                "Strobe_12ch",
+                "Color presets",
+                "Internal programs",
+                "Speed internal programs/microphone sensitivity",
+                "Dimmer speed"
+            ]
+        },
+        {
+            "name": "HSV",
+            "channels": [
+                "Hue",
+                "Saturation",
+                "Value (brightness)"
+            ]
+        },
+        {
+            "name": "HSI",
+            "channels": [
+                "Hue",
+                "Saturation",
+                "Intensity"
+            ]
+        }
+    ]
+}

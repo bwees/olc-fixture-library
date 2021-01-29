@@ -1,0 +1,151 @@
+{
+    "manufacturer": "American DJ",
+    "name": "Entour Venue",
+    "categories": [
+        "Smoke"
+    ],
+    "meta": {
+        "authors": [
+            "Massimo Callegari",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Output volume": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Intensity",
+                    "comment": "0% Output Volume, 5% Fan speed"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "5% - 100% Output volume, 100% Fan speed"
+                }
+            ]
+        },
+        "Fan speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "Speed",
+                    "comment": "5% Fan speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "6% - 100% Fan speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Duration": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Speed",
+                    "comment": "3 Seconds",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "3 - 250 Seconds",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Interval": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Speed",
+                    "comment": "0 Seconds",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "5 - 250 Seconds",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Output volume"
+            ]
+        },
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Output volume",
+                "Fan speed"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Output volume",
+                "Fan speed",
+                "Duration",
+                "Interval"
+            ]
+        }
+    ]
+}

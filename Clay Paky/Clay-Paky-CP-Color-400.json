@@ -1,0 +1,132 @@
+{
+    "manufacturer": "Clay Paky",
+    "name": "CP Color 400",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Cyan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Cyan"
+            }
+        },
+        "Magenta": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Magenta"
+            }
+        },
+        "Yellow": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Yellow"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Safe"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "4 DMX, CMY",
+            "channels": [
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "4 DMX, RGB",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "5 DMX, CMY",
+            "channels": [
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Dimmer",
+                "Control"
+            ]
+        },
+        {
+            "name": "5 DMX, RGB",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Dimmer",
+                "Control"
+            ]
+        }
+    ]
+}

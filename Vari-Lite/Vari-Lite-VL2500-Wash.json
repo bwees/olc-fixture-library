@@ -1,0 +1,272 @@
+{
+    "manufacturer": "Vari-Lite",
+    "name": "VL2500 Wash",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Color Wheel": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "Index"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Cyan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Cyan"
+            }
+        },
+        "Yellow": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Yellow"
+            }
+        },
+        "Magenta": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Magenta"
+            }
+        },
+        "Color Wheel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        216
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Index"
+                },
+                {
+                    "dmxRange": [
+                        217,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Spins"
+                }
+            ]
+        },
+        "Beam Diffuser": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "comment": "0 < Max"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Open/Closed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        12
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        13,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Speed Range",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "F Time": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "0 < Max",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "C Time": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "0 < Max",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "B Time": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "0 < Max",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        1
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        2,
+                        4
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display On"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        80
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        87
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Luminaire Reset"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        164
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        171
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp Off",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        172,
+                        248
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        249,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp On",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Normal",
+            "channels": [
+                "Dimmer",
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Cyan",
+                "Yellow",
+                "Magenta",
+                "Color Wheel",
+                "Beam Diffuser",
+                "Strobe",
+                "F Time",
+                "C Time",
+                "B Time",
+                "Control"
+            ]
+        }
+    ]
+}

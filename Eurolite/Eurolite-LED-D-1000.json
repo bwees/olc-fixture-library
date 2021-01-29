@@ -1,0 +1,170 @@
+{
+    "manufacturer": "Eurolite",
+    "name": "LED D-1000",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "Mark Baar",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Indigo": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Indigo"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Function"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe slow to fast"
+                }
+            ]
+        },
+        "Step Motor Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        180
+                    ],
+                    "type": "Speed",
+                    "comment": "Manual Motor Positioning",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        255
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW",
+                    "comment": "Set Rotation Speed S>F"
+                }
+            ]
+        },
+        "Mode Auto / Sound": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto DMX"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound DMX",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Speed Auto / Sound": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "10-channel",
+            "shortName": "10ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Amber",
+                "Indigo",
+                "Strobe",
+                "Step Motor Rotation",
+                "Mode Auto / Sound",
+                "Speed Auto / Sound"
+            ]
+        }
+    ]
+}

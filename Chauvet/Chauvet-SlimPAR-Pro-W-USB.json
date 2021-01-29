@@ -1,0 +1,277 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "SlimPAR Pro W USB",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Lance Moore",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Warm White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White",
+                "comment": "Warm White intensity (0 - 100%)"
+            }
+        },
+        "Cool White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White",
+                "comment": "Cool White (0 - 100%)"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Color macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color macros"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe, Slow to Fast"
+                }
+            ]
+        },
+        "Automatic/Sound-Active Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pulse strobe (0 - 100%) When CH 2 - 4 Active"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pulse strobe (100 - 0%) When CH 2 - 4 Active"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pulse strobe (0 - 100 - 0%) When CH 2 - 4 Active"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto fade transition"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto snap transition (3-color)"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto snap transition (7-color)"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        249
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-active mode (3 colors)",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-active mode (7 colors)",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Auto Speed/Sound Sensitivity (CH 7 Value Dependent)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "See User Manual"
+            }
+        },
+        "Dimmer Speed Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        51
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed set from display",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        101
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed mode off",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        152
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed mode 1 (fast)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        203
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed mode 2 (medium)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed mode 3 (slow)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Master dimmer",
+                "Warm White",
+                "Cool White",
+                "Amber",
+                "Color macro",
+                "Strobe",
+                "Automatic/Sound-Active Programs",
+                "Auto Speed/Sound Sensitivity (CH 7 Value Dependent)",
+                "Dimmer Speed Mode"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Master dimmer",
+                "Warm White",
+                "Cool White",
+                "Amber"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Warm White",
+                "Cool White",
+                "Amber"
+            ]
+        }
+    ]
+}

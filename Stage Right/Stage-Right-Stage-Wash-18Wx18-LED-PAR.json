@@ -1,0 +1,166 @@
+{
+    "manufacturer": "Stage Right",
+    "name": "Stage Wash 18Wx18 LED PAR",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Collin Ong",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.6 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Master Dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Flash/Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Built-in Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        50
+                    ],
+                    "type": "Effect",
+                    "effectName": "No Effect"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Jumping color change mode"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Gradient color change mode"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clock color change mode"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound activated color jumping mode",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Program Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Speed of execution of built-in programs",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Red Dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green Dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue Dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White Dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Amber Dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Ultraviolet Dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "10-channel",
+            "shortName": "10ch",
+            "channels": [
+                "Master Dimming",
+                "Flash/Strobe",
+                "Built-in Programs",
+                "Program Speed",
+                "Red Dimming",
+                "Green Dimming",
+                "Blue Dimming",
+                "White Dimming",
+                "Amber Dimming",
+                "Ultraviolet Dimming"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red Dimming",
+                "Green Dimming",
+                "Blue Dimming",
+                "White Dimming",
+                "Amber Dimming",
+                "Ultraviolet Dimming"
+            ]
+        }
+    ]
+}

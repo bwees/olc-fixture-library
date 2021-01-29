@@ -1,0 +1,267 @@
+{
+    "manufacturer": "Equinox",
+    "name": "Domin8R II",
+    "categories": [
+        "Scanner"
+    ],
+    "meta": {
+        "authors": [
+            "Andrew Newton",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            8,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "On": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Off",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Strobe speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Static pattern selector": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Static pattern selector"
+            }
+        },
+        "Pattern": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static pattern"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Moving pattern"
+                }
+            ]
+        },
+        "Moving pattern speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Mirror tilt speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "TiltContinuous",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Sound active": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Moving pattern selector": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Moving pattern selector"
+            }
+        },
+        "Tilt (8ch)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Manual tilt"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Auto tilt"
+                }
+            ]
+        },
+        "Tilt 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "90deg"
+            }
+        },
+        "Tilt 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "90deg"
+            }
+        },
+        "Tilt 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "90deg"
+            }
+        },
+        "Tilt 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "90deg"
+            }
+        },
+        "Tilt 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "90deg"
+            }
+        },
+        "Tilt 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "90deg"
+            }
+        },
+        "Tilt 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "90deg"
+            }
+        },
+        "Tilt 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "90deg"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "On",
+                "Strobe speed",
+                "Static pattern selector",
+                "Moving pattern selector",
+                "Pattern",
+                "Moving pattern speed",
+                "Tilt (8ch)",
+                "Mirror tilt speed"
+            ]
+        },
+        {
+            "name": "16-channel",
+            "shortName": "16ch",
+            "channels": [
+                "On",
+                "Strobe speed",
+                "Static pattern selector",
+                "Moving pattern selector",
+                "Pattern",
+                "Moving pattern speed",
+                "Tilt 1",
+                "Tilt 2",
+                "Tilt 3",
+                "Tilt 4",
+                "Tilt 5",
+                "Tilt 6",
+                "Tilt 7",
+                "Tilt 8",
+                "Mirror tilt speed",
+                "Sound active"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,644 @@
+{
+    "manufacturer": "Varytec",
+    "name": "Easy Move LED XS Spot",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Heikki Junnila",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller (version 3.2.0)"
+        }
+    },
+    "availableChannels": {
+        "Pan coarse": {
+            "fineChannelAliases": [
+                "Pan fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt coarse": {
+            "fineChannelAliases": [
+                "Tilt fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Vector speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Normal -> Slow",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Dimmer/Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Intensity",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        134
+                    ],
+                    "type": "Intensity",
+                    "comment": "Dimmer (100% - 0%)"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        239
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe speed (slow -> fast)"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Colour macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        21
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White"
+                },
+                {
+                    "dmxRange": [
+                        22,
+                        35
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        49
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        77
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan"
+                },
+                {
+                    "dmxRange": [
+                        78,
+                        91
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta"
+                },
+                {
+                    "dmxRange": [
+                        92,
+                        105
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        119
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Purple"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        133
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Orange"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        147
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Chartreuse"
+                },
+                {
+                    "dmxRange": [
+                        148,
+                        161
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pink"
+                },
+                {
+                    "dmxRange": [
+                        162,
+                        175
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Brown"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        189
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Gold"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        203
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Crimson"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        217
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Violet"
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        231
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Crape"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour-Change Macro 1"
+                }
+            ]
+        },
+        "Colour speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Colour vector speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Movement macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        22
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 1"
+                },
+                {
+                    "dmxRange": [
+                        23,
+                        37
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 2"
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        52
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 3"
+                },
+                {
+                    "dmxRange": [
+                        53,
+                        67
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 4"
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        82
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 5"
+                },
+                {
+                    "dmxRange": [
+                        83,
+                        97
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 6"
+                },
+                {
+                    "dmxRange": [
+                        98,
+                        112
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 7"
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program 8"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        142
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active 1",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        143,
+                        157
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active 2",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        158,
+                        172
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active 3",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        173,
+                        187
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active 4",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        202
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active 5",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        203,
+                        217
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active 6",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        232
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active 7",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        233,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active 8",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Gobo": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Gobo 1"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        23
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Gobo 2"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        31
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Gobo 3"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        39
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Gobo 4"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        47
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Gobo 5"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        55
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Gobo 6"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        63
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Gobo 7"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        71
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Gobo 8"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        79
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 10,
+                    "comment": "Gobo 9"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        94
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 11,
+                    "comment": "Gobo 1 shake"
+                },
+                {
+                    "dmxRange": [
+                        95,
+                        109
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 12,
+                    "comment": "Gobo 2 shake"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        124
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 13,
+                    "comment": "Gobo 3 shake"
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        139
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 14,
+                    "comment": "Gobo 4 shake"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        154
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 15,
+                    "comment": "Gobo 5 shake"
+                },
+                {
+                    "dmxRange": [
+                        155,
+                        169
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 16,
+                    "comment": "Gobo 6 shake"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        184
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 17,
+                    "comment": "Gobo 7 shake"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        199
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 18,
+                    "comment": "Gobo 8 shake"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        214
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 19,
+                    "comment": "Gobo 9 shake"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        235
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 20,
+                    "comment": "Rainbow forwards"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 21,
+                    "comment": "Rainbow backwards"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "13-channel",
+            "shortName": "13ch",
+            "channels": [
+                "Pan coarse",
+                "Pan fine",
+                "Tilt coarse",
+                "Tilt fine",
+                "Vector speed",
+                "Dimmer/Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "Colour macros",
+                "Colour speed",
+                "Movement macros",
+                "Gobo"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Pan coarse",
+                "Tilt coarse",
+                "Dimmer/Strobe",
+                "Colour macros",
+                "Gobo"
+            ]
+        }
+    ]
+}

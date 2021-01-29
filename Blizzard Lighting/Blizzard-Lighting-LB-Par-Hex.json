@@ -1,0 +1,300 @@
+{
+    "manufacturer": "Blizzard Lighting",
+    "name": "LB-Par Hex",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Robert Box",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Amber Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "White Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "UV Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Programs, Auto and Sound Active": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimmer speed"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 1 (R/G/B jump)"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 2 (R/G/B fade-in/out)"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 3 (R/G/B fade)"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 4 (R/G/B/A/W/UV jump)"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 5 (R/G/B/A/W/UV fade-in/out)"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 6 (R/G/B/A/W/UV fade)"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 7 (7-color jump)"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 8 (7-color fade-in/out)"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 9 (7-color fade)"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 10 (multicolor jump)"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 11 (multicolor fade-in/out)"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 12 (multicolor fade)"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto mode (loop all programs)"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active mode",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Auto Program Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Fade speed (slow <--> fast)",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "32-Bit Dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Maintenance",
+                    "comment": "As set in the control menu display"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        55
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mode 0 = 8-bit, 256 dimming steps"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        105
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mode 1 = 32-bit, 0-25% intensity range"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        155
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mode 2 = 32-bit, 0-50% intensity range"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        205
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mode 3 = 32-bit, 0-75% intensity range"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mode 4 = 32-bit, full intensity dimming"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red Intensity",
+                "Green Intensity",
+                "Blue Intensity",
+                "Amber Intensity",
+                "White Intensity",
+                "UV Intensity"
+            ]
+        },
+        {
+            "name": "11-channel",
+            "shortName": "11ch",
+            "channels": [
+                "Dimmer",
+                "Red Intensity",
+                "Green Intensity",
+                "Blue Intensity",
+                "Amber Intensity",
+                "White Intensity",
+                "UV Intensity",
+                "Strobe",
+                "Programs, Auto and Sound Active",
+                "Auto Program Speed",
+                "32-Bit Dimmer"
+            ]
+        }
+    ]
+}

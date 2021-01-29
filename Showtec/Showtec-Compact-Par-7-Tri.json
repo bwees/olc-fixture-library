@@ -1,0 +1,764 @@
+{
+    "manufacturer": "Showtec",
+    "name": "Compact Par 7 Tri",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "sonozikloc",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "20Hz",
+                    "comment": "Strobe 0-20 Hz"
+                }
+            ]
+        },
+        "Color programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "NoFunction",
+                    "switchChannels": {
+                        "Red / RGB Macro / Program speed / Audio sensitivity": "Red"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "29 static color prog via channel 2",
+                    "switchChannels": {
+                        "Red / RGB Macro / Program speed / Audio sensitivity": "RGB Macro"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        49
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 2 (7 color change)",
+                    "switchChannels": {
+                        "Red / RGB Macro / Program speed / Audio sensitivity": "Program speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 3 (3 color change)",
+                    "switchChannels": {
+                        "Red / RGB Macro / Program speed / Audio sensitivity": "Program speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        99
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 4 (7 color switch)",
+                    "switchChannels": {
+                        "Red / RGB Macro / Program speed / Audio sensitivity": "Program speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        124
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 5 (3 color switch)",
+                    "switchChannels": {
+                        "Red / RGB Macro / Program speed / Audio sensitivity": "Program speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        149
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 6 (fantasy change 1)",
+                    "switchChannels": {
+                        "Red / RGB Macro / Program speed / Audio sensitivity": "Program speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        174
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 7 (fantasy change 2)",
+                    "switchChannels": {
+                        "Red / RGB Macro / Program speed / Audio sensitivity": "Program speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        175,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 8 (Red gradual change)",
+                    "switchChannels": {
+                        "Red / RGB Macro / Program speed / Audio sensitivity": "Program speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        224
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 9 (Green gradual change)",
+                    "switchChannels": {
+                        "Red / RGB Macro / Program speed / Audio sensitivity": "Program speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        249
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 10 (Blue gradual change)",
+                    "switchChannels": {
+                        "Red / RGB Macro / Program speed / Audio sensitivity": "Program speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound-controlled",
+                    "switchChannels": {
+                        "Red / RGB Macro / Program speed / Audio sensitivity": "Audio sensitivity"
+                    }
+                }
+            ]
+        },
+        "RGB Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        8
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(255)"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        17
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(255),G(50)"
+                },
+                {
+                    "dmxRange": [
+                        18,
+                        26
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(255),G(150)"
+                },
+                {
+                    "dmxRange": [
+                        27,
+                        35
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(255),G(255)"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        44
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(200),G(255)"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        53
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(100),G(255)"
+                },
+                {
+                    "dmxRange": [
+                        54,
+                        62
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(40),G(255)"
+                },
+                {
+                    "dmxRange": [
+                        63,
+                        71
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G(255)"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        80
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G(255),B(50)"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        89
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G(255),B(150)"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        98
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G(255),B(255)"
+                },
+                {
+                    "dmxRange": [
+                        99,
+                        107
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G(150),B(255)"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        116
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G(50),B(255)"
+                },
+                {
+                    "dmxRange": [
+                        117,
+                        125
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "B(255)"
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        134
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(50),B(255)"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        143
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(150),B(250)"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        152
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(255),B(255)"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        161
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(220),B(50)"
+                },
+                {
+                    "dmxRange": [
+                        162,
+                        170
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(150),G(50),B(100)"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        179
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(50),G(180),B(220)"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        188
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(50),G(220),B(100)"
+                },
+                {
+                    "dmxRange": [
+                        189,
+                        197
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(150),G(220)"
+                },
+                {
+                    "dmxRange": [
+                        198,
+                        206
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(150),B(220)"
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        215
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G(180),B(220)"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        224
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G(220),B(50)"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        233
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(220),G(100),B(50)"
+                },
+                {
+                    "dmxRange": [
+                        234,
+                        242
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(220),G(200),B(100)"
+                },
+                {
+                    "dmxRange": [
+                        243,
+                        251
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(255),G(200),B(150)"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R(255),G(255),B(255)"
+                }
+            ]
+        },
+        "ID Adress": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 1-66"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 1"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 2"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 3"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 4"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 5"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 6"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 7"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 8"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 9"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 10"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 11"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 12"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 13"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 14"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 15"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 16"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 17"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        189
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 18"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 19"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 20"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        210
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 21"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        211
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 22"
+                },
+                {
+                    "dmxRange": [
+                        212,
+                        212
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 23"
+                },
+                {
+                    "dmxRange": [
+                        213,
+                        250
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 63"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        251
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 62"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        252
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 63"
+                },
+                {
+                    "dmxRange": [
+                        253,
+                        253
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 64"
+                },
+                {
+                    "dmxRange": [
+                        254,
+                        254
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 65"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "ID 66"
+                }
+            ]
+        },
+        "Fader response": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        250
+                    ],
+                    "type": "Maintenance",
+                    "comment": "CH1-CH4 instant fader response"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "CH1-CH4 delayed fader response"
+                }
+            ]
+        },
+        "Program speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "comment": "Speed from"
+            }
+        },
+        "Audio sensitivity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Audio sensitivity from less sensitive to highly sensitive"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Strobe",
+                "Color programs",
+                "ID Adress",
+                "Fader response"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,287 @@
+{
+    "manufacturer": "Eurolite",
+    "name": "TMH-14",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Chris de Rock",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "190deg"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Function"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe with increasing speed"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "narrow",
+                "angleEnd": "wide"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Color": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Static Colors"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        200
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colorchange 1"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colorchange 2"
+                }
+            ]
+        },
+        "Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        120
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 1"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        244
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 2"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Music"
+                }
+            ]
+        },
+        "Movement Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Colorchange Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Speed decreasing",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Macro Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Speed decreasing",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        149
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        200
+                    ],
+                    "type": "Generic",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "11-channel",
+            "shortName": "11ch",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Movement Speed",
+                "Strobe",
+                "Dimmer",
+                "Zoom",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Reset"
+            ]
+        },
+        {
+            "name": "17-channel",
+            "shortName": "17ch",
+            "physical": {
+                "dimensions": [
+                    200,
+                    280,
+                    180
+                ]
+            },
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Movement Speed",
+                "Strobe",
+                "Dimmer",
+                "Zoom",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Color",
+                "Colorchange Speed",
+                "Macros",
+                "Macro Speed",
+                "Reset"
+            ]
+        }
+    ]
+}

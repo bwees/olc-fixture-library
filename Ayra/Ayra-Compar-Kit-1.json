@@ -1,0 +1,511 @@
+{
+    "manufacturer": "Ayra",
+    "name": "Compar Kit 1",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "eigenaardiger",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            4,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobing": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        247
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe ( Slow to Fast )"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Sound Strobe"
+                }
+            ]
+        },
+        "Color Macros and Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Manual"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        22
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 1"
+                },
+                {
+                    "dmxRange": [
+                        23,
+                        37
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 2"
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        52
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 3"
+                },
+                {
+                    "dmxRange": [
+                        53,
+                        67
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 4"
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        82
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 5"
+                },
+                {
+                    "dmxRange": [
+                        83,
+                        97
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 6"
+                },
+                {
+                    "dmxRange": [
+                        98,
+                        112
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 7"
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 8"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        142
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 9"
+                },
+                {
+                    "dmxRange": [
+                        143,
+                        157
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 10"
+                },
+                {
+                    "dmxRange": [
+                        158,
+                        172
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 11"
+                },
+                {
+                    "dmxRange": [
+                        173,
+                        187
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 12"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        202
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 13"
+                },
+                {
+                    "dmxRange": [
+                        203,
+                        217
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 14"
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        232
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 15"
+                },
+                {
+                    "dmxRange": [
+                        233,
+                        247
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Chase 16"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Stand Alone"
+                }
+            ]
+        },
+        "Program Speed/Sound Sense": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Speed",
+                    "comment": "Hold",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        255
+                    ],
+                    "type": "Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Program Speed"
+                }
+            ]
+        },
+        "Red 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Green 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Blue 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Shows": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blackout",
+                    "colors": [
+                        "#000000",
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        37
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Show 01"
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        67
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Show 02"
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        97
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Show 03"
+                },
+                {
+                    "dmxRange": [
+                        98,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Show 04"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        157
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Show 05"
+                },
+                {
+                    "dmxRange": [
+                        158,
+                        187
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Show 06"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        217
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Show 07"
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        247
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Show 08"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Random Show"
+                }
+            ]
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Master dimmer",
+                "Strobing",
+                "Color Macros and Programs",
+                "Program Speed/Sound Sense"
+            ]
+        },
+        {
+            "name": "12-channel",
+            "shortName": "12ch",
+            "channels": [
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2",
+                "Red 3",
+                "Green 3",
+                "Blue 3",
+                "Red 4",
+                "Green 4",
+                "Blue 4"
+            ]
+        },
+        {
+            "name": "16-channel",
+            "shortName": "16ch",
+            "channels": [
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2",
+                "Red 3",
+                "Green 3",
+                "Blue 3",
+                "Red 4",
+                "Green 4",
+                "Blue 4",
+                "Master dimmer",
+                "Strobing",
+                "Color Macros and Programs",
+                "Program Speed/Sound Sense"
+            ]
+        },
+        {
+            "name": "1-channel ( shows )",
+            "shortName": "1ch ( shows )",
+            "channels": [
+                "Shows"
+            ]
+        }
+    ]
+}

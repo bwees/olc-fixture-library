@@ -1,0 +1,929 @@
+{
+    "manufacturer": "Showtec",
+    "name": "Explorer 250 Pro MKII",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Henk de Gunst",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Colourwheel": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "Open / white",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Magenta",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Orange",
+                    "colors": [
+                        "#ff8000"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Blue",
+                    "colors": [
+                        "#ff0080"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Pink",
+                    "colors": [
+                        "#ffaaff"
+                    ]
+                }
+            ]
+        },
+        "Gobowheel 1 + Gobo Shake": {
+            "slots": [
+                {
+                    "type": "Open"
+                },
+                {
+                    "type": "Color",
+                    "name": "1 (metal)",
+                    "colors": [
+                        "#00aaff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Shaking 1",
+                    "colors": [
+                        "#00aaff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "2 (metal)",
+                    "colors": [
+                        "#ff7f7f"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Shaking 2",
+                    "colors": [
+                        "#ff7f7f"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "3 (glass)",
+                    "colors": [
+                        "#dcc17a"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Shaking 3",
+                    "colors": [
+                        "#dcc17a"
+                    ]
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM-Color/gobo00373.png",
+                    "name": "4 (glass)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/gobo00016.svg",
+                    "name": "5 (glass)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Chauvet/gobo00067.svg",
+                    "name": "6 (glass)"
+                }
+            ]
+        },
+        "Gobowheel 2 + Gobo Shake": {
+            "slots": [
+                {
+                    "type": "Open"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM/gobo00002.svg",
+                    "name": "1 (glass)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/gobo00005.svg",
+                    "name": "2 (glass)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM-Color/gobo00395.png",
+                    "name": "3 (glass)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM-Color/gobo00375.svg",
+                    "name": "4 (metal)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM-Color/gobo00557.png",
+                    "name": "5 (metal)"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "No"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "530deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "280deg"
+            }
+        },
+        "Pan/Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Lamp On, Off & Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        139
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp on after 3 seconds, reset"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        229
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        239
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp off after 3 seconds"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Colourwheel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Open / white"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        31
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        47
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Yellow"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        63
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Magenta"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        79
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        95
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Orange"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Pink"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Forwards rainbow effect from fast to slow"
+                }
+            ]
+        },
+        "Prism + Lambency": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        187
+                    ],
+                    "type": "Effect",
+                    "effectName": "3-facet prism"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Lambency"
+                }
+            ]
+        },
+        "Prism Rotating Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Backwards rotation from",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        132
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        133,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Forwards rotation from",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "Gobowheel 1 + Gobo Shake": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Open / white"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        57
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "1 (metal)"
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        73
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Shaking 1"
+                },
+                {
+                    "dmxRange": [
+                        74,
+                        94
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "2 (metal)"
+                },
+                {
+                    "dmxRange": [
+                        95,
+                        110
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Shaking 2"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        131
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "3 (glass)"
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        147
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Shaking 3"
+                },
+                {
+                    "dmxRange": [
+                        148,
+                        168
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "4 (glass)"
+                },
+                {
+                    "dmxRange": [
+                        169,
+                        184
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 9,
+                    "comment": "Shaking 4"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        205
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 10,
+                    "comment": "5 (glass)"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        221
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 11,
+                    "comment": "Shaking 5"
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        242
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 12,
+                    "comment": "6 (glass)"
+                },
+                {
+                    "dmxRange": [
+                        243,
+                        255
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 13,
+                    "comment": "Shaking 6"
+                }
+            ]
+        },
+        "Gobowheel 2 + Gobo Shake": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Open / white"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        47
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "1 (glass)"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        63
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 3,
+                    "comment": "Shaking 1"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        79
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "2 (glass)"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        95
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 5,
+                    "comment": "Shaking 2"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "3 (glass)"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 7,
+                    "comment": "Shaking 3"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        143
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "4 (metal)"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        159
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 9,
+                    "comment": "Shaking 4"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        175
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 10,
+                    "comment": "5 (metal)"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        191
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 11,
+                    "comment": "Shaking 5"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 12,
+                    "comment": "No"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "WheelRotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Continuous rotation from"
+                }
+            ]
+        },
+        "Gobowheel 2 Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        60
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Indexing"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        158
+                    ],
+                    "type": "WheelSlotRotation",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Forwards rotation from"
+                },
+                {
+                    "dmxRange": [
+                        159,
+                        255
+                    ],
+                    "type": "WheelSlotRotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Backwards rotation from"
+                }
+            ]
+        },
+        "Zoom, Frost, UV Filter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zoom 15\u00b0 (without focus correction)"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        47
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zoom 18\u00b0 (without focus correction)"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zoom 21\u00b0 (without focus correction)"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zoom 24\u00b0 (without focus correction)"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zoom 26\u00b0 (without focus correction)"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "Effect",
+                    "effectName": "Frost"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "UV-filter"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zoom 15\u00b0 (with focus correction)"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zoom 18\u00b0 (with focus correction)"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zoom 21\u00b0 (with focus correction)"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zoom 24\u00b0 (with focus correction)"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zoom 26\u00b0 (with focus correction)"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "224-239 Frost\u00b0"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "UV-filter"
+                }
+            ]
+        },
+        "From Far Distance to Close Distance": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Focus",
+                "distanceStart": "far",
+                "distanceEnd": "near"
+            }
+        },
+        "Shutter / Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Shutter closed / blackout"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "10Hz",
+                    "comment": "Strobe effect, from slow to fast (0-10 flashes/sec.)"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse-effect 1, in sequences from"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random strobe effect, from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "16-channel",
+            "shortName": "16ch",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Pan Fine",
+                "Tilt Fine",
+                "Pan/Tilt Speed",
+                "Lamp On, Off & Reset",
+                "Colourwheel",
+                "Prism + Lambency",
+                "Prism Rotating Control",
+                "Gobowheel 1 + Gobo Shake",
+                "Gobowheel 2 + Gobo Shake",
+                "Gobowheel 2 Rotation",
+                "Zoom, Frost, UV Filter",
+                "From Far Distance to Close Distance",
+                "Shutter / Strobe",
+                "Dimmer"
+            ]
+        }
+    ]
+}

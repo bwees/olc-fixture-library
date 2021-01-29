@@ -1,0 +1,618 @@
+{
+    "manufacturer": "Stairville",
+    "name": "Blade Sting 8 RGBW Beam Mover",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "franky",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.1 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            4,
+            2,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Upper Tilt": {
+            "fineChannelAliases": [
+                "Upper Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "180deg"
+            }
+        },
+        "Lower Tilt": {
+            "fineChannelAliases": [
+                "Lower Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "180deg"
+            }
+        },
+        "Rotation Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Movement speed rotation and tilting movement, increasing speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Pan/Tilt Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        129
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "No Function",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        192
+                    ],
+                    "type": "PanContinuous",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW",
+                    "comment": "Clockwise rotation movement, speed increasing"
+                },
+                {
+                    "dmxRange": [
+                        193,
+                        255
+                    ],
+                    "type": "PanContinuous",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW",
+                    "comment": "Counter-clockwise rotation movement, speed increasing"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Intensity red LED1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity green LED1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity blue LED1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity white LED1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Intensity red LED2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity green LED2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity blue LED2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity white LED2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Intensity red LED3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity green LED3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity blue LED3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity white LED3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Intensity red LED4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity green LED4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity blue LED4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity white LED4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Intensity red LED5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity green LED5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity blue LED5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity white LED5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Intensity red LED6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity green LED6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity blue LED6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity white LED6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Intensity red LED7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity green LED7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity blue LED7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity white LED7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Intensity red LED8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity green LED8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity blue LED8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity white LED8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Auto mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto operation"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 01"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 02"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 03"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 04"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 05"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 06"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        129
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-controlled operation, increasing sensitivity",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Chaser light speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Flash frequency": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        14
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flash frequency auto operation"
+                }
+            ]
+        },
+        "Intensity red LED": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity green LED": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity blue LED": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity white LED": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "44-channel",
+            "shortName": "44ch",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Upper Tilt",
+                "Upper Tilt Fine",
+                "Lower Tilt",
+                "Lower Tilt Fine",
+                "Rotation Speed",
+                "Pan/Tilt Rotation",
+                "Dimmer",
+                "Intensity red LED1",
+                "Intensity green LED1",
+                "Intensity blue LED1",
+                "Intensity white LED1",
+                "Intensity red LED2",
+                "Intensity green LED2",
+                "Intensity blue LED2",
+                "Intensity white LED2",
+                "Intensity red LED3",
+                "Intensity green LED3",
+                "Intensity blue LED3",
+                "Intensity white LED3",
+                "Intensity red LED4",
+                "Intensity green LED4",
+                "Intensity blue LED4",
+                "Intensity white LED4",
+                "Intensity red LED5",
+                "Intensity green LED5",
+                "Intensity blue LED5",
+                "Intensity white LED5",
+                "Intensity red LED6",
+                "Intensity green LED6",
+                "Intensity blue LED6",
+                "Intensity white LED6",
+                "Intensity red LED7",
+                "Intensity green LED7",
+                "Intensity blue LED7",
+                "Intensity white LED7",
+                "Intensity red LED8",
+                "Intensity green LED8",
+                "Intensity blue LED8",
+                "Intensity white LED8",
+                "Auto mode",
+                "Chaser light speed",
+                "Flash frequency"
+            ]
+        },
+        {
+            "name": "40-channel",
+            "shortName": "40ch",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Upper Tilt",
+                "Upper Tilt Fine",
+                "Lower Tilt",
+                "Lower Tilt Fine",
+                "Rotation Speed",
+                "Pan/Tilt Rotation",
+                "Intensity red LED1",
+                "Intensity green LED1",
+                "Intensity blue LED1",
+                "Intensity white LED1",
+                "Intensity red LED2",
+                "Intensity green LED2",
+                "Intensity blue LED2",
+                "Intensity white LED2",
+                "Intensity red LED3",
+                "Intensity green LED3",
+                "Intensity blue LED3",
+                "Intensity white LED3",
+                "Intensity red LED4",
+                "Intensity green LED4",
+                "Intensity blue LED4",
+                "Intensity white LED4",
+                "Intensity red LED5",
+                "Intensity green LED5",
+                "Intensity blue LED5",
+                "Intensity white LED5",
+                "Intensity red LED6",
+                "Intensity green LED6",
+                "Intensity blue LED6",
+                "Intensity white LED6",
+                "Intensity red LED7",
+                "Intensity green LED7",
+                "Intensity blue LED7",
+                "Intensity white LED7",
+                "Intensity red LED8",
+                "Intensity green LED8",
+                "Intensity blue LED8",
+                "Intensity white LED8"
+            ]
+        },
+        {
+            "name": "16-channel",
+            "shortName": "16ch",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Upper Tilt",
+                "Upper Tilt Fine",
+                "Lower Tilt",
+                "Lower Tilt Fine",
+                "Rotation Speed",
+                "Pan/Tilt Rotation",
+                "Dimmer",
+                "Intensity red LED",
+                "Intensity green LED",
+                "Intensity blue LED",
+                "Intensity white LED",
+                "Auto mode",
+                "Chaser light speed",
+                "Flash frequency"
+            ]
+        },
+        {
+            "name": "12-channel",
+            "shortName": "12ch",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Upper Tilt",
+                "Upper Tilt Fine",
+                "Lower Tilt",
+                "Lower Tilt Fine",
+                "Rotation Speed",
+                "Pan/Tilt Rotation",
+                "Intensity red LED",
+                "Intensity green LED",
+                "Intensity blue LED",
+                "Intensity white LED"
+            ]
+        }
+    ]
+}

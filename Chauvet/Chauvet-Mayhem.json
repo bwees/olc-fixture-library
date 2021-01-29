@@ -1,0 +1,654 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "Mayhem",
+    "categories": [
+        "Scanner"
+    ],
+    "meta": {
+        "authors": [
+            "Jonathan Wilson",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            null,
+            null,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        20
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static color"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        40
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 1"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        60
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 2"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 3"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 4"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        120
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 5"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        140
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 6"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 7"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 8"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 9"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 10"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        240
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 11"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Slow -> fast"
+                }
+            ]
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Slow -> fast"
+                }
+            ]
+        },
+        "Pod 1 Static Color": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        20
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        40
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0009"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        60
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#0aff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        80
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0011ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        100
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red/green",
+                    "colors": [
+                        "#ff0007",
+                        "#0fff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        120
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red/blue",
+                    "colors": [
+                        "#ff000e",
+                        "#0100ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green/blue",
+                    "colors": [
+                        "#11ff00",
+                        "#000cff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red/green/blue",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                }
+            ]
+        },
+        "Pod 2 Static Color": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        20
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        40
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0009"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        60
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#0fff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        80
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0005ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        100
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red/green",
+                    "colors": [
+                        "#ff0009",
+                        "#01ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        120
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red/blue",
+                    "colors": [
+                        "#ff000e",
+                        "#0700ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green/blue",
+                    "colors": [
+                        "#00ff00",
+                        "#000bff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red/green/blue",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                }
+            ]
+        },
+        "Pod 1 Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        20
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Static color"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        40
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Clockwise speed 1 (slowest)"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        60
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Clockwise speed 2"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        80
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Clockwise speed 3"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        100
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Clockwise speed 4"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        120
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Clockwise speed 5 (fastest)"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        140
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "No rotation"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        160
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Anti-clockwise speed 1 (slowest)"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        180
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Anti-clockwise speed 2"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        200
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Anti-clockwise speed 3"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        220
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Anti-clockwise speed 4"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        240
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Anti-clockwise speed 5 (fastest)"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Sound"
+                }
+            ]
+        },
+        "Pod 2 Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        20
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Static color"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        40
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Clockwise speed 1 (slowest)"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        60
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Clockwise speed 2"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        80
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Clockwise speed 3"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        100
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Clockwise speed 4"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        120
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Clockwise speed 5 (fastest)"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        140
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "No rotation"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        160
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Anti-clockwise speed 1 (slowest)"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        180
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Anti-clockwise speed 2"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        200
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Anti-clockwise speed 3"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        220
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Anti-clockwise speed 4"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        240
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Anti-clockwise speed 5 (fastest)"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "79deg",
+                    "comment": "Sound"
+                }
+            ]
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Mode",
+                "Strobe",
+                "Speed",
+                "Pod 1 Static Color",
+                "Pod 2 Static Color",
+                "Pod 1 Rotation",
+                "Pod 2 Rotation"
+            ]
+        }
+    ]
+}

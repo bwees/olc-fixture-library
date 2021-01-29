@@ -1,0 +1,703 @@
+{
+    "manufacturer": "Laserworld",
+    "name": "PRO-800RGB",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Piotr Nowik",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.11.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Color Seletion": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Purple",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Laser off"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        49
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Music mode"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        199
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Automatic mode"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Patterns/DMX"
+                }
+            ]
+        },
+        "Patterns": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "128 patterns (change every even value)"
+            }
+        },
+        "Horizontal movement": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        125
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Manual positioning"
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        155
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Left to right slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        245
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Right to left slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Automatic positioning"
+                }
+            ]
+        },
+        "Y Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Indexing"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Rotating",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "X Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Indexing"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Rotating",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Generic",
+                    "comment": "No zoom"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        87
+                    ],
+                    "type": "Generic",
+                    "comment": "Max size to min size"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        150
+                    ],
+                    "type": "Generic",
+                    "comment": "Auto zooming max-min slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        200
+                    ],
+                    "type": "Generic",
+                    "comment": "Auto zooming min-max slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Continuosly min-max-min slow to fast"
+                }
+            ]
+        },
+        "Pattern Buildup (drawing)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        74
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual drawing"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        104
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic drawing",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        144
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic reduction",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        145,
+                        184
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic drawing and reduction",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic two-sided reduction"
+                }
+            ]
+        },
+        "Color Seletion": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        16
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        17,
+                        33
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        34,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        67
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        84
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        101
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Purple",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        118
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        119,
+                        169
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Rainbow mixing static"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        220
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Rainbow mixing moving"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        237
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        238,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 11,
+                    "comment": "Rainbow mixing static"
+                }
+            ]
+        },
+        "Grating": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        49
+                    ],
+                    "type": "Generic",
+                    "comment": "No grating"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        99
+                    ],
+                    "type": "Generic",
+                    "comment": "Burst grating"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        149
+                    ],
+                    "type": "Generic",
+                    "comment": "Line grating"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        199
+                    ],
+                    "type": "Generic",
+                    "comment": "3D grating"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "3D line grating"
+                }
+            ]
+        },
+        "Red fading": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green fading": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue fading": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Z rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual indexing"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        192
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW"
+                },
+                {
+                    "dmxRange": [
+                        193,
+                        255
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW"
+                }
+            ]
+        },
+        "Y wave": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Effect",
+                    "effectName": "No effect"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Small wave",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "Medium wave",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        189
+                    ],
+                    "type": "Effect",
+                    "effectName": "Large wave",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Wave effect II"
+                }
+            ]
+        },
+        "X wave": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Effect",
+                    "effectName": "No effect"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Small wave",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "Medium wave",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        189
+                    ],
+                    "type": "Effect",
+                    "effectName": "Large wave",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Wave effect II"
+                }
+            ]
+        },
+        "Vertical movement": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        125
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Manual positioning"
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        155
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Up to down slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        245
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Down to up slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        255
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Automatic positioning"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "16-channel",
+            "shortName": "16ch",
+            "channels": [
+                "Mode",
+                "Patterns",
+                "Grating",
+                "Color Seletion",
+                "Red fading",
+                "Green fading",
+                "Blue fading",
+                "Horizontal movement",
+                "Vertical movement",
+                "Zoom",
+                "X Rotation",
+                "Y Rotation",
+                "Z rotation",
+                "Pattern Buildup (drawing)",
+                "Y wave",
+                "X wave"
+            ]
+        }
+    ]
+}

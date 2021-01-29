@@ -1,0 +1,939 @@
+{
+    "manufacturer": "Eurolite",
+    "name": "LED FE-1500",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "Robert Box",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Operating mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blackout (all light beams off)",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        24
+                    ],
+                    "type": "Effect",
+                    "effectName": "Aut0: Laser + RGBWA LEDs + white LEDs"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Aut1: Laser + RGBWA LEDs"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        54
+                    ],
+                    "type": "Effect",
+                    "effectName": "Aut2: Laser + white LEDs"
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Aut3: RGBWA LEDs + white LEDs"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        84
+                    ],
+                    "type": "Effect",
+                    "effectName": "Aut4: RGBWA LEDs"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "Aut5: Laser"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        114
+                    ],
+                    "type": "Effect",
+                    "effectName": "Aut6: white LEDs"
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sou0: Laser + RGBWA LEDs + white LEDs"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        144
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sou1: Laser + RGBWA LEDs"
+                },
+                {
+                    "dmxRange": [
+                        145,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sou2: Laser + white LEDs"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        174
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sou3: RGBWA LEDs + white LEDs"
+                },
+                {
+                    "dmxRange": [
+                        175,
+                        189
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sou4: RGBWA LEDs"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        204
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sou5: Laser"
+                },
+                {
+                    "dmxRange": [
+                        205,
+                        219
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sou6: white LEDs"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX mode: This setting enables the functions of the other DMX channels."
+                }
+            ]
+        },
+        "RGBWA LEDs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blackout (all light beams off)",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        14
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        19
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        29
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber",
+                    "colors": [
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        34
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        35,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White + red",
+                    "colors": [
+                        "#ffffff",
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        44
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + green",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        49
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green + blue",
+                    "colors": [
+                        "#00ff00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        54
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue + amber",
+                    "colors": [
+                        "#0000ff",
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        59
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber + white",
+                    "colors": [
+                        "#ffbf00",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        64
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White + green",
+                    "colors": [
+                        "#ffffff",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        69
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green + amber",
+                    "colors": [
+                        "#00ff00",
+                        "#ffbf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber + red",
+                    "colors": [
+                        "#ffbf00",
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + blue",
+                    "colors": [
+                        "#ff0000",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        84
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue + white",
+                    "colors": [
+                        "#0000ff",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        89
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + green + blue",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        94
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + green + amber",
+                    "colors": [
+                        "#ffdf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        95,
+                        99
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + green + white",
+                    "colors": [
+                        "#ffff80"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        104
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + amber + blue",
+                    "colors": [
+                        "#ff6080"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        109
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + white + blue",
+                    "colors": [
+                        "#ff80ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        114
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + amber + white",
+                    "colors": [
+                        "#ff9555"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        119
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber + green + blue",
+                    "colors": [
+                        "#92ff92"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        124
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue + green + white",
+                    "colors": [
+                        "#80ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        129
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber + green + white",
+                    "colors": [
+                        "#b9ff5d"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        134
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber + white + blue",
+                    "colors": [
+                        "#ffdfff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        139
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + green + blue + amber",
+                    "colors": [
+                        "#ffdf80"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        144
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + green + blue + white",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        145,
+                        149
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue + green + white + amber",
+                    "colors": [
+                        "#b9ffb9"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        154
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + green + amber + white",
+                    "colors": [
+                        "#ffea55"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        155,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White + red + blue + amber",
+                    "colors": [
+                        "#ff95aa"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        164
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + green + blue + amber + white",
+                    "colors": [
+                        "#ffeaaa"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        209
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Automatic color change (one color)"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Automatic color change (two colors)"
+                }
+            ]
+        },
+        "Color change speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Strobe effect of the RGBWA LEDs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe effect"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        254
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Strobe effect fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Sound-controlled strobe effect",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "White strobe LEDs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Generic",
+                    "comment": "Blackout (all strobe LEDs off)",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Running light pattern 1 fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        29
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Running light pattern 2 fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        39
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Running light pattern 3 fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        49
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Running light pattern 4 fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        59
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Running light pattern 5 fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        69
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Running light pattern 6 fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Running light pattern 7 fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Running light pattern 8 fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Running light pattern 9 fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Running light pattern 10 fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "All strobe LEDs constantly on",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        },
+        "Laser": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blackout (laser off)",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        49
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red on",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        89
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green on",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        129
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Change green and red",
+                    "colors": [
+                        "#00ff00",
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        169
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red on + green strobe",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        209
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green on + red strobe",
+                    "colors": [
+                        "#00ff00",
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red strobe + green strobe",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                }
+            ]
+        },
+        "Strobe effect lasers": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe effect"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        254
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Strobe effect fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Sound-controlled strobe effect",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Rotation of the RGBWA LEDs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        133
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anticlockwise rotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "Rotation of the lasers": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        133
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anticlockwise rotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Operating mode",
+                "RGBWA LEDs",
+                "Color change speed",
+                "Strobe effect of the RGBWA LEDs",
+                "White strobe LEDs",
+                "Laser",
+                "Strobe effect lasers",
+                "Rotation of the RGBWA LEDs",
+                "Rotation of the lasers"
+            ]
+        }
+    ]
+}

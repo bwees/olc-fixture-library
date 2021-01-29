@@ -1,0 +1,95 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "Double Derby X",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.9.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Control/Operating Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        14
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        100
+                    ],
+                    "type": "Intensity",
+                    "comment": "LEDs on"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Auto"
+                }
+            ]
+        },
+        "Motor Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Counter-clockwise motor rotation (Slow ~ Fast)"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise motor rotation (Slow ~ Fast)"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Motor rotation right-to-left-to-right (Slow ~ Fast)"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Standard",
+            "channels": [
+                "Control/Operating Mode",
+                "Motor Rotation"
+            ]
+        }
+    ]
+}

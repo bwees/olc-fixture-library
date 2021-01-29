@@ -1,0 +1,282 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "SlimPar Hex 6",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Yinon Sahar",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "UV": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobing": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Slow - fast"
+                }
+            ]
+        },
+        "Color Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "No Function",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Macros"
+                }
+            ]
+        },
+        "Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Effect",
+                    "effectName": "No program"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        50
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 1"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 2"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 3"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 4"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        225
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Active mode (6-colors)",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Active mode (63-colors)",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Program Speed/Sound Sensitive": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Auto Program Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Dimmer Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        51
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimmer mode is manually set in Menue Options"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        101
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimmer mode off"
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        152
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimmer Mode 1 (fast speed)"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        203
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimmer Mode 2 (meduim speed)"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimmer Mode 3 (slow speed)"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White",
+                "UV"
+            ]
+        },
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Master Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White",
+                "UV",
+                "Strobing"
+            ]
+        },
+        {
+            "name": "12-channel",
+            "shortName": "12ch",
+            "channels": [
+                "Master Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White",
+                "UV",
+                "Strobing",
+                "Color Macro",
+                "Programs",
+                "Program Speed/Sound Sensitive",
+                "Dimmer Mode"
+            ]
+        }
+    ]
+}

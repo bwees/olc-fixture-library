@@ -1,0 +1,1423 @@
+{
+    "manufacturer": "Stairville",
+    "name": "MH-z720",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Tim Cullingworth",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            2,
+            2,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Rotation": {
+            "fineChannelAliases": [
+                "Rotation Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Inclination": {
+            "fineChannelAliases": [
+                "Inclination Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "200deg"
+            }
+        },
+        "Movement Speed (Fast to Slow)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Intensity Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intersity Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Light Effects": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "Effect",
+                    "effectName": "No Effect"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        31
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 1"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        47
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 2"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 3"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 4"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 5"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 6"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 7"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 8"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 9"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 10"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 11"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 12"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 13"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 14"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light Effect 15"
+                }
+            ]
+        },
+        "Effect Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        24
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        64
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe effect 1 Fast to Slow"
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        69
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        84
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampDown",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Strobe effect 2 (fast o,n slow off) Fast to Slow consecutively"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        89
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        104
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Strobe effect 3 (slow on, fast off) Fast to Slow consecutively"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        109
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        124
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "randomTiming": true,
+                    "comment": "Strobe effect 4 (random) Fast to Slow consecutively"
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        129
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        144
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Strobe effect 5 (random, fast on, slow off) Fast to Slow consecutively",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        145,
+                        149
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        164
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Strobe effect 6 (random, slow on, fast off) Fast to Slow consecutively",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        169
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        184
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe effect 7 (pulse series) Pulse interval increasing"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        189
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        204
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Strobe effect 8 (pulse series with random frequency) Fast to Slow consecutively"
+                },
+                {
+                    "dmxRange": [
+                        205,
+                        209
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        224
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Strobe effect 9 (single pulses) Fast to Slow consecutively"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        229
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        244
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe effect 10 (inverted pulse series) Pulse interval increasing"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "wide",
+                "angleEnd": "narrow"
+            }
+        },
+        "Special Settings": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Without function"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        14
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Blackout during Pan or Tilt movment"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        49
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Without function"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        54
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Rotation position reset"
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        59
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Inclination position reset"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        64
+                    ],
+                    "type": "Generic",
+                    "comment": "Optical zoom reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetZoom, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        69
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Without function"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        74
+                    ],
+                    "type": "Generic",
+                    "comment": "All functions reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        79
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Without function"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        84
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Inversion of rotation and inclination direction"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        89
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Inversion of rotation direction"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        94
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Inversion of inclination direction"
+                },
+                {
+                    "dmxRange": [
+                        95,
+                        99
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Cancel inversion of rotation direction"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        104
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Cancel inversion on inclination direction"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        109
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Cancel inversion of rotatin and inclination direction"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        114
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Movement speed normal"
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        119
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Movement speed fast"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        124
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Movement speed slow"
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        129
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Maximum fan speed"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        134
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Automatic fan speed"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        139
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Dimmer speed fast"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        144
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Dimmer speed slow"
+                },
+                {
+                    "dmxRange": [
+                        145,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Without function"
+                }
+            ]
+        },
+        "Preprogrammed movement pattern": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "No movement"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        23
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 1"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 2"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        55
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 3"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        71
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 4"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        87
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 5"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        103
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 6"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 7"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        135
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 8"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        151
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 1 with sound control",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        167
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 2 with sound control",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        183
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 3 with sound control",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 4 with sound control",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 5 with sound control",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        231
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 6 with sound control",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 7 with sound control",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement pattern 8 with sound control",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Intensity Red, LED group 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity Red, LED group 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity Red, LED group 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity Red, LED group 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity Green, LED group 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity Green, LED group 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity Green, LED group 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity Green, LED group 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity Blue, LED group 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity Blue, LED group 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity Blue, LED group 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity Blue, LED group 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity White, LED group 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Intensity White, LED group 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Intensity White, LED group 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Intensity White, LED group 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Colour setting": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        9
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 1",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        14
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 2",
+                    "colors": [
+                        "#ffffe5"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        19
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 3",
+                    "colors": [
+                        "#ffe5e5"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 4",
+                    "colors": [
+                        "#ff40ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        29
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 5",
+                    "colors": [
+                        "#ff99cc"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        34
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 6",
+                    "colors": [
+                        "#ebebff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        35,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 7",
+                    "colors": [
+                        "#f2f2ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        44
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 8",
+                    "colors": [
+                        "#80ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        49
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 9",
+                    "colors": [
+                        "#1affff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        54
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 10",
+                    "colors": [
+                        "#b2ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        59
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 11",
+                    "colors": [
+                        "#33d9ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        64
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 12",
+                    "colors": [
+                        "#b2ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        69
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 13",
+                    "colors": [
+                        "#f2ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 14",
+                    "colors": [
+                        "#b2faf2"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 15",
+                    "colors": [
+                        "#e5ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        84
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 16",
+                    "colors": [
+                        "#f0ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        89
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 17",
+                    "colors": [
+                        "#f7ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        94
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 18",
+                    "colors": [
+                        "#fcffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        95,
+                        99
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 19",
+                    "colors": [
+                        "#99ffcc"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        104
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 20",
+                    "colors": [
+                        "#a3edd1"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        109
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 21",
+                    "colors": [
+                        "#b2fa21"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        114
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 22",
+                    "colors": [
+                        "#bffa36"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        119
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 23",
+                    "colors": [
+                        "#d1fa6e"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        124
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 24",
+                    "colors": [
+                        "#defa9e"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        129
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 25",
+                    "colors": [
+                        "#bdfa5e"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        134
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 26",
+                    "colors": [
+                        "#ffffcc"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        139
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 27",
+                    "colors": [
+                        "#ffff66"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        144
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 28",
+                    "colors": [
+                        "#ffff99"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        145,
+                        149
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 29",
+                    "colors": [
+                        "#54fc17"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        154
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 30",
+                    "colors": [
+                        "#f5e01f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        155,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 31",
+                    "colors": [
+                        "#f7e836"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        164
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 32",
+                    "colors": [
+                        "#f5ed6b"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        169
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 33",
+                    "colors": [
+                        "#f7c70d"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        174
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour 34",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        175,
+                        179
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        201
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Gradual colour change in ascending order, fast to slow"
+                },
+                {
+                    "dmxRange": [
+                        202,
+                        207
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Stop colour change"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        229
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Gradual colour change in descending order, fash to slow"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        234
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark"
+                },
+                {
+                    "dmxRange": [
+                        235,
+                        249
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Stepped colour change in ascending order, fast to slow"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound controled colour changing"
+                }
+            ]
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "14-channel",
+            "shortName": "14ch",
+            "channels": [
+                "Rotation",
+                "Inclination",
+                "Movement Speed (Fast to Slow)",
+                "Intensity Red",
+                "Intensity Green",
+                "Intersity Blue",
+                "Intensity White",
+                "Light Effects",
+                "Effect Speed",
+                "Dimmer",
+                "Shutter",
+                "Zoom",
+                "Special Settings",
+                "Preprogrammed movement pattern"
+            ]
+        },
+        {
+            "name": "29-channel",
+            "shortName": "29ch",
+            "channels": [
+                "Rotation",
+                "Rotation Fine",
+                "Inclination",
+                "Inclination Fine",
+                "Movement Speed (Fast to Slow)",
+                "Intensity Red, LED group 1",
+                "Intensity Green, LED group 1",
+                "Intensity Blue, LED group 1",
+                "Intensity White, LED group 1",
+                "Intensity Red, LED group 2",
+                "Intensity Green, LED group 2",
+                "Intensity Blue, LED group 2",
+                "Intensity White, LED group 2",
+                "Intensity Red, LED group 3",
+                "Intensity Green, LED group 3",
+                "Intensity Blue, LED group 3",
+                "Intensity White, LED group 3",
+                "Intensity Red, LED group 4",
+                "Intensity Green, LED group 4",
+                "Intensity Blue, LED group 4",
+                "Intensity White, LED group 4",
+                "Colour setting",
+                "Light Effects",
+                "Effect Speed",
+                "Dimmer",
+                "Shutter",
+                "Zoom",
+                "Special Settings",
+                "Preprogrammed movement pattern"
+            ]
+        }
+    ]
+}

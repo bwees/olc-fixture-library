@@ -1,0 +1,230 @@
+{
+    "manufacturer": "Coemar",
+    "name": "Par Lite LED RGB",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Robert Box",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red/Fade Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "0 to 100%/1 second to 1 minute"
+            }
+        },
+        "Green/Pause Time": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "0 to 100%/1 second to 3.30 minutes"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Strobe Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Generic",
+                    "comment": "No effect",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        57
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Variable speed, from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        59
+                    ],
+                    "type": "Generic",
+                    "comment": "Stop",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        108
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Sequenced pulse effect, slow closing, fast opening"
+                },
+                {
+                    "dmxRange": [
+                        109,
+                        110
+                    ],
+                    "type": "Generic",
+                    "comment": "Stop",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        159
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Sequenced pulse effect, fast closing, slow opening"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        161
+                    ],
+                    "type": "Generic",
+                    "comment": "Stop",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        162,
+                        207
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random effect from slow to fast with synchronised colours"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        209
+                    ],
+                    "type": "Generic",
+                    "comment": "Stop",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random effect from slow to fast with non-synchronised colours"
+                }
+            ]
+        },
+        "Automated Functions": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Effect",
+                    "effectName": "No effect"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        50
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automated program 1"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        91
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automated program 2"
+                },
+                {
+                    "dmxRange": [
+                        92,
+                        132
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automated program 3"
+                },
+                {
+                    "dmxRange": [
+                        133,
+                        173
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automated program 4"
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        214
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random program repeat"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Repeat programs in sequence"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Master Dimmer",
+                "Red/Fade Speed",
+                "Green/Pause Time",
+                "Blue",
+                "Strobe Effect",
+                "Automated Functions"
+            ]
+        }
+    ]
+}

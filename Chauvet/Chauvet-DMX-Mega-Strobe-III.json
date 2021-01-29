@@ -1,0 +1,68 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "DMX Mega Strobe III",
+    "categories": [
+        "Strobe"
+    ],
+    "meta": {
+        "authors": [
+            "eklynx",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.9.1)"
+        }
+    },
+    "availableChannels": {
+        "Speed/Mode/Blinder Function": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        42
+                    ],
+                    "type": "Effect",
+                    "effectName": "Slow <-> fast/No function"
+                },
+                {
+                    "dmxRange": [
+                        43,
+                        211
+                    ],
+                    "type": "Effect",
+                    "effectName": "Slow <-> fast/Blinder (requires ch. 2 to be at DMX value 000)"
+                },
+                {
+                    "dmxRange": [
+                        212,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound triggered/No function",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "Low <-> high (0 for Blinder effect)"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Standard",
+            "channels": [
+                "Speed/Mode/Blinder Function",
+                "Dimmer"
+            ]
+        }
+    ]
+}

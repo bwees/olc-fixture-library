@@ -1,0 +1,122 @@
+{
+    "manufacturer": "American DJ",
+    "name": "Starball LED DMX",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.9.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer/Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        199
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Dimmer 0 to 100%",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        247
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobing"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open"
+                }
+            ]
+        },
+        "Dome Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        120
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "fast CW",
+                    "speedEnd": "slow CW"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        134
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        245
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        255
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Standard",
+            "channels": [
+                "Dimmer/Strobe",
+                "Dome Rotation"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,489 @@
+{
+    "manufacturer": "Pro-Lights",
+    "name": "STUDIOCOBPLUSFC",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Martin Vlcek",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        30
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        100
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe slow to Fast"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        130
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Function"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        200
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random strobe effect slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                }
+            ]
+        },
+        "Color function": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Effect",
+                    "effectName": "No presets",
+                    "switchChannels": {
+                        "No presets / Color presets / White presets / Color macro": "No presets"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color function",
+                    "switchChannels": {
+                        "No presets / Color presets / White presets / Color macro": "Color presets"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "White presets",
+                    "switchChannels": {
+                        "No presets / Color presets / White presets / Color macro": "White presets"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color macro",
+                    "switchChannels": {
+                        "No presets / Color presets / White presets / Color macro": "Color macro"
+                    }
+                }
+            ]
+        },
+        "Color presets": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        28
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB 100%, 0 - 100%, 0%",
+                    "colors": [
+                        "#ff0000",
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        29,
+                        56
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB 0 - 100%, 100%, 0%",
+                    "colors": [
+                        "#00ff00",
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        57,
+                        84
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB 0%, 100%, 0 - 100%",
+                    "colors": [
+                        "#00ff00",
+                        "#bf4040"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        112
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB 0%, 0 - 100%, 100%",
+                    "colors": [
+                        "#0000ff",
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB 0 - 100%, 0%, 100%",
+                    "colors": [
+                        "#0000ff",
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        168
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB 100%, 0%, 0 - 100%",
+                    "colors": [
+                        "#ff0000",
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        169,
+                        196
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB 100%, 0 - 100%, 0 - 100%",
+                    "colors": [
+                        "#ff0000",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        197,
+                        224
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB 0 - 100%, 0 - 100%, 100%",
+                    "colors": [
+                        "#0000ff",
+                        "#ffffff"
+                    ]
+                }
+            ]
+        },
+        "White presets": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB W 2000K",
+                    "colors": [
+                        "#f57900"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        29,
+                        40
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB W 2000K ~ 3000K",
+                    "colors": [
+                        "#c17d11"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        70
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB W 3000K ~ 4000K",
+                    "colors": [
+                        "#e9b96e"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        100
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB W 4000K ~ 5000K",
+                    "colors": [
+                        "#ffe1b4"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        130
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB W 5000K ~ 6000K",
+                    "colors": [
+                        "#fffac4"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        160
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB W 6000K ~ 7000K",
+                    "colors": [
+                        "#fffabd"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        190
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB W 7000K ~ 8000K",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB W 8000K ~ 9000K",
+                    "colors": [
+                        "#cbfff9"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        250
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB W 9000K ~ 10000K",
+                    "colors": [
+                        "#aefff6"
+                    ]
+                }
+            ]
+        },
+        "Color macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        60
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Auto program 1",
+                    "colors": [
+                        "null"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        110
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Auto Program 2",
+                    "colors": [
+                        "null"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        160
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Auto Program 3",
+                    "colors": [
+                        "null"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        210
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Auto Program 4",
+                    "colors": [
+                        "null"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Auto Program 5",
+                    "colors": [
+                        "null"
+                    ]
+                }
+            ]
+        },
+        "Color Macro Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "comment": "Color macro speed Slow to Fast"
+            }
+        },
+        "Dimmer fade": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "fast",
+                "speedEnd": "slow",
+                "comment": "Dimmer fade from fast to slow"
+            }
+        },
+        "No presets": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "10-channel",
+            "shortName": "10ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Strobe",
+                "Color function",
+                "No presets",
+                "Color Macro Speed",
+                "Dimmer fade"
+            ]
+        }
+    ]
+}

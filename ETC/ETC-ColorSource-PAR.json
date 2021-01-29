@@ -1,0 +1,113 @@
+{
+    "manufacturer": "ETC",
+    "name": "ColorSource PAR",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Jon Rosen",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.6 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Lime": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Lime"
+            }
+        },
+        "Intensity of preset 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Intensity",
+                "Red",
+                "Green",
+                "Blue",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "6-channel (direct)",
+            "shortName": "6ch (direct)",
+            "channels": [
+                "Intensity",
+                "Red",
+                "Green",
+                "Blue",
+                "Lime",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Intensity of preset 1"
+            ]
+        },
+        {
+            "name": "3-channel (RGB)",
+            "shortName": "3ch (RGB)",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        }
+    ]
+}

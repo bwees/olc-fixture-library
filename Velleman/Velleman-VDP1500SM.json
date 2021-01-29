@@ -1,0 +1,51 @@
+{
+    "manufacturer": "Velleman",
+    "name": "VDP1500SM",
+    "categories": [
+        "Smoke"
+    ],
+    "meta": {
+        "authors": [
+            "Freddy Hoogstoel",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.5a)"
+        }
+    },
+    "availableChannels": {
+        "Smoke": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Spray OFF"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Spray ON (gradual min to max output)"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Standard",
+            "channels": [
+                "Smoke"
+            ]
+        }
+    ]
+}

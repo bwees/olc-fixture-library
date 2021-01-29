@@ -1,0 +1,320 @@
+{
+    "manufacturer": "Eurolite",
+    "name": "LED SL-600",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Tim Cullingworth",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Function"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe with increasing speed"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Opening pulse"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampDown",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Closing pulse"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random"
+                }
+            ]
+        },
+        "Iris": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Iris",
+                "openPercentStart": "closed",
+                "openPercentEnd": "open"
+            }
+        },
+        "Color Presets": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        16
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        17,
+                        33
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White + Red",
+                    "colors": [
+                        "#ffffff",
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        34,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        67
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        84
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        101
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green + Magenta",
+                    "colors": [
+                        "#00ff00",
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        118
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        119,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta + Yellow",
+                    "colors": [
+                        "#ff00ff",
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        152
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        169
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow + Blue",
+                    "colors": [
+                        "#ffff00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        186
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        187,
+                        203
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue + Orange",
+                    "colors": [
+                        "#0000ff",
+                        "#ffaa00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Orange",
+                    "colors": [
+                        "#ffaa00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        237
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Orange + Purple",
+                    "colors": [
+                        "#ffaa00",
+                        "#aa00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        238,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Purple",
+                    "colors": [
+                        "#aa00ff"
+                    ]
+                }
+            ]
+        },
+        "Color Temperature": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cold white"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "5600K"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "4500K"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "3200K"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Master Dimmer",
+                "Strobe Effect",
+                "Iris",
+                "Color Presets",
+                "Color Temperature"
+            ]
+        }
+    ]
+}

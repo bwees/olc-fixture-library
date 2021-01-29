@@ -1,0 +1,108 @@
+{
+    "manufacturer": "Pro-Lights",
+    "name": "Omni Tri-9",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Kings Lighting",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.5.0)"
+        }
+    },
+    "availableChannels": {
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Effects": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        84
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Macro"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Change"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Fade"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Master Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Effects",
+                "Strobe"
+            ]
+        }
+    ]
+}

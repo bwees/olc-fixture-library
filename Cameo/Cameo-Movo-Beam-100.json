@@ -1,0 +1,1159 @@
+{
+    "manufacturer": "Cameo",
+    "name": "Movo Beam 100",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Felix Hartnagel",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.2 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            null,
+            null,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "fineChannelAliases": [
+                "Dimmer fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Strobe open"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "1Hz",
+                    "speedEnd": "20Hz",
+                    "comment": "Strobe slow -> fast <1Hz - 20Hz"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "narrow",
+                "angleEnd": "wide"
+            }
+        },
+        "Auto Program": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        36
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 1"
+                },
+                {
+                    "dmxRange": [
+                        37,
+                        67
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 2"
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        98
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 3"
+                },
+                {
+                    "dmxRange": [
+                        99,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 4"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 5"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 6"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        222
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 7"
+                },
+                {
+                    "dmxRange": [
+                        223,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 8"
+                }
+            ]
+        },
+        "Pan/Tilt Speed (Set Speed Auto Programms)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Endless Pan rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        126
+                    ],
+                    "type": "PanContinuous",
+                    "speedStart": "fast CW",
+                    "speedEnd": "slow CW",
+                    "comment": "clockwise pan rotation (fast to slow)"
+                },
+                {
+                    "dmxRange": [
+                        127,
+                        128
+                    ],
+                    "type": "PanContinuous",
+                    "speed": "stop",
+                    "comment": "no movement"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "PanContinuous",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW",
+                    "comment": "counter clockwise pan rotation (slow to fast)"
+                }
+            ]
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Endless Tilt rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        126
+                    ],
+                    "type": "TiltContinuous",
+                    "speedStart": "fast CW",
+                    "speedEnd": "slow CW",
+                    "comment": "clockwise tilt rotation (fast to slow)"
+                },
+                {
+                    "dmxRange": [
+                        127,
+                        128
+                    ],
+                    "type": "TiltContinuous",
+                    "speed": "stop",
+                    "comment": "no movement"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "TiltContinuous",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW",
+                    "comment": "counter clockwise tilt rotation (slow to fast)"
+                }
+            ]
+        },
+        "Strobe functions": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Strobe open"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Strobe closed"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        33
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse Random, slow -> fast"
+                },
+                {
+                    "dmxRange": [
+                        34,
+                        56
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp up Random, slow -> fast"
+                },
+                {
+                    "dmxRange": [
+                        57,
+                        79
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampDown",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp down Random, slow -> fast"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        102
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random Strobe Effect, slow -> fast"
+                },
+                {
+                    "dmxRange": [
+                        103,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe Break Effekt, 5s.....1s (Short burst with break)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        250
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "1Hz",
+                    "speedEnd": "20Hz",
+                    "comment": "Strobe slow -> fast <1Hz -20 Hz"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Strobe open"
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Colour Macro (override RGBW)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        13
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        21
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber",
+                    "colors": [
+                        "#ffaa00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        22,
+                        29
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow warm",
+                    "colors": [
+                        "#ffd75c"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        37
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        45
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        46,
+                        53
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Turquoise",
+                    "colors": [
+                        "#7effd9"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        54,
+                        61
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        62,
+                        69
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        77
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Lavender",
+                    "colors": [
+                        "#aaaaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        78,
+                        85
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Mauve",
+                    "colors": [
+                        "#c28dab"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        93
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        94,
+                        101
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pink",
+                    "colors": [
+                        "#ffaaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        109
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Warm White",
+                    "colors": [
+                        "#ffffee"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        117
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        118,
+                        125
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cold White",
+                    "colors": [
+                        "#edffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Jumping Stop"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Jumping Speed slow -> fast / Colour 1 -> 12"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Fading Speed slow -> fast / Colour 1 -> 12"
+                }
+            ]
+        },
+        "Pan/Tilt Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "540deg",
+                    "comment": "off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        40
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "540deg",
+                    "comment": "PAN \"small > big\""
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        75
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "540deg",
+                    "comment": "TILT \"small > big\""
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        110
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "540deg",
+                    "comment": "PAN / TILT \"small > big\""
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        145
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "540deg",
+                    "comment": "PAN / TILT (invers) \"small > big\""
+                },
+                {
+                    "dmxRange": [
+                        146,
+                        180
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "540deg",
+                    "comment": "Circle \"small > big\""
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        215
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "540deg",
+                    "comment": "Circle (invers) \"small > big\""
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "540deg",
+                    "comment": "Random \"small > big\""
+                }
+            ]
+        },
+        "Set dimmer curve": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Linear Dimmer Curve"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Exponential Dimmer Curve"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Logarithmic Dimmer Curve"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "S-Curve Dimmer Curve"
+                }
+            ]
+        },
+        "Pan/Tilt Speed (Set Speed of Pan&Tilt / Auto Programms / Pan&Tilt Macros)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Device settings": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        32
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Blackout while Moving on (Hold 3s)"
+                },
+                {
+                    "dmxRange": [
+                        33,
+                        59
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Blackout while Moving off (Hold 5s)"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        86
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Invert Pan on (Hold 3s)"
+                },
+                {
+                    "dmxRange": [
+                        87,
+                        113
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Invert Pan off(Hold 5s)"
+                },
+                {
+                    "dmxRange": [
+                        114,
+                        140
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Invert Tilt on (Hold 3s)"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        167
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Invert Tilt off (Hold 5s)"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        194
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Silent Fan on (Hold 3s)"
+                },
+                {
+                    "dmxRange": [
+                        195,
+                        221
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Silent Fan off (Hold 5s)"
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Reset All Functions (Hold 3s)"
+                }
+            ]
+        },
+        "Dimmer Colour Ring": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe Colour Ring": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe slow -> fast <1Hz - 20 Hz",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Red1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Colour Ring Macro (override RGB)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        13
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 1 (Colour Jump)"
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        21
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 2 (Red 1 Step)"
+                },
+                {
+                    "dmxRange": [
+                        22,
+                        29
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 3 (Green 1 Step)"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        37
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 4 (Blue 1 Step)"
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        45
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 5 (Yellow 1 Step)"
+                },
+                {
+                    "dmxRange": [
+                        46,
+                        53
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 6 (Cyan 1 Step)"
+                },
+                {
+                    "dmxRange": [
+                        54,
+                        61
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 7 (Magenta 1 Step)"
+                },
+                {
+                    "dmxRange": [
+                        62,
+                        69
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 8 (2step Magenta Yellow)"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        77
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 9 (2step Red Green)"
+                },
+                {
+                    "dmxRange": [
+                        78,
+                        85
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 10 (2step Red Blue)"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        93
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 11 (2step Blue Yellow)"
+                },
+                {
+                    "dmxRange": [
+                        94,
+                        101
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 12 (2step Green Blue)"
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        109
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 13 (2step Magenta Blue)"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        117
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 14 (2step Green Yellow)"
+                },
+                {
+                    "dmxRange": [
+                        118,
+                        125
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 15 (2step Cyan Magenta)"
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        133
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Macro 16 (2step Cyan Red)"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Colour Ring Macro Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "slow > fast",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Dimmer",
+                "Strobe",
+                "Auto Program",
+                "Pan/Tilt Speed (Set Speed Auto Programms)"
+            ]
+        },
+        {
+            "name": "15-channel",
+            "shortName": "15ch",
+            "channels": [
+                "Pan",
+                "Pan fine",
+                "Endless Pan rotation",
+                "Tilt",
+                "Tilt fine",
+                "Endless Tilt rotation",
+                "Dimmer",
+                "Strobe functions",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Device settings",
+                "Colour Ring Macro (override RGB)",
+                "Colour Ring Macro Speed"
+            ]
+        },
+        {
+            "name": "35-channel",
+            "shortName": "35ch",
+            "channels": [
+                "Pan",
+                "Pan fine",
+                "Endless Pan rotation",
+                "Tilt",
+                "Tilt fine",
+                "Endless Tilt rotation",
+                "Dimmer",
+                "Dimmer fine",
+                "Strobe functions",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Colour Macro (override RGBW)",
+                "Auto Program",
+                "Pan/Tilt Macro",
+                "Set dimmer curve",
+                "Pan/Tilt Speed (Set Speed of Pan&Tilt / Auto Programms / Pan&Tilt Macros)",
+                "Device settings",
+                "Dimmer Colour Ring",
+                "Strobe Colour Ring",
+                "Red1",
+                "Green1",
+                "Blue1",
+                "Red2",
+                "Green2",
+                "Blue2",
+                "Red3",
+                "Green3",
+                "Blue3",
+                "Red4",
+                "Green4",
+                "Blue4",
+                "Colour Ring Macro (override RGB)",
+                "Colour Ring Macro Speed"
+            ]
+        }
+    ]
+}

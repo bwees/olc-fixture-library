@@ -1,0 +1,405 @@
+{
+    "manufacturer": "Eurolite",
+    "name": "LED TMH-46",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Jakob Frank",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "220deg"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Function"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        249
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe with increasing speed"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Motion Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        44
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 1"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        74
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 2"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        104
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 3"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 4"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        157
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound controlled internal program 1",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        158,
+                        187
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound controlled internal program 2",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        217
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound controlled internal program 3",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound controlled internal program 4",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Motion Macro Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Decreasing speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Color Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color fade"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 1"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        72
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 2"
+                },
+                {
+                    "dmxRange": [
+                        73,
+                        105
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 3"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        138
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 4"
+                },
+                {
+                    "dmxRange": [
+                        139,
+                        140
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal program 5"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        167
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound controlled internal program 1",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        195
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound controlled internal program 2",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound controlled internal program 3",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        251
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound controlled internal program 4",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound controlled internal program 5",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Color Macro Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Increasing speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        249
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Generic",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "UV": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Pan/Tilt speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "16-channel",
+            "shortName": "16ch",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Pan/Tilt speed",
+                "Dimmer",
+                "Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Amber",
+                "UV",
+                "Motion Macros",
+                "Motion Macro Speed",
+                "Color Macros",
+                "Color Macro Speed",
+                "Reset"
+            ]
+        },
+        {
+            "name": "18-channel",
+            "shortName": "18ch",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Pan/Tilt speed",
+                "Dimmer",
+                "Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Amber",
+                "UV",
+                "Motion Macros",
+                "Motion Macro Speed",
+                "Color Macros",
+                "Color Macro Speed",
+                "Reset"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+{
+    "manufacturer": "Cameo",
+    "name": "TS 40 WW",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Andrew",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "fineChannelAliases": [
+                "Dimmer Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Strobe open"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "1Hz",
+                    "speedEnd": "20Hz",
+                    "comment": "Strobe slow -> fast < 1 Hz - 20 Hz"
+                }
+            ]
+        },
+        "Set Dimmer Curve": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Linear dimmer curve"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Exponential dimmer curve"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Logarythmic dimmer curve"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "S-curve dimmer curve"
+                }
+            ]
+        },
+        "Device Settings": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        63
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Dimmer response LED (hold 3s)"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Dimmer response halogen (hold 3s)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Dimmer",
+                "Dimmer Fine",
+                "Strobe",
+                "Set Dimmer Curve",
+                "Device Settings"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Dimmer",
+                "Dimmer Fine",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Dimmer"
+            ]
+        }
+    ]
+}

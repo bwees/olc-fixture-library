@@ -1,0 +1,586 @@
+{
+    "manufacturer": "Showtec",
+    "name": "Compact Par 7 Q4",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Alexander",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "20Hz",
+                    "comment": "Strobe 0-20 Hz"
+                }
+            ]
+        },
+        "Random Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true
+                }
+            ]
+        },
+        "Color Presets": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        13
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 1 (R255; G000; B000; W000)"
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        20
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 2 (R255; G000; B000; W100)"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        27
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 3 (R255; G000; B000; W200)"
+                },
+                {
+                    "dmxRange": [
+                        28,
+                        34
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 4 (R255; G050; B000; W000)"
+                },
+                {
+                    "dmxRange": [
+                        35,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 5 (R255; G150; B000; W000)"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        48
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 6 (R255; G255; B000; W000)"
+                },
+                {
+                    "dmxRange": [
+                        49,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 7 (R255; G255; B000; W075)"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        62
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 8 (R255; G255; B000; W255)"
+                },
+                {
+                    "dmxRange": [
+                        63,
+                        69
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 9 (R000; G255; B000; W150)"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        76
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 10 (R000; G255; B000; W050)"
+                },
+                {
+                    "dmxRange": [
+                        77,
+                        83
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 11 (R000; G255; B000; W000)"
+                },
+                {
+                    "dmxRange": [
+                        84,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 12 (R000; G255; B050; W000)"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        97
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 13 (R000; G255; B150; W000)"
+                },
+                {
+                    "dmxRange": [
+                        98,
+                        104
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 14 (R000; G255; B255; W000)"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        111
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 15 (R000; G255; B255; W075)"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        118
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 16 (R000; G255; B255; W150)"
+                },
+                {
+                    "dmxRange": [
+                        119,
+                        125
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 17 (R000; G100; B255; W255)"
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        132
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 18 (R000; G000; B255; W100)"
+                },
+                {
+                    "dmxRange": [
+                        133,
+                        139
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 19 (R000; G000; B255; W050)"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        146
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 20 (R000; G000; B255; W000)"
+                },
+                {
+                    "dmxRange": [
+                        147,
+                        153
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 21 (R075; G000; B255; W000)"
+                },
+                {
+                    "dmxRange": [
+                        154,
+                        160
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 22 (R160; G000; B255; W000)"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        167
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 23 (R255; G000; B255; W000)"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        174
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 24 (R255; G000; B175; W000)"
+                },
+                {
+                    "dmxRange": [
+                        175,
+                        181
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 25 (R255; G000; B100; W000)"
+                },
+                {
+                    "dmxRange": [
+                        182,
+                        188
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 26 (R255; G000; B100; W050)"
+                },
+                {
+                    "dmxRange": [
+                        189,
+                        195
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 27 (R255; G000; B025; W050)"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        202
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 28 (R255; G000; B025; W025)"
+                },
+                {
+                    "dmxRange": [
+                        203,
+                        209
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 29 (R255; G000; B025; W000)"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        216
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 30 (R000; G000; B000; W255)"
+                },
+                {
+                    "dmxRange": [
+                        217,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 31 (R075; G075; B100; W255)"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        230
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 32 (R000; G000; B100; W255)"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fixed Colour 33 (R255; G255; B225; W255)"
+                }
+            ]
+        },
+        "Color Running": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        31
+                    ],
+                    "type": "Effect",
+                    "effectName": "Jump 1"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        47
+                    ],
+                    "type": "Effect",
+                    "effectName": "Jump 2"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Jump 3"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Jump 4"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Jump 5"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "Effect",
+                    "effectName": "Jump 6"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Jump 7"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "Jump 8"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade 1"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade 2"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade 3"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade 4"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade 5"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade 6"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade 7"
+                }
+            ]
+        },
+        "Speed color running": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "comment": "Gradual speed adjustment, from"
+            }
+        },
+        "Sound mode": {
+            "fineChannelAliases": [
+                "Color Running"
+            ],
+            "dmxValueResolution": "8bit",
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        50
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Gradual adjustment sensivity, from 1-100%"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Dimmer",
+                "Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "White"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White"
+            ]
+        },
+        {
+            "name": "11-channel",
+            "shortName": "11ch",
+            "channels": [
+                "Dimmer",
+                "Strobe",
+                "Random Strobe",
+                "Color Presets",
+                "Color Running",
+                "Speed color running",
+                "Sound mode",
+                "Red",
+                "Green",
+                "Blue",
+                "White"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "manufacturer": "Blizzard Lighting",
+    "name": "Lo-Pro CSI",
+    "categories": [
+        "Effect"
+    ],
+    "meta": {
+        "authors": [
+            "Alton Olson",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.1)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            null,
+            null,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Section 1 UV Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Section 2 UV Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Color Temperature": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Colour temperature"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Dimmer",
+                "Strobe",
+                "Section 1 UV Intensity",
+                "Section 2 UV Intensity",
+                "Color Temperature"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Dimmer",
+                "Strobe",
+                "Section 1 UV Intensity",
+                "Section 2 UV Intensity"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Dimmer",
+                "Section 1 UV Intensity",
+                "Section 2 UV Intensity"
+            ]
+        },
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Section 1 UV Intensity",
+                "Section 2 UV Intensity"
+            ]
+        },
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Dimmer"
+            ]
+        }
+    ]
+}

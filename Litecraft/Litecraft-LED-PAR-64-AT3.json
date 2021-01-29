@@ -1,0 +1,204 @@
+{
+    "manufacturer": "Litecraft",
+    "name": "LED PAR 64 AT3",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Mihai Andrei",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Strobe/Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "16 speed values"
+                }
+            ]
+        },
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        35
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        71
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic ramp up"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        107
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic ramp down"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic ramp up/down"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic color mix mode"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random 3-colors"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        251
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random 7-colors"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Audio"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Color Macro Mode (1/2-Channel Mode)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset",
+                "comment": "35 colors + black"
+            }
+        },
+        "Color Macro Mode (7-Channel Mode)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        13
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "No macro"
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pre-programmed colors"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Color Macro Mode (1/2-Channel Mode)"
+            ]
+        },
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Color Macro Mode (1/2-Channel Mode)",
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Color Macro Mode (7-Channel Mode)",
+                "Strobe/Speed",
+                "Mode",
+                "Dimmer"
+            ]
+        }
+    ]
+}

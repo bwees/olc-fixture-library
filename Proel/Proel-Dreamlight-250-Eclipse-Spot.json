@@ -1,0 +1,602 @@
+{
+    "manufacturer": "Proel",
+    "name": "Dreamlight 250 Eclipse Spot",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Massimo Callegari",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Colour Wheel": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Purple",
+                    "colors": [
+                        "#c000c0"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Orange",
+                    "colors": [
+                        "#ff8000"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Pink",
+                    "colors": [
+                        "#ffc0ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Deep Blue",
+                    "colors": [
+                        "#000080"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                }
+            ]
+        },
+        "Gobo Wheel": {
+            "slots": [
+                {
+                    "type": "Gobo",
+                    "name": "No gobo"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 1"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 2"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 3"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 4"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 5"
+                },
+                {
+                    "type": "Gobo",
+                    "name": "Gobo 6"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "530deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "280deg"
+            }
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        249
+                    ],
+                    "type": "Speed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Pan Tilt Speed"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        252
+                    ],
+                    "type": "Speed",
+                    "comment": "Max speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        253,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Blackout during movement",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        199
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        210
+                    ],
+                    "type": "Generic",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Colour Wheel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        12
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "White"
+                },
+                {
+                    "dmxRange": [
+                        13,
+                        25
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        38
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Yellow"
+                },
+                {
+                    "dmxRange": [
+                        39,
+                        51
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Purple"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        64
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        77
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Orange"
+                },
+                {
+                    "dmxRange": [
+                        78,
+                        90
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        103
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Pink"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        116
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Deep Blue"
+                },
+                {
+                    "dmxRange": [
+                        117,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 10,
+                    "comment": "Cyan"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "WheelRotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Rainbow effect"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "WheelRotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Rainbow effect"
+                }
+            ]
+        },
+        "Gobo Wheel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        17
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "No gobo"
+                },
+                {
+                    "dmxRange": [
+                        18,
+                        35
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Gobo 1"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        53
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Gobo 2"
+                },
+                {
+                    "dmxRange": [
+                        54,
+                        71
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Gobo 3"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        89
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Gobo 4"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        107
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Gobo 5"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        125
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Gobo 6"
+                },
+                {
+                    "dmxRange": [
+                        127,
+                        191
+                    ],
+                    "type": "WheelRotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Rainbow effect"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        192
+                    ],
+                    "type": "WheelRotation",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        193,
+                        255
+                    ],
+                    "type": "WheelRotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Rainbow effect"
+                }
+            ]
+        },
+        "Gobo rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "Effect",
+                    "effectName": "Steady"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        135
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        255
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW"
+                }
+            ]
+        },
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        13
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        214
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe effect (Slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        249
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Progressive strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Intensity",
+                    "comment": "Close"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        59
+                    ],
+                    "type": "Intensity",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Dimmer (0 to 100%)"
+                }
+            ]
+        },
+        "Prism": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PrismRotation",
+                "speedStart": "fast CW",
+                "speedEnd": "slow CW",
+                "helpWanted": "Does the prism rotate clockwise or counter-clockwise?"
+            }
+        },
+        "Prism rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        135
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        255
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW"
+                }
+            ]
+        },
+        "Focus": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Focus",
+                "distanceStart": "near",
+                "distanceEnd": "far"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Pan Fine",
+                "Tilt Fine",
+                "Speed",
+                "Reset",
+                "Colour Wheel",
+                "Gobo Wheel",
+                "Gobo rotation",
+                "Shutter",
+                "Dimmer",
+                "Prism",
+                "Prism rotation",
+                "Focus"
+            ]
+        }
+    ]
+}

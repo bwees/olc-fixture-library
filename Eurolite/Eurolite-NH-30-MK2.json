@@ -1,0 +1,52 @@
+{
+    "manufacturer": "Eurolite",
+    "name": "NH-30 MK2",
+    "categories": [
+        "Hazer"
+    ],
+    "meta": {
+        "authors": [
+            "Peter Goderie",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Fog Output": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Intensity",
+                    "comment": "No fog output"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Fog output volume (0 - 100%)"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Fog Output"
+            ]
+        }
+    ]
+}

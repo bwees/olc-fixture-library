@@ -1,0 +1,1449 @@
+{
+    "manufacturer": "SGM",
+    "name": "G-Profile",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Robert Box",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.2 GIT)"
+        }
+    },
+    "wheels": {
+        "Gobo Wheel 1": {
+            "slots": [
+                {
+                    "type": "Open"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Robe/gobo00067.svg",
+                    "name": "Gobo 1 - position 1"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM/gobo00133.svg",
+                    "name": "Gobo 1 - position 2"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM/gobo00257.png",
+                    "name": "Gobo 1 - position 3"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Robe/gobo00064.svg",
+                    "name": "Gobo 1 - position 4"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/ClayPaky/gobo00081.png",
+                    "name": "Gobo 1 - position 5"
+                }
+            ]
+        },
+        "Effect Wheel (Coarse)": {
+            "slots": [
+                {
+                    "type": "Unknown",
+                    "name": "Effect wheel (coarse)"
+                }
+            ]
+        },
+        "Effect Wheel (Fine)": {
+            "slots": [
+                {
+                    "type": "Unknown",
+                    "name": "Effect wheel (fine)"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Open 1 ('pre heat' enabled)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        151
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        175
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse - open"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        199
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse - close"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        244
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe - random"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Open 2 ('pre-heat' enabled)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "CTC": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "No CTC (raw)"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "\u22482000\u00b0K"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        14
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        15
+                    ],
+                    "type": "Effect",
+                    "effectName": "\u22482200\u00b0K"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        39
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        40
+                    ],
+                    "type": "Effect",
+                    "effectName": "\u22482700\u00b0K"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        53
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        54,
+                        54
+                    ],
+                    "type": "Effect",
+                    "effectName": "\u22483000\u00b0K"
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        64
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        65
+                    ],
+                    "type": "Effect",
+                    "effectName": "\u22483200\u00b0K"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        104
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        105
+                    ],
+                    "type": "Effect",
+                    "effectName": "\u22484000\u00b0K"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        114
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        115
+                    ],
+                    "type": "Effect",
+                    "effectName": "\u22484200\u00b0K"
+                },
+                {
+                    "dmxRange": [
+                        116,
+                        176
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        177,
+                        177
+                    ],
+                    "type": "Effect",
+                    "effectName": "\u22485500\u00b0K"
+                },
+                {
+                    "dmxRange": [
+                        178,
+                        215
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        216
+                    ],
+                    "type": "Effect",
+                    "effectName": "\u22486300\u00b0K"
+                },
+                {
+                    "dmxRange": [
+                        217,
+                        237
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        238,
+                        238
+                    ],
+                    "type": "Effect",
+                    "effectName": "\u22488000\u00b0K"
+                },
+                {
+                    "dmxRange": [
+                        239,
+                        254
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "\u224810000\u00b0K"
+                }
+            ]
+        },
+        "Pan (Coarse)": {
+            "fineChannelAliases": [
+                "Pan (Fine)"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt (Coarse)": {
+            "fineChannelAliases": [
+                "Tilt (Fine)"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "240deg"
+            }
+        },
+        "Gobo Wheel 1": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        20
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        41
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Gobo 1 - position 1"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        62
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Gobo 1 - position 2"
+                },
+                {
+                    "dmxRange": [
+                        63,
+                        83
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Gobo 1 - position 3"
+                },
+                {
+                    "dmxRange": [
+                        84,
+                        104
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Gobo 1 - position 4"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Gobo 1 - position 5"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Continuous rotation CW"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        192
+                    ],
+                    "type": "WheelRotation",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        193,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Continuous rotation CCW"
+                }
+            ]
+        },
+        "Gobo Wheel 1 Indexing/Rotation/Shake (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "WheelShake",
+                "slotNumber": 1,
+                "comment": "Gobo wheel 1 indexing/rotation/shake (coarse)"
+            }
+        },
+        "Gobo Wheel 1 Indexing/Rotation/Shake (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "WheelShake",
+                "slotNumber": 1,
+                "comment": "Gobo wheel 1 indexing/rotation/shake (fine)"
+            }
+        },
+        "Blade 1 In": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Out -> In",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 2 In": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Out -> In",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 3 In": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Out -> In",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 4 In": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Out -> In",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 1 Angle": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-30\u00b0 -> +30\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 2 Angle": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-30\u00b0 -> +30\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 3 Angle": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-30\u00b0 -> +30\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 4 Angle": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-30\u00b0 -> +30\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade Assembly Rotate": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-45\u00b0 -> +45\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Effect Wheel (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Effect wheel (coarse)"
+            }
+        },
+        "Effect Wheel (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Effect wheel (fine)"
+            }
+        },
+        "Iris": {
+            "fineChannelAliases": [
+                "Zoom (Fine)",
+                "Focus (Fine)"
+            ],
+            "dmxValueResolution": "8bit",
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        200
+                    ],
+                    "type": "Generic",
+                    "comment": "Open -> close"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        205
+                    ],
+                    "type": "Generic",
+                    "comment": "Effect - \"open fast / close slow\""
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        210
+                    ],
+                    "type": "Generic",
+                    "comment": "Effect - \"open slow / close fast\""
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        215
+                    ],
+                    "type": "Generic",
+                    "comment": "Effect - \"open / close\""
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Effect - \"random close / open\", slow -> fast"
+                }
+            ]
+        },
+        "Prism": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Prism",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        129
+                    ],
+                    "type": "Prism",
+                    "comment": "Continuous rotation CW, fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        130
+                    ],
+                    "type": "Prism",
+                    "comment": "No rotation"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        255
+                    ],
+                    "type": "Prism",
+                    "comment": "Continuous rotation CCW, slow to fast"
+                }
+            ]
+        },
+        "Frost": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Open"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "No frost -> maximum frost"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "wide",
+                "angleEnd": "narrow"
+            }
+        },
+        "Focus": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Focus",
+                "distanceStart": "far",
+                "distanceEnd": "near"
+            }
+        },
+        "Effect Channel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "No effect"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        15
+                    ],
+                    "type": "Effect",
+                    "effectName": "Reserved (no function)"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        26
+                    ],
+                    "type": "Effect",
+                    "effectName": "Reserved (no function)"
+                },
+                {
+                    "dmxRange": [
+                        27,
+                        32
+                    ],
+                    "type": "Effect",
+                    "effectName": "Shutter black = red"
+                },
+                {
+                    "dmxRange": [
+                        33,
+                        38
+                    ],
+                    "type": "Effect",
+                    "effectName": "Shutter black = green"
+                },
+                {
+                    "dmxRange": [
+                        39,
+                        44
+                    ],
+                    "type": "Effect",
+                    "effectName": "Shutter black = blue"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        50
+                    ],
+                    "type": "Effect",
+                    "effectName": "Shutter black = white"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        56
+                    ],
+                    "type": "Effect",
+                    "effectName": "Shutter black = magenta"
+                },
+                {
+                    "dmxRange": [
+                        57,
+                        62
+                    ],
+                    "type": "Effect",
+                    "effectName": "Shutter black = yellow"
+                },
+                {
+                    "dmxRange": [
+                        63,
+                        68
+                    ],
+                    "type": "Effect",
+                    "effectName": "Shutter black = cyan"
+                },
+                {
+                    "dmxRange": [
+                        69,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Reserved (no function)"
+                }
+            ]
+        },
+        "Control Channel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        9
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Full reset"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        14
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pan reset"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        19
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Tilt reset"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        24
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Gobo reset"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        29
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Zoom reset"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        34
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sleep mode"
+                },
+                {
+                    "dmxRange": [
+                        35,
+                        39
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display off"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        44
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display on"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        115
+                    ],
+                    "type": "Maintenance",
+                    "comment": "LED frequency (100kHz - 1.41kHz)"
+                },
+                {
+                    "dmxRange": [
+                        116,
+                        119
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 1"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        123
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 2"
+                },
+                {
+                    "dmxRange": [
+                        124,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 3"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        131
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 4"
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        135
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 5"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        139
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 6"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        143
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 7"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        147
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 8"
+                },
+                {
+                    "dmxRange": [
+                        148,
+                        151
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 9"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        155
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 10"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        159
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 11"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        163
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 12"
+                },
+                {
+                    "dmxRange": [
+                        164,
+                        167
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 13"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        171
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 14"
+                },
+                {
+                    "dmxRange": [
+                        172,
+                        175
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 15"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        179
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 16"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        183
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 17"
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        187
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 18"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        191
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 19"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        195
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 20"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        199
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 21"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        203
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 22"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        207
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 23"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        211
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Capture scene 24"
+                },
+                {
+                    "dmxRange": [
+                        212,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Reserved (no function)"
+                }
+            ]
+        },
+        "Red (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityRedFine."
+            }
+        },
+        "Green (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityGreenFine."
+            }
+        },
+        "Blue (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityBlueFine."
+            }
+        },
+        "Intensity (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityDimmerFine."
+            }
+        },
+        "Blade 1 In (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Out -> In",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 2 In (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Out -> In",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 3 In (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Out -> In",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 4 In (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Out -> In",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 1 Angle (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-30\u00b0 -> +30\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 2 Angle (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-30\u00b0 -> +30\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 3 Angle (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-30\u00b0 -> +30\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 4 Angle (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-30\u00b0 -> +30\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade Assembly Rotate (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-45\u00b0 -> +45\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Red (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Intensity (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Blade 1 In (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Out -> In",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 2 In (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Out -> In",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 3 In (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Out -> In",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 4 In (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Out -> In",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 1 Angle (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-30\u00b0 -> +30\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 2 Angle (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-30\u00b0 -> +30\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 3 Angle (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-30\u00b0 -> +30\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade 4 Angle (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-30\u00b0 -> +30\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blade Assembly Rotate (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "-45\u00b0 -> +45\u00b0",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Zoom (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "wide",
+                "angleEnd": "narrow"
+            }
+        },
+        "Focus (Coarse)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Focus",
+                "distanceStart": "far",
+                "distanceEnd": "near"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Standard (31-channel)",
+            "shortName": "Standard (31ch)",
+            "channels": [
+                "Shutter",
+                "Intensity",
+                "Red",
+                "Green",
+                "Blue",
+                "CTC",
+                "Pan (Coarse)",
+                "Pan (Fine)",
+                "Tilt (Coarse)",
+                "Tilt (Fine)",
+                "Gobo Wheel 1",
+                "Gobo Wheel 1 Indexing/Rotation/Shake (Coarse)",
+                "Gobo Wheel 1 Indexing/Rotation/Shake (Fine)",
+                "Blade 1 In",
+                "Blade 1 Angle",
+                "Blade 2 In",
+                "Blade 2 Angle",
+                "Blade 3 In",
+                "Blade 3 Angle",
+                "Blade 4 In",
+                "Blade 4 Angle",
+                "Blade Assembly Rotate",
+                "Effect Wheel (Coarse)",
+                "Effect Wheel (Fine)",
+                "Iris",
+                "Prism",
+                "Frost",
+                "Zoom",
+                "Focus",
+                "Effect Channel",
+                "Control Channel"
+            ]
+        },
+        {
+            "name": "Extended (46-channel)",
+            "shortName": "Extended (46ch)",
+            "channels": [
+                "Shutter",
+                "Intensity (Coarse)",
+                "Intensity (Fine)",
+                "Red (Coarse)",
+                "Red (Fine)",
+                "Green (Coarse)",
+                "Green (Fine)",
+                "Blue (Coarse)",
+                "Blue (Fine)",
+                "CTC",
+                "Pan (Coarse)",
+                "Pan (Fine)",
+                "Tilt (Coarse)",
+                "Tilt (Fine)",
+                "Gobo Wheel 1",
+                "Gobo Wheel 1 Indexing/Rotation/Shake (Coarse)",
+                "Gobo Wheel 1 Indexing/Rotation/Shake (Fine)",
+                "Blade 1 In (Coarse)",
+                "Blade 1 In (Fine)",
+                "Blade 1 Angle (Coarse)",
+                "Blade 1 Angle (Fine)",
+                "Blade 2 In (Coarse)",
+                "Blade 2 In (Fine)",
+                "Blade 2 Angle (Coarse)",
+                "Blade 2 Angle (Fine)",
+                "Blade 3 In (Coarse)",
+                "Blade 3 In (Fine)",
+                "Blade 3 Angle (Coarse)",
+                "Blade 3 Angle (Fine)",
+                "Blade 4 In (Coarse)",
+                "Blade 4 In (Fine)",
+                "Blade 4 Angle (Coarse)",
+                "Blade 4 Angle (Fine)",
+                "Blade Assembly Rotate (Coarse)",
+                "Blade Assembly Rotate (Fine)",
+                "Effect Wheel (Coarse)",
+                "Effect Wheel (Fine)",
+                "Iris",
+                "Prism",
+                "Frost",
+                "Zoom (Coarse)",
+                "Zoom (Fine)",
+                "Focus (Coarse)",
+                "Focus (Fine)",
+                "Effect Channel",
+                "Control Channel"
+            ]
+        }
+    ]
+}

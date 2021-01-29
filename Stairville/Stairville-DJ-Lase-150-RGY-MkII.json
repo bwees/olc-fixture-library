@@ -1,0 +1,421 @@
+{
+    "manufacturer": "Stairville",
+    "name": "DJ Lase 150-RGY MkII",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Robert Box",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.11.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Mode Selection": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto, red+green+yellow"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto, green"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto, red"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto, yellow"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-controlled, red+green+yellow",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-controlled, green",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-controlled, red",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-controlled, yellow",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX mode"
+                }
+            ]
+        },
+        "Pattern Selection": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "From list"
+            }
+        },
+        "Colour Selection": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        49
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Original pre-programmed"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        99
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        124
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow"
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        149
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Alternating red and green"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        174
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Alternating red and yellow"
+                },
+                {
+                    "dmxRange": [
+                        175,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Alternating green and yellow"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        224
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Alternating red, green and yellow"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour rolling"
+                }
+            ]
+        },
+        "Colour Changing Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Speed",
+                    "comment": "No change",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Speed increasing",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Fixed (100% to 5%)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        169
+                    ],
+                    "type": "Generic",
+                    "comment": "Zoom-in effect, speed increasing"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        209
+                    ],
+                    "type": "Generic",
+                    "comment": "Zoom-out effect, speed increasing"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Zoom-in and zoom-out effect, speed increasing"
+                }
+            ]
+        },
+        "X Axis Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "0\u00b0 to 359\u00b0 position"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise rolling effect, speed increasing"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anti-clockwise rolling effect, speed increasing"
+                }
+            ]
+        },
+        "Y Axis Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "0\u00b0 to 359\u00b0 position"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise rolling effect, speed increasing"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anti-clockwise rolling effect, speed increasing"
+                }
+            ]
+        },
+        "Z Axis Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "0\u00b0 to 359\u00b0 position"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise rolling effect, speed increasing"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anti-clockwise rolling effect, speed increasing"
+                }
+            ]
+        },
+        "X Axis Moving": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "128 different fixed positions"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise moving effect, speed increasing"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anti-clockwise moving effect, speed increasing"
+                }
+            ]
+        },
+        "Y Axis Moving": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "128 different fixed positions"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise moving effect, speed increasing"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anti-clockwise moving effect, speed increasing"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "DMX",
+            "channels": [
+                "Mode Selection",
+                "Pattern Selection",
+                "Colour Selection",
+                "Colour Changing Speed",
+                "Zoom",
+                "X Axis Rotation",
+                "Y Axis Rotation",
+                "Z Axis Rotation",
+                "X Axis Moving",
+                "Y Axis Moving"
+            ]
+        }
+    ]
+}

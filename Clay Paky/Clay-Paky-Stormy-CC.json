@@ -1,0 +1,405 @@
+{
+    "manufacturer": "Clay Paky",
+    "name": "Stormy CC",
+    "categories": [
+        "Strobe"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Intensity",
+                    "comment": "Light Off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Min < Max"
+                }
+            ]
+        },
+        "Duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Min < Max",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Rate": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Light off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Low < Fast"
+                }
+            ]
+        },
+        "Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro Off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        42
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 1 - Up ramp"
+                },
+                {
+                    "dmxRange": [
+                        43,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 2 - Down ramp"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 3 - Up < > Down ramp"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        171
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 4 - Random"
+                },
+                {
+                    "dmxRange": [
+                        172,
+                        214
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 5 - Lighting"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 6 - Spikes"
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Blue Duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Min < Max",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Blue Rate": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "White Duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Min < Max",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "White Rate": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Green Duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Min < MAx",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Green Rate": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Red Duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Min < Max",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Red Rate": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Mask": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "Effect",
+                    "effectName": "No overwrinting"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        47
+                    ],
+                    "type": "Effect",
+                    "effectName": "RED overwrinting all"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Green overwrinting all"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blue overwrinting all"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "White overwrinting all"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "Effect",
+                    "effectName": "RED, GREEN overwrinting BLUE, WHITE"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "RED, BLUE overwrinting GREEN, WHITE"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "RED, WHITE overwrinting GREEN, BLUE"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "GREEN, BLUE overwrinting RED, WHITE"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "GREEN, WHITE overwrinting RED, BLUE"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "BLUE, WHITE overwrinting RED, GREEN"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "RGB overwrinting WHITE"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "RGW overwrinting BLUE"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "RBW overwrinting GREEN"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "GBW overwrinting RED"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Independent",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Blue Duration",
+                "Blue Rate",
+                "White Duration",
+                "White Rate",
+                "Green Duration",
+                "Green Rate",
+                "Red Duration",
+                "Red Rate",
+                "Mask"
+            ]
+        },
+        {
+            "name": "Standard",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Dimmer",
+                "Duration",
+                "Rate"
+            ]
+        }
+    ]
+}

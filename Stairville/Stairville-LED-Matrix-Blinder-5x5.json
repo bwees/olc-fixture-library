@@ -1,0 +1,974 @@
+{
+    "manufacturer": "Stairville",
+    "name": "LED Matrix Blinder 5x5",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "samuelb",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.1 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            5,
+            5,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Operating-Mode (28-Channel Mode)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "LEDs off"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        9
+                    ],
+                    "type": "Effect",
+                    "effectName": "All LEDs on"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter display, to be selected with channel 28"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "Number display, to be selected with channel 28"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 1"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 2"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 3"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 4"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 5"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 6"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 7"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 8"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 9"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 10"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 11"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 12"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 13"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 14"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 15"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        189
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 16"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 17"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 18"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        219
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 19"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        229
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 20"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 21"
+                },
+                {
+                    "dmxRange": [
+                        253,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-controlled show",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Letter/Number/Speed Adjustment (Increasing Speed 0..255)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'A'/Number '0'"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'B'/Number '0'"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        27
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'C'/Number '0'"
+                },
+                {
+                    "dmxRange": [
+                        28,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'C'/Number '1'"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'D'/Number '1'"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'E'/Number '1'"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        55
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'F'/Number '1'"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'F'/Number '2'"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'G'/Number '2'"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'H'/Number '2'"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        83
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'I'/Number '2'"
+                },
+                {
+                    "dmxRange": [
+                        84,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'I'/Number '3'"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'J'/Number '3'"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'K'/Number '3'"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        111
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'L'/Number '3'"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'L'/Number '4'"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'M'/Number '4'"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'N'/Number '4'"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'O'/Number '5'"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'P'/Number '5'"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        167
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'Q'/Number '5'"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'Q'/Number '6'"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'R'/Number '6'"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        189
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'S'/Number '6'"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        195
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'T'/Number '6'"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'T'/Number '7'"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'U'/Number '7'"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        219
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'V'/Number '7'"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        224
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'W'/Number '7'"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        229
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'W'/Number '8'"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'X'/Number '8'"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        249
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'Y'/Number '8'"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        251
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'Z'/Number '8'"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Letter 'Z'/Number '9'"
+                }
+            ]
+        },
+        "Speed Adjustment (chan 27=30...255)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Increasing speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Dimmer for LED No. 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 9": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 10": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 11": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 12": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 13": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 14": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 15": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 16": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 17": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 18": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 19": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 20": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 21": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 22": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 23": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 24": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer for LED No. 25": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Operating Mode (4-Channel Mode)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        1,
+                        11
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 1"
+                },
+                {
+                    "dmxRange": [
+                        12,
+                        23
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 2"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        35
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 3"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        47
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 4"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 5"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        71
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 6"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        83
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 7"
+                },
+                {
+                    "dmxRange": [
+                        84,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 8"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        107
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 9"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 10"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        131
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 11"
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 12"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        155
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 13"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        167
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 14"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 15"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 16"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        203
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 17"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 18"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        227
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 19"
+                },
+                {
+                    "dmxRange": [
+                        228,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 20"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        251
+                    ],
+                    "type": "Effect",
+                    "effectName": "Preprogrammed automatic show no. 21"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-controlled show",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Increasing",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Strobe Effect": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "26-channel",
+            "shortName": "26ch",
+            "channels": [
+                "Dimmer",
+                "Dimmer for LED No. 1",
+                "Dimmer for LED No. 2",
+                "Dimmer for LED No. 3",
+                "Dimmer for LED No. 4",
+                "Dimmer for LED No. 5",
+                "Dimmer for LED No. 6",
+                "Dimmer for LED No. 7",
+                "Dimmer for LED No. 8",
+                "Dimmer for LED No. 9",
+                "Dimmer for LED No. 10",
+                "Dimmer for LED No. 11",
+                "Dimmer for LED No. 12",
+                "Dimmer for LED No. 13",
+                "Dimmer for LED No. 14",
+                "Dimmer for LED No. 15",
+                "Dimmer for LED No. 16",
+                "Dimmer for LED No. 17",
+                "Dimmer for LED No. 18",
+                "Dimmer for LED No. 19",
+                "Dimmer for LED No. 20",
+                "Dimmer for LED No. 21",
+                "Dimmer for LED No. 22",
+                "Dimmer for LED No. 23",
+                "Dimmer for LED No. 24",
+                "Dimmer for LED No. 25"
+            ]
+        },
+        {
+            "name": "28-channel",
+            "shortName": "28ch",
+            "channels": [
+                "Dimmer",
+                "Dimmer for LED No. 1",
+                "Dimmer for LED No. 2",
+                "Dimmer for LED No. 3",
+                "Dimmer for LED No. 4",
+                "Dimmer for LED No. 5",
+                "Dimmer for LED No. 6",
+                "Dimmer for LED No. 7",
+                "Dimmer for LED No. 8",
+                "Dimmer for LED No. 9",
+                "Dimmer for LED No. 10",
+                "Dimmer for LED No. 11",
+                "Dimmer for LED No. 12",
+                "Dimmer for LED No. 13",
+                "Dimmer for LED No. 14",
+                "Dimmer for LED No. 15",
+                "Dimmer for LED No. 16",
+                "Dimmer for LED No. 17",
+                "Dimmer for LED No. 18",
+                "Dimmer for LED No. 19",
+                "Dimmer for LED No. 20",
+                "Dimmer for LED No. 21",
+                "Dimmer for LED No. 22",
+                "Dimmer for LED No. 23",
+                "Dimmer for LED No. 24",
+                "Dimmer for LED No. 25",
+                "Operating-Mode (28-Channel Mode)",
+                "Letter/Number/Speed Adjustment (Increasing Speed 0..255)"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Dimmer",
+                "Operating Mode (4-Channel Mode)",
+                "Speed",
+                "Strobe Effect"
+            ]
+        }
+    ]
+}

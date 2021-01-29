@@ -1,0 +1,110 @@
+{
+    "manufacturer": "Cameo",
+    "name": "LED Mini PAR CAN RGB 7x3W",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Joachim Wiedorn",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.11.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Master": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Stroboscope": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Color Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        84
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Sound Control",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Jumping Speed"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Fading Speed"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Master",
+                "Red",
+                "Green",
+                "Blue",
+                "Color Macro",
+                "Stroboscope"
+            ]
+        }
+    ]
+}

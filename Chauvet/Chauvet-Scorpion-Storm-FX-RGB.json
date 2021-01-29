@@ -1,0 +1,646 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "Scorpion Storm FX RGB",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Fr\u00e9d\u00e9ric Combe",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Control Functions": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        50
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX Mode"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program, fast"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto program, slow"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-Active program",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random program"
+                }
+            ]
+        },
+        "Color (Ch. 1 = 000-050)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blackout",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        25
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        35
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#00aaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        45
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        46,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green + Blue",
+                    "colors": [
+                        "#00ff00",
+                        "#00aaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        65
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Blue",
+                    "colors": [
+                        "#ff0000",
+                        "#00aaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        75
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green, Blue"
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        85
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red on, Green Strobing",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green on, Blue strobing",
+                    "colors": [
+                        "#00ff00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        105
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue on, Red strobing",
+                    "colors": [
+                        "#0000ff",
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        115
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green, alternate strobing",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        116,
+                        125
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green + Blue, alternate strobing",
+                    "colors": [
+                        "#00ff00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue + Red, alternate strobing",
+                    "colors": [
+                        "#0000ff",
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        145
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green on, Blue strobing",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        146,
+                        155
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue + Green on, Red strobing",
+                    "colors": [
+                        "#0000ff",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        165
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Blue on, Green strobing",
+                    "colors": [
+                        "#ff0000",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        166,
+                        175
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue on, Green + Red strobing"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        185
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red on, Green + Blue strobing"
+                },
+                {
+                    "dmxRange": [
+                        186,
+                        195
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green on, Red + Blue strobing"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        205
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue on, Red + Green alternate strobing"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        215
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red on, Green + Blue alternate strobing"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        225
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green on, Red + Blue alternate strobing"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green + Blue alternate strobing"
+                }
+            ]
+        },
+        "Color selection (Ch. 1 = 051-200)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        36
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        37,
+                        72
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        73,
+                        108
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#00aaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        109,
+                        144
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        145,
+                        180
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green + Blue",
+                    "colors": [
+                        "#00ff00",
+                        "#00aaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        216
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue + Red",
+                    "colors": [
+                        "#00aaff",
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        217,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green + Blue"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        254
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe, Slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Sound-Active Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Rotation (motor 1)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        133
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        255
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW"
+                }
+            ]
+        },
+        "Stutter (motor 1)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        56
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 1, slow to fast (when ch. 4 is on)"
+                },
+                {
+                    "dmxRange": [
+                        57,
+                        112
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 2, Slow to fast (when Ch. 4 is on)"
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        168
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 3",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        169,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 4",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "Rotation (motor 2)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        133
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        255
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW"
+                }
+            ]
+        },
+        "Stutter (motor 2)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        56
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 1, slow to fast (when Ch. 6 is on)"
+                },
+                {
+                    "dmxRange": [
+                        57,
+                        112
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 2, slow to fast (when Ch. 6 is on)"
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        168
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 3",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        169,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Mode 4",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "7-channel (Ch. 1 = 000-050)",
+            "shortName": "7ch (Ch. 1 = 000-050)",
+            "channels": [
+                "Control Functions",
+                "Color (Ch. 1 = 000-050)",
+                "Strobe",
+                "Rotation (motor 1)",
+                "Stutter (motor 1)",
+                "Rotation (motor 2)",
+                "Stutter (motor 2)"
+            ]
+        },
+        {
+            "name": "7-channel (Ch. 1 = 051-200)",
+            "shortName": "7ch (Ch. 1 = 051-200)",
+            "channels": [
+                "Control Functions",
+                "Color selection (Ch. 1 = 051-200)",
+                "Strobe",
+                "Rotation (motor 1)",
+                "Stutter (motor 1)",
+                "Rotation (motor 2)",
+                "Stutter (motor 2)"
+            ]
+        }
+    ]
+}

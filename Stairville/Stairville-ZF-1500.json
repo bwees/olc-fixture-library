@@ -1,0 +1,70 @@
+{
+    "manufacturer": "Stairville",
+    "name": "ZF-1500",
+    "categories": [
+        "Smoke"
+    ],
+    "meta": {
+        "authors": [
+            "Kevin Deldycke",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller (version 3.0.1)"
+        }
+    },
+    "availableChannels": {
+        "On-Off": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "On-off",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Sleep interval": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Sleep interval (1s to 200s)",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Spraying duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Spraying duration (1s to 200s)",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Normal",
+            "channels": [
+                "On-Off",
+                "Intensity",
+                "Sleep interval",
+                "Spraying duration"
+            ]
+        }
+    ]
+}

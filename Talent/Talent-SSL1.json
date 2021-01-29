@@ -1,0 +1,232 @@
+{
+    "manufacturer": "Talent",
+    "name": "SSL1",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Ray Console - cd",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.4)"
+        }
+    },
+    "availableChannels": {
+        "X-axis": {
+            "fineChannelAliases": [
+                "X-fine (16-bit)"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Y-axis": {
+            "fineChannelAliases": [
+                "Y-fine (16-bit)"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Functions control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "off"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        134
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "dimming",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        240
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "strobe flash"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "constant on"
+                }
+            ]
+        },
+        "Red light dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green light dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue light dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White light dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Color macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        231
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "231 kinds of color choosing"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "full color jump"
+                }
+            ]
+        },
+        "not used": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "Auto programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "off"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "fast auto"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "slow auto"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "sound active mode",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "X-axis",
+                "Y-axis",
+                "Functions control",
+                "Red light dimming",
+                "Green light dimming",
+                "Blue light dimming",
+                "White light dimming"
+            ]
+        },
+        {
+            "name": "14-channel",
+            "shortName": "14ch",
+            "channels": [
+                "X-axis",
+                "X-fine (16-bit)",
+                "Y-axis",
+                "Y-fine (16-bit)",
+                "Speed",
+                "Functions control",
+                "Red light dimming",
+                "Green light dimming",
+                "Blue light dimming",
+                "White light dimming",
+                "Color macros",
+                "not used",
+                "Auto programs",
+                "Reset"
+            ]
+        }
+    ]
+}

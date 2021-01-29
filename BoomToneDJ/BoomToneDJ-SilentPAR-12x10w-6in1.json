@@ -1,0 +1,178 @@
+{
+    "manufacturer": "BoomToneDJ",
+    "name": "SilentPAR 12x10w 6in1",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "John Yiannikakis",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Amber dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "UV dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        },
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Strobe off"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "Program scrolling speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Automatic modes": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        59
+                    ],
+                    "type": "Maintenance",
+                    "comment": "DMX operated mode"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        119
+                    ],
+                    "type": "Maintenance",
+                    "comment": "color static mode"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        179
+                    ],
+                    "type": "Maintenance",
+                    "comment": "color changing mode"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        239
+                    ],
+                    "type": "Maintenance",
+                    "comment": "fading color mode"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Music Detection Mode"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red dimmer",
+                "Green dimmer",
+                "Blue dimmer",
+                "White dimmer",
+                "Amber dimmer",
+                "UV dimmer"
+            ]
+        },
+        {
+            "name": "10-channel",
+            "shortName": "10ch",
+            "channels": [
+                "Master Dimmer",
+                "Red dimmer",
+                "Green dimmer",
+                "Blue dimmer",
+                "White dimmer",
+                "Amber dimmer",
+                "UV dimmer",
+                "Strobe speed",
+                "Program scrolling speed",
+                "Automatic modes"
+            ]
+        }
+    ]
+}

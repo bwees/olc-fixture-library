@@ -1,0 +1,102 @@
+{
+    "manufacturer": "Stairville",
+    "name": "Z100M",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Stefan",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "fineChannelAliases": [
+                "Fine Dimmer"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Stroboscope": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Strobe Effect"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        95
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "1Hz",
+                    "speedEnd": "25Hz",
+                    "comment": "Stroboscope Effect, Speed increasing (1 Hz ... 25 Hz)"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        175
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speed": "1Hz",
+                    "comment": "Stroboscope Effect, Speed increasing (1 Hz)"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Stroboscope Effect, random speed"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Dimmer",
+                "Stroboscope"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Dimmer",
+                "Fine Dimmer",
+                "Stroboscope"
+            ]
+        }
+    ]
+}

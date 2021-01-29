@@ -1,0 +1,680 @@
+{
+    "manufacturer": "Stairville",
+    "name": "MH-100 Beam 36x3 LED",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Antoni J. Canos",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "630deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "220deg"
+            }
+        },
+        "Pan/Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        140
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Increasing speed"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random speed"
+                }
+            ]
+        },
+        "White with Full Intensity and Adjustable Colour Temperature": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        35
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "All LEDs off",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "3200 K",
+                    "colors": [
+                        "#ffbb78"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        75
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "3400 K",
+                    "colors": [
+                        "#ffc184"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "4200 K",
+                    "colors": [
+                        "#ffd5ad"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        115
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "4900 K",
+                    "colors": [
+                        "#ffe3ca"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        116,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "5600 K",
+                    "colors": [
+                        "#ffeee3"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        175
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "6500 K",
+                    "colors": [
+                        "#fff9fd"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        195
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "7200 K",
+                    "colors": [
+                        "#f0f1ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        215
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "8000 K",
+                    "colors": [
+                        "#e3e9ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        235
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "8500 K",
+                    "colors": [
+                        "#dce5ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "10000 K",
+                    "colors": [
+                        "#ccdbff"
+                    ]
+                }
+            ]
+        },
+        "Preprogrammed Colours": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        14
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "All LEDs off",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        22
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red (255,0,0)",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        23,
+                        30
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Scarlet (255,51,0) + 10% white LEDs",
+                    "colors": [
+                        "#ff3d0d"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        37
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Safety Orange (255,102,0)",
+                    "colors": [
+                        "#ff6600"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        45
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Orange Peel (255,153,0)",
+                    "colors": [
+                        "#ff9900"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        46,
+                        52
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Tangerine Yellow (255,204,0) + 20% white LEDs",
+                    "colors": [
+                        "#ffd11a"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        53,
+                        60
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow (255,255,0)",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        67
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Electric Lime (204,255,0)",
+                    "colors": [
+                        "#ccff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        75
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Spring Bud (153,255,0) + 10% white LEDs",
+                    "colors": [
+                        "#9eff0d"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        82
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bright Green (102,255,0)",
+                    "colors": [
+                        "#66ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        83,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Harlequin (51,255,0) + 20% white LEDs",
+                    "colors": [
+                        "#47ff1a"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        97
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green (Lime) (0,255,0)",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        98,
+                        105
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Free Speech Green (0,255,51) + 10% white LEDs",
+                    "colors": [
+                        "#0dff3d"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        112
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Spring Green (0,255,102)",
+                    "colors": [
+                        "#00ff66"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        120
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Medium Spring Green (0,255,153)",
+                    "colors": [
+                        "#00ff99"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Bright Turquoise (0,255,204) + 10% white LEDs",
+                    "colors": [
+                        "#0dffcf"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan (0,255,255)",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        143
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Deep Sky Blue (0,204,255)",
+                    "colors": [
+                        "#00ccff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        150
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dodger Blue (0,153,255) + 10% white LEDs",
+                    "colors": [
+                        "#0d9eff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        158
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Navy Blue (0,102,255)",
+                    "colors": [
+                        "#0066ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        159,
+                        165
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Neon Blue (0,51,255) + 20% white LEDs",
+                    "colors": [
+                        "#1a47ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        166,
+                        173
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue (0,0,255)",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        180
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Han Purple (Ultramarine) (51,0,255)",
+                    "colors": [
+                        "#3300ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        188
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Electric Indigo (102,0,255)",
+                    "colors": [
+                        "#6600ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        189,
+                        195
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Vivid Violet (153,0,255) + 20% white LEDs",
+                    "colors": [
+                        "#a31aff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        203
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Electric Purple (204,0,255)",
+                    "colors": [
+                        "#cc00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        210
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta (255,0,255)",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        218
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Hot Magenta (255,0,204)",
+                    "colors": [
+                        "#ff00cc"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        219,
+                        225
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Hollywood Cerise (255,0,153)",
+                    "colors": [
+                        "#ff0099"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        233
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Razzmatazz Rose (255,0,102)",
+                    "colors": [
+                        "#ff0066"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        234,
+                        240
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Torch Red (255,0,51) + 20% white LEDs",
+                    "colors": [
+                        "#ff1a47"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        248
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red (255,0,0) + 100% white LEDs",
+                    "colors": [
+                        "#ff8080"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        249,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White (255,255,255) + 100% white LEDs",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                }
+            ]
+        },
+        "Special Functions": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        99
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        199
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Automatic sound-to-light-show"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Reset (hold value over 5 seconds )"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Pan/Tilt Speed",
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "14-channel",
+            "shortName": "14ch",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Pan/Tilt Speed",
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "White with Full Intensity and Adjustable Colour Temperature",
+                "Preprogrammed Colours",
+                "Strobe",
+                "Special Functions"
+            ]
+        }
+    ]
+}

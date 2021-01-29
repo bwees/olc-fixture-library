@@ -1,0 +1,206 @@
+{
+    "manufacturer": "Briteq",
+    "name": "COB Slim 100-RGB",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "Master dimmer 0% - 100% (full open)"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Control (7 colors)",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Master dimmer full open"
+                }
+            ]
+        },
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe (Open)"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        37
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random Strobe"
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        67
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Sound Strobe"
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe slow-fast"
+                }
+            ]
+        },
+        "Mode 2": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color fade effect (very",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Chase",
+                    "soundControlled": true
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "4LC channel",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Mode"
+            ]
+        },
+        {
+            "name": "4+ channel",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Master dimmer"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Master dimmer",
+                "Strobe",
+                "Mode 2",
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        }
+    ]
+}

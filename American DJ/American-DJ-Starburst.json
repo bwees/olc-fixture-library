@@ -1,0 +1,356 @@
+{
+    "manufacturer": "American DJ",
+    "name": "Starburst",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Robert Box",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Yellow": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Yellow"
+            }
+        },
+        "Purple": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Magenta"
+            }
+        },
+        "Strobing": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "LED on"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        131
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Slow - fast"
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        139
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "LED on"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        181
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Slow open - fast close",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        182,
+                        189
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "LED on"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        231
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Fast open - slow close",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        239
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "LED on"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        247
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "LED on"
+                }
+            ]
+        },
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        30
+                    ],
+                    "type": "Effect",
+                    "effectName": "No"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        140
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "fast CW",
+                    "speedEnd": "slow CW"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        145
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        146,
+                        255
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW"
+                }
+            ]
+        },
+        "Colow Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        25
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        205
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color macros"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color changing fast - slow"
+                }
+            ]
+        },
+        "Pan/Color Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        55
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        75
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        105
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red clockwise rotation"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        135
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blue counterclockwise"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        165
+                    ],
+                    "type": "Effect",
+                    "effectName": "7 color change clockwise rotation"
+                },
+                {
+                    "dmxRange": [
+                        166,
+                        195
+                    ],
+                    "type": "Effect",
+                    "effectName": "7 color change counterclockwise rotation"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        225
+                    ],
+                    "type": "Effect",
+                    "effectName": "7 color change with strobe clockwise rotation"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "7 color change with strobe counterclockwise rotation"
+                }
+            ]
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        69
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        85
+                    ],
+                    "type": "Generic",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "DMX Values & Traits",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Yellow",
+                "Purple",
+                "Strobing",
+                "Master Dimmer",
+                "Rotation",
+                "Colow Macros",
+                "Pan/Color Macros",
+                "Reset"
+            ]
+        }
+    ]
+}

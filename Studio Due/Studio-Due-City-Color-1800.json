@@ -1,0 +1,253 @@
+{
+    "manufacturer": "Studio Due",
+    "name": "City Color 1800",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "root",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.7.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Motor Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Slow"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mid 2"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mid 1"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Fast"
+                }
+            ]
+        },
+        "Cyan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Cyan"
+            }
+        },
+        "Yellow": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Yellow"
+            }
+        },
+        "Magenta": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Magenta"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Macro Color": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        25
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Mixing"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        51
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#3f95ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        77
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffdb22"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        78,
+                        103
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#ff0267"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        129
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#2724ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        155
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        181
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#0ea800"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        182,
+                        207
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color mix sequence (slow)"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        233
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color mix sequence (mid)"
+                },
+                {
+                    "dmxRange": [
+                        234,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color mix sequence (fast)"
+                }
+            ]
+        },
+        "Reset / Lamp Off": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Normal"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Reset (Delay)"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        250
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Normal"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp Off (Delay)"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Motor Speed",
+                "Cyan",
+                "Yellow",
+                "Magenta",
+                "Dimmer",
+                "Macro Color",
+                "Reset / Lamp Off"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Motor Speed",
+                "Cyan",
+                "Yellow",
+                "Magenta",
+                "Dimmer",
+                "Macro Color"
+            ]
+        }
+    ]
+}

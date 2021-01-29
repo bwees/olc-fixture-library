@@ -1,0 +1,255 @@
+{
+    "manufacturer": "Stairville",
+    "name": "DJ Lase Polar 200",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Andres Robles",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Operating mode selection": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        51
+                    ],
+                    "type": "Effect",
+                    "effectName": "Laser off"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        102
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic show in random order, fast"
+                },
+                {
+                    "dmxRange": [
+                        103,
+                        154
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic show in random order, slow"
+                },
+                {
+                    "dmxRange": [
+                        155,
+                        206
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound controlled automatic show in random order",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX mode This setting enables the function of the other DMX channels"
+                }
+            ]
+        },
+        "Red laser": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Red",
+                    "comment": "Laser off"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Red",
+                    "comment": "Laser is constantly on"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        254
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Red",
+                    "comment": "Strobe effect (flashing), decreasing speed"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Red",
+                    "comment": "Sound controlled strobe effect (flashing)"
+                }
+            ]
+        },
+        "Green laser": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Green",
+                    "comment": "Laser off"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Green",
+                    "comment": "Laser is constantly on"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        254
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Green",
+                    "comment": "Strobe effect (flashing), decreasing speed"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Green",
+                    "comment": "Sound controlled strobe effect (flashing)"
+                }
+            ]
+        },
+        "Rotation of the red and green laser around the Z-axis (rolling)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        133
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        255
+                    ],
+                    "type": "Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Anti-clockwise rotating effect, speed increasing from"
+                }
+            ]
+        },
+        "Intensity of the blue LED background illumination": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        255
+                    ],
+                    "type": "ColorIntensity",
+                    "color": "Blue",
+                    "comment": "Increasing brightness (0 %...100 %)"
+                }
+            ]
+        },
+        "Strobe effect (flashing) of the blue LED background illumination": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Background illumination off",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Background illumination is constantly on",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Operating mode selection",
+                "Red laser",
+                "Green laser",
+                "Rotation of the red and green laser around the Z-axis (rolling)",
+                "Intensity of the blue LED background illumination",
+                "Strobe effect (flashing) of the blue LED background illumination"
+            ]
+        }
+    ]
+}

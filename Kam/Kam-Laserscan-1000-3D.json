@@ -1,0 +1,729 @@
+{
+    "manufacturer": "Kam",
+    "name": "Laserscan 1000 3D",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Robert",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.7.2)"
+        }
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        18
+                    ],
+                    "type": "Effect",
+                    "effectName": "Laser off"
+                },
+                {
+                    "dmxRange": [
+                        19,
+                        36
+                    ],
+                    "type": "Effect",
+                    "effectName": "AUT - auto show with mixed 5 effect"
+                },
+                {
+                    "dmxRange": [
+                        37,
+                        54
+                    ],
+                    "type": "Effect",
+                    "effectName": "A3D - laser 3D effect auto show"
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        72
+                    ],
+                    "type": "Effect",
+                    "effectName": "AUB - scanned beam effect auto show"
+                },
+                {
+                    "dmxRange": [
+                        73,
+                        90
+                    ],
+                    "type": "Effect",
+                    "effectName": "AUL - laser lumina effect auto show"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        108
+                    ],
+                    "type": "Effect",
+                    "effectName": "AUN - burst grating effect auto show"
+                },
+                {
+                    "dmxRange": [
+                        109,
+                        126
+                    ],
+                    "type": "Effect",
+                    "effectName": "AUO - laser universal effect auto show"
+                },
+                {
+                    "dmxRange": [
+                        127,
+                        144
+                    ],
+                    "type": "Effect",
+                    "effectName": "SOU - sound show with mixed 5 effect",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        145,
+                        162
+                    ],
+                    "type": "Effect",
+                    "effectName": "S3D - sound show with laser 3D",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        163,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "SOB - sound show with scanned beam",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        198
+                    ],
+                    "type": "Effect",
+                    "effectName": "SOL - sound show with laser lumia",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        199,
+                        216
+                    ],
+                    "type": "Effect",
+                    "effectName": "SON - sound show with burst grating",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        217,
+                        234
+                    ],
+                    "type": "Effect",
+                    "effectName": "SOO - sound show with laser universal",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        235,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX mode"
+                }
+            ]
+        },
+        "Group": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        51
+                    ],
+                    "type": "Effect",
+                    "effectName": "Group 1 patterns"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        103
+                    ],
+                    "type": "Effect",
+                    "effectName": "Group 2 patterns"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        155
+                    ],
+                    "type": "Effect",
+                    "effectName": "Group 3 patterns"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "Group 4 patterns"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Group 5 patterns"
+                }
+            ]
+        },
+        "Pattern group": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "16 per pattern per pattern group, total 80 patterns"
+            }
+        },
+        "Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Original"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        23
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        47
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Purple",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light blue",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        111
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour rolling"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour jumping"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        207
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour moving"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Strobing"
+                }
+            ]
+        },
+        "Clipping": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full pattern without clipping"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "0-99% fixed pattern clipped"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clipping speed"
+                }
+            ]
+        },
+        "Zooming": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "100-5% fixed pattern zoomed"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zooming in"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "Zooming out"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Alternate zooming"
+                }
+            ]
+        },
+        "Zoom speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Y-axis rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "0-359 degree fixed Y-axis rolling"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise rolling"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anticlockwise rolling"
+                }
+            ]
+        },
+        "Y-axis roll speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "X-axis rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "0-359 degree fixed X-axis rolled"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise rolling"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anticlockwise rolling"
+                }
+            ]
+        },
+        "X-axis roll speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Z-axis rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "0-359 degree fixed Z-axis rolled"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise rolling"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anticlockwise rolling"
+                }
+            ]
+        },
+        "Z axis roll speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Y-axis moving": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "20deg",
+                    "comment": "128 different fixed positions on X-axis"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "20deg",
+                    "comment": "Clockwise moving"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "20deg",
+                    "comment": "Anticlockwise moving"
+                }
+            ]
+        },
+        "Y-axis move speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "X axis moving": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "20deg",
+                    "comment": "128 different fixed positions on Y-axis"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "20deg",
+                    "comment": "Clockwise moving"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "20deg",
+                    "comment": "Anticlockwise moving"
+                }
+            ]
+        },
+        "X-axis move speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Grating rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "No grating rotation"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise grating rotation"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        133
+                    ],
+                    "type": "Effect",
+                    "effectName": "No grating rotation"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Anticlockwise grating rotation"
+                }
+            ]
+        },
+        "Grating effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "Effect",
+                    "effectName": "Laser 3D effect"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Scanned beam effect (pattern effect)"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Laser lumina effect"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Scanned beam effect (pattern effect)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Burst grating effect"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Scanned beam effect (pattern effect)"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Laser universal effect"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Scanned beam effect (pattern effect)"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "DMX channels with ILDA NOT connected",
+            "channels": [
+                "Mode",
+                "Group",
+                "Pattern group",
+                "Colour",
+                "Clipping",
+                "Zooming",
+                "Zoom speed",
+                "Y-axis rolling",
+                "Y-axis roll speed",
+                "X-axis rolling",
+                "X-axis roll speed",
+                "Z-axis rolling",
+                "Z axis roll speed",
+                "Y-axis moving",
+                "Y-axis move speed",
+                "X axis moving",
+                "X-axis move speed",
+                "Grating rotation",
+                "Grating effect"
+            ]
+        },
+        {
+            "name": "DMX channels with ILDA connected",
+            "channels": [
+                "Grating rotation",
+                "Grating effect"
+            ]
+        }
+    ]
+}

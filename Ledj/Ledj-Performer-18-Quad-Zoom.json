@@ -1,0 +1,181 @@
+{
+    "manufacturer": "Ledj",
+    "name": "Performer 18 Quad Zoom",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Allan Rhynas",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Programme": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        40
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX control"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour fade in/out"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        120
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        140
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active (blackout when no sound)",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour change with zoom movement"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour fade with zoom movement"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour fade in/out with zoom movement"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active with zoom movement",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active with zoom movement",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Chase/fade speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "wide",
+                "angleEnd": "narrow"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Master dimmer",
+                "Zoom"
+            ]
+        },
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Programme",
+                "Chase/fade speed",
+                "Master dimmer",
+                "Zoom"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,264 @@
+{
+    "manufacturer": "Blizzard Lighting",
+    "name": "Rocklite RGBAW",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Larry Wall",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Amber Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "White Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        14
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimming"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe (slow <--> fast)"
+                }
+            ]
+        },
+        "Fade, Color Change, Sound Active": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade in (ch. 9 controls speed)"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade out (ch. 9 controls speed)"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade in / fade out (ch. 9 controls speed)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        164
+                    ],
+                    "type": "Effect",
+                    "effectName": "Multicolor fade (ch. 9 controls speed)"
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade in / fade out, auto run"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color jump (ch. 9 controls speed)"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active, multicolor (ch. 9 controls speed)",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Fade Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Slow <--> fast",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "32-Bit Dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        55
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        105
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        155
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        205
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "10-channel",
+            "shortName": "10ch",
+            "channels": [
+                "Dimmer",
+                "Red Intensity",
+                "Green Intensity",
+                "Blue Intensity",
+                "Amber Intensity",
+                "White Intensity",
+                "Strobe",
+                "Fade, Color Change, Sound Active",
+                "Fade Speed",
+                "32-Bit Dimmer"
+            ]
+        },
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Dimmer",
+                "Red Intensity",
+                "Green Intensity",
+                "Blue Intensity",
+                "Amber Intensity",
+                "White Intensity",
+                "Strobe",
+                "Fade, Color Change, Sound Active",
+                "Fade Speed"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Red Intensity",
+                "Green Intensity",
+                "Blue Intensity",
+                "Amber Intensity",
+                "White Intensity"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red Intensity",
+                "Amber Intensity",
+                "White Intensity",
+                "Dimmer"
+            ]
+        }
+    ]
+}

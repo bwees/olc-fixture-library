@@ -1,0 +1,367 @@
+{
+    "manufacturer": "Elation",
+    "name": "DW Fresnel",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Niklas Larsson",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Cool White LED": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Warm White LED": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Warm White"
+            }
+        },
+        "Dimmer": {
+            "fineChannelAliases": [
+                "Dimmer fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Color temperature 1": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature (3200K to 6000K)"
+                }
+            ]
+        },
+        "Color temperature 2": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        16
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 3200K"
+                },
+                {
+                    "dmxRange": [
+                        17,
+                        33
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 3400K"
+                },
+                {
+                    "dmxRange": [
+                        34,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 3600K"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        67
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 3800K"
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        84
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 4000K"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        101
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 4200K"
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        118
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 4400K"
+                },
+                {
+                    "dmxRange": [
+                        119,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 4600K"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        152
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 4800K"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        169
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 5000K"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        186
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 5200K"
+                },
+                {
+                    "dmxRange": [
+                        187,
+                        203
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 5400K"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 5600K"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        237
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 5800K"
+                },
+                {
+                    "dmxRange": [
+                        238,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color temperature 6000K"
+                }
+            ]
+        },
+        "Shutter / Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "LED off"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "LED on"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe effect (slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "LED on"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse effect in sequences (slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "LED on"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random strobe effect (slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "LED on"
+                }
+            ]
+        },
+        "Dimming curves": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        41
+                    ],
+                    "type": "Effect",
+                    "effectName": "Standard"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        84
+                    ],
+                    "type": "Effect",
+                    "effectName": "Stage"
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "TV"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Architectural"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        213
+                    ],
+                    "type": "Effect",
+                    "effectName": "Theatre"
+                },
+                {
+                    "dmxRange": [
+                        214,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Default to unit dimming curve setting"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Cool White LED",
+                "Warm White LED"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Cool White LED",
+                "Warm White LED",
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Cool White LED",
+                "Warm White LED",
+                "Color temperature 1",
+                "Color temperature 2",
+                "Shutter / Strobe",
+                "Dimmer",
+                "Dimmer fine",
+                "Dimming curves"
+            ]
+        }
+    ]
+}

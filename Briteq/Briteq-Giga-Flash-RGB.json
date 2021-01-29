@@ -1,0 +1,459 @@
+{
+    "manufacturer": "Briteq",
+    "name": "Giga Flash RGB",
+    "categories": [
+        "Strobe"
+    ],
+    "meta": {
+        "authors": [
+            "Fredje",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            null,
+            null,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        247
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Strobe Rate 0-30Hz"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Blinder Effect"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Intensity",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Dimmer 0-100%"
+                }
+            ]
+        },
+        "Flash Duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Strobe rate": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "No Flash"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Strobe Rate 0-30Hz"
+                }
+            ]
+        },
+        "Strobe Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Normal Flashes"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        42
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp up S>F"
+                },
+                {
+                    "dmxRange": [
+                        43,
+                        85
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampDown",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp Down S>F"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        128
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "comment": "Ramp Up-Down S>F",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        171
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random Effect S>F"
+                },
+                {
+                    "dmxRange": [
+                        172,
+                        214
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Lightning effect S>F",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Spike Effect",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Color Pixel Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "No Pixel Fx (other channels active)"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        41
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Pixel Fx 1 S>F"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        83
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Pixel Fx 2 S>F"
+                },
+                {
+                    "dmxRange": [
+                        84,
+                        125
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Pixel Fx 3 S>F"
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        167
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Pixel Fx 4 S>F"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Pixel Fx 5 S>F"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color Pixel FX 6 S>F"
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "1-channel (White color)",
+            "shortName": "1ch (White color)",
+            "channels": [
+                "Strobe"
+            ]
+        },
+        {
+            "name": "3-channel (White color)",
+            "shortName": "3ch (White color)",
+            "channels": [
+                "Dimmer",
+                "Flash Duration",
+                "Strobe rate"
+            ]
+        },
+        {
+            "name": "4-channel (White color)",
+            "shortName": "4ch (White color)",
+            "channels": [
+                "Dimmer",
+                "Flash Duration",
+                "Strobe rate",
+                "Strobe Effect"
+            ]
+        },
+        {
+            "name": "4-channel (Multi color)",
+            "shortName": "4ch (Multi color)",
+            "channels": [
+                "Dimmer",
+                "Flash Duration",
+                "Strobe rate",
+                "Color Pixel Effect"
+            ]
+        },
+        {
+            "name": "6-channel (Multi color)",
+            "shortName": "6ch (Multi color)",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Flash Duration",
+                "Strobe rate"
+            ]
+        },
+        {
+            "name": "7-channel (Multi color)",
+            "shortName": "7ch (Multi color)",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Flash Duration",
+                "Strobe rate",
+                "Color Pixel Effect"
+            ]
+        },
+        {
+            "name": "13-channel (Multi color)",
+            "shortName": "13ch (Multi color)",
+            "channels": [
+                "Dimmer",
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2",
+                "Red 3",
+                "Green 3",
+                "Blue 3",
+                "Flash Duration",
+                "Strobe rate",
+                "Color Pixel Effect"
+            ]
+        },
+        {
+            "name": "1-channel Pixel (White color)",
+            "shortName": "1ch Pixel (White color)",
+            "channels": [
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "3-channel Pixel (Multi color)",
+            "shortName": "3ch Pixel (Multi color)",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "9-channel Pixel (Multi color)",
+            "shortName": "9ch Pixel (Multi color)",
+            "channels": [
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2",
+                "Red 3",
+                "Green 3",
+                "Blue 3"
+            ]
+        }
+    ]
+}

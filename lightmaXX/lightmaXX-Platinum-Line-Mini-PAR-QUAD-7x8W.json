@@ -1,0 +1,204 @@
+{
+    "manufacturer": "lightmaXX",
+    "name": "Platinum Line Mini PAR QUAD 7x8W",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "loderunner",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.8.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Master": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "7ch Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Sound to Light",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Jump"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Fade"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "2ch Macro 1": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        240
+                    ],
+                    "type": "Intensity"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe"
+                }
+            ]
+        },
+        "2ch Macro 2": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Changer Sound to Light",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Jump"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Fade"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Master",
+                "Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "7ch Macro",
+                "White"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "2ch Macro 1",
+                "2ch Macro 2"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,345 @@
+{
+    "manufacturer": "Futurelight",
+    "name": "EVO-5",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Heikki Junnila",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color indexing"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        187
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow forward slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        193
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "No rotation"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow backward slow to fast"
+                }
+            ]
+        },
+        "Gobo": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        3
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        4,
+                        7
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Reset"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        19
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        39
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Gobo 1"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        59
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Gobo 2"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        79
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Gobo 3"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        99
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Gobo 4"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        120
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Gobo 5"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        147
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 9,
+                    "comment": "Gobo 1 shake speed"
+                },
+                {
+                    "dmxRange": [
+                        148,
+                        174
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 10,
+                    "comment": "Gobo 2 shake speed"
+                },
+                {
+                    "dmxRange": [
+                        175,
+                        201
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 11,
+                    "comment": "Gobo 3 shake speed"
+                },
+                {
+                    "dmxRange": [
+                        202,
+                        228
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 12,
+                    "comment": "Gobo 4 shake speed"
+                },
+                {
+                    "dmxRange": [
+                        229,
+                        255
+                    ],
+                    "type": "WheelShake",
+                    "slotNumber": 13,
+                    "comment": "Gobo 5 shake speed"
+                }
+            ]
+        },
+        "Gobo rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "WheelSlotRotation",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Rotation speed"
+                }
+            ]
+        },
+        "Prism rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Prism",
+                    "comment": "No rotation"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        127
+                    ],
+                    "type": "Prism",
+                    "comment": "Forward speed"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        135
+                    ],
+                    "type": "Prism",
+                    "comment": "No rotation"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        255
+                    ],
+                    "type": "Prism",
+                    "comment": "Backward speed"
+                }
+            ]
+        },
+        "Auto program": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        23
+                    ],
+                    "type": "Effect",
+                    "effectName": "Normal"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        47
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 1"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        71
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 2"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 3"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 4"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 5"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        167
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 6"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 7"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 8"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 9"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 10"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Colour",
+                "Gobo",
+                "Gobo rotation",
+                "Prism rotation",
+                "Auto program"
+            ]
+        }
+    ]
+}

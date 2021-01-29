@@ -1,0 +1,922 @@
+{
+    "manufacturer": "Briteq",
+    "name": "BT Theatre HD1",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Ray Console - cd",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.4)"
+        }
+    },
+    "availableChannels": {
+        "Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Hue": {
+            "fineChannelAliases": [
+                "Hue Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Saturation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "CCT": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        28
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "1800K"
+                },
+                {
+                    "dmxRange": [
+                        29,
+                        46
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "2200K"
+                },
+                {
+                    "dmxRange": [
+                        47,
+                        64
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "2700K"
+                },
+                {
+                    "dmxRange": [
+                        65,
+                        82
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "3000K"
+                },
+                {
+                    "dmxRange": [
+                        83,
+                        100
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "3200K"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        118
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "3500K"
+                },
+                {
+                    "dmxRange": [
+                        119,
+                        136
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "4000K"
+                },
+                {
+                    "dmxRange": [
+                        137,
+                        154
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "4200K"
+                },
+                {
+                    "dmxRange": [
+                        155,
+                        172
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "4500K"
+                },
+                {
+                    "dmxRange": [
+                        173,
+                        190
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "5600K"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        208
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "6000K"
+                },
+                {
+                    "dmxRange": [
+                        209,
+                        226
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "6500K"
+                },
+                {
+                    "dmxRange": [
+                        227,
+                        244
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "7200K"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "8000K"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Function"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        99
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "25Hz",
+                    "comment": "Strobe from slow to fast 0-25Hz"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Function"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        179
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Lighting Strobe"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        189
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Function"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random Strobe"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "narrow",
+                "angleEnd": "wide"
+            }
+        },
+        "Dimmer Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Speed",
+                    "comment": "Preset Dimmer Speed from Display Menu",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        29
+                    ],
+                    "type": "Speed",
+                    "comment": "Off",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        69
+                    ],
+                    "type": "Speed",
+                    "comment": "Dim1",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        129
+                    ],
+                    "type": "Speed",
+                    "comment": "Dim2",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        189
+                    ],
+                    "type": "Speed",
+                    "comment": "Dim3",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Dim4",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Master Dimmer": {
+            "fineChannelAliases": [
+                "Master Dimmer Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "fineChannelAliases": [
+                "Red Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "fineChannelAliases": [
+                "Green Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "fineChannelAliases": [
+                "Blue Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Lime": {
+            "fineChannelAliases": [
+                "Lime Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Lime"
+            }
+        },
+        "Amber": {
+            "fineChannelAliases": [
+                "Amber Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Preset Color": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        20
+                    ],
+                    "type": "Effect",
+                    "effectName": "L106"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        30
+                    ],
+                    "type": "Effect",
+                    "effectName": "R05"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        40
+                    ],
+                    "type": "Effect",
+                    "effectName": "L194"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        50
+                    ],
+                    "type": "Effect",
+                    "effectName": "R54"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        60
+                    ],
+                    "type": "Effect",
+                    "effectName": "L019"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        70
+                    ],
+                    "type": "Effect",
+                    "effectName": "R08"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "R89"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        90
+                    ],
+                    "type": "Effect",
+                    "effectName": "R86"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "L213"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        110
+                    ],
+                    "type": "Effect",
+                    "effectName": "R377"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        120
+                    ],
+                    "type": "Effect",
+                    "effectName": "R80"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        130
+                    ],
+                    "type": "Effect",
+                    "effectName": "L202"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        140
+                    ],
+                    "type": "Effect",
+                    "effectName": "L328"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "R3314"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "L101"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "L768"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Color Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        30
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red 100% / Green Up / Blue 0%",
+                    "colors": [
+                        "#ff0000",
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red Down / Green 100% / Blue 0%",
+                    "colors": [
+                        "#ffff00",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        70
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red 0% / Green 100% / Blue 100%",
+                    "colors": [
+                        "#ffff00",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red 0% / Green Down / Blue 100%",
+                    "colors": [
+                        "#00ffff",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        110
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red Up / Green 0% / Blue 100%",
+                    "colors": [
+                        "#0000ff",
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        130
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red 100% / Green 0% / Blue Down",
+                    "colors": [
+                        "#ff00ff",
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        150
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red 100% / Green Up / Blue Up",
+                    "colors": [
+                        "#ff0000",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        170
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red Down / Green Down / Blue 100%",
+                    "colors": [
+                        "#ffffff",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        195
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "All Led At Full Output",
+                    "colors": [
+                        "#000000",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "1800K"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        203
+                    ],
+                    "type": "Effect",
+                    "effectName": "2200K"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "2700K"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        211
+                    ],
+                    "type": "Effect",
+                    "effectName": "3000K"
+                },
+                {
+                    "dmxRange": [
+                        212,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "3200K"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        219
+                    ],
+                    "type": "Effect",
+                    "effectName": "3500K"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "4000K"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        227
+                    ],
+                    "type": "Effect",
+                    "effectName": "4200K"
+                },
+                {
+                    "dmxRange": [
+                        228,
+                        231
+                    ],
+                    "type": "Effect",
+                    "effectName": "4500K"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        235
+                    ],
+                    "type": "Effect",
+                    "effectName": "5600K"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "6000K"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        243
+                    ],
+                    "type": "Effect",
+                    "effectName": "6500K"
+                },
+                {
+                    "dmxRange": [
+                        244,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "7200K"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "8000K"
+                }
+            ]
+        },
+        "Auto": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        40
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        60
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 1"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 2"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto3"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        120
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto4"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        140
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto5"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto6"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto7"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto8"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto9"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto10"
+                }
+            ]
+        },
+        "Auto Speed Adjustment": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Auto Speed Adjustement",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "HSIC",
+            "channels": [
+                "Intensity",
+                "Hue",
+                "Hue Fine",
+                "Saturation",
+                "CCT",
+                "Strobe",
+                "Zoom",
+                "Dimmer Speed"
+            ]
+        },
+        {
+            "name": "SSP",
+            "channels": [
+                "Master Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Lime",
+                "Amber",
+                "Preset Color",
+                "Strobe",
+                "Zoom",
+                "Dimmer Speed"
+            ]
+        },
+        {
+            "name": "TOUR",
+            "channels": [
+                "Master Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Lime",
+                "Amber",
+                "Preset Color",
+                "Color Macro",
+                "Strobe",
+                "Zoom",
+                "Auto",
+                "Auto Speed Adjustment",
+                "Dimmer Speed"
+            ]
+        },
+        {
+            "name": "TR16",
+            "channels": [
+                "Master Dimmer",
+                "Master Dimmer Fine",
+                "Red",
+                "Red Fine",
+                "Green",
+                "Green Fine",
+                "Blue",
+                "Blue Fine",
+                "Lime",
+                "Lime Fine",
+                "Amber",
+                "Amber Fine",
+                "Preset Color",
+                "Color Macro",
+                "Strobe",
+                "Zoom",
+                "Auto",
+                "Auto Speed Adjustment",
+                "Dimmer Speed"
+            ]
+        }
+    ]
+}

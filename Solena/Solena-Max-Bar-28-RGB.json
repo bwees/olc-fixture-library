@@ -1,0 +1,579 @@
+{
+    "manufacturer": "Solena",
+    "name": "Max Bar 28 RGB",
+    "categories": [
+        "Pixel Bar"
+    ],
+    "meta": {
+        "authors": [
+            "Nathan Durnan",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.1 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            8,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Red Brightness": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green Brightness": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue Brightness": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Color Selection": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color controlled by CH1-CH3"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        35
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R--RG--G--GB--B--RB--RGB"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        71
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "7 Color AUTO change, speed slow(1.5S) to fast(0.1S)"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        107
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R--G--B AUTO change, speed slow(1.5S) to fast(0.1S)"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        143
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R--RG--RGB AUTO change, speed slow(1.5S) to fast(0.1S)"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        179
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color AUTO fade, speed slow(3S) to fast(0.8S)"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        187
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "7 Color SOUND change"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        195
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R--G--B AUTO change"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        203
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R--G--B SOUND change"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        219
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "7 Color AUTO change, Speed controlled by CH6 (96-215)"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        235
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R--G--B AUTO change, Speed controlled by CH6 (96-215)"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R--G--B AUTO change, Speed controlled by CH6 (96-215)"
+                }
+            ]
+        },
+        "Flash Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "No flash",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        239
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "AUTO flash, speed"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "SOUND flash",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Section Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section Selection"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 1-2-3-4-5-6-7-8 AUTO change selection, speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 12-34-56-78 AUTO change, speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 13-57-24-68 AUTO change, speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 12-23-34-45-56-67-78-81 AUTO change, speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 1357-2468-1234-5678-2367-1258 AUTO change, speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "AUTO section stream, speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        195
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 1-2-3-4-5-6-7-8 SOUND section change",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 12-34-56-78 SOUND section change",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        203
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 13-57-24-68 SOUND section change",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 12-23-34-45-56-67-78-81 SOUND section change",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        211
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 1357-2468-5678-2367-1458 SOUND section change",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        212,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "SOUND section stream change",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 1-2-3-4-5-6-7-8 AUTO change Section"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        231
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 12-34-56-78 AUTO change Section"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 13-57-24-68 AUTO change Section"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        243
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 12-23-34-45-56-67-78-81 AUTO change Section"
+                },
+                {
+                    "dmxRange": [
+                        244,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Section 1357-2648-1234-5678-2367-1458 AUTO change Section"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "AUTO section stream change"
+                }
+            ]
+        },
+        "Section 1, Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Section 1, Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Section 1, Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Section 2, Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Section 2, Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Section 2, Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Section 3, Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Section 3, Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Section 3, Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Section 4, Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Section 4, Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Section 4, Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Section 5, Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Section 5, Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Section 5, Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Section 6, Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Section 6, Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Section 6, Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Section 7, Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Section 7, Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Section 7, Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Section 8, Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Section 8, Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Section 8, Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red Brightness",
+                "Green Brightness",
+                "Blue Brightness",
+                "Color Selection",
+                "Flash Control",
+                "Section Control"
+            ]
+        },
+        {
+            "name": "24-channel",
+            "shortName": "24ch",
+            "channels": [
+                "Section 1, Red",
+                "Section 1, Green",
+                "Section 1, Blue",
+                "Section 2, Red",
+                "Section 2, Green",
+                "Section 2, Blue",
+                "Section 3, Red",
+                "Section 3, Green",
+                "Section 3, Blue",
+                "Section 4, Red",
+                "Section 4, Green",
+                "Section 4, Blue",
+                "Section 5, Red",
+                "Section 5, Green",
+                "Section 5, Blue",
+                "Section 6, Red",
+                "Section 6, Green",
+                "Section 6, Blue",
+                "Section 7, Red",
+                "Section 7, Green",
+                "Section 7, Blue",
+                "Section 8, Red",
+                "Section 8, Green",
+                "Section 8, Blue"
+            ]
+        }
+    ]
+}

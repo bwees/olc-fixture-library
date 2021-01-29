@@ -1,0 +1,510 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "Colorpalette II",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Jimmy Traylor",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            4,
+            2,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Control/Operating Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "27 channel mode"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "15 channel mode"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "9 channel mode"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "6 channel mode"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        90
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 1",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        101
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 2",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        112
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 3",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        123
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 4",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        124,
+                        134
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 5",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        145
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 6",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        146,
+                        156
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 7",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        167
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 8",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        178
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 9",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        179,
+                        189
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 10",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 11",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        211
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 12",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        212,
+                        222
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 13",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        223,
+                        233
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 14",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        234,
+                        244
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto mode 1"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto/Sound mode 16",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Auto Mode Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Slow > fast",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        2
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe"
+                },
+                {
+                    "dmxRange": [
+                        3,
+                        249
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Slow > fast"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Sound activated",
+                    "helpWanted": "Unknown QLC+ capability preset SilentModeOff, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        },
+        "Red 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 7": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 8": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "27-channel",
+            "shortName": "27ch",
+            "channels": [
+                "Control/Operating Mode",
+                "Auto Mode Speed",
+                "Strobe",
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2",
+                "Red 3",
+                "Green 3",
+                "Blue 3",
+                "Red 4",
+                "Green 4",
+                "Blue 4",
+                "Red 5",
+                "Green 5",
+                "Blue 5",
+                "Red 6",
+                "Green 6",
+                "Blue 6",
+                "Red 7",
+                "Green 7",
+                "Blue 7",
+                "Red 8",
+                "Green 8",
+                "Blue 8"
+            ]
+        },
+        {
+            "name": "15-channel",
+            "shortName": "15ch",
+            "channels": [
+                "Control/Operating Mode",
+                "Auto Mode Speed",
+                "Strobe",
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2",
+                "Red 3",
+                "Green 3",
+                "Blue 3",
+                "Red 4",
+                "Green 4",
+                "Blue 4"
+            ]
+        },
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Control/Operating Mode",
+                "Auto Mode Speed",
+                "Strobe",
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "physical": {
+                "bulb": {
+                    "lumens": 4121
+                }
+            },
+            "channels": [
+                "Control/Operating Mode",
+                "Auto Mode Speed",
+                "Strobe",
+                "Red 1",
+                "Green 1",
+                "Blue 1"
+            ]
+        }
+    ]
+}

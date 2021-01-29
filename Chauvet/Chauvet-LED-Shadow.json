@@ -1,0 +1,91 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "LED Shadow",
+    "categories": [
+        "Strobe"
+    ],
+    "meta": {
+        "authors": [
+            "Louis Gutenschwager",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.11.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        39
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Dimmer Mode"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        159
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Mode 1"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        199
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Mode 2"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        239
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto Mode 3"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound Mode"
+                }
+            ]
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Mode",
+                "Speed",
+                "Dimmer"
+            ]
+        }
+    ]
+}

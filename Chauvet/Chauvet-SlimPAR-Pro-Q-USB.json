@@ -1,0 +1,269 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "SlimPAR Pro Q USB",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Lance Moore",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Color Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color Macros"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Function"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe, Slow to Fast"
+                }
+            ]
+        },
+        "Automatic/Sound-Active Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 1"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        106
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 2"
+                },
+                {
+                    "dmxRange": [
+                        107,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 3"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 4"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        217
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-Active Program 1",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-Active Program 2",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Auto Speed/Sound Sensivitity (Ch 8 Value Dependent)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "See User Manual"
+            }
+        },
+        "Dimmer Speed Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        51
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed set from display",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        101
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed mode off",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        152
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed mode 1 (fast)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        203
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed mode 2 (medium)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Dimmer speed mode 3 (slow)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "10-channel",
+            "shortName": "10ch",
+            "channels": [
+                "Master dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "Color Macro",
+                "Strobe",
+                "Automatic/Sound-Active Programs",
+                "Auto Speed/Sound Sensivitity (Ch 8 Value Dependent)",
+                "Dimmer Speed Mode"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Master dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber"
+            ]
+        }
+    ]
+}

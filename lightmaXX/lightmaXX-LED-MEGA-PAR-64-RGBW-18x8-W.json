@@ -1,0 +1,138 @@
+{
+    "manufacturer": "lightmaXX",
+    "name": "LED MEGA PAR 64 RGBW 18x8 W",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "aschmitz",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.4.1)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "white": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "sound",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "color macro"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "color change"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "color dream"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "red",
+                "green",
+                "blue"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "red",
+                "green",
+                "blue",
+                "white"
+            ]
+        },
+        {
+            "name": "7-channel full",
+            "shortName": "7ch full",
+            "channels": [
+                "Dimmer",
+                "Strobe",
+                "red",
+                "green",
+                "blue",
+                "white",
+                "effect"
+            ]
+        }
+    ]
+}

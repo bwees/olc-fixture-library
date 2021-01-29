@@ -1,0 +1,457 @@
+{
+    "manufacturer": "High End Systems",
+    "name": "Studio Command 1200",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Tony Schuite",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan (coarse)": {
+            "fineChannelAliases": [
+                "Pan (fine)"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt (Coarse)": {
+            "fineChannelAliases": [
+                "Tilt (Fine)"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "240deg"
+            }
+        },
+        "Color Function": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Full Speed, Continuous"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Full Speed, Cycle (Speed is set by the Cyan Channel)"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        47
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Full Speed, Random (Speed is set by the Cyan Channel)"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "TBD"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        143
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "MSpeed, Continuous"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "MSpeed, Cycle (Speed is set by the Cyan Channel)"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        175
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "MSpeed, Random (Speed is set by the Cyan Channel)"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "TBD"
+                }
+            ]
+        },
+        "Cyan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Cyan"
+            }
+        },
+        "Magenta": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Magenta"
+            }
+        },
+        "Yellow": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Yellow"
+            }
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "narrow",
+                "angleEnd": "wide"
+            }
+        },
+        "Shutter Function": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        23
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Close"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        27
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "1Hz",
+                    "speedEnd": "4Hz",
+                    "comment": "Periodic Strobe (Mechanical from 1-4Hz operation)"
+                },
+                {
+                    "dmxRange": [
+                        28,
+                        49
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "5Hz",
+                    "speedEnd": "33Hz",
+                    "comment": "Periodic Strobe (Electronic from 5-33Hz operation)"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        75
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random Random Strobe"
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        101
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Synchronous Random Strobe"
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "MSpeed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        3
+                    ],
+                    "type": "Speed",
+                    "comment": "Disable",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        4,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Duration (252.7sec - 0.15sec)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro Off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        62
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pan sweep, small to large angle"
+                },
+                {
+                    "dmxRange": [
+                        63,
+                        65
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro Off"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        122
+                    ],
+                    "type": "Effect",
+                    "effectName": "Tilt sweep, small to large angle"
+                },
+                {
+                    "dmxRange": [
+                        123,
+                        125
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro Off"
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Clockwise circle, small to large"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        163
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro Off"
+                },
+                {
+                    "dmxRange": [
+                        164,
+                        198
+                    ],
+                    "type": "Effect",
+                    "effectName": "Counterclockwise circle, small to large"
+                },
+                {
+                    "dmxRange": [
+                        199,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Reserved"
+                }
+            ]
+        },
+        "Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Safe (Disables all Control settings)"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pan & Tilt MSpeed off"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        28
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display Off"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        38
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display Dim"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        48
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display Bright"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        68
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Home"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        88
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp On",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        98
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp Off",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        130
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Shutdown (send for 5 secs)"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        137
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp Assisted Strobes"
+                },
+                {
+                    "dmxRange": [
+                        138,
+                        141
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp Functions (modifies the shutter channel)"
+                },
+                {
+                    "dmxRange": [
+                        142,
+                        145
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp/mechanical dimming"
+                },
+                {
+                    "dmxRange": [
+                        146,
+                        149
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Lamp only dimming"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "TBD"
+                }
+            ]
+        },
+        "Dim": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "16-Bit",
+            "channels": [
+                "Pan (coarse)",
+                "Pan (fine)",
+                "Tilt (Coarse)",
+                "Tilt (Fine)",
+                "Color Function",
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Zoom",
+                "Shutter Function",
+                "Dim",
+                "MSpeed",
+                "Macro",
+                "Control"
+            ]
+        }
+    ]
+}

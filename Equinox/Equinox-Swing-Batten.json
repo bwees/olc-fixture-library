@@ -1,0 +1,1536 @@
+{
+    "manufacturer": "Equinox",
+    "name": "Swing Batten",
+    "categories": [
+        "Pixel Bar"
+    ],
+    "meta": {
+        "authors": [
+            "Dean Clough",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            8,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe (Slow To Fast)"
+                }
+            ]
+        },
+        "Shows": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 1"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        91
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 2"
+                },
+                {
+                    "dmxRange": [
+                        92,
+                        133
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 3"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 4"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        217
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 5"
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 6"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Active",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Colour Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        9
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        13
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        17
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "B",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        18,
+                        21
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "W",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        22,
+                        25
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RG",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        29
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RB",
+                    "colors": [
+                        "#ff0000",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        33
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RW",
+                    "colors": [
+                        "#ff0000",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        34,
+                        37
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "GB",
+                    "colors": [
+                        "#00ff00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "GW",
+                    "colors": [
+                        "#00ff00",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        45
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "BW",
+                    "colors": [
+                        "#0000ff",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        46,
+                        49
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        53
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGW"
+                },
+                {
+                    "dmxRange": [
+                        54,
+                        57
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RBW"
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        61
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "GBW"
+                },
+                {
+                    "dmxRange": [
+                        62,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGBW"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Chase 1"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Chase 2"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        111
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Chase 3"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Chase 4"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        143
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Chase 5"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Chase 6"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        175
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Chase 7"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Chase 8"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        207
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Chase 9"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Chase 10"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Chase 11"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Chase 12"
+                }
+            ]
+        },
+        "Colour Chase Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Show Mode Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Tilt": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Tilt Movement Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "TiltContinuous",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "LED 1 Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        8
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - R"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - G"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        57
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - B"
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - W"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - RG"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        107
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - RB"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        123
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - RW"
+                },
+                {
+                    "dmxRange": [
+                        124,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - GB"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        156
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - GW"
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        173
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - BW"
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        189
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - RGB"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        206
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - RGW"
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        222
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - RBW"
+                },
+                {
+                    "dmxRange": [
+                        223,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - GBW"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 1 - RGBW"
+                }
+            ]
+        },
+        "LED 2 Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        8
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - R"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - G"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        57
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - B"
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - W"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - RG"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        107
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - RB"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        123
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - RW"
+                },
+                {
+                    "dmxRange": [
+                        124,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - GB"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        156
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - GW"
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        173
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - BW"
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        189
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - RGB"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        206
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - RGW"
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        222
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - RBW"
+                },
+                {
+                    "dmxRange": [
+                        223,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - GBW"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 2 - RGBW"
+                }
+            ]
+        },
+        "LED 3 Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        8
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - R"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - G"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        57
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - B"
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - W"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - RG"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        107
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - RB"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        123
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - RW"
+                },
+                {
+                    "dmxRange": [
+                        124,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - GB"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        156
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - GW"
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        173
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - BW"
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        189
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - RGB"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        206
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - RGW"
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        222
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - RBW"
+                },
+                {
+                    "dmxRange": [
+                        223,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - GBW"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 3 - RGBW"
+                }
+            ]
+        },
+        "LED 4 Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        8
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - R"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - G"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        57
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - B"
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - W"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - RG"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        107
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - RB"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        123
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - RW"
+                },
+                {
+                    "dmxRange": [
+                        124,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - GB"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        156
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - GW"
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        173
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - BW"
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        189
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - RGB"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        206
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - RGW"
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        222
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - RBW"
+                },
+                {
+                    "dmxRange": [
+                        223,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - GBW"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 4 - RGBW"
+                }
+            ]
+        },
+        "LED 5 Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        8
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - R"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - G"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        57
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - B"
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - W"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - RG"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        107
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - RB"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        123
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - RW"
+                },
+                {
+                    "dmxRange": [
+                        124,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - GB"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        156
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - GW"
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        173
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - BW"
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        189
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - RGB"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        206
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - RGW"
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        222
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - RBW"
+                },
+                {
+                    "dmxRange": [
+                        223,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - GBW"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 5 - RGBW"
+                }
+            ]
+        },
+        "LED 6 Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        8
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - R"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - G"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        57
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - B"
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - W"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - RG"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        107
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - RB"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        123
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - RW"
+                },
+                {
+                    "dmxRange": [
+                        124,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - GB"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        156
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - GW"
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        173
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - BW"
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        189
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - RGB"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        206
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - RGW"
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        222
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - RBW"
+                },
+                {
+                    "dmxRange": [
+                        223,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - GBW"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 6 - RGBW"
+                }
+            ]
+        },
+        "LED 7 Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        8
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - R"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - G"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        57
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - B"
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - W"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - RG"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        107
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - RB"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        123
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - RW"
+                },
+                {
+                    "dmxRange": [
+                        124,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - GB"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        156
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - GW"
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        173
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - BW"
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        189
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - RGB"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        206
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - RGW"
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        222
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - RBW"
+                },
+                {
+                    "dmxRange": [
+                        223,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - GBW"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 7 - RGBW"
+                }
+            ]
+        },
+        "LED 8 Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        8
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        24
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - R"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        41
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - G"
+                },
+                {
+                    "dmxRange": [
+                        42,
+                        57
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - B"
+                },
+                {
+                    "dmxRange": [
+                        58,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - W"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - RG"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        107
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - RB"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        123
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - RW"
+                },
+                {
+                    "dmxRange": [
+                        124,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - GB"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        156
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - GW"
+                },
+                {
+                    "dmxRange": [
+                        157,
+                        173
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - BW"
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        189
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - RGB"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        206
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - RGW"
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        222
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - RBW"
+                },
+                {
+                    "dmxRange": [
+                        223,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - GBW"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "LED 8 - RGBW"
+                }
+            ]
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Dimmer",
+                "Strobe",
+                "Shows",
+                "Show Mode Speed",
+                "Colour Macros",
+                "Colour Chase Speed"
+            ]
+        },
+        {
+            "name": "12-channel",
+            "shortName": "12ch",
+            "channels": [
+                "Tilt",
+                "Tilt Movement Speed",
+                "Dimmer",
+                "Strobe",
+                "LED 1 Colour",
+                "LED 2 Colour",
+                "LED 3 Colour",
+                "LED 4 Colour",
+                "LED 5 Colour",
+                "LED 6 Colour",
+                "LED 7 Colour",
+                "LED 8 Colour"
+            ]
+        },
+        {
+            "name": "16-channel",
+            "shortName": "16ch",
+            "channels": [
+                "Tilt",
+                "Tilt Movement Speed",
+                "Dimmer",
+                "Strobe",
+                "LED 1 Colour",
+                "LED 2 Colour",
+                "LED 3 Colour",
+                "LED 4 Colour",
+                "LED 5 Colour",
+                "LED 6 Colour",
+                "LED 7 Colour",
+                "LED 8 Colour",
+                "Shows",
+                "Show Mode Speed",
+                "Colour Macros",
+                "Colour Chase Speed"
+            ]
+        }
+    ]
+}

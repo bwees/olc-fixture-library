@@ -1,0 +1,157 @@
+{
+    "manufacturer": "Clay Paky",
+    "name": "Stage Color 300 AE",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Cyan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Cyan"
+            }
+        },
+        "Magenta": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Magenta"
+            }
+        },
+        "Yellow": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Yellow"
+            }
+        },
+        "Stopper/Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        25
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        230
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe (Slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "360deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "252deg"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Frost": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "comment": "Frost (0 - 100%)"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Option Stnd",
+            "channels": [
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Stopper/Strobe",
+                "Pan",
+                "Tilt",
+                "Dimmer",
+                "Frost"
+            ]
+        },
+        {
+            "name": "Option 16 b",
+            "channels": [
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Stopper/Strobe",
+                "Pan",
+                "Tilt",
+                "Dimmer",
+                "Frost",
+                "Pan Fine",
+                "Tilt Fine"
+            ]
+        },
+        {
+            "name": " Option Extn",
+            "channels": [
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Stopper/Strobe",
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Dimmer",
+                "Frost"
+            ]
+        }
+    ]
+}

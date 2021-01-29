@@ -1,0 +1,536 @@
+{
+    "manufacturer": "Showtec",
+    "name": "Infinity XPLO-15 LED Strobe",
+    "categories": [
+        "Strobe"
+    ],
+    "meta": {
+        "authors": [
+            "Daniele Fogale",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.6 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Strobe flash duration, from short to long",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Effects": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Not functional"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        42
+                    ],
+                    "type": "Effect",
+                    "effectName": "Ramp up (fade in)"
+                },
+                {
+                    "dmxRange": [
+                        43,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Ramp down (fade out)"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Ramp up/down (fade in/out)"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        171
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random effects"
+                },
+                {
+                    "dmxRange": [
+                        172,
+                        173
+                    ],
+                    "type": "Effect",
+                    "effectName": "Left zone"
+                },
+                {
+                    "dmxRange": [
+                        174,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Center zone"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        178
+                    ],
+                    "type": "Effect",
+                    "effectName": "Right zone"
+                },
+                {
+                    "dmxRange": [
+                        179,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pattern A"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        182
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pattern B"
+                },
+                {
+                    "dmxRange": [
+                        183,
+                        184
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pattern C"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        186
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pattern D"
+                },
+                {
+                    "dmxRange": [
+                        187,
+                        214
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random patterns"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        235
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 1 - from left to right, from",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Chase 2 - from right to left, from",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "16-bit dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset IntensityDimmerFine."
+            }
+        },
+        "Dimming curves": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "Default"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "Not functional"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        34
+                    ],
+                    "type": "Effect",
+                    "effectName": "Linear dimming curve"
+                },
+                {
+                    "dmxRange": [
+                        35,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Square dimming curve"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        44
+                    ],
+                    "type": "Effect",
+                    "effectName": "S-Curve dimming curve"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "PL-Curve dimming curve"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Not functional"
+                }
+            ]
+        },
+        "Zone 1 - Dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Zone 1 - Strobe duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Strobe flash duration, from short to long",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Zone 1 - Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Zone 2 - Dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Zone 2 - Strobe duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Strobe flash duration, from short to long",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Zone 2 - Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Zone 3 - Dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Zone 3 - Strobe duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Strobe flash duration, from short to long",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Zone 3 - Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Zone 4 - Dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Zone 4 - Strobe duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Strobe flash duration, from short to long",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Zone 4 - Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Zone 5 - Dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Zone 5 - Strobe duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Strobe flash duration, from short to long",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Zone 5 - Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Zone 6 - Dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Zone 6 - Strobe duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Strobe flash duration, from short to long",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Zone 6 - Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Zone 7 - Dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Zone 7 - Strobe duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Strobe flash duration, from short to long",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Zone 7 - Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Zone 8 - Dimmer intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Zone 8 - Strobe duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Strobe flash duration, from short to long",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Zone 8 - Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Strobe"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Dimmer intensity",
+                "Strobe duration",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Dimmer intensity",
+                "Strobe duration",
+                "Strobe",
+                "Effects"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Dimmer intensity",
+                "16-bit dimmer intensity",
+                "Effects",
+                "Dimming curves",
+                "Strobe duration",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "28-channel",
+            "shortName": "28ch",
+            "channels": [
+                "Dimmer intensity",
+                "16-bit dimmer intensity",
+                "Effects",
+                "Dimming curves",
+                "Zone 1 - Dimmer intensity",
+                "Zone 1 - Strobe duration",
+                "Zone 1 - Strobe",
+                "Zone 2 - Dimmer intensity",
+                "Zone 2 - Strobe duration",
+                "Zone 2 - Strobe",
+                "Zone 3 - Dimmer intensity",
+                "Zone 3 - Strobe duration",
+                "Zone 3 - Strobe",
+                "Zone 4 - Dimmer intensity",
+                "Zone 4 - Strobe duration",
+                "Zone 4 - Strobe",
+                "Zone 5 - Dimmer intensity",
+                "Zone 5 - Strobe duration",
+                "Zone 5 - Strobe",
+                "Zone 6 - Dimmer intensity",
+                "Zone 6 - Strobe duration",
+                "Zone 6 - Strobe",
+                "Zone 7 - Dimmer intensity",
+                "Zone 7 - Strobe duration",
+                "Zone 7 - Strobe",
+                "Zone 8 - Dimmer intensity",
+                "Zone 8 - Strobe duration",
+                "Zone 8 - Strobe"
+            ]
+        }
+    ]
+}

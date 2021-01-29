@@ -1,0 +1,697 @@
+{
+    "manufacturer": "Briteq",
+    "name": "Tornado 7",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Robert Box",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            2,
+            2,
+            1
+        ]
+    },
+    "wheels": {
+        "Color Macro": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "No"
+                },
+                {
+                    "type": "Color",
+                    "name": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Red + green",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Green + blue",
+                    "colors": [
+                        "#00ff00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Red + blue",
+                    "colors": [
+                        "#ff0000",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Red + green + blue",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        129
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe from slow to fast"
+                }
+            ]
+        },
+        "Dimmer": {
+            "fineChannelAliases": [
+                "16 Bit Dimmer"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Color Temperature": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "No"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Linear adjustment from low to high"
+                }
+            ]
+        },
+        "Animation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "No"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Animation effects"
+                }
+            ]
+        },
+        "Color Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "No"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + green",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green + blue",
+                    "colors": [
+                        "#00ff00",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + blue",
+                    "colors": [
+                        "#ff0000",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + green + blue",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Rainbow effects (speed from slow to fast)"
+                }
+            ]
+        },
+        "Red 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Zone Master 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Red 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Zone Master 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Red 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Zone Master 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Zone Master 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan 16 Bit"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "720deg"
+            }
+        },
+        "Pan Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "PanContinuous",
+                    "speed": "stop",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "PanContinuous",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW",
+                    "comment": "Speed counterclockwise from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "PanContinuous",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW",
+                    "comment": "Speed clockwise from slow to fast"
+                }
+            ]
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt 16 Bit"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Tilt Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "TiltContinuous",
+                    "speed": "stop",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "TiltContinuous",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW",
+                    "comment": "Speed counterclockwise from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "TiltContinuous",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW",
+                    "comment": "Speed clockwise from slow to fast"
+                }
+            ]
+        },
+        "Pan/Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Control Function": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX mode"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        37
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound mode 1",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        67
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound mode 2",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        97
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound mode 3",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        98,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound mode 4",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        157
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound mode 5",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        158,
+                        187
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound mode 6",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        217
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound mode 0",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        247
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Reset"
+                }
+            ]
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "Standard",
+            "channels": [
+                "Strobe",
+                "Dimmer",
+                "Color Temperature",
+                "Animation",
+                "Color Macro",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Pan",
+                "Pan 16 Bit",
+                "Pan Rotation",
+                "Tilt",
+                "Tilt 16 Bit",
+                "Tilt Rotation",
+                "Pan/Tilt Speed",
+                "Control Function"
+            ]
+        },
+        {
+            "name": "Extended",
+            "channels": [
+                "Strobe",
+                "Dimmer",
+                "16 Bit Dimmer",
+                "Color Temperature",
+                "Animation",
+                "Color Macro",
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "White 1",
+                "Zone Master 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2",
+                "White 2",
+                "Zone Master 2",
+                "Red 3",
+                "Green 3",
+                "Blue 3",
+                "White 3",
+                "Zone Master 3",
+                "Red 4",
+                "Green 4",
+                "Blue 4",
+                "White 4",
+                "Zone Master 4",
+                "Pan",
+                "Pan 16 Bit",
+                "Pan Rotation",
+                "Tilt",
+                "Tilt 16 Bit",
+                "Tilt Rotation",
+                "Pan/Tilt Speed",
+                "Control Function"
+            ]
+        }
+    ]
+}

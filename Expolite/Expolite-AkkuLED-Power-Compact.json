@@ -1,0 +1,649 @@
+{
+    "manufacturer": "Expolite",
+    "name": "AkkuLED Power Compact",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Matthias Schlecht",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "fineChannelAliases": [
+                "Red fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "fineChannelAliases": [
+                "Green fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "fineChannelAliases": [
+                "Blue fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Amber": {
+            "fineChannelAliases": [
+                "Amber fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Master dimmer": {
+            "fineChannelAliases": [
+                "Master dimmer fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Hue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Saturation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Value": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Color Macro & White": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        30
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Red 100% / Green UP / Blue 0%"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        50
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Red DOWN / Green 100% / Blue 0%"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        70
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Red 0% / Green 100% / Blue DOWN"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        90
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Red 0% / Green DOWN / Blue 100%"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        110
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Red UP / Green 0% / Blue 100%"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        130
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Red 100% / Green 0% / Blue DOWN"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        150
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Red 100% / Green UP / Blue UP"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        170
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Red DOWN / Green DOWN / Blue 100%"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        200
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Red 100% / Green 100% / Blue 100% / Amber 100%"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        205
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White: 3200K"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        210
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White: 3400K"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        215
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White: 4200K"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        220
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White: 4900K"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        225
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White: 5600K"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        230
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White: 5900K"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        235
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White: 6500K"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        240
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White: 7200K"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        245
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White: 8000K"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        250
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White: 8500K"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "White: 10000K"
+                }
+            ]
+        },
+        "Special/Classic Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Special Strobe: No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        99
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Special Strobe: Strobe (slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Special Strobe: No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        179
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Special Strobe: Lightning Strobe (slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        189
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Special Strobe: No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Special Strobe: Random Strobe (slow to fast)"
+                }
+            ]
+        },
+        "Automation Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "comment": "Since the walking speed"
+            }
+        },
+        "Automation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        40
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        50
+                    ],
+                    "type": "Intensity",
+                    "comment": "AUTO01"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        60
+                    ],
+                    "type": "Intensity",
+                    "comment": "AUTO02"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        70
+                    ],
+                    "type": "Intensity",
+                    "comment": "AUTO03"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        80
+                    ],
+                    "type": "Intensity",
+                    "comment": "AUTO04"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        90
+                    ],
+                    "type": "Intensity",
+                    "comment": "AUTO05"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        100
+                    ],
+                    "type": "Intensity",
+                    "comment": "AUTO06"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        150
+                    ],
+                    "type": "Intensity",
+                    "comment": "CUSTOM01"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        160
+                    ],
+                    "type": "Intensity",
+                    "comment": "CUSTOM02"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        170
+                    ],
+                    "type": "Intensity",
+                    "comment": "CUSTOM03"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        180
+                    ],
+                    "type": "Intensity",
+                    "comment": "CUSTOM04"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        190
+                    ],
+                    "type": "Intensity",
+                    "comment": "CUSTOM05"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        200
+                    ],
+                    "type": "Intensity",
+                    "comment": "CUSTOM06"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        210
+                    ],
+                    "type": "Intensity",
+                    "comment": "CUSTOM07"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        220
+                    ],
+                    "type": "Intensity",
+                    "comment": "CUSTOM08"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        230
+                    ],
+                    "type": "Intensity",
+                    "comment": "CUSTOM09"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "CUSTOM10"
+                }
+            ]
+        },
+        "Dimmer Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Speed",
+                    "comment": "Return Settings",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        29
+                    ],
+                    "type": "Speed",
+                    "comment": "Normal",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        69
+                    ],
+                    "type": "Speed",
+                    "comment": "DIM1",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        129
+                    ],
+                    "type": "Speed",
+                    "comment": "DIM2",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        189
+                    ],
+                    "type": "Speed",
+                    "comment": "DIM3",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "DIM4",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "TOUR",
+            "channels": [
+                "Master dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "Color Macro & White",
+                "Special/Classic Strobe",
+                "Automation",
+                "Automation Speed",
+                "Dimmer Speed"
+            ]
+        },
+        {
+            "name": "TR16",
+            "channels": [
+                "Master dimmer",
+                "Master dimmer fine",
+                "Red",
+                "Red fine",
+                "Green",
+                "Green fine",
+                "Blue",
+                "Blue fine",
+                "Amber",
+                "Amber fine",
+                "Color Macro & White",
+                "Special/Classic Strobe",
+                "Automation",
+                "Automation Speed",
+                "Dimmer Speed"
+            ]
+        },
+        {
+            "name": "ARC1",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "AR1.D",
+            "channels": [
+                "Master dimmer",
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "ARC2",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber"
+            ]
+        },
+        {
+            "name": "AR2.D",
+            "channels": [
+                "Master dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber"
+            ]
+        },
+        {
+            "name": "AR2.S",
+            "channels": [
+                "Master dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "HSV",
+            "channels": [
+                "Hue",
+                "Saturation",
+                "Value"
+            ]
+        }
+    ]
+}

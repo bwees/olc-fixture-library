@@ -1,0 +1,164 @@
+{
+    "manufacturer": "Briteq",
+    "name": "COB PAR56 RGB",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Giacomo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.9.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Effect-5CH": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Effect",
+                    "effectName": "ON"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        24
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Control (7 colors)",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        34
+                    ],
+                    "type": "Effect",
+                    "effectName": "ON"
+                },
+                {
+                    "dmxRange": [
+                        35,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe (increasing)"
+                }
+            ]
+        },
+        "Effect-4CH": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "Master Dimmer"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Control (7 colors)",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe (increasing)"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Master Dimmer"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Dimmer",
+                "Effect-5CH"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "physical": {
+                "dimensions": [
+                    240,
+                    2400,
+                    400
+                ]
+            },
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Effect-4CH"
+            ]
+        }
+    ]
+}

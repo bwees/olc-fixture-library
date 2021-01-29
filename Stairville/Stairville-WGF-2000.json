@@ -1,0 +1,73 @@
+{
+    "manufacturer": "Stairville",
+    "name": "WGF 2000",
+    "categories": [
+        "Smoke"
+    ],
+    "meta": {
+        "authors": [
+            "CoS2000",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Smoke": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "Smoke Intensity (0%-100%)"
+            }
+        },
+        "Fan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "Van Intensity (0%-100%)"
+            }
+        },
+        "Program": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Heavy Mode (Fluid and Water)",
+                    "colors": [
+                        "#860000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Mode (Water only)",
+                    "colors": [
+                        "#427eff"
+                    ]
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Smoke",
+                "Fan",
+                "Program"
+            ]
+        }
+    ]
+}

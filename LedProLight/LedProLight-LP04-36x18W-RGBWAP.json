@@ -1,0 +1,462 @@
+{
+    "manufacturer": "LedProLight",
+    "name": "LP04 - 36x18W RGBWAP",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Ivan Brinda",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Pan/Tilt speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "narrow",
+                "angleEnd": "wide"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe (from slow to fast)"
+                }
+            ]
+        },
+        "Custom Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Auto Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "No Macro"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        25
+                    ],
+                    "type": "Effect",
+                    "effectName": "Enable console delay"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        50
+                    ],
+                    "type": "Effect",
+                    "effectName": "Close console delay"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        90
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color selection"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        130
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pulse change"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Hopping"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        210
+                    ],
+                    "type": "Effect",
+                    "effectName": "Gradual change"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        250
+                    ],
+                    "type": "Effect",
+                    "effectName": "Internal mode 1 (not controlled)"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Voice mode (not controlled)"
+                }
+            ]
+        },
+        "Auto Mode Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Do not use color selection function"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        20
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G \u2191 B0 C0 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        40
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R\u2193 G255 B0 C0 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        60
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R0 G255 B \u2191 C0 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        80
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R0 G \u2193 B255 C0 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        100
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R \u2191 G0 B255 C0 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        120
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G0 B \u2193 C0 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G\u2191 B\u2191 C0 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        160
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R\u2193 G\u2193 B255 C0 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        170
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G255 B255 C255 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        200
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R0 G0 B0 C0 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        205
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R242 G204 B5 C227 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        210
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R242 G215 B5 C227 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        215
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G255 B50 C255 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G255 B90 C255 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        225
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G255 B132 C255 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        230
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G255 B131 C255 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        235
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G255 B151 C255 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        240
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G255 B171 C255 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        245
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G255 B185 C255 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        250
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G255 B197 C255 I0 Y0"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R255 G255 B234 C255 I0 Y0"
+                }
+            ]
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        249
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Invalid"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "3 seconds after reset"
+                }
+            ]
+        },
+        "UV": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "UV"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "12-channel",
+            "shortName": "12ch",
+            "channels": [
+                "Master Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "UV",
+                "Amber",
+                "Pan",
+                "Tilt",
+                "Pan/Tilt speed",
+                "Zoom",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "18-channel",
+            "shortName": "18ch",
+            "channels": [
+                "Master Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "UV",
+                "Amber",
+                "Custom Dimmer",
+                "Pan",
+                "Tilt",
+                "Pan fine",
+                "Tilt fine",
+                "Pan/Tilt speed",
+                "Zoom",
+                "Strobe",
+                "Auto Mode",
+                "Auto Mode Control",
+                "Reset"
+            ]
+        }
+    ]
+}

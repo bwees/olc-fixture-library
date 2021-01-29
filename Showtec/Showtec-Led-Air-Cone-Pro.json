@@ -1,0 +1,201 @@
+{
+    "manufacturer": "Showtec",
+    "name": "Led Air Cone Pro",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Joep Admiraal",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.8.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        13
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro"
+                }
+            ]
+        },
+        "Speed/strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe static state",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe/Speed 16 steps",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        35
+                    ],
+                    "type": "Effect",
+                    "effectName": "Adjust colors"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        71
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light mode"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        107
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dim mode"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light and dim mode"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto mixcolor"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        251
+                    ],
+                    "type": "Effect",
+                    "effectName": "7 colors random shows"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Change light by music signal"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Macro simple modes": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Macro"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "4",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Macro",
+                "Speed/strobe",
+                "Mode",
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "1",
+            "channels": [
+                "Macro simple modes"
+            ]
+        },
+        {
+            "name": "2",
+            "channels": [
+                "Macro simple modes",
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "3",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,670 @@
+{
+    "manufacturer": "Pro-Lights",
+    "name": "ArcLed-7314HD",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "root",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "fineChannelAliases": [
+                "Red Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "fineChannelAliases": [
+                "Green Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "fineChannelAliases": [
+                "Blue Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Master Dimmer": {
+            "fineChannelAliases": [
+                "Master Dimmer Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Hue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Saturation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Value": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Color Macro + White Balance": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        30
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red 100% / Green Up / Blue 0%",
+                    "colors": [
+                        "#ff0000",
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red Down / Green 100% / Blue 0%",
+                    "colors": [
+                        "#ffff00",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        70
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red 0% / Green 100% / Blue Up",
+                    "colors": [
+                        "#00ff00",
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red 0% / Green Down / Blue 100%",
+                    "colors": [
+                        "#00ffff",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        110
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red Up / Green 0% / Blue 100%",
+                    "colors": [
+                        "#0000ff",
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        130
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red 100% / Green 0% / Blue Down",
+                    "colors": [
+                        "#ff00ff",
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        150
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red 100% / Green Up / Blue Up",
+                    "colors": [
+                        "#ff0000",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        170
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red Down / Green Down / Blue 100%",
+                    "colors": [
+                        "#ffffff",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        200
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "All LEDs 100%",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        205
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 1: 3200K",
+                    "colors": [
+                        "#ffc076"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        210
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 2: 3400K",
+                    "colors": [
+                        "#ffc61e"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        215
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 3: 4200K",
+                    "colors": [
+                        "#ffd9ab"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 4: 4900K",
+                    "colors": [
+                        "#ffe5c8"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        225
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 5: 5600K",
+                    "colors": [
+                        "#ffefe1"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        230
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 6: 5900K",
+                    "colors": [
+                        "#fff3ea"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        235
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 7: 6500K",
+                    "colors": [
+                        "#fff9fb"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        240
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 8: 7200K",
+                    "colors": [
+                        "#f3f3ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        245
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 9: 8000K",
+                    "colors": [
+                        "#e5e9ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        250
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 10: 8500K",
+                    "colors": [
+                        "#dfe5ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White 11: 10000K",
+                    "colors": [
+                        "#cfdaff"
+                    ]
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "1Hz",
+                    "speedEnd": "20Hz",
+                    "comment": "Strobe: 1 > 20 Hz"
+                }
+            ]
+        },
+        "Auto": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        20
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        30
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 01"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        40
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 02"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        50
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 03"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        60
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 04"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        70
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 05"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 06"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        90
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 07"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 08"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        110
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 09"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        120
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 10"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        130
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 01"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        140
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 02"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 03"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 04"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 05"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 06"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 07"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        210
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 08"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 09"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        230
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 10"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Auto Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "comment": "Since the walking speed"
+            }
+        },
+        "Dimmer speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Speed",
+                    "comment": "Return settings",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        29
+                    ],
+                    "type": "Speed",
+                    "comment": "Normal",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        69
+                    ],
+                    "type": "Speed",
+                    "comment": "DIM1",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        129
+                    ],
+                    "type": "Speed",
+                    "comment": "DIM2",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        189
+                    ],
+                    "type": "Speed",
+                    "comment": "DIM3",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "DIM4",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "ARC.1",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "AR1.d",
+            "channels": [
+                "Master Dimmer",
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "HSV",
+            "channels": [
+                "Hue",
+                "Saturation",
+                "Value"
+            ]
+        },
+        {
+            "name": "AR1.S",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Master Dimmer",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "TOUR",
+            "channels": [
+                "Master Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Color Macro + White Balance",
+                "Strobe",
+                "Auto",
+                "Auto Speed",
+                "Dimmer speed"
+            ]
+        },
+        {
+            "name": "TR16",
+            "channels": [
+                "Master Dimmer",
+                "Master Dimmer Fine",
+                "Red",
+                "Red Fine",
+                "Green",
+                "Green Fine",
+                "Blue",
+                "Blue Fine",
+                "Color Macro + White Balance",
+                "Strobe",
+                "Auto",
+                "Auto Speed",
+                "Dimmer speed"
+            ]
+        }
+    ]
+}

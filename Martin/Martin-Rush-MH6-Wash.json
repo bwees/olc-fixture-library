@@ -1,0 +1,482 @@
+{
+    "manufacturer": "Martin",
+    "name": "Rush MH6 Wash",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo/Piotr Nowik",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Color presets": {
+            "slots": [
+                {
+                    "type": "Open"
+                },
+                {
+                    "type": "Color",
+                    "name": "Color presets"
+                },
+                {
+                    "type": "Open"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Color scroll fast-slow"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Color scroll slow-fast"
+                },
+                {
+                    "type": "Color",
+                    "name": "Random fast"
+                },
+                {
+                    "type": "Color",
+                    "name": "Random medium"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Random slow"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        131
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe, slow-fast"
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        139
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        181
+                    ],
+                    "type": "StrobeSpeed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Fast close, slow open"
+                },
+                {
+                    "dmxRange": [
+                        182,
+                        189
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        231
+                    ],
+                    "type": "StrobeSpeed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Slow close, fast open"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        239
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        247
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random strobe"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Dimmer": {
+            "fineChannelAliases": [
+                "Dimmer fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Color presets": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        190
+                    ],
+                    "type": "ColorPreset"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        192
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        193,
+                        214
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Color scroll fast-slow"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        221
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Stop at current position"
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        243
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Color scroll slow-fast"
+                },
+                {
+                    "dmxRange": [
+                        244,
+                        247
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Random fast"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        251
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Random medium"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Random slow"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "wide",
+                "angleEnd": "narrow"
+            }
+        },
+        "Fixture control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Maintenance",
+                    "comment": "No function (disables calibration)"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        14
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset fixture",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        54
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        59
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Enable calibration"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        74
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        79
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pan & Tilt Speed = Normal"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pan & Tilt Speed = Fast (default)"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        94
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pan & Tilt Speed = Slow"
+                },
+                {
+                    "dmxRange": [
+                        95,
+                        144
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        145,
+                        149
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pan/tilt blackout = ON"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        154
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pan/tilt blackout = OFF"
+                },
+                {
+                    "dmxRange": [
+                        155,
+                        159
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Illuminate display"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        164
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Display illumination off"
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        229
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        234
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Store zoom calibration"
+                },
+                {
+                    "dmxRange": [
+                        235,
+                        239
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Store pan calibration"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        244
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Store tilt calibration"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        249
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset all calibrations to factory default",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Standard",
+            "channels": [
+                "Strobe",
+                "Dimmer",
+                "Dimmer fine",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Color presets",
+                "Zoom",
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Fixture control"
+            ]
+        }
+    ]
+}

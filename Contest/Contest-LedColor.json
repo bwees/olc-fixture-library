@@ -1,0 +1,172 @@
+{
+    "manufacturer": "Contest",
+    "name": "LedColor",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "jacques",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.4.1)"
+        }
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        29
+                    ],
+                    "type": "Maintenance",
+                    "comment": "RGB & B & F (ch2=Red, ch3=green, ch4=blue, ch5=strobe)"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        94
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto"
+                },
+                {
+                    "dmxRange": [
+                        95,
+                        159
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound impulsions"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        184
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Snake"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        209
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sequencer"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        234
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Automatic sequencer (40 colours)"
+                },
+                {
+                    "dmxRange": [
+                        235,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Automatic sequencer time synchronized (40 colours)"
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Colour": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset"
+            }
+        },
+        "Flash": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Flash speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Fade": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Fade"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "comment": "Strobe speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "C & B",
+            "channels": [
+                "Colour",
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "RGB & B",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Dimmer"
+            ]
+        },
+        {
+            "name": "RGB & B & F",
+            "channels": [
+                "Mode",
+                "Dimmer",
+                "Fade",
+                "Flash",
+                "Strobe"
+            ]
+        }
+    ]
+}

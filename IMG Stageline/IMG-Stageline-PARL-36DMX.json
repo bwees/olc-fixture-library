@@ -1,0 +1,205 @@
+{
+    "manufacturer": "IMG Stageline",
+    "name": "PARL-36DMX",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Andrew",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Operating Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual colour adjustment",
+                    "switchChannels": {
+                        "Green / No function": "Green",
+                        "Blue / No function": "Blue",
+                        "Red / Speed": "Red"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic fading between 7 colours",
+                    "switchChannels": {
+                        "Green / No function": "No function",
+                        "Blue / No function": "No function",
+                        "Red / Speed": "Speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic change between 7 colours",
+                    "switchChannels": {
+                        "Green / No function": "No function",
+                        "Blue / No function": "No function",
+                        "Red / Speed": "Speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic change between red, green and blue",
+                    "switchChannels": {
+                        "Green / No function": "No function",
+                        "Blue / No function": "No function",
+                        "Red / Speed": "Speed"
+                    }
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Fast Change of Colour, Music Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction",
+                    "switchChannels": {
+                        "Operating Mode / No function": "Operating Mode",
+                        "Red / No function": "Red",
+                        "Green / No function": "Green",
+                        "Blue / No function": "Blue"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fast change of colour red/green/blue - speed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "switchChannels": {
+                        "Operating Mode / No function": "No function",
+                        "Red / No function": "No function",
+                        "Green / No function": "No function",
+                        "Blue / No function": "No function"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        150
+                    ],
+                    "type": "NoFunction",
+                    "switchChannels": {
+                        "Operating Mode / No function": "Operating Mode",
+                        "Red / No function": "Red",
+                        "Green / No function": "Green",
+                        "Blue / No function": "Blue"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Music-controlled change of colour - sensitivity max to min",
+                    "switchChannels": {
+                        "Operating Mode / No function": "No function",
+                        "Red / No function": "No function",
+                        "Green / No function": "No function",
+                        "Blue / No function": "No function"
+                    }
+                }
+            ]
+        },
+        "No function": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Speed",
+                    "comment": "Minimum speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "Speed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Operating Mode",
+                "Red",
+                "Green",
+                "Blue",
+                "Fast Change of Colour, Music Control"
+            ]
+        }
+    ]
+}

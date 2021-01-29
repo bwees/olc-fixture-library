@@ -1,0 +1,261 @@
+{
+    "manufacturer": "NJD",
+    "name": "Spectre",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "charles.oldham",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Brightness": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        42
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        43,
+                        85
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        170
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        213
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        214,
+                        254
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#aa007f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                }
+            ]
+        },
+        "Saturation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Full Colour [0] -> White [255]"
+            }
+        },
+        "X-position (pan) or dish rotation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "X-position (pan) or dish rotation"
+            }
+        },
+        "Y-position (tilt)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Y-position (tilt)"
+            }
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Gobo or Colour Saturation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "WheelSlot",
+                "slotNumber": 1
+            }
+        },
+        "Strobe/Blackout": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "0Hz",
+                "speedEnd": "10Hz",
+                "comment": "Off [0] -> 10Hz [255]"
+            }
+        },
+        "Colour + Colour Scrolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        42
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        43,
+                        85
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        170
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        213
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        214,
+                        254
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#aa007f"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "DMX 3-channel",
+            "shortName": "DMX 3ch",
+            "channels": [
+                "Brightness",
+                "Colour",
+                "Saturation"
+            ]
+        },
+        {
+            "name": "MX90",
+            "channels": [
+                "X-position (pan) or dish rotation",
+                "Y-position (tilt)",
+                "Colour + Colour Scrolling",
+                "Gobo or Colour Saturation",
+                "Speed",
+                "Strobe/Blackout",
+                "Brightness"
+            ]
+        }
+    ]
+}

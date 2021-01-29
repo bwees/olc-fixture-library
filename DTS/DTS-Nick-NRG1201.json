@@ -1,0 +1,649 @@
+{
+    "manufacturer": "DTS",
+    "name": "Nick NRG1201",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Vassily Leushin",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan Coarse": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "360deg"
+            }
+        },
+        "Tilt Coarse": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Speed Move": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Speed",
+                    "comment": "Standard",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        25
+                    ],
+                    "type": "Speed",
+                    "comment": "Fast Move",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        127
+                    ],
+                    "type": "Speed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Vector Mode"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        247
+                    ],
+                    "type": "Speed",
+                    "comment": "Variable Reaction",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Slow Reaction",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Pan FPR": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Standard"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        20
+                    ],
+                    "type": "Maintenance",
+                    "comment": "1 turn"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        30
+                    ],
+                    "type": "Maintenance",
+                    "comment": "2 turn"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        40
+                    ],
+                    "type": "Maintenance",
+                    "comment": "3 turn"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        50
+                    ],
+                    "type": "Maintenance",
+                    "comment": "4 turn"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        60
+                    ],
+                    "type": "Maintenance",
+                    "comment": "5 turn"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        70
+                    ],
+                    "type": "Maintenance",
+                    "comment": "6 turn"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        80
+                    ],
+                    "type": "Maintenance",
+                    "comment": "7 turn"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        90
+                    ],
+                    "type": "Maintenance",
+                    "comment": "8 turn"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        100
+                    ],
+                    "type": "Maintenance",
+                    "comment": "9 turn"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        110
+                    ],
+                    "type": "Maintenance",
+                    "comment": "10 turn"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        120
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Smart path"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        182
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Forward Spin"
+                },
+                {
+                    "dmxRange": [
+                        183,
+                        193
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Reverse Spin"
+                }
+            ]
+        },
+        "No function": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        29
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        119
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        149
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse up"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        179
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampDown",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Pulse down"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        204
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random Strobe"
+                },
+                {
+                    "dmxRange": [
+                        205,
+                        229
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Full Random Strobe"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "White Preprogrammed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        55
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        105
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Full RGB"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        155
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White DTS"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        205
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Custom White Create"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White CTC"
+                }
+            ]
+        },
+        "CTC": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorTemperature",
+                "colorTemperatureStart": "warm",
+                "colorTemperatureEnd": "cold",
+                "helpWanted": "Is this the correct direction? Can you provide exact color temperature values in Kelvin?"
+            }
+        },
+        "Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        14
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        29
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 1"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        44
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 2"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        59
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 3"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 4"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        89
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 5"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        104
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 6"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        119
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 7"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        134
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 8"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        149
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 9"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        164
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 10"
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        179
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 11"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        194
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 12"
+                },
+                {
+                    "dmxRange": [
+                        195,
+                        209
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 13"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        225
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 14"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 15"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 16"
+                }
+            ]
+        },
+        "Custom White": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "CW Recall"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        160
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "CW Create"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "CW Store"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "narrow",
+                "angleEnd": "wide"
+            }
+        },
+        "No function2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Total Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "20-channel",
+            "shortName": "20ch",
+            "channels": [
+                "Pan Coarse",
+                "Pan Fine",
+                "Tilt Coarse",
+                "Tilt Fine",
+                "Speed Move",
+                "Pan FPR",
+                "No function",
+                "Shutter",
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "White Preprogrammed",
+                "CTC",
+                "Macros",
+                "Custom White",
+                "Zoom",
+                "No function2",
+                "Reset"
+            ]
+        }
+    ]
+}

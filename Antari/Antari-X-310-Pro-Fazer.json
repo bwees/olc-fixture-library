@@ -1,0 +1,82 @@
+{
+    "manufacturer": "Antari",
+    "name": "X-310 Pro Fazer",
+    "categories": [
+        "Smoke"
+    ],
+    "meta": {
+        "authors": [
+            "Flox Garden",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.4 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Fan speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Slow"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Medium"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fast"
+                }
+            ]
+        },
+        "Volume control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Volume control"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Fan speed",
+                "Volume control"
+            ]
+        }
+    ]
+}

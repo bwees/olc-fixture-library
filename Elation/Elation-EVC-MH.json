@@ -1,0 +1,191 @@
+{
+    "manufacturer": "Elation",
+    "name": "EVC MH",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "David Kuder",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan Coarse": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt Coarse": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Pan / Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Warm White LED": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Warm White"
+            }
+        },
+        "Cool White LED": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Zoom",
+                "angleStart": "narrow",
+                "angleEnd": "wide"
+            }
+        },
+        "Focus Coarse": {
+            "fineChannelAliases": [
+                "Focus Fine"
+            ],
+            "dmxValueResolution": "8bit",
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Generic",
+                    "comment": "Auto Focus"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Near - Far"
+                }
+            ]
+        },
+        "Function": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        69
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Enable Blackout while moving"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Disable Blackout while moving"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        199
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        209
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset All",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "LED Color Temperature": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "OFF"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Warm - Cool"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "12-channel",
+            "shortName": "12ch",
+            "channels": [
+                "Pan Coarse",
+                "Pan Fine",
+                "Tilt Coarse",
+                "Tilt Fine",
+                "Pan / Tilt Speed",
+                "LED Color Temperature",
+                "Warm White LED",
+                "Cool White LED",
+                "Zoom",
+                "Focus Coarse",
+                "Focus Fine",
+                "Function"
+            ]
+        }
+    ]
+}

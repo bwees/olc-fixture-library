@@ -1,0 +1,447 @@
+{
+    "manufacturer": "American DJ",
+    "name": "Inno Color Beam LED",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Louis Gutenschwafe",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Shows": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        67
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 1"
+                },
+                {
+                    "dmxRange": [
+                        68,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 2"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        187
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 3"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 4"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Random Show"
+                }
+            ]
+        },
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "630deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "220deg"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Shutter / strobing": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobing slow - fast"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Slow open - fast close",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "open"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random strobe slow - fast"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Master Dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Rainbow": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Colors 1"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        71
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Colors 2"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        103
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Colors 3"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Colors 4"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        167
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Colors 5"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Colors 6"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        231
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow Colors 7"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Crossfading colors slow - fast"
+                }
+            ]
+        },
+        "Pan/ Tilt movement Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        225
+                    ],
+                    "type": "Speed",
+                    "comment": "Max - Min speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        235
+                    ],
+                    "type": "Speed",
+                    "comment": "Blackout By Movement",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "open/ reset / internal programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        79
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Normal"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        84
+                    ],
+                    "type": "Generic",
+                    "comment": "All motor Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetMotors, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        99
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        119
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Program 1"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        139
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Program 2"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        159
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Program 3"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        179
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Program 4"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        199
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Program 5"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        219
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Program 6"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        239
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Program 7"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound Active Program"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Shows"
+            ]
+        },
+        {
+            "name": "13-channel",
+            "shortName": "13ch",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Shutter / strobing",
+                "Master Dimming",
+                "Rainbow",
+                "Pan/ Tilt movement Speed",
+                "open/ reset / internal programs"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,558 @@
+{
+    "manufacturer": "Pulse",
+    "name": "Impstar 40",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Paul Wilton",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            null,
+            null,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "210deg"
+            }
+        },
+        "Pan/Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "LED Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        8
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Increasing speed"
+                }
+            ]
+        },
+        "Special Functions 16": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        199
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        209
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        239
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "Special Functions 21": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        199
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        209
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        239
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Automatic sound-to-light-show"
+                }
+            ]
+        },
+        "5050 SMD Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "5050 SMD Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        8
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Increasing speed"
+                }
+            ]
+        },
+        "5050 SMD Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "5050 SMD Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "5050 SMD Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "5050 SMD Section 1": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        44
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        114
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        149
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        184
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Blue"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        219
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green + Blue"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green + Blue"
+                }
+            ]
+        },
+        "5050 SMD Section 2": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        44
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        114
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        149
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        184
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Blue"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        219
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green + Blue"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green + Blue"
+                }
+            ]
+        },
+        "5050 SMD Section 3": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        44
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        114
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        149
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        184
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Blue"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        219
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green + Blue"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green + Blue"
+                }
+            ]
+        },
+        "5050 SMD Section 4": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        44
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        114
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        115,
+                        149
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        184
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Blue"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        219
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green + Blue"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green + Blue"
+                }
+            ]
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "16-channel",
+            "shortName": "16ch",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Pan/Tilt Speed",
+                "LED Dimmer",
+                "Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "5050 SMD Dimmer",
+                "5050 SMD Strobe",
+                "5050 SMD Section 1",
+                "5050 SMD Section 2",
+                "5050 SMD Section 3",
+                "5050 SMD Section 4",
+                "Special Functions 16"
+            ]
+        },
+        {
+            "name": "21-channel",
+            "shortName": "21ch",
+            "channels": [
+                "Pan",
+                "Pan Fine",
+                "Tilt",
+                "Tilt Fine",
+                "Pan/Tilt Speed",
+                "LED Dimmer",
+                "Strobe",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "5050 SMD Dimmer",
+                "5050 SMD Strobe",
+                "5050 SMD Red",
+                "5050 SMD Green",
+                "5050 SMD Blue",
+                "5050 SMD Section 1",
+                "5050 SMD Section 2",
+                "5050 SMD Section 3",
+                "5050 SMD Section 4",
+                "Special Functions 21"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,440 @@
+{
+    "manufacturer": "American DJ",
+    "name": "Event Bar LED",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "George Qualley IV",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            4,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Pan 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "360deg"
+            }
+        },
+        "Tilt 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Dimmer 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Reset",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe (Slow -> Fast)"
+                }
+            ]
+        },
+        "Pan 1 (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset PositionPanFine."
+            }
+        },
+        "Tilt 1 (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset PositionTiltFine."
+            }
+        },
+        "Movement": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        26
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement 1"
+                },
+                {
+                    "dmxRange": [
+                        27,
+                        46
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement 2"
+                },
+                {
+                    "dmxRange": [
+                        47,
+                        66
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement 3"
+                },
+                {
+                    "dmxRange": [
+                        67,
+                        86
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement 4"
+                },
+                {
+                    "dmxRange": [
+                        87,
+                        106
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement 5"
+                },
+                {
+                    "dmxRange": [
+                        107,
+                        125
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement 6"
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        145
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement 7"
+                },
+                {
+                    "dmxRange": [
+                        146,
+                        165
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement 8"
+                },
+                {
+                    "dmxRange": [
+                        166,
+                        185
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement 9"
+                },
+                {
+                    "dmxRange": [
+                        186,
+                        205
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement 10"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        225
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement 11"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        244
+                    ],
+                    "type": "Effect",
+                    "effectName": "Movement 12"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Stand Alone"
+                }
+            ]
+        },
+        "Movement Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Movement (Fine)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Speed",
+                    "comment": "Horizontal Movement",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Vertical Movement",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Pan 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "360deg"
+            }
+        },
+        "Pan 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "360deg"
+            }
+        },
+        "Pan 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "360deg"
+            }
+        },
+        "Tilt 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Tilt 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Tilt 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Pan 2 (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset PositionPanFine."
+            }
+        },
+        "Pan 3 (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset PositionPanFine."
+            }
+        },
+        "Pan 4 (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset PositionPanFine."
+            }
+        },
+        "Dimmer 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Tilt 2 (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset PositionTiltFine."
+            }
+        },
+        "Tilt 3 (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset PositionTiltFine."
+            }
+        },
+        "Tilt 4 (Fine)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset PositionTiltFine."
+            }
+        },
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "12-channel",
+            "shortName": "12ch",
+            "channels": [
+                "Pan 1",
+                "Tilt 1",
+                "Dimmer 1",
+                "Pan 2",
+                "Tilt 2",
+                "Dimmer 2",
+                "Pan 3",
+                "Tilt 3",
+                "Dimmer 3",
+                "Pan 4",
+                "Tilt 4",
+                "Dimmer 4"
+            ]
+        },
+        {
+            "name": "14-channel",
+            "shortName": "14ch",
+            "channels": [
+                "Pan 1",
+                "Tilt 1",
+                "Dimmer 1",
+                "Pan 2",
+                "Tilt 2",
+                "Dimmer 2",
+                "Pan 3",
+                "Tilt 3",
+                "Pan 4",
+                "Dimmer 3",
+                "Tilt 4",
+                "Dimmer 4",
+                "Strobe",
+                "Master Dimmer"
+            ]
+        },
+        {
+            "name": "25-channel",
+            "shortName": "25ch",
+            "channels": [
+                "Pan 1",
+                "Pan 1 (Fine)",
+                "Tilt 1",
+                "Tilt 1 (Fine)",
+                "Dimmer 1",
+                "Pan 2",
+                "Pan 2 (Fine)",
+                "Tilt 2",
+                "Tilt 2 (Fine)",
+                "Dimmer 2",
+                "Pan 3",
+                "Pan 3 (Fine)",
+                "Tilt 3",
+                "Tilt 3 (Fine)",
+                "Dimmer 3",
+                "Pan 4",
+                "Pan 4 (Fine)",
+                "Tilt 4",
+                "Tilt 4 (Fine)",
+                "Dimmer 4",
+                "Movement",
+                "Movement Speed",
+                "Movement (Fine)",
+                "Strobe",
+                "Master Dimmer"
+            ]
+        }
+    ]
+}

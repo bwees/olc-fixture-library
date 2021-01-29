@@ -1,0 +1,330 @@
+{
+    "manufacturer": "Stairville",
+    "name": "LED BAR 252 RGB (no. 234564)",
+    "categories": [
+        "Pixel Bar"
+    ],
+    "meta": {
+        "authors": [
+            "Ralf Herold",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            null,
+            null,
+            1
+        ]
+    },
+    "wheels": {
+        "Mode 1": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "Black out",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Dimmer 1 (RGB mix, seperated segments)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Dimmer 2 (RGB mix, all segments)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM-Color/gobo00529.png",
+                    "name": "Color change"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM-Color/gobo00542.png",
+                    "name": "Color flow"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM-Color/gobo00484.png",
+                    "name": "Dream flow"
+                }
+            ]
+        },
+        "Mode 2": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "Black out",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Dimmer 2 (RGB mix, all segments)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM-Color/gobo00529.png",
+                    "name": "Color change"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM-Color/gobo00542.png",
+                    "name": "Color flow"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/SGM-Color/gobo00484.png",
+                    "name": "Dream flow"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Mode 1": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        40
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Black out",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        80
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Dimmer 1 (RGB mix, seperated segments)"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        120
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Dimmer 2 (RGB mix, all segments)"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        200
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Color change"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        240
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Color flow"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Dream flow"
+                }
+            ]
+        },
+        "Shutter / Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        41,
+                        160
+                    ],
+                    "type": "Speed",
+                    "comment": "Shutter",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Red1 / All Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green1 / All Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 1 / All Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Mode 2": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        40
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Black out",
+                    "colors": [
+                        "#000000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        120
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Dimmer 2 (RGB mix, all segments)"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        200
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Color change"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        240
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Color flow"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Dream flow"
+                }
+            ]
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Mode 1",
+                "Shutter / Speed",
+                "Red1 / All Red",
+                "Green1 / All Green",
+                "Blue 1 / All Blue",
+                "Red 2",
+                "Green 2",
+                "Blue 2",
+                "Red 3",
+                "Green 3",
+                "Blue 3"
+            ]
+        },
+        {
+            "name": "2",
+            "channels": [
+                "Mode 2",
+                "Shutter / Speed",
+                "Red1 / All Red",
+                "Green1 / All Green",
+                "Blue 1 / All Blue"
+            ]
+        }
+    ]
+}

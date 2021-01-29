@@ -1,0 +1,47 @@
+{
+    "manufacturer": "Smoke Factory",
+    "name": "Tour-Hazer II",
+    "categories": [
+        "Smoke"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.4)"
+        }
+    },
+    "availableChannels": {
+        "Pump": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Fan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Min to Max",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Standard",
+            "channels": [
+                "Pump",
+                "Fan"
+            ]
+        }
+    ]
+}

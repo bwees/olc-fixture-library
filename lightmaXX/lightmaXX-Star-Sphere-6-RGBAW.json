@@ -1,0 +1,288 @@
+{
+    "manufacturer": "lightmaXX",
+    "name": "Star Sphere 6 RGBAW",
+    "categories": [
+        "Effect"
+    ],
+    "meta": {
+        "authors": [
+            "Flox Garden",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Program Selection": {
+            "slots": [
+                {
+                    "type": "Unknown",
+                    "name": "Blackout"
+                },
+                {
+                    "type": "Color",
+                    "name": "Red & pink - speed from slow to fast",
+                    "colors": [
+                        "#ff0000",
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Green & amber - speed from slow to fast",
+                    "colors": [
+                        "#00aa00",
+                        "#ffaa00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Blue & white - speed from slow to fast",
+                    "colors": [
+                        "#0000ff",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "3-color jump - speed from slow to fast"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "7-color jump - speed from slow to fast"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "7-color fade - speed from slow to fast"
+                },
+                {
+                    "type": "Unknown",
+                    "name": "Strobe mode - speed from slow to fast"
+                },
+                {
+                    "type": "Unknown",
+                    "name": "Sound activated 1 - OFF without sound"
+                },
+                {
+                    "type": "Unknown",
+                    "name": "Sound activated 2 - ON without sound"
+                },
+                {
+                    "type": "Unknown",
+                    "name": "Full control with channels 2-6"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Program Selection": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & pink - speed from slow to fast",
+                    "colors": [
+                        "#ff0000",
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        59
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green & amber - speed from slow to fast",
+                    "colors": [
+                        "#00aa00",
+                        "#ffaa00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        79
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue & white - speed from slow to fast",
+                    "colors": [
+                        "#0000ff",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        99
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "3-color jump - speed from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        119
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "7-color jump - speed from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        139
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "7-color fade - speed from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe mode - speed from",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound activated 1 - OFF without sound",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound activated 2 - ON without sound",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full control with channels 2-6"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe - from fast to slow"
+                }
+            ]
+        },
+        "Red & Pink": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red",
+                "comment": "Brightness from min to max"
+            }
+        },
+        "Green & Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green",
+                "comment": "Brightness from min to max"
+            }
+        },
+        "Blue & White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue",
+                "comment": "Brightness from min to max"
+            }
+        },
+        "Motor": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Speed",
+                    "comment": "Indexed static position",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Swing back and forth - from"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Program Selection",
+                "Strobe",
+                "Red & Pink",
+                "Green & Amber",
+                "Blue & White",
+                "Motor"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,272 @@
+{
+    "manufacturer": "Stairville",
+    "name": "Tri Flat PAR Profile 5x3W RGB",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Freasy",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.6 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Operating Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Manual mode; colours can be adjusted via channels 2 to 4"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        27
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Preprogrammed automatic show no. 1"
+                },
+                {
+                    "dmxRange": [
+                        28,
+                        55
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Preprogrammed automatic show no. 2"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        83
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Preprogrammed automatic show no. 3"
+                },
+                {
+                    "dmxRange": [
+                        84,
+                        111
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Preprogrammed automatic show no. 4"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        139
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Preprogrammed automatic show no. 5"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        167
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Preprogrammed automatic show no. 6"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        195
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Preprogrammed automatic show no. 7"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        223
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Preprogrammed automatic show no. 8"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        251
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Preprogrammed automatic show no. 9"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound-controlled show"
+                }
+            ]
+        },
+        "Constant Colour / Progress Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        27
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dark, when channel 5 = 1...24"
+                },
+                {
+                    "dmxRange": [
+                        28,
+                        55
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red, when channel 5 = 1...24"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        83
+                    ],
+                    "type": "Effect",
+                    "effectName": "Orange, when channel 5 = 1...24"
+                },
+                {
+                    "dmxRange": [
+                        84,
+                        111
+                    ],
+                    "type": "Effect",
+                    "effectName": "Yellow, when channel 5 = 1...24"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light green, when channel 5 = 1...24"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        167
+                    ],
+                    "type": "Effect",
+                    "effectName": "Light blue, when channel 5 = 1...24"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        195
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blue, when channel 5 = 1...24"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Purple, when channel 5 = 1...24"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        251
+                    ],
+                    "type": "Effect",
+                    "effectName": "Pink, when channel 5 = 1...24"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red + green + blue, when channel 5 = 1...24"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Dimmer",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Operating Mode",
+                "Constant Colour / Progress Speed",
+                "Strobe"
+            ]
+        }
+    ]
+}

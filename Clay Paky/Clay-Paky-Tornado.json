@@ -1,0 +1,164 @@
+{
+    "manufacturer": "Clay Paky",
+    "name": "Tornado",
+    "categories": [
+        "Scanner"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.8.4)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            null,
+            null,
+            1
+        ]
+    },
+    "wheels": {
+        "Color Wheel": {
+            "slots": [
+                {
+                    "type": "Color",
+                    "name": "Color Select"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Color Wheel": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Color Select"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "WheelRotation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Color Rotation"
+                }
+            ]
+        },
+        "Dimmer & Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimmer Min -> Max"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "Open"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        241
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe 0.66Hz -> 5Hz"
+                },
+                {
+                    "dmxRange": [
+                        242,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Open"
+                }
+            ]
+        },
+        "Pan 1 - 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "150deg"
+            }
+        },
+        "Tilt 1 - 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "110deg"
+            }
+        },
+        "Pan 2 - 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "150deg"
+            }
+        },
+        "Tilt 2 - 5": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "110deg"
+            }
+        },
+        "Pan 3 - 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "150deg"
+            }
+        },
+        "Tilt 3 - 6": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "110deg"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "Standard",
+            "channels": [
+                "Color Wheel",
+                "Dimmer & Strobe",
+                "Pan 1 - 4",
+                "Tilt 1 - 4",
+                "Pan 2 - 5",
+                "Tilt 2 - 5",
+                "Pan 3 - 6",
+                "Tilt 3 - 6"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,340 @@
+{
+    "manufacturer": "Laserworld",
+    "name": "CS-1000RGB",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Rob Nieuwenhuizen",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Laser off",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Music mode",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Automatic mode",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "DMX Mode",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Patterns": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Patterns"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Horizontal movement": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "40deg",
+                    "comment": "No effect"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        167
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "40deg",
+                    "comment": "(fixed) Movement"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        188
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "40deg",
+                    "comment": "Animated left to right with increasing speed"
+                },
+                {
+                    "dmxRange": [
+                        189,
+                        209
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "40deg",
+                    "comment": "dto. Right to Left"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "40deg",
+                    "comment": "dto. Left to Right and back"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Generic",
+                    "comment": "No effect"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        104
+                    ],
+                    "type": "Generic",
+                    "comment": "Increasing size"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        154
+                    ],
+                    "type": "Generic",
+                    "comment": "growing with increasing speed"
+                },
+                {
+                    "dmxRange": [
+                        155,
+                        204
+                    ],
+                    "type": "Generic",
+                    "comment": "dto. shrinking"
+                },
+                {
+                    "dmxRange": [
+                        205,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "dto. growing / shrinking"
+                }
+            ]
+        },
+        "Width (rotation over Y)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        150
+                    ],
+                    "type": "Rotation",
+                    "angleStart": "0deg",
+                    "angleEnd": "360deg",
+                    "helpWanted": "Are these the correct angles?",
+                    "comment": "Fixed rotation"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW",
+                    "comment": "automatic rotation with increased speed"
+                }
+            ]
+        },
+        "Width (rotation over X)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Maintenance",
+                "comment": "Height (rotation over X): analogous to width"
+            }
+        },
+        "Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        180
+                    ],
+                    "type": "Generic",
+                    "comment": "Fixed rotation"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        217
+                    ],
+                    "type": "Generic",
+                    "comment": "automatic with increased speed clockwise"
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "do. counter clockwise"
+                }
+            ]
+        },
+        "Blanking": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        70
+                    ],
+                    "type": "Generic",
+                    "comment": "no effect"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        139
+                    ],
+                    "type": "Generic",
+                    "comment": "points are brighter"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        209
+                    ],
+                    "type": "Generic",
+                    "comment": "dashed lines"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "points only"
+                }
+            ]
+        },
+        "Wave": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Colour": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset",
+                "comment": "colour"
+            }
+        },
+        "Image format": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "comment": "image format"
+            }
+        },
+        "Horizontal / vertical movement": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "40deg",
+                "comment": "Vertical movement: analogus to horizontal movement"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "CS-1000RGB",
+            "channels": [
+                "Mode",
+                "Patterns",
+                "Strobe",
+                "Horizontal movement",
+                "Horizontal / vertical movement",
+                "Zoom",
+                "Width (rotation over Y)",
+                "Width (rotation over X)",
+                "Rotation",
+                "Blanking",
+                "Wave",
+                "Colour",
+                "Image format"
+            ]
+        }
+    ]
+}

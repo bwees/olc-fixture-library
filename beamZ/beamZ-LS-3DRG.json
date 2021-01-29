@@ -1,0 +1,364 @@
+{
+    "manufacturer": "beamZ",
+    "name": "LS-3DRG",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "julbre",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.7.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Mode Select": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        103
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Active Mode",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        155
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto-Animation Mode"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static Patterns (selection with CH3)"
+                }
+            ]
+        },
+        "Color Select": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Laser OFF"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color selection"
+                }
+            ]
+        },
+        "Pattern select": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Selecting patters"
+            }
+        },
+        "Y axis moving": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Manual up to down moving"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Auto down moving (under dunamic pattern)"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Auto up moving (under dynamic pattern)"
+                }
+            ]
+        },
+        "X axis moving": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Manual left to right moving"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Auto right moving (under dynamic pattern)"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Auto left moving (under dynamic pattern)"
+                }
+            ]
+        },
+        "X axis rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Manual rolling"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Auto rolling (under dynamic pattern)"
+                }
+            ]
+        },
+        "Y axis rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Manual rolling"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Auto rolling (under dynamic pattern)"
+                }
+            ]
+        },
+        "Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Prism",
+                    "comment": "Manual rotation"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Prism",
+                    "comment": "Auto clockwise rotation (under dynamic pattern)"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Prism",
+                    "comment": "Auto counter-clockwise rotation (under dynamic pattern)"
+                }
+            ]
+        },
+        "Zooming": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        85
+                    ],
+                    "type": "Generic",
+                    "comment": "Auto zooming (+)"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        170
+                    ],
+                    "type": "Generic",
+                    "comment": "Auto zooming (-)"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Manual zooming (+/-)"
+                }
+            ]
+        },
+        "Pattern Size": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "Normal size"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "1 is smallest, 255 is biggest"
+                }
+            ]
+        },
+        "Display dot": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "Normal display"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "display dot, 255 is best brightness"
+                }
+            ]
+        },
+        "Drawing": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "No drawing"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto drawing mode 1 (under dynamic pattern)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto drawing mode 2 (under dynamic pattern)"
+                }
+            ]
+        },
+        "Stretch": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "X/Y/Z stretch"
+            }
+        },
+        "Shake Effect": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "Combination with channel 13"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Mode Select",
+                "Color Select",
+                "Pattern select",
+                "Y axis moving",
+                "X axis moving",
+                "X axis rolling",
+                "Y axis rolling",
+                "Rotation",
+                "Zooming",
+                "Pattern Size",
+                "Display dot",
+                "Drawing",
+                "Stretch",
+                "Shake Effect"
+            ]
+        }
+    ]
+}

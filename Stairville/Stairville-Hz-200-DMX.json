@@ -1,0 +1,48 @@
+{
+    "manufacturer": "Stairville",
+    "name": "Hz-200 DMX",
+    "categories": [
+        "Hazer"
+    ],
+    "meta": {
+        "authors": [
+            "Hadley Denton",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.8.2)"
+        }
+    },
+    "availableChannels": {
+        "Haze": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "Amount of haze 0-100 %"
+            }
+        },
+        "Fan Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Fan speed 0-100 %",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Haze",
+                "Fan Speed"
+            ]
+        }
+    ]
+}

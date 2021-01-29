@@ -1,0 +1,166 @@
+{
+    "manufacturer": "Sagitter",
+    "name": "Slimpar 18 RGB",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Daniele Fogale",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Function": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color macro 1 (fade)"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        192
+                    ],
+                    "type": "Effect",
+                    "effectName": "Color macro 2 (color change)"
+                },
+                {
+                    "dmxRange": [
+                        193,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound mode (strobe)",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Color Macro Speed - Microphone Sensitivity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Color macro speed (ch5) - Microphone sensitivity (ch5)"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        11
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        12,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe from min to max"
+                }
+            ]
+        },
+        "Color Macro": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset",
+                "helpWanted": "Which color can be selected at which DMX values?"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Function",
+                "Color Macro Speed - Microphone Sensitivity",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Color Macro"
+            ]
+        }
+    ]
+}

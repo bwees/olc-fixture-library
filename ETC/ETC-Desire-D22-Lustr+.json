@@ -1,0 +1,200 @@
+{
+    "manufacturer": "ETC",
+    "name": "Desire D22 Lustr+",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Tavon Markov",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Cyan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Cyan"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Indigo": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Indigo"
+            }
+        },
+        "Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Full on"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        254
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Variable rate from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Full on"
+                }
+            ]
+        },
+        "Hue (coarse)": {
+            "fineChannelAliases": [
+                "Hue (fine)"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Saturation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Color Point": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Tint": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Not Used (RGB Mode)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Not Used (RGB Mode)"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Direct",
+            "channels": [
+                "Red",
+                "White",
+                "Amber",
+                "Green",
+                "Cyan",
+                "Blue",
+                "Indigo",
+                "Intensity",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "HSI",
+            "channels": [
+                "Hue (coarse)",
+                "Hue (fine)",
+                "Saturation",
+                "Intensity",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "HSIC",
+            "channels": [
+                "Hue (coarse)",
+                "Hue (fine)",
+                "Saturation",
+                "Intensity",
+                "Strobe",
+                "Color Point"
+            ]
+        },
+        {
+            "name": "RGB",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Not Used (RGB Mode)",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "Studio",
+            "channels": [
+                "Intensity",
+                "Color Point",
+                "Tint"
+            ]
+        }
+    ]
+}

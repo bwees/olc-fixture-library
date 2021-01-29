@@ -1,0 +1,270 @@
+{
+    "manufacturer": "American DJ",
+    "name": "Spherion Tri LED",
+    "categories": [
+        "Effect"
+    ],
+    "meta": {
+        "authors": [
+            "JL Griffin",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Shows": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        47
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 1"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        87
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 2"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 3"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        167
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 4"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 5"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Show 6"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Active",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        113
+                    ],
+                    "type": "Speed",
+                    "comment": "Clockwise [Fast > Slow]",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        114,
+                        141
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        142,
+                        245
+                    ],
+                    "type": "Speed",
+                    "comment": "Counter Clockwise [Fast > Slow]",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        247
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Sound Active",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Intensity",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        199
+                    ],
+                    "type": "Intensity",
+                    "comment": "Dimmer [0% > 100%]"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        247
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe [Fast > Slow]"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "On"
+                }
+            ]
+        },
+        "Color Macros": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        46
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 1"
+                },
+                {
+                    "dmxRange": [
+                        47,
+                        85
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 2"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        124
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 3"
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        163
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 4"
+                },
+                {
+                    "dmxRange": [
+                        164,
+                        202
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 5"
+                },
+                {
+                    "dmxRange": [
+                        203,
+                        240
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 6"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 7"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1-channel. [Default]",
+            "shortName": "1ch. [Default]",
+            "channels": [
+                "Shows"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Rotation",
+                "Shutter",
+                "Color Macros"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "manufacturer": "Lightronics",
+    "name": "FXLD618C2I",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Robert Box",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.9.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Warm White Level": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Warm White"
+            }
+        },
+        "Cool White Level": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe Control": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Color Temperature": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset",
+                "comment": "Color temperature",
+                "colors": [
+                    "#ffbb78",
+                    "#e4eaff"
+                ]
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "1-channel (P)",
+            "shortName": "1ch (P)",
+            "channels": [
+                "Master Dimmer"
+            ]
+        },
+        {
+            "name": "2-channel (A)",
+            "shortName": "2ch (A)",
+            "channels": [
+                "Warm White Level",
+                "Cool White Level"
+            ]
+        },
+        {
+            "name": "3-channel (F)",
+            "shortName": "3ch (F)",
+            "channels": [
+                "Master Dimmer",
+                "Warm White Level",
+                "Cool White Level"
+            ]
+        },
+        {
+            "name": "4-channel (D)",
+            "shortName": "4ch (D)",
+            "channels": [
+                "Master Dimmer",
+                "Strobe Control",
+                "Warm White Level",
+                "Cool White Level"
+            ]
+        },
+        {
+            "name": "5-channel (H)",
+            "shortName": "5ch (H)",
+            "channels": [
+                "Master Dimmer",
+                "Strobe Control",
+                "Warm White Level",
+                "Cool White Level",
+                "Color Temperature"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,158 @@
+{
+    "manufacturer": "Clay Paky",
+    "name": "Stormy",
+    "categories": [
+        "Strobe"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Intensity",
+                    "comment": "Light Off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Min < Max"
+                }
+            ]
+        },
+        "Duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Min < Max",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Rate": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Light off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Low < Fast"
+                }
+            ]
+        },
+        "Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro Off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        42
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 1 - Up ramp"
+                },
+                {
+                    "dmxRange": [
+                        43,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 2 - Down ramp"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 3 - Up < > Down ramp"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        171
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 4 - Random"
+                },
+                {
+                    "dmxRange": [
+                        172,
+                        214
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 5 - Lighting"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Macro 6 - Spikes"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Xenon",
+            "channels": [
+                "Dimmer",
+                "Duration",
+                "Rate",
+                "Macro"
+            ]
+        },
+        {
+            "name": "Standard",
+            "channels": [
+                "Dimmer",
+                "Duration",
+                "Rate"
+            ]
+        }
+    ]
+}

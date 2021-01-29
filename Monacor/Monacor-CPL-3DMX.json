@@ -1,0 +1,101 @@
+{
+    "manufacturer": "Monacor",
+    "name": "CPL-3DMX",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "marcus",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.11.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Proportion of red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Proportion of green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Proportion of blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Dimmer / music control / stroboscope": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "light off"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "dimmer: dark \u2192 bright"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "music-controlled change of colour via integrated microphone"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "stroboscope:",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "maximum brightness"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Proportion of red",
+                "Proportion of green",
+                "Proportion of blue",
+                "Dimmer / music control / stroboscope"
+            ]
+        }
+    ]
+}

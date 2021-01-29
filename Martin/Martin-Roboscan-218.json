@@ -1,0 +1,824 @@
+{
+    "manufacturer": "Martin",
+    "name": "Roboscan 218",
+    "categories": [
+        "Scanner"
+    ],
+    "meta": {
+        "authors": [
+            "Heikki Junnila",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "175deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "85deg"
+            }
+        },
+        "Shutter/Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        80
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        208
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Strobe speed fast-slow"
+                },
+                {
+                    "dmxRange": [
+                        209,
+                        230
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Remote stand-alone auto trig",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        252
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Remote stand-alone music trig",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        253,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset fixture",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White -> Flame red"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        21
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Flame red -> Light blue"
+                },
+                {
+                    "dmxRange": [
+                        22,
+                        32
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light blue -> Fern green"
+                },
+                {
+                    "dmxRange": [
+                        33,
+                        43
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fern green -> Yellow"
+                },
+                {
+                    "dmxRange": [
+                        44,
+                        54
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow -> Primary green"
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        65
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Primary green -> Mauve"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        76
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Mauve -> Dark blue"
+                },
+                {
+                    "dmxRange": [
+                        77,
+                        87
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark blue -> Cyan blue"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        98
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan blue -> Primary red"
+                },
+                {
+                    "dmxRange": [
+                        99,
+                        109
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Primary red -> Light orange"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        120
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light orange -> Light green"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        131
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light green -> Amber"
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        142
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber -> Pink"
+                },
+                {
+                    "dmxRange": [
+                        143,
+                        153
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pink -> Dark lavender"
+                },
+                {
+                    "dmxRange": [
+                        154,
+                        164
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark lavender -> Dark orange"
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        175
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark orange -> Multicolor 1"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        186
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Multicolor 1 -> Multicolor 2"
+                },
+                {
+                    "dmxRange": [
+                        187,
+                        190
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Multicolor 2"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        193
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Multicolor 1"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        196
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark orange"
+                },
+                {
+                    "dmxRange": [
+                        197,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark lavender"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        202
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pink"
+                },
+                {
+                    "dmxRange": [
+                        203,
+                        205
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        208
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light green"
+                },
+                {
+                    "dmxRange": [
+                        209,
+                        211
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light orange"
+                },
+                {
+                    "dmxRange": [
+                        212,
+                        214
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Primary red"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        217
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan blue"
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        220
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark blue"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Mauve"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        226
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Primary green"
+                },
+                {
+                    "dmxRange": [
+                        227,
+                        229
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        232
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Fern green"
+                },
+                {
+                    "dmxRange": [
+                        233,
+                        235
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light blue"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        238
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Flame red"
+                },
+                {
+                    "dmxRange": [
+                        239,
+                        241
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White"
+                }
+            ]
+        },
+        "Gobo": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Open -> Half"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        21
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Half -> Dot"
+                },
+                {
+                    "dmxRange": [
+                        22,
+                        32
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Dot -> Pin"
+                },
+                {
+                    "dmxRange": [
+                        33,
+                        43
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Pin -> Vertical bar"
+                },
+                {
+                    "dmxRange": [
+                        44,
+                        54
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Vertical bar -> Horizontal bar"
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        65
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Horizontal bar -> Cross"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        76
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Cross -> Arrow"
+                },
+                {
+                    "dmxRange": [
+                        77,
+                        87
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Arrow -> Triangles"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        98
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Triangles -> Star"
+                },
+                {
+                    "dmxRange": [
+                        99,
+                        109
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 10,
+                    "comment": "Star -> Holes"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        120
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 11,
+                    "comment": "Holes -> Bells"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        131
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 12,
+                    "comment": "Bells -> Cone"
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        142
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 13,
+                    "comment": "Cone -> Cones"
+                },
+                {
+                    "dmxRange": [
+                        143,
+                        153
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 14,
+                    "comment": "Cones -> Phone"
+                },
+                {
+                    "dmxRange": [
+                        154,
+                        164
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 15,
+                    "comment": "Phone -> Thin bars"
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        175
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 16,
+                    "comment": "Thin bars -> Window"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        186
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 17,
+                    "comment": "Window -> Turbine"
+                },
+                {
+                    "dmxRange": [
+                        187,
+                        190
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 18,
+                    "comment": "Turbine"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        193
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 19,
+                    "comment": "Window"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        196
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 20,
+                    "comment": "Thin bars"
+                },
+                {
+                    "dmxRange": [
+                        197,
+                        199
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 21,
+                    "comment": "Phone"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        202
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 22,
+                    "comment": "Cones"
+                },
+                {
+                    "dmxRange": [
+                        203,
+                        205
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 23,
+                    "comment": "Cone"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        208
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 24,
+                    "comment": "Bells"
+                },
+                {
+                    "dmxRange": [
+                        209,
+                        211
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 25,
+                    "comment": "Holes"
+                },
+                {
+                    "dmxRange": [
+                        212,
+                        214
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 26,
+                    "comment": "Star"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        217
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 27,
+                    "comment": "Triangles"
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        220
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 28,
+                    "comment": "Arrow"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        223
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 29,
+                    "comment": "Cross"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        226
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 30,
+                    "comment": "Horizontal bar"
+                },
+                {
+                    "dmxRange": [
+                        227,
+                        229
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 31,
+                    "comment": "Vertical bar"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        232
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 32,
+                    "comment": "Pin"
+                },
+                {
+                    "dmxRange": [
+                        233,
+                        235
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 33,
+                    "comment": "Dot"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        238
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 34,
+                    "comment": "Half"
+                },
+                {
+                    "dmxRange": [
+                        239,
+                        241
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 35,
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Movement speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Speed",
+                    "comment": "Tracking",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        251
+                    ],
+                    "type": "Speed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Speed"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Blackout while changing",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Colour/Gobo/Dimmer speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        251
+                    ],
+                    "type": "Speed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Speed"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Blackout while colour/gobo change, fast dimmer",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Shutter/Strobe",
+                "Dimmer",
+                "Colour",
+                "Gobo",
+                "Pan",
+                "Tilt"
+            ]
+        },
+        {
+            "name": "2",
+            "channels": [
+                "Shutter/Strobe",
+                "Dimmer",
+                "Colour",
+                "Gobo",
+                "Pan",
+                "Tilt",
+                "Movement speed",
+                "Colour/Gobo/Dimmer speed"
+            ]
+        },
+        {
+            "name": "3",
+            "channels": [
+                "Shutter/Strobe",
+                "Dimmer",
+                "Colour",
+                "Gobo",
+                "Pan",
+                "Pan fine",
+                "Tilt",
+                "Tilt fine"
+            ]
+        }
+    ]
+}

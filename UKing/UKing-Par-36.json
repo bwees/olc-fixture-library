@@ -1,0 +1,149 @@
+{
+    "manufacturer": "UKing",
+    "name": "Par 36",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "castilga",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.1 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe Slow to Fast"
+                }
+            ]
+        },
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Manual Control"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        60
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Colors Selection (Colors contorted by CH7)"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        110
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Colors Shade (Colors contorted by CH7, bigger values faster)"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        160
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Colors Pulse transform (speed contorted by CH7, bigger values faster)"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        210
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Colors transition (speed contorted by CH7, bigger values faster)"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound Control"
+                }
+            ]
+        },
+        "Color Selection": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset",
+                "comment": "Colors selection/colors shade(larger the values the faster)"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Master Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Strobe",
+                "Mode",
+                "Color Selection"
+            ]
+        }
+    ]
+}

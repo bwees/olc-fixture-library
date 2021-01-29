@@ -1,0 +1,289 @@
+{
+    "manufacturer": "Blizzard Lighting",
+    "name": "Hotbox 5 RGBAW",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Doug",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.8.3)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        14
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dimming"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "Build-In Programs Fade, Color Change, Sound Active": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade In (CH 10 Speed)"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade Out (CH 10 Speed)"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade In / Fade Out (CH 10 Speed)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Multicolor Fade (CH 10 Speed)"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fade In / Fade Out, Auto Run"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Multi-Color Jump (CH 10 Speed)"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Active, MultiColor (CH 10 Speed)",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Program (Fade) Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Fade Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "32-Bit Dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Maintenance",
+                    "comment": "As Set in Control Menu"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        55
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mode 0 = 8 bit, 256 Dimmer Settings"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        105
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mode 1 = 32-bit, 0-25% Intensity Range"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        155
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mode 2 = 32 bit, 0-50% intensity range"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        205
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mode 3 = 32 bit, 0-75% intensity range"
+                },
+                {
+                    "dmxRange": [
+                        206,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Mode 4 = 32 bit, Full Intensity Dimming"
+                }
+            ]
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "RGB Color Mixing": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "10-channel",
+            "shortName": "10ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White",
+                "Strobe",
+                "Build-In Programs Fade, Color Change, Sound Active",
+                "Program (Fade) Speed",
+                "32-Bit Dimmer"
+            ]
+        },
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White",
+                "Strobe",
+                "Build-In Programs Fade, Color Change, Sound Active",
+                "Program (Fade) Speed"
+            ]
+        },
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Amber",
+                "White"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "RGB Color Mixing",
+                "White",
+                "Dimmer"
+            ]
+        }
+    ]
+}

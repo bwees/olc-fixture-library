@@ -1,0 +1,518 @@
+{
+    "manufacturer": "Martin",
+    "name": "ELP-CL Profile",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "John Yiannikakis",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        89
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe (Slow-Fast)"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        169
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse effect in sequences"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        179
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        249
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random strobe effect (Slow-Fast)"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Dimmer 0-100%": {
+            "fineChannelAliases": [
+                "Dimmer fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer fade time": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "fast",
+                "speedEnd": "slow",
+                "comment": "Dimmer fade time time"
+            }
+        },
+        "CTC 2000K \u2013 10000K": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorTemperature",
+                "colorTemperatureStart": "warm",
+                "colorTemperatureEnd": "cold",
+                "helpWanted": "Is this the correct direction? Can you provide exact color temperature values in Kelvin?"
+            }
+        },
+        "CTC fine": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "helpWanted": "Unknown QLC+ channel preset ColorWheelFine."
+            }
+        },
+        "Red": {
+            "fineChannelAliases": [
+                "Red fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "fineChannelAliases": [
+                "Green fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "fineChannelAliases": [
+                "Blue fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Lime": {
+            "fineChannelAliases": [
+                "Lime fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Lime"
+            }
+        },
+        "Amber": {
+            "fineChannelAliases": [
+                "Amber fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Color Scene": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        19
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "2000K-2700K"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        28
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "2700K-3200K"
+                },
+                {
+                    "dmxRange": [
+                        29,
+                        37
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "3200K-4200K"
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        46
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "4200K-5600K"
+                },
+                {
+                    "dmxRange": [
+                        47,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "5600K-8000K"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        65
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "8000K-10,000K"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Pink",
+                    "colors": [
+                        "#f7d5db"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        84
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pale Amber Gold",
+                    "colors": [
+                        "#f7ba86"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        85,
+                        93
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        94,
+                        103
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Deep straw",
+                    "colors": [
+                        "#f7b801"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        112
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Deep Amber",
+                    "colors": [
+                        "#f85901"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        122
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Orange",
+                    "colors": [
+                        "#ffaa00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        123,
+                        131
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Primary Red",
+                    "colors": [
+                        "#d90000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        141
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Medium Pink",
+                    "colors": [
+                        "#ffaaff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        142,
+                        150
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark Pink",
+                    "colors": [
+                        "#c281c2"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        160
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#ff55ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        169
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Medium Purple",
+                    "colors": [
+                        "#906dd6"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        179
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Dark Lavender",
+                    "colors": [
+                        "#704d92"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        188
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Deep Purple",
+                    "colors": [
+                        "#8f4196"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        189,
+                        198
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sky Blue",
+                    "colors": [
+                        "#597bf7"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        199,
+                        207
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Light Blue",
+                    "colors": [
+                        "#0090ce"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        217
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Medium Blue",
+                    "colors": [
+                        "#008ed2"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        226
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Deep Blue",
+                    "colors": [
+                        "#013f6e"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        227,
+                        236
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue Green",
+                    "colors": [
+                        "#00869b"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        237,
+                        246
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Moss Green",
+                    "colors": [
+                        "#5adc5a"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        247,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Primary Green",
+                    "colors": [
+                        "#4bc300"
+                    ]
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Dimmer 0-100%"
+            ]
+        },
+        {
+            "name": "10-channel",
+            "shortName": "10ch",
+            "channels": [
+                "Shutter",
+                "Dimmer 0-100%",
+                "Dimmer fade time",
+                "CTC 2000K \u2013 10000K",
+                "Red",
+                "Green",
+                "Blue",
+                "Lime",
+                "Amber",
+                "Color Scene"
+            ]
+        },
+        {
+            "name": "17-channel",
+            "shortName": "17ch",
+            "channels": [
+                "Shutter",
+                "Dimmer 0-100%",
+                "Dimmer fine",
+                "Dimmer fade time",
+                "CTC 2000K \u2013 10000K",
+                "CTC fine",
+                "Red",
+                "Red fine",
+                "Green",
+                "Green fine",
+                "Blue",
+                "Blue fine",
+                "Lime",
+                "Lime fine",
+                "Amber",
+                "Amber fine",
+                "Color Scene"
+            ]
+        }
+    ]
+}

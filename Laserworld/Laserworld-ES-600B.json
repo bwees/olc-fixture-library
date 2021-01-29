@@ -1,0 +1,320 @@
+{
+    "manufacturer": "Laserworld",
+    "name": "ES-600B",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Dingezz",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Laser off"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound mode",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic mode"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX mode"
+                }
+            ]
+        },
+        "Patterns/Animations": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Patterns/Animations"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Point Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Point Speed"
+            }
+        },
+        "Movement X": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        189
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto right to left"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        219
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto left to right"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto changing"
+                }
+            ]
+        },
+        "Movement Y": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        189
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto top to bottom"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        219
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto bottom to top"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto changing"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Effect",
+                    "effectName": "No effect"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        92
+                    ],
+                    "type": "Effect",
+                    "effectName": "Increasing size"
+                },
+                {
+                    "dmxRange": [
+                        93,
+                        146
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic small to large"
+                },
+                {
+                    "dmxRange": [
+                        147,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic large to small"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic small to large to small..."
+                }
+            ]
+        },
+        "No Function": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        199
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset over 200",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        },
+        "Rotation Y (Height)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "manual"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "auto"
+                }
+            ]
+        },
+        "Rotation Z": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "manual"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        217
+                    ],
+                    "type": "Effect",
+                    "effectName": "auto CW"
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "auto CCW"
+                }
+            ]
+        },
+        "Rotation X (Width)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static rotation"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic rotation"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "std",
+            "channels": [
+                "Mode",
+                "Patterns/Animations",
+                "Strobe",
+                "Point Speed",
+                "Movement X",
+                "Movement Y",
+                "Zoom",
+                "No Function",
+                "Reset",
+                "Rotation X (Width)",
+                "Rotation Y (Height)",
+                "Rotation Z"
+            ]
+        }
+    ]
+}

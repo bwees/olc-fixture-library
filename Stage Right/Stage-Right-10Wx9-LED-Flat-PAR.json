@@ -1,0 +1,216 @@
+{
+    "manufacturer": "Stage Right",
+    "name": "10Wx9 LED Flat PAR",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Daniel Smith",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Blue Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Green Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "White Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Strobe"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe Speed (slow to fast)"
+                }
+            ]
+        },
+        "Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "Off"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "Four color jumping change"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full color jumping change"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full color gradient mode"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Variable pulse mode"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "Jumping change, gradient, and variable pulse modes combined"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "Gradient fast strobe mode (color change speed)"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Save disabled"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        229
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe follow mode color selections (1-9)"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        243
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe follow mode effect selection (1-13)"
+                },
+                {
+                    "dmxRange": [
+                        244,
+                        245
+                    ],
+                    "type": "Effect",
+                    "effectName": "Recycle effect"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        250
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound activated strobe mode (sensitivity)",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound activated jumping change mode (sensitivity)",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Macro Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "comment": "LED speed"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Dimmer",
+                "Red Dimmer",
+                "Green Dimmer",
+                "Blue Dimmer",
+                "White Dimmer",
+                "Strobe",
+                "Macro",
+                "Macro Speed"
+            ]
+        }
+    ]
+}

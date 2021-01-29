@@ -1,0 +1,835 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "Scorpion Dual RGB",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Ryan Morgan",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.4)"
+        }
+    },
+    "availableChannels": {
+        "Control Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        17
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Manual control mode"
+                },
+                {
+                    "dmxRange": [
+                        18,
+                        34
+                    ],
+                    "type": "Effect",
+                    "effectName": "Automatic mode (multi-color)",
+                    "comment": "Automatic mode (multi-color)"
+                },
+                {
+                    "dmxRange": [
+                        35,
+                        51
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Automatic mode (red)",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        68
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Automatic mode (green)",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        69,
+                        85
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Automatic mode (blue)",
+                    "colors": [
+                        "#1c36ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        102
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Automatic mode (yellow)",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        103,
+                        119
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Automatic mode (magenta)",
+                    "colors": [
+                        "#b600f5"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        136
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Automatic mode (cyan)",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        137,
+                        153
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound-active mode (multi-color)",
+                    "comment": "Sound-active mode (multi-color)"
+                },
+                {
+                    "dmxRange": [
+                        154,
+                        170
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound-active mode (red)",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        187
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound-active mode (green)",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        204
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound-active mode (blue)",
+                    "colors": [
+                        "#2750ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        205,
+                        221
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound-active mode (yellow)",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        238
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound-active mode (magenta)",
+                    "colors": [
+                        "#b600f5"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        239,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound-active mode (cyan)",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                }
+            ]
+        },
+        "Pattern": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "Circle"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        15
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dashed Circle"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        23
+                    ],
+                    "type": "Effect",
+                    "effectName": "Triangle"
+                },
+                {
+                    "dmxRange": [
+                        24,
+                        31
+                    ],
+                    "type": "Effect",
+                    "effectName": "Square"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dashed Square"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        47
+                    ],
+                    "type": "Effect",
+                    "effectName": "Square in a Square"
+                },
+                {
+                    "dmxRange": [
+                        48,
+                        55
+                    ],
+                    "type": "Effect",
+                    "effectName": "Cross"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Star"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        71
+                    ],
+                    "type": "Effect",
+                    "effectName": "Backwards L"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "Bow-Tie"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        87
+                    ],
+                    "type": "Effect",
+                    "effectName": "Spiral"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Half Circles"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        103
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fibonacci Spiral"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        111
+                    ],
+                    "type": "Effect",
+                    "effectName": "Parenthesis"
+                },
+                {
+                    "dmxRange": [
+                        112,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "Two Triangles"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "zig-zag"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        135
+                    ],
+                    "type": "Effect",
+                    "effectName": "V-Line"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        143
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sawtooth"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        151
+                    ],
+                    "type": "Effect",
+                    "effectName": "Squarewave"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Line"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        167
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dashed Line"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        175
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobed Line"
+                },
+                {
+                    "dmxRange": [
+                        176,
+                        183
+                    ],
+                    "type": "Effect",
+                    "effectName": "Parallel Lines"
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Crosshair"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Two Dashes"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        207
+                    ],
+                    "type": "Effect",
+                    "effectName": "Four Lines (Square)"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "Two Squares"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Four Squares"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        231
+                    ],
+                    "type": "Effect",
+                    "effectName": "Small Circle"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dotted Line"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dotted Half-Circle"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Cluster Dashes"
+                }
+            ]
+        },
+        "Color": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        14
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        30
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Multi-color"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        46
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#fc000d"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        47,
+                        62
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        63,
+                        78
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0030ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        79,
+                        94
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        95,
+                        110
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#d105f5"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        126
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        127,
+                        149
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & Green",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        174
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green & Blue",
+                    "colors": [
+                        "#00ff00",
+                        "#1f52ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        175,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red & Blue",
+                    "colors": [
+                        "#ff0000",
+                        "#0549ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        224
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red/Green/Blue/Yellow/Magenta/Cyan"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        255
+                    ],
+                    "type": "WheelSlotRotation",
+                    "wheel": "",
+                    "speed": "fast CW",
+                    "comment": "Color Roll"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No Function"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe, slow to fast"
+                }
+            ]
+        },
+        "Zoom": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Manual zoom, 100-5%"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        169
+                    ],
+                    "type": "Generic",
+                    "comment": "Auto zoom, 100-5%, slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        209
+                    ],
+                    "type": "Generic",
+                    "comment": "Auto zoom, 5-100%, slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Auto zoom, 100-5-100%, slow to fast"
+                }
+            ]
+        },
+        "Pan": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "30deg",
+                    "comment": "Manual pan (128 horizontal points)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "30deg",
+                    "comment": "Auto pan, slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "30deg",
+                    "comment": "Reverse auto pan, fast to slow"
+                }
+            ]
+        },
+        "Tilt": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "30deg",
+                    "comment": "Manual tilt (128 vertical points)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "30deg",
+                    "comment": "Auto tilt, slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "30deg",
+                    "comment": "Reverse auto tilt, fast to slow"
+                }
+            ]
+        },
+        "X-Axis Rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual x-axis rolling (0-359\u00ba)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto rolling",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Reverse auto rolling",
+                    "speedStart": "fast",
+                    "speedEnd": "slow"
+                }
+            ]
+        },
+        "Y-Axis Rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual Y-Axis rolling (0-359\u00ba)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto rolling",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Reverse auto rolling",
+                    "speedStart": "fast",
+                    "speedEnd": "slow"
+                }
+            ]
+        },
+        "Z-Axis Rolling": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual Z-Axis rolling (0-359\u00ba)"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto rolling",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Reverse auto rolling",
+                    "speedStart": "fast",
+                    "speedEnd": "slow"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "10-channel",
+            "shortName": "10ch",
+            "channels": [
+                "Control Mode",
+                "Pattern",
+                "Color",
+                "Strobe",
+                "Zoom",
+                "Pan",
+                "Tilt",
+                "X-Axis Rolling",
+                "Y-Axis Rolling",
+                "Z-Axis Rolling"
+            ]
+        }
+    ]
+}

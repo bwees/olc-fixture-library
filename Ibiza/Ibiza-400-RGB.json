@@ -1,0 +1,380 @@
+{
+    "manufacturer": "Ibiza",
+    "name": "400 RGB",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Jochem de Kruijf",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Control Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Shut off"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound control",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto play"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX control"
+                }
+            ]
+        },
+        "Pattern Selection": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        34
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static pattern for manual control"
+                },
+                {
+                    "dmxRange": [
+                        35,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Dynamic Geometric pattern"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        30
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "8 grade speed (0-255) / 30 = 0 - 8 do",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Pattern display": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "Smooth"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "Spot and Line"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "Line"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Spot"
+                }
+            ]
+        },
+        "Horizontal Move": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        1,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "From left to right move"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "From right to left move"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Right and left in-phase move"
+                }
+            ]
+        },
+        "Vertical Move": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        1,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Manual"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "From down to up"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "From up to down"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Up and down in-phase move"
+                }
+            ]
+        },
+        "Zoom(+/-) pattern size": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Pattern size change / zoom in or out"
+            }
+        },
+        "Color macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        17
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB"
+                },
+                {
+                    "dmxRange": [
+                        18,
+                        35
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        53
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red + Green (Yellow)"
+                },
+                {
+                    "dmxRange": [
+                        54,
+                        71
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        89
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green + Blue (cyan)"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        107
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue"
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        120
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue + Red (pink)"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        137
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "7 colors in section"
+                },
+                {
+                    "dmxRange": [
+                        138,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "7 colors in section + flowing"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color changing by sound"
+                }
+            ]
+        },
+        "Colors Moving": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "From",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        },
+        "Axis Y rotation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Axis Y rotation"
+            }
+        },
+        "Axis X Rotation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Axis X rotation"
+            }
+        },
+        "Axis Z rotation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Axis Z rotation"
+            }
+        },
+        "Motor Resetting": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        199
+                    ],
+                    "type": "Maintenance",
+                    "comment": "No resetting"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "XY motor resetting"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "13-channel",
+            "shortName": "13ch",
+            "channels": [
+                "Control Mode",
+                "Pattern Selection",
+                "Strobe",
+                "Pattern display",
+                "Horizontal Move",
+                "Vertical Move",
+                "Zoom(+/-) pattern size",
+                "Color macro",
+                "Colors Moving",
+                "Axis Y rotation",
+                "Axis X Rotation",
+                "Axis Z rotation",
+                "Motor Resetting"
+            ]
+        }
+    ]
+}

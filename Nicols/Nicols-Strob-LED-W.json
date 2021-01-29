@@ -1,0 +1,74 @@
+{
+    "manufacturer": "Nicols",
+    "name": "Strob LED W",
+    "categories": [
+        "Effect"
+    ],
+    "meta": {
+        "authors": [
+            "NiKoyes",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer / Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Intensity",
+                    "comment": "Off"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        190
+                    ],
+                    "type": "Intensity"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        200
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        247
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe Slow to Fast"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Open"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "DMX",
+            "channels": [
+                "Dimmer / Strobe"
+            ]
+        }
+    ]
+}

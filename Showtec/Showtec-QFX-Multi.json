@@ -1,0 +1,1577 @@
+{
+    "manufacturer": "Showtec",
+    "name": "QFX Multi",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Avolites / Sinedied",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.1 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            5,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Built-in Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout",
+                    "switchChannels": {
+                        "No function 2 / Auto PAR / Auto Laser / Auto Flash LED / Auto MIX / Sound PAR / Sound Laser / Sound Flash / Sound MIX": "No function 2",
+                        "No function 3 / Program Speed": "No function 3"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        31
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto PAR",
+                    "switchChannels": {
+                        "No function 2 / Auto PAR / Auto Laser / Auto Flash LED / Auto MIX / Sound PAR / Sound Laser / Sound Flash / Sound MIX": "Auto PAR",
+                        "No function 3 / Program Speed": "Program Speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        65
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Laser",
+                    "switchChannels": {
+                        "No function 2 / Auto PAR / Auto Laser / Auto Flash LED / Auto MIX / Sound PAR / Sound Laser / Sound Flash / Sound MIX": "Auto Laser",
+                        "No function 3 / Program Speed": "Program Speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Flash LED",
+                    "switchChannels": {
+                        "No function 2 / Auto PAR / Auto Laser / Auto Flash LED / Auto MIX / Sound PAR / Sound Laser / Sound Flash / Sound MIX": "Auto Flash LED",
+                        "No function 3 / Program Speed": "Program Speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto MIX",
+                    "switchChannels": {
+                        "No function 2 / Auto PAR / Auto Laser / Auto Flash LED / Auto MIX / Sound PAR / Sound Laser / Sound Flash / Sound MIX": "Auto MIX",
+                        "No function 3 / Program Speed": "Program Speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound PAR",
+                    "soundControlled": true,
+                    "switchChannels": {
+                        "No function 2 / Auto PAR / Auto Laser / Auto Flash LED / Auto MIX / Sound PAR / Sound Laser / Sound Flash / Sound MIX": "Sound PAR",
+                        "No function 3 / Program Speed": "Program Speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Laser",
+                    "soundControlled": true,
+                    "switchChannels": {
+                        "No function 2 / Auto PAR / Auto Laser / Auto Flash LED / Auto MIX / Sound PAR / Sound Laser / Sound Flash / Sound MIX": "Sound Laser",
+                        "No function 3 / Program Speed": "Program Speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Flash LED",
+                    "soundControlled": true,
+                    "switchChannels": {
+                        "No function 2 / Auto PAR / Auto Laser / Auto Flash LED / Auto MIX / Sound PAR / Sound Laser / Sound Flash / Sound MIX": "Sound Flash",
+                        "No function 3 / Program Speed": "Program Speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound MIX",
+                    "soundControlled": true,
+                    "switchChannels": {
+                        "No function 2 / Auto PAR / Auto Laser / Auto Flash LED / Auto MIX / Sound PAR / Sound Laser / Sound Flash / Sound MIX": "Sound MIX",
+                        "No function 3 / Program Speed": "Program Speed"
+                    }
+                }
+            ]
+        },
+        "PAR and Derby Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "PAR and Derby Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "PAR and Derby Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "PAR and Derby Dimmer": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        191
+                    ],
+                    "type": "Intensity",
+                    "comment": "Brightness of all lights"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        200
+                    ],
+                    "type": "Intensity",
+                    "comment": "Sound strobe"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        249
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "18Hz",
+                    "comment": "Strobe effect (slow to fast, 0-18Hz)"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Full on"
+                }
+            ]
+        },
+        "Derby LED Motor rotating speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW",
+                    "comment": "Rotate"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        133
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        255
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW",
+                    "comment": "Rotate"
+                }
+            ]
+        },
+        "Reserved": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "LED Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe %"
+                }
+            ]
+        },
+        "Red Laser Dimmer/Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Full on"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "18Hz",
+                    "comment": "Strobe effect (slow to fast, 0-18Hz)"
+                }
+            ]
+        },
+        "Green Laser Dimmer/Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Full on"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "18Hz",
+                    "comment": "Strobe effect (slow to fast, 0-18Hz)"
+                }
+            ]
+        },
+        "4pcs Strobe LED": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Full on"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "18Hz",
+                    "comment": "Strobe effect (slow to fast, 0-18Hz)"
+                }
+            ]
+        },
+        "Laser Motor rotating speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Generic",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Rotate clockwise, from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        133
+                    ],
+                    "type": "Generic",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Rotate counterclockwise, from slow to fast"
+                }
+            ]
+        },
+        "Derby 1 Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red",
+                "comment": "Red C-Mix"
+            }
+        },
+        "Derby 2 Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red",
+                "comment": "Red C-Mix"
+            }
+        },
+        "PAR 1 Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red",
+                "comment": "Red C-Mix"
+            }
+        },
+        "PAR 2 Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red",
+                "comment": "Red C-Mix"
+            }
+        },
+        "Derby 1 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green",
+                "comment": "Green C-Mix"
+            }
+        },
+        "Derby 2 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green",
+                "comment": "Green C-Mix"
+            }
+        },
+        "PAR 1 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green",
+                "comment": "Green C-Mix"
+            }
+        },
+        "PAR 2 Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green",
+                "comment": "Green C-Mix"
+            }
+        },
+        "Derby 1 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue",
+                "comment": "Blue C-Mix"
+            }
+        },
+        "Derby 2 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue",
+                "comment": "Blue C-Mix"
+            }
+        },
+        "PAR 1 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue",
+                "comment": "Blue C-Mix"
+            }
+        },
+        "PAR 2 Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue",
+                "comment": "Blue C-Mix"
+            }
+        },
+        "Derby 1 Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "18Hz",
+                    "comment": "Strobe effect (slow to fast, 0-18Hz)"
+                }
+            ]
+        },
+        "Derby 2 Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "18Hz",
+                    "comment": "Strobe effect (slow to fast, 0-18Hz)"
+                }
+            ]
+        },
+        "PAR 1 Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "18Hz",
+                    "comment": "Strobe effect (slow to fast, 0-18Hz)"
+                }
+            ]
+        },
+        "PAR 2 Shutter": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "18Hz",
+                    "comment": "Strobe effect (slow to fast, 0-18Hz)"
+                }
+            ]
+        },
+        "PAR 1 Reserved": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "PAR 2 Reserved": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "Derby 1 Motor rotating speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Generic",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Rotate clockwise, from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        133
+                    ],
+                    "type": "Generic",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Rotate counterclockwise, from slow to fast"
+                }
+            ]
+        },
+        "Derby 2 Motor rotating speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "Generic",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        127
+                    ],
+                    "type": "Generic",
+                    "comment": "Rotate clockwise, from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        133
+                    ],
+                    "type": "Generic",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Rotate counterclockwise, from slow to fast"
+                }
+            ]
+        },
+        "LED Strobe 1": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Full on"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "18Hz",
+                    "comment": "Strobe effect (slow to fast, 0-18Hz)"
+                }
+            ]
+        },
+        "LED Strobe 2": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Full on"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "18Hz",
+                    "comment": "Strobe effect (slow to fast, 0-18Hz)"
+                }
+            ]
+        },
+        "LED Strobe 3": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Full on"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "18Hz",
+                    "comment": "Strobe effect (slow to fast, 0-18Hz)"
+                }
+            ]
+        },
+        "LED Strobe 4": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Full on"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "18Hz",
+                    "comment": "Strobe effect (slow to fast, 0-18Hz)"
+                }
+            ]
+        },
+        "Auto PAR": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        9
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP01"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP02"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP03"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP04"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP05"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP06"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP07"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP08"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP09"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP10"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP11"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP12"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP13"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP14"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP15"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP16"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP17"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "AP18"
+                }
+            ]
+        },
+        "Auto Laser": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "AL01"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "AL02"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "AL03"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "AL04"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "AL05"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "AL06"
+                }
+            ]
+        },
+        "Auto Flash LED": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        14
+                    ],
+                    "type": "Effect",
+                    "effectName": "AF01"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "AF02"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        44
+                    ],
+                    "type": "Effect",
+                    "effectName": "AF03"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "AF04"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        74
+                    ],
+                    "type": "Effect",
+                    "effectName": "AF05"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "AF06"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        104
+                    ],
+                    "type": "Effect",
+                    "effectName": "AF07"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "AF08"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        134
+                    ],
+                    "type": "Effect",
+                    "effectName": "AF09"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "AF10"
+                }
+            ]
+        },
+        "Auto MIX": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "AM01"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "AM02"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "AM03"
+                }
+            ]
+        },
+        "Sound PAR": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP01"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP02"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP03"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP04"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP05"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP06"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP07"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP08"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP09"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP10"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP11"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP12"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP13"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP14"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP15"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP16"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP17"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "SP18"
+                }
+            ]
+        },
+        "Sound Laser": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "SL01"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "SL02"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "SL03"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "SL04"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "SL05"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "SL06"
+                }
+            ]
+        },
+        "Sound Flash": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        14
+                    ],
+                    "type": "Effect",
+                    "effectName": "SF01"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "SF02"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        44
+                    ],
+                    "type": "Effect",
+                    "effectName": "SF03"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "SF04"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        74
+                    ],
+                    "type": "Effect",
+                    "effectName": "SF05"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "SF06"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        104
+                    ],
+                    "type": "Effect",
+                    "effectName": "SF07"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "SF08"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        134
+                    ],
+                    "type": "Effect",
+                    "effectName": "SF09"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "SF10"
+                }
+            ]
+        },
+        "Sound MIX": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "SM01"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "SM02"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "SM03"
+                }
+            ]
+        },
+        "No function 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "No function 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "Program Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "From",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Built-in Programs",
+                "No function 2",
+                "No function 3"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "PAR and Derby Red",
+                "PAR and Derby Green",
+                "PAR and Derby Blue",
+                "PAR and Derby Dimmer",
+                "Derby LED Motor rotating speed"
+            ]
+        },
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "PAR and Derby Red",
+                "PAR and Derby Green",
+                "PAR and Derby Blue",
+                "PAR and Derby Dimmer",
+                "Derby LED Motor rotating speed",
+                "Red Laser Dimmer/Strobe",
+                "Green Laser Dimmer/Strobe",
+                "Laser Motor rotating speed",
+                "4pcs Strobe LED"
+            ]
+        },
+        {
+            "name": "27-channel",
+            "shortName": "27ch",
+            "channels": [
+                "Derby 1 Red",
+                "Derby 1 Green",
+                "Derby 1 Blue",
+                "Derby 1 Shutter",
+                "Derby 1 Motor rotating speed",
+                "PAR 1 Red",
+                "PAR 1 Green",
+                "PAR 1 Blue",
+                "PAR 1 Shutter",
+                "PAR 1 Reserved",
+                "PAR 2 Red",
+                "PAR 2 Green",
+                "PAR 2 Blue",
+                "PAR 2 Shutter",
+                "PAR 2 Reserved",
+                "Derby 2 Red",
+                "Derby 2 Green",
+                "Derby 2 Blue",
+                "Derby 2 Shutter",
+                "Derby 2 Motor rotating speed",
+                "Red Laser Dimmer/Strobe",
+                "Green Laser Dimmer/Strobe",
+                "Laser Motor rotating speed",
+                "LED Strobe 1",
+                "LED Strobe 2",
+                "LED Strobe 3",
+                "LED Strobe 4"
+            ]
+        }
+    ]
+}

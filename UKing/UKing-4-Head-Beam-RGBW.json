@@ -1,0 +1,349 @@
+{
+    "manufacturer": "UKing",
+    "name": "4 Head Beam RGBW",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Donny Lockart",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            4,
+            1,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Pan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "X-axis": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "PanContinuous",
+                    "speed": "stop",
+                    "comment": "No Rotation"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "PanContinuous",
+                    "speed": "fast CW",
+                    "comment": "X-axis CW Rotation"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "PanContinuous",
+                    "speed": "fast CCW",
+                    "comment": "X-Axis CCW Rotation"
+                }
+            ]
+        },
+        "X-axis Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanContinuous",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Tilt Head 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Tilt Head 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Tilt Head 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Tilt Head 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Y-axis speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "TiltContinuous",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Red H1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green H1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue H1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White H1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Red H2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green H2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue H2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White H2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Red H3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green H3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue H3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White H3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Red H4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green H4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue H4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White H4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Auto Program": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        50
+                    ],
+                    "type": "Effect",
+                    "effectName": "No Program"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Prog 1"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Prog 2"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound Active",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Reset": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Maintenance",
+                "comment": "Reset (Hold 5 sec)"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "28-channel",
+            "shortName": "28ch",
+            "channels": [
+                "Pan",
+                "X-axis",
+                "X-axis Speed",
+                "Tilt Head 1",
+                "Tilt Head 2",
+                "Tilt Head 3",
+                "Tilt Head 4",
+                "Y-axis speed",
+                "Master dimmer",
+                "Strobe",
+                "Red H1",
+                "Green H1",
+                "Blue H1",
+                "White H1",
+                "Red H2",
+                "Green H2",
+                "Blue H2",
+                "White H2",
+                "Red H3",
+                "Green H3",
+                "Blue H3",
+                "White H3",
+                "Red H4",
+                "Green H4",
+                "Blue H4",
+                "White H4",
+                "Auto Program",
+                "Reset"
+            ]
+        },
+        {
+            "name": "16-channel",
+            "shortName": "16ch",
+            "channels": [
+                "Pan",
+                "X-axis",
+                "X-axis Speed",
+                "Tilt Head 1",
+                "Tilt Head 2",
+                "Tilt Head 3",
+                "Tilt Head 4",
+                "Y-axis speed",
+                "Master dimmer",
+                "Strobe",
+                "Red H1",
+                "Green H1",
+                "Blue H1",
+                "White H1",
+                "Auto Program",
+                "Reset"
+            ]
+        }
+    ]
+}

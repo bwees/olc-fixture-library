@@ -1,0 +1,1164 @@
+{
+    "manufacturer": "Pulse",
+    "name": "SlimLite 56",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Jimmy Traylor",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "wheels": {
+        "Color Programs": {
+            "slots": [
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Channel 2 static colours"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Pr02 (7 colour fading)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Pr03 (3 colour fading)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Pr04 (7 colour jump)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Pr05 (3 colour jump)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Pr06 (colour dreaming 1)"
+                },
+                {
+                    "type": "Gobo",
+                    "resource": "gobos/aliases/qlcplus/Others/rainbow.png",
+                    "name": "Pr07 (colour dreaming 2)"
+                },
+                {
+                    "type": "Color",
+                    "name": "Pr08 (red fading)",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Pr09 (green fading)",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "type": "Color",
+                    "name": "Pr10 (blue fading)",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "type": "Unknown",
+                    "name": "Sound active"
+                }
+            ]
+        }
+    },
+    "availableChannels": {
+        "Green Dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue Dimming": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No function"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Slow-fast"
+                }
+            ]
+        },
+        "Red Dimming/Static Colour/Speed Adjust/Sound Sensitivity": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        8
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        9,
+                        17
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (255) G (50)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#ff3200"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        18,
+                        26
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (255) G (150)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#ff9600"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        27,
+                        35
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (255) G (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        44
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (200) G (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#c8ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        53
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (100) G (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#64ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        54,
+                        62
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (40) G (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#28ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        63,
+                        71
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/G (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        80
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/G (255) B (50)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#00ff32"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        89
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/G (255) B (150)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#00ff96"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        98
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/G (255) B (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        99,
+                        107
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/G (150) B (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#0096ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        108,
+                        116
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/G (50) B (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#0032ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        117,
+                        125
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/B (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        134
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (50) B (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#3200ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        143
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (150) B (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#9600ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        152
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (255) B (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        153,
+                        161
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (220) B (50)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#dc0032"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        162,
+                        170
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (150) G (50 B (100)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#963264"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        179
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (50) G (150) B (220)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#3296dc"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        188
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (50) G (220) B (220)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#32dcdc"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        189,
+                        197
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (150) G (220)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#96dc00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        198,
+                        206
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (150) B (220)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#9600dc"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        207,
+                        215
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/G (180) B (220)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#00b4dc"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        224
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/G (220) B (50)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#00dc32"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        233
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (220) G (100) B (50)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#dc6432"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        234,
+                        242
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (220) G (200) B (100)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#dcc864"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        243,
+                        251
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (255) G (200) B (150)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#ffc896"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red intensity/R (255) G (255) B (255)/Slow-fast/Sensitivity",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                }
+            ]
+        },
+        "Color Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        24
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Channel 2 static colours"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        49
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Pr02 (7 colour fading)"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        74
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Pr03 (3 colour fading)"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        99
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Pr04 (7 colour jump)"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        124
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Pr05 (3 colour jump)"
+                },
+                {
+                    "dmxRange": [
+                        125,
+                        149
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Pr06 (colour dreaming 1)"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        174
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Pr07 (colour dreaming 2)"
+                },
+                {
+                    "dmxRange": [
+                        175,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pr08 (red fading)",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        224
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pr09 (green fading)",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        249
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pr10 (blue fading)",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound active",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "ID Address": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID1-ID66"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID1"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        29
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID2"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        39
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID3"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        49
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID4"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        59
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID5"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        69
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID6"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID7"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID8"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID9"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID10"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        119
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID11"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        129
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID12"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        139
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID13"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        149
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID14"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        159
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID15"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        169
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID16"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        179
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID17"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        189
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID18"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        199
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID19"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        209
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID20"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        210
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID21"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        211
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID22"
+                },
+                {
+                    "dmxRange": [
+                        212,
+                        212
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID23"
+                },
+                {
+                    "dmxRange": [
+                        213,
+                        213
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID24"
+                },
+                {
+                    "dmxRange": [
+                        214,
+                        214
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID25"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        215
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID26"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        216
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID27"
+                },
+                {
+                    "dmxRange": [
+                        217,
+                        217
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID28"
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        218
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID29"
+                },
+                {
+                    "dmxRange": [
+                        219,
+                        219
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID30"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        220
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID31"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        221
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID32"
+                },
+                {
+                    "dmxRange": [
+                        222,
+                        222
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID33"
+                },
+                {
+                    "dmxRange": [
+                        223,
+                        223
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID34"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        224
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID35"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        225
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID36"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        226
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID37"
+                },
+                {
+                    "dmxRange": [
+                        227,
+                        227
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID38"
+                },
+                {
+                    "dmxRange": [
+                        228,
+                        228
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID39"
+                },
+                {
+                    "dmxRange": [
+                        229,
+                        229
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID40"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        230
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID41"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        231
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID42"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        232
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID43"
+                },
+                {
+                    "dmxRange": [
+                        233,
+                        233
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID44"
+                },
+                {
+                    "dmxRange": [
+                        234,
+                        234
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID45"
+                },
+                {
+                    "dmxRange": [
+                        235,
+                        235
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID46"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        236
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID47"
+                },
+                {
+                    "dmxRange": [
+                        237,
+                        237
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID48"
+                },
+                {
+                    "dmxRange": [
+                        238,
+                        238
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID49"
+                },
+                {
+                    "dmxRange": [
+                        239,
+                        239
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID50"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        240
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID51"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        241
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID52"
+                },
+                {
+                    "dmxRange": [
+                        242,
+                        242
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID53"
+                },
+                {
+                    "dmxRange": [
+                        243,
+                        243
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID54"
+                },
+                {
+                    "dmxRange": [
+                        244,
+                        244
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID55"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        245
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID56"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        246
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID57"
+                },
+                {
+                    "dmxRange": [
+                        247,
+                        247
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID58"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        248
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID59"
+                },
+                {
+                    "dmxRange": [
+                        249,
+                        249
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID60"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        250
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID61"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        251
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID62"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        252
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID63"
+                },
+                {
+                    "dmxRange": [
+                        253,
+                        253
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID64"
+                },
+                {
+                    "dmxRange": [
+                        254,
+                        254
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID65"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID66"
+                }
+            ]
+        },
+        "Fader Response": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        250
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Ch1-ch4 instant"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Ch1-ch4 delayed"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1 = 3-channel",
+            "shortName": "1 = 3ch",
+            "channels": [
+                "Red Dimming/Static Colour/Speed Adjust/Sound Sensitivity",
+                "Green Dimming",
+                "Blue Dimming"
+            ]
+        },
+        {
+            "name": "2 = 4-channel",
+            "shortName": "2 = 4ch",
+            "channels": [
+                "Master Dimmer",
+                "Red Dimming/Static Colour/Speed Adjust/Sound Sensitivity",
+                "Green Dimming",
+                "Blue Dimming"
+            ]
+        },
+        {
+            "name": "3 = 8-channel",
+            "shortName": "3 = 8ch",
+            "channels": [
+                "Master Dimmer",
+                "Red Dimming/Static Colour/Speed Adjust/Sound Sensitivity",
+                "Green Dimming",
+                "Blue Dimming",
+                "Strobe",
+                "Color Programs",
+                "ID Address",
+                "Fader Response"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "manufacturer": "Clay Paky",
+    "name": "Pin Scan",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Thierry Rodolfo",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.8.5 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer/ Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Intensity",
+                    "comment": "Close"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        139
+                    ],
+                    "type": "Intensity",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        243
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe Slow < Fast"
+                },
+                {
+                    "dmxRange": [
+                        244,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "Pan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "360deg"
+            }
+        },
+        "Tilt": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "227deg"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Standard",
+            "channels": [
+                "Dimmer/ Strobe",
+                "Pan",
+                "Tilt"
+            ]
+        }
+    ]
+}

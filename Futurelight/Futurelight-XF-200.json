@@ -1,0 +1,238 @@
+{
+    "manufacturer": "Futurelight",
+    "name": "XF-200",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "Heikki Junnila",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Gobo": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Blackout"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        21
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        22,
+                        32
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Gobo 1"
+                },
+                {
+                    "dmxRange": [
+                        33,
+                        43
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Gobo 2"
+                },
+                {
+                    "dmxRange": [
+                        44,
+                        54
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Gobo 3"
+                },
+                {
+                    "dmxRange": [
+                        55,
+                        65
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Gobo 4"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        76
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Gobo 5"
+                },
+                {
+                    "dmxRange": [
+                        77,
+                        87
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Gobo 6"
+                },
+                {
+                    "dmxRange": [
+                        88,
+                        98
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Gobo 7"
+                },
+                {
+                    "dmxRange": [
+                        99,
+                        109
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 10,
+                    "comment": "Gobo 8"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        120
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 11,
+                    "comment": "Gobo 9"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        131
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 12,
+                    "comment": "Gobo 10"
+                },
+                {
+                    "dmxRange": [
+                        132,
+                        193
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 13,
+                    "comment": "Backward gobo rainbow speed"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 14,
+                    "comment": "Forward gobo rainbow speed"
+                }
+            ]
+        },
+        "Color": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        240
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color combinations"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        250
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Rainbow"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound activation"
+                }
+            ]
+        },
+        "Flower reflector": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "Speed",
+                    "speed": "stop"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        130
+                    ],
+                    "type": "Speed",
+                    "comment": "Clockwise rotation speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        245
+                    ],
+                    "type": "Speed",
+                    "comment": "Anti-clockwise rotation speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Sound activation",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Gobo",
+                "Color",
+                "Flower reflector"
+            ]
+        }
+    ]
+}

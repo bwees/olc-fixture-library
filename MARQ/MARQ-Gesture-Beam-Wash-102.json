@@ -1,0 +1,878 @@
+{
+    "manufacturer": "MARQ",
+    "name": "Gesture Beam/Wash 102",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "John Yiannikakis",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "matrix": {
+        "pixelCount": [
+            null,
+            null,
+            1
+        ]
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Pan/Tilt Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Pan Continuous Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        189
+                    ],
+                    "type": "PanContinuous",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW",
+                    "comment": "Forward pan rotation, slow (128) to fast (189)"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        193
+                    ],
+                    "type": "PanContinuous",
+                    "speed": "stop",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        255
+                    ],
+                    "type": "PanContinuous",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW",
+                    "comment": "Backward pan rotation, slow (194) to fast (255)"
+                }
+            ]
+        },
+        "Tilt Continuous Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        189
+                    ],
+                    "type": "TiltContinuous",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW",
+                    "comment": "Forward tilt rotation, slow (128) to fast (189)"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        193
+                    ],
+                    "type": "TiltContinuous",
+                    "speed": "stop",
+                    "comment": "Stop"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        255
+                    ],
+                    "type": "TiltContinuous",
+                    "speedStart": "slow CCW",
+                    "speedEnd": "fast CCW",
+                    "comment": "Backward tilt rotation, slow (194) to fast (255)"
+                }
+            ]
+        },
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "Master dimmer, all colors, A & B sides, dark (000) to bright (255)"
+            }
+        },
+        "Shutter A&B": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        3
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Closed"
+                },
+                {
+                    "dmxRange": [
+                        4,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "open"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        76
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Strobe, slow (008) to fast (076)"
+                },
+                {
+                    "dmxRange": [
+                        77,
+                        145
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse, slow (077) to fast (145)"
+                },
+                {
+                    "dmxRange": [
+                        146,
+                        215
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random strobe, slow (146) to fast (215)"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                }
+            ]
+        },
+        "A Red Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "A Green Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "A Blue Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "A White Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "B Red Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "B Blue Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "B White Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Color Presets- Overrides Ch. 10\u201317": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        29
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        44
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R"
+                },
+                {
+                    "dmxRange": [
+                        45,
+                        59
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        74
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "B"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        89
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "W"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        104
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R G"
+                },
+                {
+                    "dmxRange": [
+                        105,
+                        119
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R B"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        134
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R W"
+                },
+                {
+                    "dmxRange": [
+                        135,
+                        149
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G B"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        164
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G W"
+                },
+                {
+                    "dmxRange": [
+                        165,
+                        179
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "B W"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        194
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R G B"
+                },
+                {
+                    "dmxRange": [
+                        195,
+                        209
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R G W"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        224
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R B W"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "G B W"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "R G B W"
+                }
+            ]
+        },
+        "Color Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "NO FUNCT"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        39
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 1 (snap)"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        71
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 2 (snap)"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        103
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 3 (snap)"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 4 (fade)"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        167
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 5 (fade)"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Program 6 (fade)"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        231
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound-active colors (snap)"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound-active colors (fade)"
+                }
+            ]
+        },
+        "Program Speed / Microphone Sensitivity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "Color change rate (slow to fast) / Microphone sensitivity",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Macro Functions": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        39
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Automatic movement 1"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        71
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Automatic movement 2"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        103
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Automatic movement 3"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        135
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Automatic movement 4"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        167
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound-active movement 1"
+                },
+                {
+                    "dmxRange": [
+                        168,
+                        199
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound-active movement 2"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        231
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound-active movement 3"
+                },
+                {
+                    "dmxRange": [
+                        232,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound-active movement 4"
+                }
+            ]
+        },
+        "Control Functions": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        69
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Blackout during pan/tilt"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Disable blackout during pan/tilt"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        139
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        149
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset pan/tilt",
+                    "helpWanted": "Unknown QLC+ capability preset ResetPanTilt, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        169
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset color/gobo",
+                    "helpWanted": "Unknown QLC+ capability preset ResetColor, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        199
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        209
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset all",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        255
+                    ],
+                    "type": "NoFunction"
+                }
+            ]
+        },
+        "B Green Dimmer 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "A Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "Master dimmer, A side, all colors, dark (000) to bright (255)"
+            }
+        },
+        "B Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "Master dimmer, B side, all colors, dark (000) to bright (255)"
+            }
+        },
+        "Red Dimmer A&B": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green Dimmer A&B": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue Dimmer A&B": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White Dimmer A&B": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        }
+    },
+    "templateChannels": {},
+    "modes": [
+        {
+            "name": "22-channel (Beam)",
+            "shortName": "22ch (Beam)",
+            "channels": [
+                "Pan",
+                "Pan fine",
+                "Tilt",
+                "Tilt fine",
+                "Pan/Tilt Speed",
+                "Pan Continuous Rotation",
+                "Tilt Continuous Rotation",
+                "Master Dimmer",
+                "Shutter A&B",
+                "A Red Dimmer",
+                "A Green Dimmer",
+                "A Blue Dimmer",
+                "A White Dimmer",
+                "B Red Dimmer",
+                "B Green Dimmer 1",
+                "B Blue Dimmer",
+                "B White Dimmer",
+                "Color Presets- Overrides Ch. 10\u201317",
+                "Color Programs",
+                "Program Speed / Microphone Sensitivity",
+                "Macro Functions",
+                "Control Functions"
+            ]
+        },
+        {
+            "name": "22-channel (Wash)",
+            "shortName": "22ch (Wash)",
+            "physical": {
+                "weight": 2.55,
+                "power": 75,
+                "bulb": {
+                    "lumens": 5600
+                },
+                "lens": {
+                    "degreesMinMax": [
+                        0,
+                        38.5
+                    ]
+                }
+            },
+            "channels": [
+                "Pan",
+                "Pan fine",
+                "Tilt",
+                "Tilt fine",
+                "Pan/Tilt Speed",
+                "Pan Continuous Rotation",
+                "Tilt Continuous Rotation",
+                "Master Dimmer",
+                "Shutter A&B",
+                "A Red Dimmer",
+                "A Green Dimmer",
+                "A Blue Dimmer",
+                "A White Dimmer",
+                "B Red Dimmer",
+                "B Green Dimmer 1",
+                "B Blue Dimmer",
+                "B White Dimmer",
+                "Color Presets- Overrides Ch. 10\u201317",
+                "Color Programs",
+                "Program Speed / Microphone Sensitivity",
+                "Macro Functions",
+                "Control Functions"
+            ]
+        },
+        {
+            "name": "15-channel (Beam)",
+            "shortName": "15ch (Beam)",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Pan Continuous Rotation",
+                "Tilt Continuous Rotation",
+                "A Master Dimmer",
+                "B Master Dimmer",
+                "Shutter A&B",
+                "Red Dimmer A&B",
+                "Green Dimmer A&B",
+                "Blue Dimmer A&B",
+                "White Dimmer A&B",
+                "Color Presets- Overrides Ch. 10\u201317",
+                "Color Programs",
+                "Program Speed / Microphone Sensitivity",
+                "Macro Functions"
+            ]
+        },
+        {
+            "name": "15-channel (Wash)",
+            "shortName": "15ch (Wash)",
+            "physical": {
+                "weight": 2.55,
+                "power": 75,
+                "bulb": {
+                    "lumens": 5600
+                },
+                "lens": {
+                    "degreesMinMax": [
+                        0,
+                        38.5
+                    ]
+                }
+            },
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Pan Continuous Rotation",
+                "Tilt Continuous Rotation",
+                "A Master Dimmer",
+                "B Master Dimmer",
+                "Shutter A&B",
+                "Red Dimmer A&B",
+                "Green Dimmer A&B",
+                "Blue Dimmer A&B",
+                "White Dimmer A&B",
+                "Color Presets- Overrides Ch. 10\u201317",
+                "Color Programs",
+                "Program Speed / Microphone Sensitivity",
+                "Macro Functions"
+            ]
+        },
+        {
+            "name": "7-channel (Beam)",
+            "shortName": "7ch (Beam)",
+            "channels": [
+                "A Master Dimmer",
+                "B Master Dimmer",
+                "Shutter A&B",
+                "Color Presets- Overrides Ch. 10\u201317",
+                "Color Programs",
+                "Program Speed / Microphone Sensitivity",
+                "Macro Functions"
+            ]
+        },
+        {
+            "name": "7-channel (Wash)",
+            "shortName": "7ch (Wash)",
+            "physical": {
+                "weight": 2.55,
+                "power": 75,
+                "bulb": {
+                    "lumens": 5600
+                },
+                "lens": {
+                    "degreesMinMax": [
+                        0,
+                        38.5
+                    ]
+                }
+            },
+            "channels": [
+                "A Master Dimmer",
+                "B Master Dimmer",
+                "Shutter A&B",
+                "Color Presets- Overrides Ch. 10\u201317",
+                "Color Programs",
+                "Program Speed / Microphone Sensitivity",
+                "Macro Functions"
+            ]
+        },
+        {
+            "name": "3-channel (Beam)",
+            "shortName": "3ch (Beam)",
+            "channels": [
+                "Master Dimmer",
+                "Color Presets- Overrides Ch. 10\u201317",
+                "Macro Functions"
+            ]
+        },
+        {
+            "name": "3-channel (Wash)",
+            "shortName": "3ch (Wash)",
+            "physical": {
+                "weight": 2.55,
+                "power": 75,
+                "bulb": {
+                    "lumens": 5600
+                },
+                "lens": {
+                    "degreesMinMax": [
+                        0,
+                        38.5
+                    ]
+                }
+            },
+            "channels": [
+                "Master Dimmer",
+                "Color Presets- Overrides Ch. 10\u201317",
+                "Macro Functions"
+            ]
+        }
+    ]
+}

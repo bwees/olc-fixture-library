@@ -1,0 +1,708 @@
+{
+    "manufacturer": "Chauvet",
+    "name": "COLORdash Batten",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Kurt Malkames",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.4.0)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red",
+                "comment": "0 - 100% (or STEP TIME when Custom 1-10 is activated)"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green",
+                "comment": "0 - 100% (or FADE TIME when Custom 1-10 is activated)"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Color Macro + White Balance": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        35
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red 100% - Green Up - Blue 0%"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        60
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red Down - Green 100% - Blue 0%"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red 0% - Green 100% - Blue Up"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        110
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red 0% - Green Down - Blue 100%"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        135
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red Up - Green 0% - Blue 100%"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red 100% - Green 0% - Blue Down"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        185
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red 100% - Green Up - Blue Up"
+                },
+                {
+                    "dmxRange": [
+                        186,
+                        210
+                    ],
+                    "type": "Effect",
+                    "effectName": "Red Down - Green Down - Blue 100%"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        215
+                    ],
+                    "type": "Effect",
+                    "effectName": "White 1: 3200K"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "White 2: 3400K"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        225
+                    ],
+                    "type": "Effect",
+                    "effectName": "White 3: 4200K"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        230
+                    ],
+                    "type": "Effect",
+                    "effectName": "White 4: 4900K"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        235
+                    ],
+                    "type": "Effect",
+                    "effectName": "White 5: 5600K"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        240
+                    ],
+                    "type": "Effect",
+                    "effectName": "White 6: 5900K"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        245
+                    ],
+                    "type": "Effect",
+                    "effectName": "White 7: 6500K"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        250
+                    ],
+                    "type": "Effect",
+                    "effectName": "White 8: 7200K"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "White 9: 8500K"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        4
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        5,
+                        255
+                    ],
+                    "type": "Speed",
+                    "speedStart": "0Hz",
+                    "speedEnd": "20Hz"
+                }
+            ]
+        },
+        "Auto + Custom Programs + Fan Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Effect",
+                    "effectName": "Reset to display fan setting"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        20
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fans Off (Hold for 3sec)"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        30
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fans Low (Hold for 3sec)"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        40
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fans Normal (Hold for 3sec)"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        50
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fans High (Hold for 3sec)"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        60
+                    ],
+                    "type": "Effect",
+                    "effectName": "Fans Auto (Hold for 3sec)"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        70
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 1"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        80
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 2"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        90
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 3"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        100
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 4"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        110
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 5"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        120
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 6"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        130
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 7"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        140
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 8"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        150
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 9"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto 10"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 1"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        180
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 2"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 3"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 4"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        210
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 5"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        220
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 6"
+                },
+                {
+                    "dmxRange": [
+                        221,
+                        230
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 7"
+                },
+                {
+                    "dmxRange": [
+                        231,
+                        240
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 8"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        250
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 9"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Custom 10"
+                }
+            ]
+        },
+        "Auto Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "comment": "0 - 100% (only when CH 7 is between 61-255)",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        },
+        "Block": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 1,2,3,4"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        29
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 1"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        49
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 2"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        69
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 3"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        89
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 4"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        109
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 1,2"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        129
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 3,4"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        149
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 1,4"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        169
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 2,3"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        189
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 1,2,3"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        209
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 2,3,4"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        229
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 1,3,4"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Block 1,2,4"
+                }
+            ]
+        },
+        "ID Addressing": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Maintenance",
+                    "comment": "All IDs"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "ID 1 - 66"
+                }
+            ]
+        },
+        "Red 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue 4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "STAGE 1",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue",
+                "Color Macro + White Balance",
+                "Strobe",
+                "Auto + Custom Programs + Fan Control",
+                "Auto Speed",
+                "ID Addressing",
+                "Block"
+            ]
+        },
+        {
+            "name": "ARC 1",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "ARC 1 + D",
+            "channels": [
+                "Dimmer",
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "BLOCK",
+            "channels": [
+                "Red 1",
+                "Green 1",
+                "Blue 1",
+                "Red 2",
+                "Green 2",
+                "Blue 2",
+                "Red 3",
+                "Green 3",
+                "Blue 3",
+                "Red 4",
+                "Green 4",
+                "Blue 4"
+            ]
+        }
+    ]
+}

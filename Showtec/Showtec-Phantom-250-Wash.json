@@ -1,0 +1,527 @@
+{
+    "manufacturer": "Showtec",
+    "name": "Phantom 250 Wash",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Veljko Stankov",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan 16bit"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "540deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt 16bit"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "PanTiltSpeed",
+                "speedStart": "fast",
+                "speedEnd": "slow"
+            }
+        },
+        "Cyan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Cyan"
+            }
+        },
+        "Magenta": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Magenta"
+            }
+        },
+        "Yellow": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Yellow"
+            }
+        },
+        "CMY Macro": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "Preset Colors"
+            }
+        },
+        "CMY Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "fast",
+                "speedEnd": "slow",
+                "comment": "Gradual adjustment color change speed"
+            }
+        },
+        "Shutter/Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        14
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Shutter closed / Blackout"
+                },
+                {
+                    "dmxRange": [
+                        15,
+                        85
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Dimmer 0-100%",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        99
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        140
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe, slow-fast"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        151
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        152,
+                        195
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Pulse, slow-fast"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        203
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        244
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "randomTiming": true,
+                    "comment": "Random strobe, slow-fast"
+                },
+                {
+                    "dmxRange": [
+                        245,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                }
+            ]
+        },
+        "Lamp Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "moving blackout"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        99
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "Effect",
+                    "effectName": "reset"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        129
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        145
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 1"
+                },
+                {
+                    "dmxRange": [
+                        146,
+                        161
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 2"
+                },
+                {
+                    "dmxRange": [
+                        162,
+                        177
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 3"
+                },
+                {
+                    "dmxRange": [
+                        178,
+                        193
+                    ],
+                    "type": "Effect",
+                    "effectName": "Auto Program 4"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "sound control 1",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        225
+                    ],
+                    "type": "Effect",
+                    "effectName": "sound control 2",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        241
+                    ],
+                    "type": "Effect",
+                    "effectName": "sound control 3",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        242,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "sound contorl 4",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect1"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        29
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect2"
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        39
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect3"
+                },
+                {
+                    "dmxRange": [
+                        40,
+                        49
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect4"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        59
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect5"
+                },
+                {
+                    "dmxRange": [
+                        60,
+                        69
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect6"
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        79
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect7"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        89
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect8"
+                },
+                {
+                    "dmxRange": [
+                        90,
+                        99
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect9"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        109
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect10"
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect11"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect12"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        139
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect13"
+                },
+                {
+                    "dmxRange": [
+                        140,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect14"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect15"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        169
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect16"
+                },
+                {
+                    "dmxRange": [
+                        170,
+                        179
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect17"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        189
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect18"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect19"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        209
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect20"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        219
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect21"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        229
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect22"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        239
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect23"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        249
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect24"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "effect25"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Pan",
+                "Tilt",
+                "Pan 16bit",
+                "Tilt 16bit",
+                "Speed",
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "CMY Macro",
+                "CMY Speed",
+                "Shutter/Strobe",
+                "Lamp Effect",
+                "Effect"
+            ]
+        }
+    ]
+}

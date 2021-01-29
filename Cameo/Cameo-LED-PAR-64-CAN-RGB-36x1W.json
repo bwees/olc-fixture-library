@@ -1,0 +1,137 @@
+{
+    "manufacturer": "Cameo",
+    "name": "LED PAR 64 RGB 36x1W",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "D\u00e1vid Czir\u00f3k",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Master dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Adjustment": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        16
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        17,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Strobe/Speed Adjust/Sound Sensitivity Adjust"
+                }
+            ]
+        },
+        "Settings": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        95
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Colour mixing"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        159
+                    ],
+                    "type": "Maintenance",
+                    "comment": "RGB colour change"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        233
+                    ],
+                    "type": "Maintenance",
+                    "comment": "7 colour change"
+                },
+                {
+                    "dmxRange": [
+                        234,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound activation"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Master dimmer"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Master dimmer",
+                "Adjustment",
+                "Settings"
+            ]
+        }
+    ]
+}

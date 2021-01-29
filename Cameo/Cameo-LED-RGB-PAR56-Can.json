@@ -1,0 +1,146 @@
+{
+    "manufacturer": "Cameo",
+    "name": "LED RGB PAR56 Can",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "MC Sushii",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.1 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Master": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe / Speed Adjust / Sensitivity Adjust": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        16
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        17,
+                        255
+                    ],
+                    "type": "StrobeSpeed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Mixing"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        159
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "RGB Colour Change"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        233
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "7 Colour Change"
+                },
+                {
+                    "dmxRange": [
+                        234,
+                        243
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        244,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Sound Activation"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "4-channel (Red Dot)",
+            "shortName": "4ch (Red Dot)",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Master"
+            ]
+        },
+        {
+            "name": "6-channel (No Dot)",
+            "shortName": "6ch (No Dot)",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Master",
+                "Strobe / Speed Adjust / Sensitivity Adjust",
+                "Effect"
+            ]
+        }
+    ]
+}

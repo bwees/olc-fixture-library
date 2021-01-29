@@ -1,0 +1,152 @@
+{
+    "manufacturer": "Eurolite",
+    "name": "LED SLS-180 RGB",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Peter",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.8.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "No strobe effect",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe effect with increasing speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Functions": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        60
+                    ],
+                    "type": "Effect",
+                    "effectName": "Static colours (colour selection CH 7)"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        110
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour change 1 - fading, 7 colours (speed CH 7)"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour change 2 - fading, 7 colours (speed CH 7)"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        210
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour change 3 - switching, 7 colours (speed CH 7)"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound controlled mode",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Colours": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset",
+                "comment": "Select static colour / increasing speed"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Normal",
+            "channels": [
+                "Intensity",
+                "Red",
+                "Green",
+                "Blue",
+                "Strobe",
+                "Functions",
+                "Colours"
+            ]
+        }
+    ]
+}

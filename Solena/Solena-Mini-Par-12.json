@@ -1,0 +1,181 @@
+{
+    "manufacturer": "Solena",
+    "name": "Mini Par 12",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Nathan Durnan",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red Brightness": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green Brightness": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue Brightness": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White Brightness": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe/Flashing": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        223
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "AUTO strobe, speed from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Sound strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "All LEDs Brightness": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Color Change": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color controlled by CH1 to CH5"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Static color Selection CC01-CC16"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        143
+                    ],
+                    "type": "ColorPreset"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color AUTO Dimming, speed controlled by CH7"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        223
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color AUTO Jumping, speed controlled by CH7"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "COlor Sound Jumping"
+                }
+            ]
+        },
+        "Static Color Selection and Speed Control": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Effect",
+                "effectName": "CC01---CC16 15 kinds of static colors, speed from",
+                "speedStart": "slow",
+                "speedEnd": "fast"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Red Brightness",
+                "Green Brightness",
+                "Blue Brightness",
+                "White Brightness",
+                "Strobe/Flashing"
+            ]
+        },
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "All LEDs Brightness",
+                "Red Brightness",
+                "Green Brightness",
+                "Blue Brightness",
+                "White Brightness",
+                "Color Change",
+                "Static Color Selection and Speed Control",
+                "Strobe/Flashing"
+            ]
+        }
+    ]
+}

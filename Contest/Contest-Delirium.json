@@ -1,0 +1,206 @@
+{
+    "manufacturer": "Contest",
+    "name": "Delirium",
+    "categories": [
+        "Flower"
+    ],
+    "meta": {
+        "authors": [
+            "Vincent",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Functions": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Effect",
+                    "effectName": "Off"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        129
+                    ],
+                    "type": "Effect",
+                    "effectName": "Synchronous show"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        249
+                    ],
+                    "type": "Effect",
+                    "effectName": "Asynchronous show"
+                },
+                {
+                    "dmxRange": [
+                        250,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Musical Mode"
+                }
+            ]
+        },
+        "Combos": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        21
+                    ],
+                    "type": "Effect",
+                    "effectName": "Combo 1"
+                },
+                {
+                    "dmxRange": [
+                        22,
+                        42
+                    ],
+                    "type": "Effect",
+                    "effectName": "Combo 2"
+                },
+                {
+                    "dmxRange": [
+                        43,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Combo 3"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Combo 4"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        106
+                    ],
+                    "type": "Effect",
+                    "effectName": "Combo 5"
+                },
+                {
+                    "dmxRange": [
+                        107,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Combo 6"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        149
+                    ],
+                    "type": "Effect",
+                    "effectName": "Combo 7"
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Combo 8"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Combo 9"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        213
+                    ],
+                    "type": "Effect",
+                    "effectName": "Combo 10"
+                },
+                {
+                    "dmxRange": [
+                        214,
+                        234
+                    ],
+                    "type": "Effect",
+                    "effectName": "Combo 11"
+                },
+                {
+                    "dmxRange": [
+                        235,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Combo 12"
+                }
+            ]
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "comment": "From"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "On"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "From slow to fast"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Functions",
+                "Combos",
+                "Speed",
+                "Strobe"
+            ]
+        }
+    ]
+}

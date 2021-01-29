@@ -1,0 +1,196 @@
+{
+    "manufacturer": "Botex",
+    "name": "SP-1500",
+    "categories": [
+        "Strobe"
+    ],
+    "meta": {
+        "authors": [
+            "Gabse",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Brightness": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "StrobeSpeed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "comment": "Strobe"
+            }
+        },
+        "Control": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        49
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Normal",
+                    "switchChannels": {
+                        "Strobe / Blind Speed / Single Flash": "Strobe"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        99
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Blinder",
+                    "switchChannels": {
+                        "Strobe / Blind Speed / Single Flash": "Blind Speed"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        149
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Random",
+                    "switchChannels": {
+                        "Strobe / Blind Speed / Single Flash": "Strobe"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        150,
+                        199
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Single Flash",
+                    "switchChannels": {
+                        "Strobe / Blind Speed / Single Flash": "Single Flash"
+                    }
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "SYNC",
+                    "switchChannels": {
+                        "Strobe / Blind Speed / Single Flash": "Strobe"
+                    }
+                }
+            ]
+        },
+        "Single Flash": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "No Flash"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Flash"
+                }
+            ]
+        },
+        "Blind Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "OFF"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "Effect",
+                    "effectName": "14Hz"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "15Hz"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "Effect",
+                    "effectName": "16,6Hz"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        192
+                    ],
+                    "type": "Effect",
+                    "effectName": "20Hz"
+                },
+                {
+                    "dmxRange": [
+                        193,
+                        223
+                    ],
+                    "type": "Effect",
+                    "effectName": "25Hz"
+                },
+                {
+                    "dmxRange": [
+                        224,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "50Hz"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "Default",
+            "channels": [
+                "Speed",
+                "Brightness"
+            ]
+        },
+        {
+            "name": "Henne's Mod",
+            "channels": [
+                "Speed",
+                "Brightness",
+                "Control"
+            ]
+        }
+    ]
+}

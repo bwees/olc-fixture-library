@@ -1,0 +1,48 @@
+{
+    "manufacturer": "Eurolite",
+    "name": "LED Strobe PRO DMX",
+    "categories": [
+        "Strobe"
+    ],
+    "meta": {
+        "authors": [
+            "Rob G.",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 5.0.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Flash-rate": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Brightness": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Flash-rate",
+                "Brightness"
+            ]
+        }
+    ]
+}

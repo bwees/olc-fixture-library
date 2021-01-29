@@ -1,0 +1,191 @@
+{
+    "manufacturer": "JB Systems",
+    "name": "Plano Spot 7TC",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Robin Davis",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.8.4 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Dimmer/Sound/Strobe (Mode 1)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        7
+                    ],
+                    "type": "Effect",
+                    "effectName": "Off"
+                },
+                {
+                    "dmxRange": [
+                        8,
+                        190
+                    ],
+                    "type": "Effect",
+                    "effectName": "Intensity 0-100%"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        200
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound (random colour changer)",
+                    "soundControlled": true
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        247
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Open"
+                }
+            ]
+        },
+        "Dimmer (Mode 2)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Dimmer/Strobe (Mode 3)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        160
+                    ],
+                    "type": "Effect",
+                    "effectName": "Intensity 0-100%"
+                },
+                {
+                    "dmxRange": [
+                        161,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "Dimmer/Strobe/Colour Changer Show (Mode 4)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Intensity 0-100%"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        199
+                    ],
+                    "type": "Effect",
+                    "effectName": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Colour Changer Show",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Dimmer/Sound/Strobe (Mode 1)"
+            ]
+        },
+        {
+            "name": "2",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Dimmer (Mode 2)"
+            ]
+        },
+        {
+            "name": "3",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Dimmer/Strobe (Mode 3)"
+            ]
+        },
+        {
+            "name": "4",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Dimmer/Strobe/Colour Changer Show (Mode 4)"
+            ]
+        }
+    ]
+}

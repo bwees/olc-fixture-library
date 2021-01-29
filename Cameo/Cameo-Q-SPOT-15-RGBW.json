@@ -1,0 +1,458 @@
+{
+    "manufacturer": "Cameo",
+    "name": "Q SPOT 15 RGBW",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Antoine Houbron",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "fineChannelAliases": [
+                "Dimmer Fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Colour Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        13
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        14,
+                        21
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Amber",
+                    "colors": [
+                        "#ff6400"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        22,
+                        29
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow warm",
+                    "colors": [
+                        "#ffaf00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        30,
+                        37
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Yellow",
+                    "colors": [
+                        "#ffff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        38,
+                        45
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        46,
+                        53
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Turquoise",
+                    "colors": [
+                        "#00ff80"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        54,
+                        61
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cyan",
+                    "colors": [
+                        "#00ffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        62,
+                        69
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        70,
+                        77
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Lavender",
+                    "colors": [
+                        "#4b00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        78,
+                        85
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Mauve",
+                    "colors": [
+                        "#af00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        93
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Magenta",
+                    "colors": [
+                        "#ff00ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        94,
+                        101
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pink",
+                    "colors": [
+                        "#ff80ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        102,
+                        109
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Warm White",
+                    "colors": [
+                        "#ffc380"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        110,
+                        117
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        118,
+                        125
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Cold White",
+                    "colors": [
+                        "#85c9ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Jumping Stop"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Jumping Speed slow -> fast / Colour 1 -> 12"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Colour Fading Speed slow -> fast / Colour 1 -> 12"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe slow -> fast <1Hz - 20Hz",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White"
+            }
+        },
+        "Strobe functions": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Strobe open"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Strobe closed"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        33
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Puls Random, slow -> fast"
+                },
+                {
+                    "dmxRange": [
+                        34,
+                        56
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampUp",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp up Random, slow -> fast"
+                },
+                {
+                    "dmxRange": [
+                        57,
+                        79
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "RampDown",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Ramp down Random, slow -> fast"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        102
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random Strobe Effect, slow -> fast"
+                },
+                {
+                    "dmxRange": [
+                        103,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe Break Effekt, 5s.....1s (Short burst with break)",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        250
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "0Hz",
+                    "speedEnd": "20Hz",
+                    "comment": "Strobe slow -> fast <1Hz - 20Hz"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Strobe open"
+                }
+            ]
+        },
+        "Colour Temperature (affects RGB)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "Effect",
+                    "effectName": "off"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "cold - warm @ Full on affects colours too"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Dimmer",
+                "Colour Macro"
+            ]
+        },
+        {
+            "name": "3-channel 1",
+            "shortName": "3ch 1",
+            "channels": [
+                "Dimmer",
+                "Strobe",
+                "Colour Macro"
+            ]
+        },
+        {
+            "name": "3-channel 2",
+            "shortName": "3ch 2",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "White"
+            ]
+        },
+        {
+            "name": "9-channel",
+            "shortName": "9ch",
+            "channels": [
+                "Dimmer",
+                "Dimmer Fine",
+                "Strobe functions",
+                "Red",
+                "Green",
+                "Blue",
+                "White",
+                "Colour Macro",
+                "Colour Temperature (affects RGB)"
+            ]
+        }
+    ]
+}

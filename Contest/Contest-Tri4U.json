@@ -1,0 +1,743 @@
+{
+    "manufacturer": "Contest",
+    "name": "Tri4U",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "nicolas",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Mode": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "Maintenance",
+                    "comment": "LED Off"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        20
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Red: R255 - G00 - B00"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        30
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Orange: R255 - G070 - B000"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        40
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Yellow: R255 - G155 - B000"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        51
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Green: R000 - G255 - B000"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        61
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Cyan: R000 - G255 - B255"
+                },
+                {
+                    "dmxRange": [
+                        62,
+                        71
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Blue: R000 - G000 - B255"
+                },
+                {
+                    "dmxRange": [
+                        72,
+                        81
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pink: R255 - G000 - B255"
+                },
+                {
+                    "dmxRange": [
+                        82,
+                        92
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Magenta: R255 - G000 - B100"
+                },
+                {
+                    "dmxRange": [
+                        93,
+                        102
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Cold White: R255 - G255 - B255"
+                },
+                {
+                    "dmxRange": [
+                        103,
+                        112
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Hot White: R255 - B200"
+                },
+                {
+                    "dmxRange": [
+                        113,
+                        122
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Color macro 1"
+                },
+                {
+                    "dmxRange": [
+                        123,
+                        133
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Color macro 2"
+                },
+                {
+                    "dmxRange": [
+                        134,
+                        143
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Color macro 3"
+                },
+                {
+                    "dmxRange": [
+                        144,
+                        153
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Color macro 4"
+                },
+                {
+                    "dmxRange": [
+                        154,
+                        163
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Color macro 5"
+                },
+                {
+                    "dmxRange": [
+                        164,
+                        174
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pattern 1"
+                },
+                {
+                    "dmxRange": [
+                        175,
+                        184
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pattern 2"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        194
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pattern 3"
+                },
+                {
+                    "dmxRange": [
+                        195,
+                        204
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pattern 4"
+                },
+                {
+                    "dmxRange": [
+                        205,
+                        215
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pattern 5"
+                },
+                {
+                    "dmxRange": [
+                        216,
+                        225
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pattern 6"
+                },
+                {
+                    "dmxRange": [
+                        226,
+                        235
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pattern 7"
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        245
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Pattern 8"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Auto mode: Macros then patterns 10 times each"
+                }
+            ]
+        },
+        "Dimmer / Speed / Audio": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "Dimmer (Mode < 113) / Speed (113<Mode<245) / Audio (Mode >245)"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Dimmer & Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Intensity",
+                    "comment": "Black-out"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        189
+                    ],
+                    "type": "Intensity"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        250
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe (slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Full-on"
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        250
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe (slow to fast)"
+                }
+            ]
+        },
+        "Dim (ch 6 <= 10) / Dim & Speed (ch 6 > 10)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity",
+                "comment": "Dimmer or Dimmer speed"
+            }
+        },
+        "Red (ch 6 < 11)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red",
+                "comment": "Red intensity"
+            }
+        },
+        "Green (ch 6 < 11)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue (ch 6 < 11)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Strobe (6 ch)": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        24
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        25,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Red #1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green #1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue #1": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red #2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green #2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue #2": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red #3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green #3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue #3": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Red #4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green #4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue #4": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Speed / Audio": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        200
+                    ],
+                    "type": "Speed",
+                    "comment": "Speed",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        201,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Audio",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Dimmer & Strobe #1": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Intensity",
+                    "comment": "Black-out"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        189
+                    ],
+                    "type": "Intensity"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        250
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe (slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Full-on"
+                }
+            ]
+        },
+        "Dimmer & Strobe #2": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Intensity",
+                    "comment": "Black-out"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        189
+                    ],
+                    "type": "Intensity"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        250
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe (slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Full-on"
+                }
+            ]
+        },
+        "Dimmer & Strobe #3": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Intensity",
+                    "comment": "Black-out"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        189
+                    ],
+                    "type": "Intensity"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        250
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe (slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Full-on"
+                }
+            ]
+        },
+        "Dimmer & Strobe #4": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Intensity",
+                    "comment": "Black-out"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        189
+                    ],
+                    "type": "Intensity"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        250
+                    ],
+                    "type": "Intensity",
+                    "comment": "Strobe (slow to fast)"
+                },
+                {
+                    "dmxRange": [
+                        251,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Full-on"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Mode",
+                "Dimmer / Speed / Audio"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        },
+        {
+            "name": "4-channel",
+            "shortName": "4ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Dimmer & Strobe"
+            ]
+        },
+        {
+            "name": "5-channel",
+            "shortName": "5ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Dimmer",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Red (ch 6 < 11)",
+                "Green (ch 6 < 11)",
+                "Blue (ch 6 < 11)",
+                "Dim (ch 6 <= 10) / Dim & Speed (ch 6 > 10)",
+                "Strobe (6 ch)",
+                "Mode"
+            ]
+        },
+        {
+            "name": "12-channel",
+            "shortName": "12ch",
+            "channels": [
+                "Red #1",
+                "Green #1",
+                "Blue #1",
+                "Red #2",
+                "Green #2",
+                "Blue #2",
+                "Red #3",
+                "Green #3",
+                "Blue #3",
+                "Red #4",
+                "Green #4",
+                "Blue #4"
+            ]
+        },
+        {
+            "name": "15-channel",
+            "shortName": "15ch",
+            "channels": [
+                "Red #1",
+                "Green #1",
+                "Blue #1",
+                "Red #2",
+                "Green #2",
+                "Blue #2",
+                "Red #3",
+                "Green #3",
+                "Blue #3",
+                "Red #4",
+                "Green #4",
+                "Blue #4",
+                "Dimmer & Strobe",
+                "Mode",
+                "Speed / Audio"
+            ]
+        },
+        {
+            "name": "16-channel",
+            "shortName": "16ch",
+            "channels": [
+                "Red #1",
+                "Green #1",
+                "Blue #1",
+                "Dimmer & Strobe #1",
+                "Red #2",
+                "Green #2",
+                "Blue #2",
+                "Dimmer & Strobe #2",
+                "Red #3",
+                "Green #3",
+                "Blue #3",
+                "Dimmer & Strobe #3",
+                "Red #4",
+                "Green #4",
+                "Blue #4",
+                "Dimmer & Strobe #4"
+            ]
+        }
+    ]
+}

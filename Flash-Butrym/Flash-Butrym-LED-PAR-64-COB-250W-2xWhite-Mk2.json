@@ -1,0 +1,416 @@
+{
+    "manufacturer": "Flash-Butrym",
+    "name": "LED PAR 64 COB 250W 2xWhite Mk2",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Edgar Aichinger",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Dimmer": {
+            "fineChannelAliases": [
+                "Dimmer 16bit"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "CTC": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorTemperature",
+                "colorTemperatureStart": "warm",
+                "colorTemperatureEnd": "cold",
+                "helpWanted": "Is this the correct direction? Can you provide exact color temperature values in Kelvin?"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "Macro": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        5
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        6,
+                        10
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 2200K"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 2300K"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        20
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 2400K"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        25
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 2500K"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        30
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 2600K"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        35
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 2700K"
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        40
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 2800K"
+                },
+                {
+                    "dmxRange": [
+                        41,
+                        45
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 2900K"
+                },
+                {
+                    "dmxRange": [
+                        46,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 3000K"
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        55
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 3100K"
+                },
+                {
+                    "dmxRange": [
+                        56,
+                        60
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 3200K"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        65
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 3400K"
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        70
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 3600K"
+                },
+                {
+                    "dmxRange": [
+                        71,
+                        75
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 3800K"
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        80
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 4000K"
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        85
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 4200K"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 4400K"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 4600K"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        100
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 4800K"
+                },
+                {
+                    "dmxRange": [
+                        101,
+                        105
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 5000K"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        110
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Calibrated white 5200K"
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        115
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 1 - change"
+                },
+                {
+                    "dmxRange": [
+                        116,
+                        120
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 2 - ramp"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        125
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 3 - fade"
+                },
+                {
+                    "dmxRange": [
+                        126,
+                        130
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 4 - redshift"
+                },
+                {
+                    "dmxRange": [
+                        131,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 5 - pulse"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        140
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 6 - CTO"
+                },
+                {
+                    "dmxRange": [
+                        141,
+                        145
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 7 - Flash"
+                },
+                {
+                    "dmxRange": [
+                        146,
+                        150
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Macro 8 - Random"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blackout"
+                }
+            ]
+        },
+        "2200K": {
+            "fineChannelAliases": [
+                "2200K 16bit"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "5200K": {
+            "fineChannelAliases": [
+                "5200K 16bit"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "01",
+            "channels": [
+                "Dimmer",
+                "CTC"
+            ]
+        },
+        {
+            "name": "02",
+            "channels": [
+                "Dimmer",
+                "Dimmer 16bit",
+                "CTC"
+            ]
+        },
+        {
+            "name": "03",
+            "channels": [
+                "Dimmer",
+                "CTC",
+                "Strobe",
+                "Macro"
+            ]
+        },
+        {
+            "name": "04",
+            "channels": [
+                "Dimmer",
+                "Dimmer 16bit",
+                "CTC",
+                "Strobe",
+                "Macro"
+            ]
+        },
+        {
+            "name": "05",
+            "channels": [
+                "Dimmer",
+                "Dimmer 16bit",
+                "CTC",
+                "2200K",
+                "5200K",
+                "Strobe",
+                "Macro"
+            ]
+        },
+        {
+            "name": "06",
+            "channels": [
+                "Dimmer",
+                "2200K",
+                "5200K"
+            ]
+        },
+        {
+            "name": "07",
+            "channels": [
+                "Dimmer",
+                "Dimmer 16bit",
+                "2200K",
+                "5200K"
+            ]
+        },
+        {
+            "name": "08",
+            "channels": [
+                "2200K",
+                "5200K"
+            ]
+        },
+        {
+            "name": "09",
+            "channels": [
+                "2200K",
+                "2200K 16bit",
+                "5200K",
+                "5200K 16bit"
+            ]
+        }
+    ]
+}

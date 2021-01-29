@@ -1,0 +1,221 @@
+{
+    "manufacturer": "ETC",
+    "name": "Desire D40 Vivid",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Richard",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Orange": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Amber"
+            }
+        },
+        "Amber": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset",
+                "colors": [
+                    "#ff8000"
+                ]
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Cyan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Cyan"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Indigo": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Indigo"
+            }
+        },
+        "Intensity": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Full on"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        254
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Variable rate from slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        255,
+                        255
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Full on"
+                }
+            ]
+        },
+        "Hue (coarse)": {
+            "fineChannelAliases": [
+                "Hue (fine)"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Saturation": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic"
+            }
+        },
+        "Color Point": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Plus 7 Control on/off": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Tint": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Not Used (RGB Mode)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        },
+        "Not Used 6 (plus 7 mode)": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "NoFunction"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "1 Direct",
+            "channels": [
+                "Red",
+                "Orange",
+                "Amber",
+                "Green",
+                "Cyan",
+                "Blue",
+                "Indigo",
+                "Intensity",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "2 Stage",
+            "channels": [
+                "Hue (coarse)",
+                "Hue (fine)",
+                "Saturation",
+                "Intensity",
+                "Strobe",
+                "Not Used 6 (plus 7 mode)",
+                "Plus 7 Control on/off",
+                "Red",
+                "Orange",
+                "Amber",
+                "Green",
+                "Cyan",
+                "Blue",
+                "Indigo"
+            ]
+        },
+        {
+            "name": "3 XT Arch",
+            "channels": [
+                "Intensity",
+                "Strobe",
+                "Hue (coarse)",
+                "Hue (fine)",
+                "Saturation"
+            ]
+        },
+        {
+            "name": "4 RGB",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue",
+                "Not Used (RGB Mode)",
+                "Strobe"
+            ]
+        },
+        {
+            "name": "5 Studio",
+            "channels": [
+                "Intensity",
+                "Color Point",
+                "Tint"
+            ]
+        }
+    ]
+}

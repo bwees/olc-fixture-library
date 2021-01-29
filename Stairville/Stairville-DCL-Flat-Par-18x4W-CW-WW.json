@@ -1,0 +1,188 @@
+{
+    "manufacturer": "Stairville",
+    "name": "DCL Flat Par 18x4W CW/WW",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Freasy",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.11.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Master Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Warm White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Warm White"
+            }
+        },
+        "Cold White": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Cold White"
+            }
+        },
+        "Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "NoFunction"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        42
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 01"
+                },
+                {
+                    "dmxRange": [
+                        43,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 02"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        128
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 03"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        171
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 04"
+                },
+                {
+                    "dmxRange": [
+                        172,
+                        214
+                    ],
+                    "type": "Effect",
+                    "effectName": "Program 05"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Sound control",
+                    "soundControlled": true
+                }
+            ]
+        },
+        "Colour Setting / Process Speed / Sound-Control Sensitivity": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "Maintenance",
+                    "comment": "No function, if channel 4 = 0/Speed, if channel 4 = 43..214/Sensitivity, if channel 4 = 215..255"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Warm white, if channel 4 = 1...42 (programme 01)/Speed, if channel 4 = 43..214/Sensitivity, if channel 4 = 215..255"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Cold white, if channel 4 = 1..42 (programme 01)/Speed, if channel 4 = 43..214/Sensitivity, if channel 4 = 215..255"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "All, if channel 4 = 1..42 (programme 01)/Speed, if channel 4 = 43..214/Sensitivity, if channel 4 = 215..255"
+                }
+            ]
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Warm White, if Channel 4 = 0": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White",
+                "comment": "Colour temperature selection warm white, if channel 4 = 0"
+            }
+        },
+        "Cold White, if Channel 4 = 0": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "White",
+                "comment": "Colour temperature selection cold white, if channel 4 = 0"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "2-channel",
+            "shortName": "2ch",
+            "channels": [
+                "Warm White",
+                "Cold White"
+            ]
+        },
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Master Dimmer",
+                "Warm White, if Channel 4 = 0",
+                "Cold White, if Channel 4 = 0",
+                "Programs",
+                "Colour Setting / Process Speed / Sound-Control Sensitivity",
+                "Strobe"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "manufacturer": "Involight",
+    "name": "LEDSTROB400",
+    "categories": [
+        "Strobe"
+    ],
+    "meta": {
+        "authors": [
+            "D\u00e1vid Czir\u00f3k",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Brightness": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Speed": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "StrobeSpeed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "comment": "Strobe speed"
+            }
+        },
+        "Light duration": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Speed",
+                "speedStart": "slow",
+                "speedEnd": "fast",
+                "helpWanted": "Are the automatically added speed values correct?"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "Basic",
+            "channels": [
+                "Brightness",
+                "Speed",
+                "Light duration"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,209 @@
+{
+    "manufacturer": "Stairville",
+    "name": "AF-180 LED Fogger Co2 FX",
+    "categories": [
+        "Smoke"
+    ],
+    "meta": {
+        "authors": [
+            "Johannes Uhl",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.10.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Amount of Fog": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Intensity",
+                    "comment": "No fog output (0%)"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Fog output (100%)"
+                }
+            ]
+        },
+        "Brightness of All LEDs": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Colour effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        20
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "All LEDs off"
+                },
+                {
+                    "dmxRange": [
+                        21,
+                        35
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red steady light",
+                    "colors": [
+                        "#ff0000"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        36,
+                        50
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green steady light",
+                    "colors": [
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        51,
+                        65
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue steady light",
+                    "colors": [
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        66,
+                        80
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red / green steady light",
+                    "colors": [
+                        "#ff0000",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        81,
+                        95
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red / blue steady light",
+                    "colors": [
+                        "#ff0000",
+                        "#0000ff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        110
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue / green steady light",
+                    "colors": [
+                        "#0000ff",
+                        "#00ff00"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        111,
+                        127
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red / green / blue steady light",
+                    "colors": [
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Automatic colour change, all LEDs, increasing speed"
+                }
+            ]
+        },
+        "Stroboscope Effect": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        9
+                    ],
+                    "type": "Effect",
+                    "effectName": "Stroboscope effect off"
+                },
+                {
+                    "dmxRange": [
+                        10,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Stroboscope effect from",
+                    "speedStart": "slow",
+                    "speedEnd": "fast"
+                }
+            ]
+        },
+        "Intensity Colour Effect Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Intensity Colour Effect Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Intensity Colour Effect Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        }
+    },
+    "modes": [
+        {
+            "name": "7-channel",
+            "shortName": "7ch",
+            "channels": [
+                "Amount of Fog",
+                "Brightness of All LEDs",
+                "Colour effect",
+                "Stroboscope Effect",
+                "Intensity Colour Effect Red",
+                "Intensity Colour Effect Green",
+                "Intensity Colour Effect Blue"
+            ]
+        }
+    ]
+}

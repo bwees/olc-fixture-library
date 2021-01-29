@@ -1,0 +1,606 @@
+{
+    "manufacturer": "Martin",
+    "name": "MAC300",
+    "categories": [
+        "Moving Head"
+    ],
+    "meta": {
+        "authors": [
+            "Heikki Junnila",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Shutter, strobe, reset, lamp": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Closed",
+                    "comment": "Shutter closed"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        49
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        50,
+                        72
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Strobe, fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        73,
+                        79
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        80,
+                        99
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Opening pulse, fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        100,
+                        119
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Pulse",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Closing pulse, fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        127
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        187
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "randomTiming": true,
+                    "comment": "Random strobe, fast -> slow"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        190
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        191,
+                        193
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random opening pulse, fast"
+                },
+                {
+                    "dmxRange": [
+                        194,
+                        196
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random opening pulse, slow"
+                },
+                {
+                    "dmxRange": [
+                        197,
+                        199
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random closing pulse, fast"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        202
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "randomTiming": true,
+                    "comment": "Random closing pulse, slow"
+                },
+                {
+                    "dmxRange": [
+                        203,
+                        207
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        217
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        218,
+                        227
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        228,
+                        237
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp on",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        238,
+                        247
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "Shutter open"
+                },
+                {
+                    "dmxRange": [
+                        248,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp off",
+                    "helpWanted": "Unknown QLC+ capability preset LampOff, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        },
+        "Dimmer": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Intensity"
+            }
+        },
+        "Cyan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Cyan"
+            }
+        },
+        "Magenta": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Magenta"
+            }
+        },
+        "Yellow": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Yellow"
+            }
+        },
+        "Colour": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White"
+                },
+                {
+                    "dmxRange": [
+                        26,
+                        26
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "CTC 5500-2900"
+                },
+                {
+                    "dmxRange": [
+                        52,
+                        52
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pink 312"
+                },
+                {
+                    "dmxRange": [
+                        78,
+                        78
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "UV"
+                },
+                {
+                    "dmxRange": [
+                        104,
+                        104
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red 308"
+                },
+                {
+                    "dmxRange": [
+                        130,
+                        130
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green 206"
+                },
+                {
+                    "dmxRange": [
+                        156,
+                        156
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue 108"
+                },
+                {
+                    "dmxRange": [
+                        180,
+                        183
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Blue 108"
+                },
+                {
+                    "dmxRange": [
+                        184,
+                        187
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Green 206"
+                },
+                {
+                    "dmxRange": [
+                        188,
+                        191
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Red 308"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        195
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "UV"
+                },
+                {
+                    "dmxRange": [
+                        196,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Pink 312"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        203
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "CTC 5500-2900"
+                },
+                {
+                    "dmxRange": [
+                        204,
+                        207
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White"
+                },
+                {
+                    "dmxRange": [
+                        208,
+                        226
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "CW fast to slow"
+                },
+                {
+                    "dmxRange": [
+                        227,
+                        245
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "CCW slow to fast"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        248
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Random CMY fast"
+                },
+                {
+                    "dmxRange": [
+                        249,
+                        251
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Random CMY medium"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Random CMY slow"
+                }
+            ]
+        },
+        "Frost": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Generic",
+                "comment": "Open to full"
+            }
+        },
+        "Pan": {
+            "fineChannelAliases": [
+                "Pan fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "270deg"
+            }
+        },
+        "Tilt": {
+            "fineChannelAliases": [
+                "Tilt fine"
+            ],
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "265deg"
+            }
+        },
+        "Pan/tilt speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        2
+                    ],
+                    "type": "PanTiltSpeed",
+                    "comment": "Tracking mode",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        3,
+                        245
+                    ],
+                    "type": "PanTiltSpeed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        248
+                    ],
+                    "type": "PanTiltSpeed",
+                    "comment": "Tracking, PTSP NORM",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        249,
+                        251
+                    ],
+                    "type": "PanTiltSpeed",
+                    "comment": "Tracking, PTSP FAST",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "PanTiltSpeed",
+                    "comment": "Blackout while moving",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        },
+        "Effect speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        2
+                    ],
+                    "type": "Speed",
+                    "comment": "Tracking mode",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        3,
+                        245
+                    ],
+                    "type": "Speed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow"
+                },
+                {
+                    "dmxRange": [
+                        246,
+                        248
+                    ],
+                    "type": "Speed",
+                    "comment": "Tracking, SCUT OFF",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        249,
+                        251
+                    ],
+                    "type": "Speed",
+                    "comment": "Tracking, SCUT ON",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        252,
+                        255
+                    ],
+                    "type": "Speed",
+                    "comment": "Blackout while moving",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Shutter, strobe, reset, lamp",
+                "Dimmer",
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Colour",
+                "Frost",
+                "Pan",
+                "Tilt"
+            ]
+        },
+        {
+            "name": "2",
+            "channels": [
+                "Shutter, strobe, reset, lamp",
+                "Dimmer",
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Colour",
+                "Frost",
+                "Pan",
+                "Pan fine",
+                "Tilt",
+                "Tilt fine"
+            ]
+        },
+        {
+            "name": "3",
+            "channels": [
+                "Shutter, strobe, reset, lamp",
+                "Dimmer",
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Colour",
+                "Frost",
+                "Pan",
+                "Tilt",
+                "Pan/tilt speed",
+                "Effect speed"
+            ]
+        },
+        {
+            "name": "4",
+            "channels": [
+                "Shutter, strobe, reset, lamp",
+                "Dimmer",
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "Colour",
+                "Frost",
+                "Pan",
+                "Pan fine",
+                "Tilt",
+                "Tilt fine",
+                "Pan/tilt speed",
+                "Effect speed"
+            ]
+        }
+    ]
+}

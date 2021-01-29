@@ -1,0 +1,615 @@
+{
+    "manufacturer": "Martin",
+    "name": "Roboscan 812",
+    "categories": [
+        "Scanner"
+    ],
+    "meta": {
+        "authors": [
+            "Heikki Junnila",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.3 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Strobe, SA, Reset, Lamp ON": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        10
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Open",
+                    "comment": "No strobe"
+                },
+                {
+                    "dmxRange": [
+                        11,
+                        74
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "fast",
+                    "speedEnd": "slow",
+                    "comment": "Gobo strobe (fast->slow)"
+                },
+                {
+                    "dmxRange": [
+                        75,
+                        138
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "comment": "Color strobe (fast->slow)"
+                },
+                {
+                    "dmxRange": [
+                        139,
+                        170
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Remote Auto trig",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        202
+                    ],
+                    "type": "ShutterStrobe",
+                    "shutterEffect": "Strobe",
+                    "comment": "Remote Music trig",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        203,
+                        235
+                    ],
+                    "type": "Generic",
+                    "comment": "Reset fixture",
+                    "helpWanted": "Unknown QLC+ capability preset ResetAll, Res1=\"undefined\", Res2=\"undefined\"."
+                },
+                {
+                    "dmxRange": [
+                        236,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Lamp power ON",
+                    "helpWanted": "Unknown QLC+ capability preset LampOn, Res1=\"undefined\", Res2=\"undefined\"."
+                }
+            ]
+        },
+        "Color": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Black -> white"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        30
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White -> Color 1"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        45
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 1 -> Color 2"
+                },
+                {
+                    "dmxRange": [
+                        46,
+                        60
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 2 -> Color 3"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        75
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 3 -> Color 4"
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        90
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 4 -> Color 5"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        105
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 5 -> Color 6"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        120
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 6 -> Color 7"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        135
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 7 -> Color 8"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        150
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 8 -> Color 9"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        165
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 9 -> Color 10"
+                },
+                {
+                    "dmxRange": [
+                        166,
+                        180
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 10 -> Color 11"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        184
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 11"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        189
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 10"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        194
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 9"
+                },
+                {
+                    "dmxRange": [
+                        195,
+                        199
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 8"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        204
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 7"
+                },
+                {
+                    "dmxRange": [
+                        205,
+                        209
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 6"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        214
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 5"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        219
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 4"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        224
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 3"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        229
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 2"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        234
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Color 1"
+                },
+                {
+                    "dmxRange": [
+                        235,
+                        239
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "White"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "ColorPreset",
+                    "comment": "Black"
+                }
+            ]
+        },
+        "Gobo": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        15
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Closed -> Open"
+                },
+                {
+                    "dmxRange": [
+                        16,
+                        30
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Open -> Gobo 1"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        45
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Gobo 1 -> Gobo 2"
+                },
+                {
+                    "dmxRange": [
+                        46,
+                        60
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Gobo 2 -> Gobo 3"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        75
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Gobo 3 -> Gobo 4"
+                },
+                {
+                    "dmxRange": [
+                        76,
+                        90
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Gobo 4 -> Gobo 5"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        105
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Gobo 5 -> Gobo 6"
+                },
+                {
+                    "dmxRange": [
+                        106,
+                        120
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Gobo 6 -> Gobo 7"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        135
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 9,
+                    "comment": "Gobo 7 -> Gobo 8"
+                },
+                {
+                    "dmxRange": [
+                        136,
+                        150
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 10,
+                    "comment": "Gobo 8 -> Gobo 9"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        165
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 11,
+                    "comment": "Gobo 9 -> Gobo 10"
+                },
+                {
+                    "dmxRange": [
+                        166,
+                        180
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 12,
+                    "comment": "Gobo 10 -> Gobo 11"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        184
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 13,
+                    "comment": "Gobo 11"
+                },
+                {
+                    "dmxRange": [
+                        185,
+                        189
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 14,
+                    "comment": "Gobo 10"
+                },
+                {
+                    "dmxRange": [
+                        190,
+                        194
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 15,
+                    "comment": "Gobo 9"
+                },
+                {
+                    "dmxRange": [
+                        195,
+                        199
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 16,
+                    "comment": "Gobo 8"
+                },
+                {
+                    "dmxRange": [
+                        200,
+                        204
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 17,
+                    "comment": "Gobo 7"
+                },
+                {
+                    "dmxRange": [
+                        205,
+                        209
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 18,
+                    "comment": "Gobo 6"
+                },
+                {
+                    "dmxRange": [
+                        210,
+                        214
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 19,
+                    "comment": "Gobo 5"
+                },
+                {
+                    "dmxRange": [
+                        215,
+                        219
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 20,
+                    "comment": "Gobo 4"
+                },
+                {
+                    "dmxRange": [
+                        220,
+                        224
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 21,
+                    "comment": "Gobo 3"
+                },
+                {
+                    "dmxRange": [
+                        225,
+                        229
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 22,
+                    "comment": "Gobo 2"
+                },
+                {
+                    "dmxRange": [
+                        230,
+                        234
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 23,
+                    "comment": "Gobo 1"
+                },
+                {
+                    "dmxRange": [
+                        235,
+                        239
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 24,
+                    "comment": "Open"
+                },
+                {
+                    "dmxRange": [
+                        240,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 25,
+                    "comment": "Closed"
+                }
+            ]
+        },
+        "Pan": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Pan",
+                "angleStart": "0deg",
+                "angleEnd": "175deg"
+            }
+        },
+        "Tilt": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "Tilt",
+                "angleStart": "0deg",
+                "angleEnd": "83deg"
+            }
+        },
+        "Movement Speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Speed",
+                    "comment": "Tracking mode enabled",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "Speed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow"
+                }
+            ]
+        },
+        "Color / Gobo speed": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        0
+                    ],
+                    "type": "Speed",
+                    "comment": "Tracking mode enabled",
+                    "speedStart": "slow",
+                    "speedEnd": "fast",
+                    "helpWanted": "Are the automatically added speed values correct?"
+                },
+                {
+                    "dmxRange": [
+                        1,
+                        255
+                    ],
+                    "type": "Speed",
+                    "speedStart": "fast",
+                    "speedEnd": "slow"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Strobe, SA, Reset, Lamp ON",
+                "Color",
+                "Gobo",
+                "Pan",
+                "Tilt",
+                "Movement Speed",
+                "Color / Gobo speed"
+            ]
+        }
+    ]
+}

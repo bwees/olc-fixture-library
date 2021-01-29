@@ -1,0 +1,159 @@
+{
+    "manufacturer": "Alkalite",
+    "name": "Octopod DP-80",
+    "categories": [
+        "Color Changer"
+    ],
+    "meta": {
+        "authors": [
+            "Ryan Gough",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.11.2 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Rainbow": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorPreset"
+            }
+        },
+        "Red": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Red"
+            }
+        },
+        "Green": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Green"
+            }
+        },
+        "Blue": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ColorIntensity",
+                "color": "Blue"
+            }
+        },
+        "Strobe": {
+            "defaultValue": 0,
+            "capability": {
+                "type": "ShutterStrobe",
+                "shutterEffect": "Strobe",
+                "speedStart": "fast",
+                "speedEnd": "slow",
+                "helpWanted": "At which DMX values is strobe disabled?"
+            }
+        },
+        "Programs": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        1,
+                        30
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Chase 1"
+                },
+                {
+                    "dmxRange": [
+                        31,
+                        60
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Chase 2"
+                },
+                {
+                    "dmxRange": [
+                        61,
+                        90
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Chase 3"
+                },
+                {
+                    "dmxRange": [
+                        91,
+                        120
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Chase 4"
+                },
+                {
+                    "dmxRange": [
+                        121,
+                        150
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Chase 5"
+                },
+                {
+                    "dmxRange": [
+                        151,
+                        180
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Chase 6"
+                },
+                {
+                    "dmxRange": [
+                        181,
+                        210
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Chase 7"
+                },
+                {
+                    "dmxRange": [
+                        211,
+                        240
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Chase 8"
+                },
+                {
+                    "dmxRange": [
+                        241,
+                        255
+                    ],
+                    "type": "Maintenance",
+                    "comment": "Sound Active"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "6-channel",
+            "shortName": "6ch",
+            "channels": [
+                "Rainbow",
+                "Red",
+                "Green",
+                "Blue",
+                "Strobe",
+                "Programs"
+            ]
+        },
+        {
+            "name": "3-channel",
+            "shortName": "3ch",
+            "channels": [
+                "Red",
+                "Green",
+                "Blue"
+            ]
+        }
+    ]
+}

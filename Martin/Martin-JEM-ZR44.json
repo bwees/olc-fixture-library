@@ -1,0 +1,51 @@
+{
+    "manufacturer": "Martin",
+    "name": "JEM ZR44",
+    "categories": [
+        "Smoke"
+    ],
+    "meta": {
+        "authors": [
+            "Joep Admiraal",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.4.2)"
+        }
+    },
+    "availableChannels": {
+        "Intensity": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        12
+                    ],
+                    "type": "Intensity",
+                    "comment": "No fog"
+                },
+                {
+                    "dmxRange": [
+                        13,
+                        255
+                    ],
+                    "type": "Intensity",
+                    "comment": "Fog at variable density, (13=minimum, 255=maximum)"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1",
+            "channels": [
+                "Intensity"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,353 @@
+{
+    "manufacturer": "JB Systems",
+    "name": "Space Laser 3",
+    "categories": [
+        "Laser"
+    ],
+    "meta": {
+        "authors": [
+            "Ben Engelen",
+            "bwees"
+        ],
+        "createDate": "2021-01-25",
+        "lastModifyDate": "2021-01-25",
+        "importPlugin": {
+            "plugin": "qlcplus_4.12.1",
+            "date": "2021-01-25",
+            "comment": "created by Q Light Controller Plus (version 4.12.0 GIT)"
+        }
+    },
+    "availableChannels": {
+        "Mode 1": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        19
+                    ],
+                    "type": "Effect",
+                    "effectName": "Laser off (Blackout)"
+                },
+                {
+                    "dmxRange": [
+                        20,
+                        119
+                    ],
+                    "type": "Effect",
+                    "effectName": "AUTO"
+                },
+                {
+                    "dmxRange": [
+                        120,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "MUSIC"
+                }
+            ]
+        },
+        "Mode 2": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "Effect",
+                    "effectName": "Laser output in blackout"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "Effect",
+                    "effectName": "Laser in Music mode"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "Effect",
+                    "effectName": "Full automatic mode"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "DMX Mode"
+                }
+            ]
+        },
+        "Pattern Group": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        63
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "1: Lines"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "2: Tunnels"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        191
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "3: Curves"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "4: Others"
+                }
+            ]
+        },
+        "Pattern Select": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        31
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 1,
+                    "comment": "Pattern 1"
+                },
+                {
+                    "dmxRange": [
+                        32,
+                        63
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 2,
+                    "comment": "Pattern 2"
+                },
+                {
+                    "dmxRange": [
+                        64,
+                        95
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 3,
+                    "comment": "Pattern 3"
+                },
+                {
+                    "dmxRange": [
+                        96,
+                        127
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 4,
+                    "comment": "Pattern 4"
+                },
+                {
+                    "dmxRange": [
+                        128,
+                        159
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 5,
+                    "comment": "Pattern 5"
+                },
+                {
+                    "dmxRange": [
+                        160,
+                        191
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 6,
+                    "comment": "Pattern 6"
+                },
+                {
+                    "dmxRange": [
+                        192,
+                        233
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 7,
+                    "comment": "Pattern 7"
+                },
+                {
+                    "dmxRange": [
+                        234,
+                        255
+                    ],
+                    "type": "WheelSlot",
+                    "slotNumber": 8,
+                    "comment": "Pattern 8"
+                }
+            ]
+        },
+        "Rotation": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        128
+                    ],
+                    "type": "Rotation",
+                    "speed": "stop",
+                    "comment": "Fixed rotation position of the pattern"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "Rotation",
+                    "speedStart": "slow CW",
+                    "speedEnd": "fast CW",
+                    "comment": "Continuous pattern rotation from slow to fast"
+                }
+            ]
+        },
+        "Size": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        128
+                    ],
+                    "type": "Generic",
+                    "comment": "Zooming : pattern size from big to small"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "Generic",
+                    "comment": "Continuous pattern zooming from slow to fast"
+                }
+            ]
+        },
+        "Pan": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        128
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Pan movement (X Axis horizontal movement)"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "Pan",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Pan speed (from slow to fast)"
+                }
+            ]
+        },
+        "Tilt": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        128
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Tilt movement (Y-Axis vertical movement)"
+                },
+                {
+                    "dmxRange": [
+                        129,
+                        255
+                    ],
+                    "type": "Tilt",
+                    "angleStart": "0deg",
+                    "angleEnd": "90deg",
+                    "comment": "Tilt speed (from slow to fast)"
+                }
+            ]
+        },
+        "Option": {
+            "defaultValue": 0,
+            "capabilities": [
+                {
+                    "dmxRange": [
+                        0,
+                        85
+                    ],
+                    "type": "Effect",
+                    "effectName": "Original pattern (selected with channels 2+3)"
+                },
+                {
+                    "dmxRange": [
+                        86,
+                        170
+                    ],
+                    "type": "Effect",
+                    "effectName": "Patterns without blanking (all pattern lines connected together)"
+                },
+                {
+                    "dmxRange": [
+                        171,
+                        255
+                    ],
+                    "type": "Effect",
+                    "effectName": "Blackout"
+                }
+            ]
+        }
+    },
+    "modes": [
+        {
+            "name": "1-channel",
+            "shortName": "1ch",
+            "channels": [
+                "Mode 1"
+            ]
+        },
+        {
+            "name": "8-channel",
+            "shortName": "8ch",
+            "channels": [
+                "Mode 2",
+                "Pattern Group",
+                "Pattern Select",
+                "Rotation",
+                "Size",
+                "Pan",
+                "Tilt",
+                "Option"
+            ]
+        }
+    ]
+}
